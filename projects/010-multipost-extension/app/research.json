@@ -1,0 +1,1318 @@
+{
+  "repo": "https://github.com/leaperone/MultiPost-Extension",
+  "commit": "e99ed1be26c3bb898b026a436810d96e2c02d81d",
+  "version": "1.4.8",
+  "research_date": "2026-09-17",
+  "method": "固定提交源码静态阅读；注册表按顶层键统计，不执行 TypeScript",
+  "verification": {
+    "source_review": true,
+    "extension_installed": false,
+    "build_run": false,
+    "upstream_tests_run": false,
+    "live_publishing_tested": false,
+    "server_api_tested": false
+  },
+  "platform_registrations": {
+    "dynamic": {
+      "count": 31,
+      "keys": [
+        "DYNAMIC_BILIBILI",
+        "DYNAMIC_DOUYIN",
+        "DYNAMIC_X",
+        "DYNAMIC_REDNOTE",
+        "DYNAMIC_WEIBO",
+        "DYNAMIC_XUEQIU",
+        "DYNAMIC_ZHIHU",
+        "DYNAMIC_INSTAGRAM",
+        "DYNAMIC_FACEBOOK",
+        "DYNAMIC_LINKEDIN",
+        "DYNAMIC_OKJIKE",
+        "DYNAMIC_REDDIT",
+        "DYNAMIC_PINTEREST",
+        "DYNAMIC_KUAISHOU",
+        "DYNAMIC_SOHUTV",
+        "DYNAMIC_BAIJIAHAO",
+        "DYNAMIC_TOUTIAO",
+        "DYNAMIC_THREADS",
+        "DYNAMIC_WEIXINCHANNEL",
+        "DYNAMIC_BLUESKY",
+        "DYNAMIC_V2EX",
+        "DYNAMIC_DOUBAN",
+        "DYNAMIC_DEDAO",
+        "DYNAMIC_WEIXIN",
+        "DYNAMIC_WEBHOOK",
+        "DYNAMIC_ZSXQ",
+        "DYNAMIC_XIAOHEIHE",
+        "DYNAMIC_TOUTIAOHAO",
+        "DYNAMIC_SUBSTACK",
+        "DYNAMIC_MAIMAI",
+        "DYNAMIC_JUEJIN"
+      ],
+      "entries": [
+        {
+          "key": "DYNAMIC_BILIBILI",
+          "label": "哔哩哔哩",
+          "path": "src/sync/dynamic.ts",
+          "line": 35
+        },
+        {
+          "key": "DYNAMIC_DOUYIN",
+          "label": "抖音",
+          "path": "src/sync/dynamic.ts",
+          "line": 47
+        },
+        {
+          "key": "DYNAMIC_X",
+          "label": "X",
+          "path": "src/sync/dynamic.ts",
+          "line": 58
+        },
+        {
+          "key": "DYNAMIC_REDNOTE",
+          "label": "小红书",
+          "path": "src/sync/dynamic.ts",
+          "line": 70
+        },
+        {
+          "key": "DYNAMIC_WEIBO",
+          "label": "微博",
+          "path": "src/sync/dynamic.ts",
+          "line": 82
+        },
+        {
+          "key": "DYNAMIC_XUEQIU",
+          "label": "雪球",
+          "path": "src/sync/dynamic.ts",
+          "line": 93
+        },
+        {
+          "key": "DYNAMIC_ZHIHU",
+          "label": "知乎",
+          "path": "src/sync/dynamic.ts",
+          "line": 104
+        },
+        {
+          "key": "DYNAMIC_INSTAGRAM",
+          "label": "Instagram",
+          "path": "src/sync/dynamic.ts",
+          "line": 115
+        },
+        {
+          "key": "DYNAMIC_FACEBOOK",
+          "label": "脸书",
+          "path": "src/sync/dynamic.ts",
+          "line": 127
+        },
+        {
+          "key": "DYNAMIC_LINKEDIN",
+          "label": "领英",
+          "path": "src/sync/dynamic.ts",
+          "line": 139
+        },
+        {
+          "key": "DYNAMIC_OKJIKE",
+          "label": "即刻",
+          "path": "src/sync/dynamic.ts",
+          "line": 151
+        },
+        {
+          "key": "DYNAMIC_REDDIT",
+          "label": "Reddit",
+          "path": "src/sync/dynamic.ts",
+          "line": 162
+        },
+        {
+          "key": "DYNAMIC_PINTEREST",
+          "label": "Pinterest",
+          "path": "src/sync/dynamic.ts",
+          "line": 173
+        },
+        {
+          "key": "DYNAMIC_KUAISHOU",
+          "label": "快手",
+          "path": "src/sync/dynamic.ts",
+          "line": 184
+        },
+        {
+          "key": "DYNAMIC_SOHUTV",
+          "label": "搜狐视频",
+          "path": "src/sync/dynamic.ts",
+          "line": 195
+        },
+        {
+          "key": "DYNAMIC_BAIJIAHAO",
+          "label": "百家号",
+          "path": "src/sync/dynamic.ts",
+          "line": 206
+        },
+        {
+          "key": "DYNAMIC_TOUTIAO",
+          "label": "今日头条",
+          "path": "src/sync/dynamic.ts",
+          "line": 217
+        },
+        {
+          "key": "DYNAMIC_THREADS",
+          "label": "Threads",
+          "path": "src/sync/dynamic.ts",
+          "line": 228
+        },
+        {
+          "key": "DYNAMIC_WEIXINCHANNEL",
+          "label": "微信视频号",
+          "path": "src/sync/dynamic.ts",
+          "line": 239
+        },
+        {
+          "key": "DYNAMIC_BLUESKY",
+          "label": "BlueSky",
+          "path": "src/sync/dynamic.ts",
+          "line": 250
+        },
+        {
+          "key": "DYNAMIC_V2EX",
+          "label": "V2EX",
+          "path": "src/sync/dynamic.ts",
+          "line": 261
+        },
+        {
+          "key": "DYNAMIC_DOUBAN",
+          "label": "豆瓣",
+          "path": "src/sync/dynamic.ts",
+          "line": 272
+        },
+        {
+          "key": "DYNAMIC_DEDAO",
+          "label": "得到",
+          "path": "src/sync/dynamic.ts",
+          "line": 283
+        },
+        {
+          "key": "DYNAMIC_WEIXIN",
+          "label": "微信公众号",
+          "path": "src/sync/dynamic.ts",
+          "line": 294
+        },
+        {
+          "key": "DYNAMIC_WEBHOOK",
+          "label": "Webhook",
+          "path": "src/sync/dynamic.ts",
+          "line": 305
+        },
+        {
+          "key": "DYNAMIC_ZSXQ",
+          "label": "知识星球",
+          "path": "src/sync/dynamic.ts",
+          "line": 316
+        },
+        {
+          "key": "DYNAMIC_XIAOHEIHE",
+          "label": "小黑盒",
+          "path": "src/sync/dynamic.ts",
+          "line": 327
+        },
+        {
+          "key": "DYNAMIC_TOUTIAOHAO",
+          "label": "今日头条号",
+          "path": "src/sync/dynamic.ts",
+          "line": 338
+        },
+        {
+          "key": "DYNAMIC_SUBSTACK",
+          "label": "Substack",
+          "path": "src/sync/dynamic.ts",
+          "line": 349
+        },
+        {
+          "key": "DYNAMIC_MAIMAI",
+          "label": "脉脉",
+          "path": "src/sync/dynamic.ts",
+          "line": 360
+        },
+        {
+          "key": "DYNAMIC_JUEJIN",
+          "label": "掘金",
+          "path": "src/sync/dynamic.ts",
+          "line": 371
+        }
+      ]
+    },
+    "article": {
+      "count": 42,
+      "keys": [
+        "ARTICLE_CNBLOGS",
+        "ARTICLE_CSDN",
+        "ARTICLE_ZHIHU",
+        "ARTICLE_JUEJIN",
+        "ARTICLE_JIANSHU",
+        "ARTICLE_SEGMENTFAULT",
+        "ARTICLE_ALIYUN",
+        "ARTICLE_TENCENTYUN",
+        "ARTICLE_VOLCENGINE",
+        "ARTICLE_BAIJIAHAO",
+        "ARTICLE_TOUTIAO",
+        "ARTICLE_QQ",
+        "ARTICLE_DOUBAN",
+        "ARTICLE_WEIXIN",
+        "ARTICLE_WORDPRESS",
+        "ARTICLE_BILIBILI",
+        "ARTICLE_SSPAI",
+        "ARTICLE_51CTO",
+        "ARTICLE_XUEQIU",
+        "ARTICLE_WEIBO",
+        "ARTICLE_EASTMONEY",
+        "ARTICLE_SUBSTACK",
+        "ARTICLE_MEDIUM",
+        "ARTICLE_OSCHINA",
+        "ARTICLE_INFOQ",
+        "ARTICLE_SMZDM",
+        "ARTICLE_WOSHIPM",
+        "ARTICLE_GELONGHUI",
+        "ARTICLE_JIANKANGJIE",
+        "ARTICLE_KAIDIWANG",
+        "ARTICLE_AUTOHOME",
+        "ARTICLE_JIANPIAN",
+        "ARTICLE_TONGHUASHUN",
+        "ARTICLE_DONGCHEDI",
+        "ARTICLE_ZSXQ",
+        "ARTICLE_NETEASE",
+        "ARTICLE_SOHU",
+        "ARTICLE_DAYUHAO",
+        "ARTICLE_DINGDUANHAO",
+        "ARTICLE_KUAICHUANHAO",
+        "ARTICLE_YIDIANZIXUN",
+        "ARTICLE_XARTICLE"
+      ],
+      "entries": [
+        {
+          "key": "ARTICLE_CNBLOGS",
+          "label": "博客园",
+          "path": "src/sync/article.ts",
+          "line": 46
+        },
+        {
+          "key": "ARTICLE_CSDN",
+          "label": "CSDN",
+          "path": "src/sync/article.ts",
+          "line": 57
+        },
+        {
+          "key": "ARTICLE_ZHIHU",
+          "label": "知乎",
+          "path": "src/sync/article.ts",
+          "line": 68
+        },
+        {
+          "key": "ARTICLE_JUEJIN",
+          "label": "掘金",
+          "path": "src/sync/article.ts",
+          "line": 79
+        },
+        {
+          "key": "ARTICLE_JIANSHU",
+          "label": "简书",
+          "path": "src/sync/article.ts",
+          "line": 90
+        },
+        {
+          "key": "ARTICLE_SEGMENTFAULT",
+          "label": "思否",
+          "path": "src/sync/article.ts",
+          "line": 101
+        },
+        {
+          "key": "ARTICLE_ALIYUN",
+          "label": "阿里云",
+          "path": "src/sync/article.ts",
+          "line": 113
+        },
+        {
+          "key": "ARTICLE_TENCENTYUN",
+          "label": "腾讯云",
+          "path": "src/sync/article.ts",
+          "line": 125
+        },
+        {
+          "key": "ARTICLE_VOLCENGINE",
+          "label": "火山引擎",
+          "path": "src/sync/article.ts",
+          "line": 137
+        },
+        {
+          "key": "ARTICLE_BAIJIAHAO",
+          "label": "百家号",
+          "path": "src/sync/article.ts",
+          "line": 148
+        },
+        {
+          "key": "ARTICLE_TOUTIAO",
+          "label": "今日头条",
+          "path": "src/sync/article.ts",
+          "line": 159
+        },
+        {
+          "key": "ARTICLE_QQ",
+          "label": "企鹅号",
+          "path": "src/sync/article.ts",
+          "line": 171
+        },
+        {
+          "key": "ARTICLE_DOUBAN",
+          "label": "豆瓣",
+          "path": "src/sync/article.ts",
+          "line": 182
+        },
+        {
+          "key": "ARTICLE_WEIXIN",
+          "label": "微信公众号",
+          "path": "src/sync/article.ts",
+          "line": 193
+        },
+        {
+          "key": "ARTICLE_WORDPRESS",
+          "label": "WordPress",
+          "path": "src/sync/article.ts",
+          "line": 204
+        },
+        {
+          "key": "ARTICLE_BILIBILI",
+          "label": "哔哩哔哩",
+          "path": "src/sync/article.ts",
+          "line": 215
+        },
+        {
+          "key": "ARTICLE_SSPAI",
+          "label": "少数派",
+          "path": "src/sync/article.ts",
+          "line": 226
+        },
+        {
+          "key": "ARTICLE_51CTO",
+          "label": "51CTO",
+          "path": "src/sync/article.ts",
+          "line": 237
+        },
+        {
+          "key": "ARTICLE_XUEQIU",
+          "label": "雪球",
+          "path": "src/sync/article.ts",
+          "line": 248
+        },
+        {
+          "key": "ARTICLE_WEIBO",
+          "label": "微博",
+          "path": "src/sync/article.ts",
+          "line": 259
+        },
+        {
+          "key": "ARTICLE_EASTMONEY",
+          "label": "东方财富",
+          "path": "src/sync/article.ts",
+          "line": 270
+        },
+        {
+          "key": "ARTICLE_SUBSTACK",
+          "label": "Substack",
+          "path": "src/sync/article.ts",
+          "line": 281
+        },
+        {
+          "key": "ARTICLE_MEDIUM",
+          "label": "Medium",
+          "path": "src/sync/article.ts",
+          "line": 292
+        },
+        {
+          "key": "ARTICLE_OSCHINA",
+          "label": "开源中国",
+          "path": "src/sync/article.ts",
+          "line": 303
+        },
+        {
+          "key": "ARTICLE_INFOQ",
+          "label": "InfoQ",
+          "path": "src/sync/article.ts",
+          "line": 314
+        },
+        {
+          "key": "ARTICLE_SMZDM",
+          "label": "什么值得买",
+          "path": "src/sync/article.ts",
+          "line": 325
+        },
+        {
+          "key": "ARTICLE_WOSHIPM",
+          "label": "人人都是产品经理",
+          "path": "src/sync/article.ts",
+          "line": 336
+        },
+        {
+          "key": "ARTICLE_GELONGHUI",
+          "label": "格隆汇",
+          "path": "src/sync/article.ts",
+          "line": 348
+        },
+        {
+          "key": "ARTICLE_JIANKANGJIE",
+          "label": "健康界",
+          "path": "src/sync/article.ts",
+          "line": 360
+        },
+        {
+          "key": "ARTICLE_KAIDIWANG",
+          "label": "凯迪网",
+          "path": "src/sync/article.ts",
+          "line": 372
+        },
+        {
+          "key": "ARTICLE_AUTOHOME",
+          "label": "汽车之家",
+          "path": "src/sync/article.ts",
+          "line": 383
+        },
+        {
+          "key": "ARTICLE_JIANPIAN",
+          "label": "美篇",
+          "path": "src/sync/article.ts",
+          "line": 395
+        },
+        {
+          "key": "ARTICLE_TONGHUASHUN",
+          "label": "同花顺",
+          "path": "src/sync/article.ts",
+          "line": 407
+        },
+        {
+          "key": "ARTICLE_DONGCHEDI",
+          "label": "懂车号",
+          "path": "src/sync/article.ts",
+          "line": 419
+        },
+        {
+          "key": "ARTICLE_ZSXQ",
+          "label": "知识星球",
+          "path": "src/sync/article.ts",
+          "line": 431
+        },
+        {
+          "key": "ARTICLE_NETEASE",
+          "label": "网易号",
+          "path": "src/sync/article.ts",
+          "line": 443
+        },
+        {
+          "key": "ARTICLE_SOHU",
+          "label": "搜狐号",
+          "path": "src/sync/article.ts",
+          "line": 455
+        },
+        {
+          "key": "ARTICLE_DAYUHAO",
+          "label": "大鱼号",
+          "path": "src/sync/article.ts",
+          "line": 467
+        },
+        {
+          "key": "ARTICLE_DINGDUANHAO",
+          "label": "顶端号",
+          "path": "src/sync/article.ts",
+          "line": 479
+        },
+        {
+          "key": "ARTICLE_KUAICHUANHAO",
+          "label": "快传号",
+          "path": "src/sync/article.ts",
+          "line": 491
+        },
+        {
+          "key": "ARTICLE_YIDIANZIXUN",
+          "label": "一点号",
+          "path": "src/sync/article.ts",
+          "line": 503
+        },
+        {
+          "key": "ARTICLE_XARTICLE",
+          "label": "X",
+          "path": "src/sync/article.ts",
+          "line": 515
+        }
+      ]
+    },
+    "video": {
+      "count": 30,
+      "keys": [
+        "VIDEO_BILIBILI",
+        "VIDEO_DOUYIN",
+        "VIDEO_YOUTUBE",
+        "VIDEO_REDNOTE",
+        "VIDEO_TIKTOK",
+        "VIDEO_WEIXINCHANNEL",
+        "VIDEO_KUAISHOU",
+        "VIDEO_BAIJIAHAO",
+        "VIDEO_WEIBO",
+        "VIDEO_OKJIKE",
+        "VIDEO_BLUESKY",
+        "VIDEO_ZHIHU",
+        "VIDEO_EASTMONEY",
+        "VIDEO_XIAOHEIHE",
+        "VIDEO_TOUTIAOHAO",
+        "VIDEO_QIE",
+        "VIDEO_CHEJIAHAO",
+        "VIDEO_DEWU",
+        "VIDEO_YICHE",
+        "VIDEO_SOHU",
+        "VIDEO_SOHUTV",
+        "VIDEO_NETEASE",
+        "VIDEO_DAYU",
+        "VIDEO_ALIPAY",
+        "VIDEO_YIDIAN",
+        "VIDEO_PINDUODUO",
+        "VIDEO_VIVOVIDEO",
+        "VIDEO_IQIYI",
+        "VIDEO_YOUKU",
+        "VIDEO_TENCENTVIDEO"
+      ],
+      "entries": [
+        {
+          "key": "VIDEO_BILIBILI",
+          "label": "哔哩哔哩",
+          "path": "src/sync/video.ts",
+          "line": 34
+        },
+        {
+          "key": "VIDEO_DOUYIN",
+          "label": "抖音",
+          "path": "src/sync/video.ts",
+          "line": 46
+        },
+        {
+          "key": "VIDEO_YOUTUBE",
+          "label": "YouTube",
+          "path": "src/sync/video.ts",
+          "line": 57
+        },
+        {
+          "key": "VIDEO_REDNOTE",
+          "label": "小红书",
+          "path": "src/sync/video.ts",
+          "line": 68
+        },
+        {
+          "key": "VIDEO_TIKTOK",
+          "label": "Tiktok",
+          "path": "src/sync/video.ts",
+          "line": 80
+        },
+        {
+          "key": "VIDEO_WEIXINCHANNEL",
+          "label": "微信视频号",
+          "path": "src/sync/video.ts",
+          "line": 91
+        },
+        {
+          "key": "VIDEO_KUAISHOU",
+          "label": "快手",
+          "path": "src/sync/video.ts",
+          "line": 102
+        },
+        {
+          "key": "VIDEO_BAIJIAHAO",
+          "label": "百家号",
+          "path": "src/sync/video.ts",
+          "line": 113
+        },
+        {
+          "key": "VIDEO_WEIBO",
+          "label": "微博",
+          "path": "src/sync/video.ts",
+          "line": 124
+        },
+        {
+          "key": "VIDEO_OKJIKE",
+          "label": "即刻",
+          "path": "src/sync/video.ts",
+          "line": 135
+        },
+        {
+          "key": "VIDEO_BLUESKY",
+          "label": "BlueSky",
+          "path": "src/sync/video.ts",
+          "line": 146
+        },
+        {
+          "key": "VIDEO_ZHIHU",
+          "label": "知乎",
+          "path": "src/sync/video.ts",
+          "line": 157
+        },
+        {
+          "key": "VIDEO_EASTMONEY",
+          "label": "东方财富",
+          "path": "src/sync/video.ts",
+          "line": 168
+        },
+        {
+          "key": "VIDEO_XIAOHEIHE",
+          "label": "小黑盒",
+          "path": "src/sync/video.ts",
+          "line": 179
+        },
+        {
+          "key": "VIDEO_TOUTIAOHAO",
+          "label": "今日头条号",
+          "path": "src/sync/video.ts",
+          "line": 190
+        },
+        {
+          "key": "VIDEO_QIE",
+          "label": "企鹅号",
+          "path": "src/sync/video.ts",
+          "line": 201
+        },
+        {
+          "key": "VIDEO_CHEJIAHAO",
+          "label": "车家号",
+          "path": "src/sync/video.ts",
+          "line": 212
+        },
+        {
+          "key": "VIDEO_DEWU",
+          "label": "得物",
+          "path": "src/sync/video.ts",
+          "line": 223
+        },
+        {
+          "key": "VIDEO_YICHE",
+          "label": "易车",
+          "path": "src/sync/video.ts",
+          "line": 234
+        },
+        {
+          "key": "VIDEO_SOHU",
+          "label": "搜狐号",
+          "path": "src/sync/video.ts",
+          "line": 245
+        },
+        {
+          "key": "VIDEO_SOHUTV",
+          "label": "搜狐视频",
+          "path": "src/sync/video.ts",
+          "line": 256
+        },
+        {
+          "key": "VIDEO_NETEASE",
+          "label": "网易号",
+          "path": "src/sync/video.ts",
+          "line": 267
+        },
+        {
+          "key": "VIDEO_DAYU",
+          "label": "大鱼号",
+          "path": "src/sync/video.ts",
+          "line": 278
+        },
+        {
+          "key": "VIDEO_ALIPAY",
+          "label": "支付宝",
+          "path": "src/sync/video.ts",
+          "line": 289
+        },
+        {
+          "key": "VIDEO_YIDIAN",
+          "label": "一点号",
+          "path": "src/sync/video.ts",
+          "line": 300
+        },
+        {
+          "key": "VIDEO_PINDUODUO",
+          "label": "拼多多",
+          "path": "src/sync/video.ts",
+          "line": 311
+        },
+        {
+          "key": "VIDEO_VIVOVIDEO",
+          "label": "vivo视频",
+          "path": "src/sync/video.ts",
+          "line": 322
+        },
+        {
+          "key": "VIDEO_IQIYI",
+          "label": "爱奇艺",
+          "path": "src/sync/video.ts",
+          "line": 333
+        },
+        {
+          "key": "VIDEO_YOUKU",
+          "label": "优酷",
+          "path": "src/sync/video.ts",
+          "line": 344
+        },
+        {
+          "key": "VIDEO_TENCENTVIDEO",
+          "label": "腾讯视频",
+          "path": "src/sync/video.ts",
+          "line": 355
+        }
+      ]
+    },
+    "podcast": {
+      "count": 7,
+      "keys": [
+        "PODCAST_QQMUSIC",
+        "PODCAST_LIZHI",
+        "PODCAST_XIMALAYA",
+        "PODCAST_XIAOYUZHOU",
+        "PODCAST_QINGTING",
+        "PODCAST_NETEASE",
+        "PODCAST_SPOTIFY"
+      ],
+      "entries": [
+        {
+          "key": "PODCAST_QQMUSIC",
+          "label": "QQ音乐（TME）",
+          "path": "src/sync/podcast.ts",
+          "line": 11
+        },
+        {
+          "key": "PODCAST_LIZHI",
+          "label": "荔枝",
+          "path": "src/sync/podcast.ts",
+          "line": 22
+        },
+        {
+          "key": "PODCAST_XIMALAYA",
+          "label": "喜马拉雅",
+          "path": "src/sync/podcast.ts",
+          "line": 33
+        },
+        {
+          "key": "PODCAST_XIAOYUZHOU",
+          "label": "小宇宙",
+          "path": "src/sync/podcast.ts",
+          "line": 44
+        },
+        {
+          "key": "PODCAST_QINGTING",
+          "label": "蜻蜓 FM",
+          "path": "src/sync/podcast.ts",
+          "line": 55
+        },
+        {
+          "key": "PODCAST_NETEASE",
+          "label": "网易云音乐播客",
+          "path": "src/sync/podcast.ts",
+          "line": 66
+        },
+        {
+          "key": "PODCAST_SPOTIFY",
+          "label": "Spotify",
+          "path": "src/sync/podcast.ts",
+          "line": 77
+        }
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "path": "package.json",
+      "line": 4,
+      "note": "版本、框架与扩展权限",
+      "sha256": "61db80fb9ae08a09c089fddc312c5203c3d248af1f3803e35114f4387b63d443",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/package.json#L4"
+    },
+    {
+      "path": "LICENSE",
+      "line": 1,
+      "note": "上游许可",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/LICENSE#L1"
+    },
+    {
+      "path": "docs/README-zh.md",
+      "line": 81,
+      "note": "上游环境与功能说明；宣传能力不等于实测结果",
+      "sha256": "6e1472b66693835c8dc5f04f4aedb1d1221de491bc1bd04c242a290ebad6411e",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/docs/README-zh.md#L81"
+    },
+    {
+      "path": "src/sync/common.ts",
+      "line": 18,
+      "note": "统一内容协议",
+      "sha256": "91cf26b49697fa59997c162e79d5a350573ec98d79d3fdddcbce29856c586be9",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/common.ts#L18"
+    },
+    {
+      "path": "src/sync/common.ts",
+      "line": 136,
+      "note": "标签页调度与平台脚本注入",
+      "sha256": "91cf26b49697fa59997c162e79d5a350573ec98d79d3fdddcbce29856c586be9",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/common.ts#L136"
+    },
+    {
+      "path": "src/contents/extension.ts",
+      "line": 23,
+      "note": "网页消息桥接与可信域名",
+      "sha256": "e8bd3404051b616d6e325f95ea7be88306a374ea0086c154eec95895c5cbaa60",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/contents/extension.ts#L23"
+    },
+    {
+      "path": "src/background/index.ts",
+      "line": 62,
+      "note": "发布请求、返回标签页与 30 秒 ping 启动",
+      "sha256": "0f6db4aad32c7ebaabd92d17297552c6bb6809b0140eae39181460b3f51e8c98",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/background/index.ts#L62"
+    },
+    {
+      "path": "src/background/services/api.ts",
+      "line": 8,
+      "note": "API Key、服务端 ping 与 NEW_TASK",
+      "sha256": "a6d916e1a731d29ccf5e49a69bf20e6dcd641bf2bc0f5914c89303ac501ae628",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/background/services/api.ts#L8"
+    },
+    {
+      "path": "src/tabs/publish.tsx",
+      "line": 82,
+      "note": "素材转换及 Blob URL",
+      "sha256": "0f372452f8d626208657fcf625faa5b191b2ebe69da3dab4ec68cb4254ac905a",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/tabs/publish.tsx#L82"
+    },
+    {
+      "path": "src/tabs/publish.tsx",
+      "line": 489,
+      "note": "回调直接显示完成，未逐平台验证发布 ID",
+      "sha256": "0f372452f8d626208657fcf625faa5b191b2ebe69da3dab4ec68cb4254ac905a",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/tabs/publish.tsx#L489"
+    },
+    {
+      "path": "src/sync/article/zhihu.ts",
+      "line": 3,
+      "note": "编辑器粘贴、封面上传与条件点击发布",
+      "sha256": "e7637d326c0c86a48717c5715f5d88d0991b2686aa5b0fc97e5b3b60263aca42",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/article/zhihu.ts#L3"
+    },
+    {
+      "path": "src/sync/dynamic/rednote.ts",
+      "line": 4,
+      "note": "小红书图文上传、填写、条件点击发布",
+      "sha256": "0749449de7e3de338a1a256488959cb997731243c4d74b8a75e26a3d3480598a",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/dynamic/rednote.ts#L4"
+    },
+    {
+      "path": "src/sync/article/volcengine.ts",
+      "line": 8,
+      "note": "明确拒绝自动发布",
+      "sha256": "0720fbcf244e9452cf9d3f209003fe5f1cd8ca1f8989dc84ec5144867819da5d",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/article/volcengine.ts#L8"
+    },
+    {
+      "path": "src/sync/article/wordpress.ts",
+      "line": 44,
+      "note": "站内接口与页面上下文，不只模拟点击",
+      "sha256": "c24a51db2b142ec8fe765eda3399342e82b7f9f79580b2b33a47792bd1dd3dde",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/article/wordpress.ts#L44"
+    },
+    {
+      "path": "src/sync/video/douyin.ts",
+      "line": 206,
+      "note": "平台定时控件填写",
+      "sha256": "1902e03df237e2112087956bbfb4684e9af33b34b12bd0060c5db753cdddbb74",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/video/douyin.ts#L206"
+    },
+    {
+      "path": "src/contents/scraper/default.ts",
+      "line": 29,
+      "note": "站点规则及 Readability 回退",
+      "sha256": "06d0d972c361310ec1dc1a5749789e3eec7c11192f19422c9a9008bd479962b3",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/contents/scraper/default.ts#L29"
+    },
+    {
+      "path": "src/contents/scraper.ts",
+      "line": 6,
+      "note": "正文抓取排除小红书域名",
+      "sha256": "2528af78c2531371eeffcb667874ff638f23e68f2498f35744cf18bddd035ffa",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/contents/scraper.ts#L6"
+    },
+    {
+      "path": "src/sync/dynamic.ts",
+      "line": 34,
+      "note": "dynamic 注册表：31 个条目",
+      "sha256": "685055f7e4d519569ec3537c2b78672b5616ab7c473819d102f80f02f068085b",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/dynamic.ts#L34"
+    },
+    {
+      "path": "src/sync/article.ts",
+      "line": 45,
+      "note": "article 注册表：42 个条目",
+      "sha256": "a18f72a5dccc5d1581887328455099783b016f66144f2237ac42d9fed9735da9",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/article.ts#L45"
+    },
+    {
+      "path": "src/sync/video.ts",
+      "line": 33,
+      "note": "video 注册表：30 个条目",
+      "sha256": "7175904ba8ab759f3efa735d507e66f645640d143ae5597a9b522fc0348daa21",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/video.ts#L33"
+    },
+    {
+      "path": "src/sync/podcast.ts",
+      "line": 10,
+      "note": "podcast 注册表：7 个条目",
+      "sha256": "d082b48cbe74220eab9efd004f0f284153665ab8c114d6373aa9ee9cd033132e",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/podcast.ts#L10"
+    },
+    {
+      "path": "src/sync/podcast/xiaoyuzhou.ts",
+      "line": 1,
+      "note": "小宇宙音频上传和资料填写，未见最终提交步骤",
+      "sha256": "2f55ef96571998146602b11b3c68972b92731aa62da9d868ec98b36c3ddd52ef",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/podcast/xiaoyuzhou.ts#L1"
+    },
+    {
+      "path": "src/sync/podcast/spotify.ts",
+      "line": 1,
+      "note": "Spotify 音频上传和资料填写，未见最终提交步骤",
+      "sha256": "6ce1e8beda85d5089611891552f7da6c0c1c61cb096c25f04837fb84503dec6b",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/sync/podcast/spotify.ts#L1"
+    },
+    {
+      "path": "src/popup/index.tsx",
+      "line": 27,
+      "note": "当前工具栏入口打开官网发布页",
+      "sha256": "28d1ad085ccf76ffe26d4edf0ea8accab6228f110faee94a28ee872807a21aa6",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/popup/index.tsx#L27"
+    },
+    {
+      "path": "src/options/index.tsx",
+      "line": 28,
+      "note": "选项页同样跳转官网发布页",
+      "sha256": "73569893c7cc62de05bc1c760b0dfb3cc6befe9e1b6e711f53985ffd19419d42",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/options/index.tsx#L28"
+    },
+    {
+      "path": "src/background/services/trust-domain.ts",
+      "line": 45,
+      "note": "自有网页的可信域名确认流程",
+      "sha256": "6654279cd101b4493cbcbc28e84bb602007c1e5abff3effdf4248c876ad6781a",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/background/services/trust-domain.ts#L45"
+    },
+    {
+      "path": "src/tabs/link-extension.tsx",
+      "line": 57,
+      "note": "扩展联动确认并保存 API Key",
+      "sha256": "174e6c1e5cade2fb1b145ba7dba19e998fce15f9ce39937f591debb355e02d98",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/tabs/link-extension.tsx#L57"
+    },
+    {
+      "path": "src/background/services/tabs.ts",
+      "line": 12,
+      "note": "内存标签页列表和重新注入操作",
+      "sha256": "5741446ca12e7496db1f39dd94712074f9bc2d096185527bdf213bf4510ebc0c",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/background/services/tabs.ts#L12"
+    },
+    {
+      "path": "src/components/Sync/ArticleTab.tsx",
+      "line": 131,
+      "note": "仓库保留的文章组件；不视为当前官网 UI",
+      "sha256": "5e18d98b752a708f3dc836ae344bd136ac6f10e905c3242e54bb2edee19dac19",
+      "url": "https://github.com/leaperone/MultiPost-Extension/blob/e99ed1be26c3bb898b026a436810d96e2c02d81d/src/components/Sync/ArticleTab.tsx#L131"
+    }
+  ],
+  "web_references": [
+    {
+      "url": "https://multipost.app/docs/zh/user-guide/quick-start",
+      "note": "官方安装、发布入口与自动发布说明"
+    },
+    {
+      "url": "https://multipost.app/dashboard/publish",
+      "note": "公开页面访问转至 signin?redirect=/dashboard/publish；未登录检查内部 UI"
+    },
+    {
+      "url": "https://multipost.app/docs/zh/user-guide/markdown-editor",
+      "note": "配套编辑器与题图要求，属于另一项目"
+    },
+    {
+      "url": "https://multipost.app/docs/zh/api-reference/authentication",
+      "note": "控制台 API Key 与 Bearer 鉴权"
+    },
+    {
+      "url": "https://multipost.app/docs/zh/api-reference/extension/task-create",
+      "note": "POST 创建任务、targetClientId、任务类型与计划任务"
+    },
+    {
+      "url": "https://multipost.app/docs/zh/api-reference/extension/task-get",
+      "note": "GET 按 taskId 查询任务详情"
+    }
+  ],
+  "web_reference_date": "2026-09-17",
+  "platform_count": {
+    "display_names_excluding_webhook": 78,
+    "normalized_platform_services": 77,
+    "method": "四类注册表按显示名称去重，排除 Webhook，再将今日头条与今日头条号合并；不同产品服务保留独立项，不按母公司合并。平台覆盖为源码登记，不等于全部已验证可用。",
+    "summary_wording": "70余个平台/服务",
+    "groups": {
+      "哔哩哔哩": [
+        "DYNAMIC_BILIBILI",
+        "ARTICLE_BILIBILI",
+        "VIDEO_BILIBILI"
+      ],
+      "抖音": [
+        "DYNAMIC_DOUYIN",
+        "VIDEO_DOUYIN"
+      ],
+      "X": [
+        "DYNAMIC_X",
+        "ARTICLE_XARTICLE"
+      ],
+      "小红书": [
+        "DYNAMIC_REDNOTE",
+        "VIDEO_REDNOTE"
+      ],
+      "微博": [
+        "DYNAMIC_WEIBO",
+        "ARTICLE_WEIBO",
+        "VIDEO_WEIBO"
+      ],
+      "雪球": [
+        "DYNAMIC_XUEQIU",
+        "ARTICLE_XUEQIU"
+      ],
+      "知乎": [
+        "DYNAMIC_ZHIHU",
+        "ARTICLE_ZHIHU",
+        "VIDEO_ZHIHU"
+      ],
+      "Instagram": [
+        "DYNAMIC_INSTAGRAM"
+      ],
+      "脸书": [
+        "DYNAMIC_FACEBOOK"
+      ],
+      "领英": [
+        "DYNAMIC_LINKEDIN"
+      ],
+      "即刻": [
+        "DYNAMIC_OKJIKE",
+        "VIDEO_OKJIKE"
+      ],
+      "Reddit": [
+        "DYNAMIC_REDDIT"
+      ],
+      "Pinterest": [
+        "DYNAMIC_PINTEREST"
+      ],
+      "快手": [
+        "DYNAMIC_KUAISHOU",
+        "VIDEO_KUAISHOU"
+      ],
+      "搜狐视频": [
+        "DYNAMIC_SOHUTV",
+        "VIDEO_SOHUTV"
+      ],
+      "百家号": [
+        "DYNAMIC_BAIJIAHAO",
+        "ARTICLE_BAIJIAHAO",
+        "VIDEO_BAIJIAHAO"
+      ],
+      "今日头条 / 头条号": [
+        "DYNAMIC_TOUTIAO",
+        "DYNAMIC_TOUTIAOHAO",
+        "ARTICLE_TOUTIAO",
+        "VIDEO_TOUTIAOHAO"
+      ],
+      "Threads": [
+        "DYNAMIC_THREADS"
+      ],
+      "微信视频号": [
+        "DYNAMIC_WEIXINCHANNEL",
+        "VIDEO_WEIXINCHANNEL"
+      ],
+      "BlueSky": [
+        "DYNAMIC_BLUESKY",
+        "VIDEO_BLUESKY"
+      ],
+      "V2EX": [
+        "DYNAMIC_V2EX"
+      ],
+      "豆瓣": [
+        "DYNAMIC_DOUBAN",
+        "ARTICLE_DOUBAN"
+      ],
+      "得到": [
+        "DYNAMIC_DEDAO"
+      ],
+      "微信公众号": [
+        "DYNAMIC_WEIXIN",
+        "ARTICLE_WEIXIN"
+      ],
+      "知识星球": [
+        "DYNAMIC_ZSXQ",
+        "ARTICLE_ZSXQ"
+      ],
+      "小黑盒": [
+        "DYNAMIC_XIAOHEIHE",
+        "VIDEO_XIAOHEIHE"
+      ],
+      "Substack": [
+        "DYNAMIC_SUBSTACK",
+        "ARTICLE_SUBSTACK"
+      ],
+      "脉脉": [
+        "DYNAMIC_MAIMAI"
+      ],
+      "掘金": [
+        "DYNAMIC_JUEJIN",
+        "ARTICLE_JUEJIN"
+      ],
+      "博客园": [
+        "ARTICLE_CNBLOGS"
+      ],
+      "CSDN": [
+        "ARTICLE_CSDN"
+      ],
+      "简书": [
+        "ARTICLE_JIANSHU"
+      ],
+      "思否": [
+        "ARTICLE_SEGMENTFAULT"
+      ],
+      "阿里云": [
+        "ARTICLE_ALIYUN"
+      ],
+      "腾讯云": [
+        "ARTICLE_TENCENTYUN"
+      ],
+      "火山引擎": [
+        "ARTICLE_VOLCENGINE"
+      ],
+      "企鹅号": [
+        "ARTICLE_QQ",
+        "VIDEO_QIE"
+      ],
+      "WordPress": [
+        "ARTICLE_WORDPRESS"
+      ],
+      "少数派": [
+        "ARTICLE_SSPAI"
+      ],
+      "51CTO": [
+        "ARTICLE_51CTO"
+      ],
+      "东方财富": [
+        "ARTICLE_EASTMONEY",
+        "VIDEO_EASTMONEY"
+      ],
+      "Medium": [
+        "ARTICLE_MEDIUM"
+      ],
+      "开源中国": [
+        "ARTICLE_OSCHINA"
+      ],
+      "InfoQ": [
+        "ARTICLE_INFOQ"
+      ],
+      "什么值得买": [
+        "ARTICLE_SMZDM"
+      ],
+      "人人都是产品经理": [
+        "ARTICLE_WOSHIPM"
+      ],
+      "格隆汇": [
+        "ARTICLE_GELONGHUI"
+      ],
+      "健康界": [
+        "ARTICLE_JIANKANGJIE"
+      ],
+      "凯迪网": [
+        "ARTICLE_KAIDIWANG"
+      ],
+      "汽车之家": [
+        "ARTICLE_AUTOHOME"
+      ],
+      "美篇": [
+        "ARTICLE_JIANPIAN"
+      ],
+      "同花顺": [
+        "ARTICLE_TONGHUASHUN"
+      ],
+      "懂车号": [
+        "ARTICLE_DONGCHEDI"
+      ],
+      "网易号": [
+        "ARTICLE_NETEASE",
+        "VIDEO_NETEASE"
+      ],
+      "搜狐号": [
+        "ARTICLE_SOHU",
+        "VIDEO_SOHU"
+      ],
+      "大鱼号": [
+        "ARTICLE_DAYUHAO",
+        "VIDEO_DAYU"
+      ],
+      "顶端号": [
+        "ARTICLE_DINGDUANHAO"
+      ],
+      "快传号": [
+        "ARTICLE_KUAICHUANHAO"
+      ],
+      "一点号": [
+        "ARTICLE_YIDIANZIXUN",
+        "VIDEO_YIDIAN"
+      ],
+      "YouTube": [
+        "VIDEO_YOUTUBE"
+      ],
+      "Tiktok": [
+        "VIDEO_TIKTOK"
+      ],
+      "车家号": [
+        "VIDEO_CHEJIAHAO"
+      ],
+      "得物": [
+        "VIDEO_DEWU"
+      ],
+      "易车": [
+        "VIDEO_YICHE"
+      ],
+      "支付宝": [
+        "VIDEO_ALIPAY"
+      ],
+      "拼多多": [
+        "VIDEO_PINDUODUO"
+      ],
+      "vivo视频": [
+        "VIDEO_VIVOVIDEO"
+      ],
+      "爱奇艺": [
+        "VIDEO_IQIYI"
+      ],
+      "优酷": [
+        "VIDEO_YOUKU"
+      ],
+      "腾讯视频": [
+        "VIDEO_TENCENTVIDEO"
+      ],
+      "QQ音乐（TME）": [
+        "PODCAST_QQMUSIC"
+      ],
+      "荔枝": [
+        "PODCAST_LIZHI"
+      ],
+      "喜马拉雅": [
+        "PODCAST_XIMALAYA"
+      ],
+      "小宇宙": [
+        "PODCAST_XIAOYUZHOU"
+      ],
+      "蜻蜓 FM": [
+        "PODCAST_QINGTING"
+      ],
+      "网易云音乐播客": [
+        "PODCAST_NETEASE"
+      ],
+      "Spotify": [
+        "PODCAST_SPOTIFY"
+      ]
+    }
+  }
+}

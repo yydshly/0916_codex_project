@@ -184,6 +184,24 @@
       "cover": "projects/009-mediago/assets/capability-map.png",
       "cover_alt": "原创 MediaGo 能力全景图：输入、发现、任务、来源、引擎、媒体处理、浏览收藏、部署、自动化及运行资源；附六类场景与边界，非下载实测截图。",
       "demo": "https://yydshly.github.io/0916_codex_project/009-mediago/"
+    },
+    {
+      "id": 10,
+      "slug": "multipost-extension",
+      "name": "MultiPost 多平台内容分发研究",
+      "summary": "以浏览器插件接入，将用户的文章、图文、视频和播客按平台要求自动填写、上传，并按适配能力提交发布；源码覆盖70余个平台／服务、110项内容适配，未做真实发布实测。",
+      "repo": "https://github.com/leaperone/MultiPost-Extension",
+      "status": "已完成",
+      "tags": [
+        "内容分发",
+        "浏览器扩展",
+        "平台适配",
+        "源码研究",
+        "网页手册"
+      ],
+      "cover": "projects/010-multipost-extension/assets/understanding-guide.png",
+      "cover_alt": "原创研究总览图：浏览器扩展的三种接入、四类内容、六步内部流程、代表平台与自动发布边界；110 项为注册条目，非运行截图，未做真实发布实测。",
+      "demo": ""
     }
   ]
 }

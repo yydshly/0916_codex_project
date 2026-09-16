@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-17",
+  "revision": "使用流程与实现原理",
+  "local_url": "http://127.0.0.1:8780/010-multipost-extension/",
+  "checks_passed": [
+    "HTML 标签闭合、唯一 ID、本地资源和锚点有效",
+    "七步使用流程、三种调用方式、八个机制详解完整",
+    "页面按使用流程→使用方式→实现原理→机制→能力附录组织",
+    "四类内容标签与面板的 ARIA 关联有效",
+    "29 组证据文件 SHA-256 与固定提交一致",
+    "JavaScript 语法检查通过",
+    "全站汇总构建与索引检查通过",
+    "本地 HTTP 200，返回内容与最新网页一致",
+    "五个网页文件与汇总构建产物逐字节一致",
+    "理解总览图片源文件、网页副本、首页预览与 HTTP 返回逐字节一致；新增图文链接与锚点有效"
+  ],
+  "official_reference_count": 6,
+  "responsive_implementation": "保留原有断点；新增流程手机单列、架构图纵向、机制可展开",
+  "browser_visual_qa": false,
+  "browser_interaction_qa": false,
+  "extension_runtime_tested": false,
+  "published": false,
+  "understanding_image": {
+    "file": "assets/understanding-guide.png",
+    "width": 1448,
+    "height": 1086,
+    "method": "ImageGen built-in",
+    "image_inspected": true,
+    "not_a_runtime_screenshot": true,
+    "local_http": 200,
+    "source_web_and_gallery_bytes_equal": true,
+    "sha256": "ef5060ca95adde6d470cb2049da18682d149468545a3f6435a289ad297f8caba"
+  }
+}
