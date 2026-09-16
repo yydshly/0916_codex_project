@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-17",
+  "url": "https://yydshly.github.io/0916_codex_project/010-multipost-extension/",
+  "content_commit": "52929d67d9854c5397b65184b0e01418aa394ce1",
+  "workflow": "https://github.com/yydshly/0916_codex_project/actions/runs/35130767944",
+  "status": "success",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "9fc513b2b11b72813fd74496a4d31974c0e566cb562465356711886d69cd6154",
+      "matches_commit": true
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "sha256": "6458b7766cd0cb5ccdb97bfd4b15469efcaed2cc253d9d1fdeebe639d10a378c",
+      "matches_commit": true
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "sha256": "57054193f86f149b88e61866360df3015aadf01f3033d0fb67c936b0cf0f2c91",
+      "matches_commit": true
+    },
+    {
+      "path": "research.json",
+      "status": 200,
+      "sha256": "9a6e9d4bedd87dead58112f4fbef08537dd89fbea0a2e7090a86a4ee0fdfaffd",
+      "matches_commit": true
+    },
+    {
+      "path": "site.json",
+      "status": 200,
+      "sha256": "8f8ae89ef09e04c4a4640715f100096e3d971e1976615121aaec1677e61965f4",
+      "matches_commit": true
+    },
+    {
+      "path": "media/understanding-guide.png",
+      "status": 200,
+      "sha256": "ef5060ca95adde6d470cb2049da18682d149468545a3f6435a289ad297f8caba",
+      "matches_commit": true
+    }
+  ],
+  "browser_checks": {
+    "desktop_width": 1440,
+    "mobile_width": 390,
+    "horizontal_page_overflow": false,
+    "single_image_loaded": true,
+    "video_tab_click": true,
+    "podcast_keyboard_arrow": true,
+    "overview_anchor_reload": true,
+    "viewport_restored": true
+  },
+  "scope": "仅部署静态研究网页；未运行扩展发布功能。"
+}

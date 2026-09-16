@@ -24,7 +24,7 @@ PDF 工具参考：[PDF Craft](projects/002-pdf-craft/README.md) 用于扫描书
 | 007 | [PUA 排查与验收实验室](projects/007-pua/README.md) | 通过 Skill 规则推动 AI 多角度排查、执行与验证；按问题参考作者整理的十几种方法，依据失败证据调整策略，以任务验收结束循环。附理解总览与教学示例，未验证真实模型收益。 | Agent 技能、工作原理、验收标准、适用场景 | 已完成 | [tanweai/pua](https://github.com/tanweai/pua) | [访问](https://yydshly.github.io/0916_codex_project/007-pua/) |
 | 008 | [AI Code Guide 编程方法研究](projects/008-aicodeguide/README.md) | AI 编程入门指南与资源导航；附完整思路与价值总览图。对当前 Codex 工作方式新增价值有限，低优先级参考，无独立可集成功能。 | AI 编程方法、文档研究、交互讲解、低优先级参考 | 已归档 | [automata/aicodeguide](https://github.com/automata/aicodeguide) | — |
 | 009 | [MediaGo 视频下载能力与技术原理研究](projects/009-mediago/README.md) | 获取输入 → 识别资源类型 → 选择对应引擎 → 解析并下载 → 合并、检查与保存。MediaGo 负责识别、分派和管理；引擎承担主要解析与下载，覆盖 HLS、媒体直链、站点视频及可访问直播。源码研究，未实测下载。 | 视频下载、资源嗅探、多引擎编排、MCP、源码研究、交互手册 | 已完成 | [mediago\-dev/mediago](https://github.com/mediago-dev/mediago) | [访问](https://yydshly.github.io/0916_codex_project/009-mediago/) |
-| 010 | [MultiPost 多平台内容分发研究](projects/010-multipost-extension/README.md) | 以浏览器插件接入，将用户的文章、图文、视频和播客按平台要求自动填写、上传，并按适配能力提交发布；源码覆盖70余个平台／服务、110项内容适配，未做真实发布实测。 | 内容分发、浏览器扩展、平台适配、源码研究、网页手册 | 已完成 | [leaperone/MultiPost\-Extension](https://github.com/leaperone/MultiPost-Extension) | — |
+| 010 | [MultiPost 多平台内容分发研究](projects/010-multipost-extension/README.md) | 以浏览器插件接入，将用户的文章、图文、视频和播客按平台要求自动填写、上传，并按适配能力提交发布；源码覆盖70余个平台／服务、110项内容适配，未做真实发布实测。 | 内容分发、浏览器扩展、平台适配、源码研究、网页手册 | 已完成 | [leaperone/MultiPost\-Extension](https://github.com/leaperone/MultiPost-Extension) | [访问](https://yydshly.github.io/0916_codex_project/010-multipost-extension/) |
 <!-- PROJECT_INDEX:END -->
 
 ## 项目预览

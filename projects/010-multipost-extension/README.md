@@ -110,9 +110,11 @@ pnpm dev
 | 2026-09-17 | 抽查知乎、小红书、火山引擎、WordPress、抖音定时及正文提取 | 确认实现路径，不代表真实平台可用 |
 | 2026-09-17 | 新增 010 条目并同步总索引 | 未安装扩展、未构建、未执行上游测试、未发送真实发布请求 |
 
-尚无运行截图；封面使用原创研究总览图（非运行截图），演示地址留空。上游代码仅保存在已忽略的 `upstream/`，没有复制完整源码或截图到研究条目。
+尚无运行截图；封面使用原创研究总览图（非运行截图），正式网页已上线。上游代码仅保存在已忽略的 `upstream/`，没有复制完整源码或截图到研究条目。
 
 ## 能力分析网页
+
+**[在线查看：MultiPost 使用流程与实现原理](https://yydshly.github.io/0916_codex_project/010-multipost-extension/)** · [理解总览原图](https://yydshly.github.io/0916_codex_project/010-multipost-extension/media/understanding-guide.png)
 
 已新增 [中文能力分析网页](app/index.html)，使用原生 HTML、CSS、JavaScript，无额外依赖，可直接打开。以两条主线组织：第一部分是七步完整使用流程及官网、自有网页、服务端三种调用方式；第二部分是三层架构、八步内部处理、八个机制详解与知乎 / 火山引擎对照示例。四类内容及 110 个平台注册条目作为附录保留，全部链接到固定版本注册位置。
 
@@ -130,7 +132,7 @@ python -m http.server 8780 --bind 127.0.0.1 --directory web
 
 浏览器访问 <http://127.0.0.1:8780/010-multipost-extension/>。网页生成脚本读取已保存的研究快照，不依赖上游克隆；使用与原理正文维护在 `scripts/guide_sections.py`，页面组织在 `scripts/build_guide.py`，样式和交互分别位于 `app/styles.css`、`app/app.js`。
 
-已通过静态资源、锚点、数据、源码摘要、脚本语法和汇总构建检查，本地 HTTP 返回 200。实现桌面与手机自适应布局；本次未进行浏览器视觉或交互实测。详见 [网页验证记录](notes/web-verification.json)。尚未发布到公网，`demo` 保持为空。
+已通过静态资源、锚点、数据、源码摘要、脚本语法和汇总构建检查，本地 HTTP 返回 200。已在线检查桌面（1440px）与手机（390px）布局、内容标签切换、键盘切换、引导图加载及锚点刷新。早期本地静态检查见 [网页验证记录](notes/web-verification.json)，本次线上结果见 [部署验证](notes/deployment-verification.json)。
 
 ## 从使用流程理解实现
 

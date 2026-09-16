@@ -86,3 +86,11 @@ GitHub Pages 托管静态文件；需要常驻服务、数据库或服务端密�
 2026-09-17 已发布并验证：[中文研究手册](https://yydshly.github.io/0916_codex_project/009-mediago/) · [支持资源与下载方式](https://yydshly.github.io/0916_codex_project/009-mediago/#sources) · [能力全景图](https://yydshly.github.io/0916_codex_project/009-mediago/media/capability-map.png)。
 
 摘要采用“获取输入 → 识别资源类型 → 选择对应引擎 → 解析并下载 → 合并、检查与保存”，明确 MediaGo 主要负责识别、分派和管理，具体解析下载主要由引擎承担。页面含六种下载通道、六类完整场景、来源矩阵与十模块能力图。内容提交 `5c16daf`，[首次工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35128267747) 成功；六项线上主要资源与提交一致，交互、锚点刷新、桌面与手机布局通过检查。详见 [部署验证](../projects/009-mediago/notes/deployment-verification.json)。仅发布静态研究网页，未运行或部署 MediaGo 下载服务，未做真实站点下载。
+
+## MultiPost 使用流程与实现原理
+
+2026-09-17 已发布并验证：[能力与原理手册](https://yydshly.github.io/0916_codex_project/010-multipost-extension/) · [唯一理解总览图](https://yydshly.github.io/0916_codex_project/010-multipost-extension/media/understanding-guide.png)。
+
+以浏览器插件接入，按目标平台要求填写、上传并按适配能力提交发布。源码统计为 70 余个平台／服务、110 项内容适配，计数口径及归并清单随研究快照保存。网页包括七步使用流程、三种调用方式、内部机制及平台能力附录。
+
+内容提交 `52929d6`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35130767944)成功；6 个线上文件与提交逐字节一致。已验证 1440px / 390px 布局、单张引导图、标签与键盘切换、锚点刷新，总入口及 MediaGo 原页面 HTTP 200。见 [部署记录](../projects/010-multipost-extension/notes/deployment-verification.json)。仅部署研究网页，未安装或实际执行 MultiPost 发布功能。

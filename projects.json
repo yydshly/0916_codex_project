@@ -201,7 +201,7 @@
       ],
       "cover": "projects/010-multipost-extension/assets/understanding-guide.png",
       "cover_alt": "原创研究总览图：浏览器扩展的三种接入、四类内容、六步内部流程、代表平台与自动发布边界；110 项为注册条目，非运行截图，未做真实发布实测。",
-      "demo": ""
+      "demo": "https://yydshly.github.io/0916_codex_project/010-multipost-extension/"
     }
   ]
 }
