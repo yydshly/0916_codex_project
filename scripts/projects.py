@@ -66,6 +66,19 @@ def validate(projects):
                     f"{number}: 封面必须位于该子项目 assets 目录内")
             require(cover.is_file(), f"封面不存在：{project['cover']}")
             require(project["cover_alt"].strip(), f"{number}: 封面需要 cover_alt 图片说明")
+        guides = project.get("guides", [])
+        require(isinstance(guides, list), f"{number}: guides 必须为数组")
+        for guide in guides:
+            require(isinstance(guide, dict), f"{number}: 引导图必须为对象")
+            for key in ("title", "image", "alt"):
+                value = guide.get(key)
+                require(isinstance(value, str) and value.strip()
+                        and "\n" not in value and "\r" not in value,
+                        f"{number}: 引导图 {key} 必须为非空单行字符串")
+            guide_image = (ROOT / guide["image"]).resolve()
+            require(guide_image.is_relative_to((directory / "assets").resolve()),
+                    f"{number}: 引导图必须位于该子项目 assets 目录内")
+            require(guide_image.is_file(), f"引导图不存在：{guide['image']}")
     return sorted(projects, key=lambda project: project["id"])
 
 
@@ -112,6 +125,11 @@ def render(projects):
                 f"{markdown(project['summary'])}\n\n"
                 f"![{markdown(project['cover_alt'])}]({link_url(project['cover'])})\n\n"
                 f"{markdown(project['cover_alt'])}")
+            for guide in project.get("guides", []):
+                cards.append(
+                    f"#### {markdown(guide['title'])}\n\n"
+                    f"![{markdown(guide['alt'])}]({link_url(guide['image'])})\n\n"
+                    f"{markdown(guide['alt'])}")
     gallery = "\n\n".join(cards) or "添加子项目截图后，这里会自动展示带说明的预览图。"
     content = (ROOT / "README.md").read_text(encoding="utf-8")
     for section, body in (("INDEX", index), ("GALLERY", gallery)):

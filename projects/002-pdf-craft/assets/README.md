@@ -1,8 +1,19 @@
 # 图片来源与关联
 
+## PDF 工具引导图
+
+- 文件：[pdf-tools-guide.png](pdf-tools-guide.png)。
+- 内容：Stirling-PDF 的格式转换、页面整理、压缩与自动化价值，以及与 PDF Craft 扫描书结构重建的用途区分。
+- 制作：2026-09-16，使用内置 imagegen 生成，并核对图中文字、流程方向和能力边界；[完整提示词](pdf-tools-guide.prompt.md)。
+- 依据：两库官方文档和已记录的源码快照，详见[研究记录](../README.md#相关项目简述stirling-pdf)。
+- 关联：根目录 `projects.json` 的 `guides` 记录本图，首页由 `scripts/projects.py sync` 在原有总览图之后追加展示；子项目 README 同时展示。
+- 边界：原创研究导读图，不是运行截图；未做转换效果、识别准确率或两库互接实测。图中的“外部识别引擎”指复用的 OCR 组件，不表示必须调用第三方云服务。
+
+## PDF Craft 详细总览
+
 - 文件：[overview.png](overview.png)，2200 × 3160 像素。
 - 内容：PDF Craft 的定位、OCR 接入、后处理、产物、效果边界与研究优先级。
 - 制作：2026-09-16，基于官方文档、固定版本源码与本次讨论，通过本地绘图生成；不是运行截图、上游宣传图或实测结果。
 - 依据：上游 commit `0846291e32eee107f2c17341b7b14113b99645c5`，版本标记 2.3.1；图内包含版本与源库地址，详细引用见[研究记录](../README.md)。
-- 关联：根目录 `projects.json` 的 `cover` 指向本图，首页预览由 `scripts/projects.py sync` 生成；子项目 README 同时嵌入并链接高清原图。
+- 关联：根目录 `projects.json` 的 `cover` 指向本图，继续作为首页主预览；子项目 README 也将本图置于补充引导图之前。
 - 边界：“后续研究优先级较低”为本次讨论判断，未做准确率、速度或同类工具的比较实验。

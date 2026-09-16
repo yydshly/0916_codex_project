@@ -17,7 +17,15 @@
 
 [![PDF Craft 能力总览：OCR 接入、处理流程、结构重建、输出效果、局限与研究优先级](assets/overview.png)](assets/overview.png)
 
-上图为本次研究绘制的信息图，**不是运行截图或实测效果图**。图片也作为首页预览，由根目录 `projects.json` 的 `cover` 字段关联。[图片说明](assets/README.md)
+上图为本次研究绘制的信息图，**不是运行截图或实测效果图**。图片作为首页主预览，由根目录 `projects.json` 的 `cover` 字段关联。[图片说明](assets/README.md)
+
+## PDF 工具参考
+
+需要以 PDF 为中心的格式转换、合并拆分、压缩或批量处理时，可参考 [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF)；需要扫描书的段落、章节、目录重建及 EPUB 输出时，可参考 PDF Craft。格式转换是 Stirling-PDF 的重要能力，其完整定位是可自建的 PDF 处理工具箱。不同转换方向的效果与条件不同，不能理解为任意格式都可无损互转。
+
+[![PDF 工具引导图：Stirling-PDF 的格式转换与通用处理，以及 PDF Craft 的扫描书结构重建与输出](assets/pdf-tools-guide.png)](assets/pdf-tools-guide.png)
+
+本图作为原有总览图之后的补充引导，帮助后续按任务找到参考项目；首页通过 `projects.json` 的 `guides` 字段追加展示。不是运行截图或准确率对比。[Stirling-PDF 简述与依据](#相关项目简述stirling-pdf) · [图片说明](assets/README.md)
 
 ## 定位与核心价值
 
@@ -115,6 +123,23 @@ git -C upstream/pdf-craft checkout 0846291e32eee107f2c17341b7b14113b99645c5
 - 暂停原因：本次更关注 OCR 核心识别能力；该库主要贡献是工程集成与书籍场景适配，当前阅读范围内未见独立 OCR 算法优势证据。
 - 重新评估条件：出现扫描书转 EPUB、批量整理扫描资料、结构化结果复用或译文 PDF 的具体需求。
 - 再评估指标：错字与漏字、阅读顺序、跨页段落、目录和脚注、表格公式，以及成本、速度和回填版面。
+
+## 相关项目简述：Stirling-PDF
+
+[Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) 是可自建的 PDF 工具平台，提供网页、桌面端和 API，覆盖合并、拆分、格式转换、压缩、签署、敏感内容涂销及批量流水线。适合日常办公、内网文件处理和业务系统集成。本次仅在 PDF Craft 研究中保留对比摘要，不单独收录或继续深入研究。
+
+| 对比维度 | Stirling-PDF | PDF Craft |
+| --- | --- | --- |
+| 主要定位 | 通用 PDF 操作与自动化平台 | 扫描文档、书籍的结构重建与输出 |
+| 技术路径 | React 界面、Spring Boot API，整合 PDFBox / JPDFium、LibreOffice、qpdf / Ghostscript 等引擎 | 接入 OCR 模型，进行段落、章节、目录等后处理，再导出或翻译 |
+| OCR 角色 | 通过 Tesseract 识别扫描文字；可结合 OCRmyPDF 处理，生成可搜索、可复制的 PDF | 通过已列出的 OCR 后端获取文字及版面信息，供后续重建使用 |
+| 主要价值 | 将多种文件操作统一为易用界面、接口和流水线 | 组织书籍内容、保存中间结果并输出 Markdown、EPUB 或译文 PDF |
+
+**不能把“功能丰富”直接等同于“OCR 识别能力强”，也不能未经实测就认定其 OCR 不够用。** Stirling-PDF 的 OCR 适用于清晰印刷体扫描件的搜索、复制需求；官方说明 Tesseract 不负责表格结构和公式识别，手写识别能力有限。复杂版面还原、准确提取合同字段等需求，需要额外的解析与抽取能力。PDF Craft 同样依赖所接入模型和输入质量；本次没有两者识别准确率的横向实测。
+
+选型上，可将 Stirling-PDF 作为通用 PDF 操作或预处理组件，将 PDF Craft 用于扫描书结构重建及输出；这是职责层面的组合设想，尚未验证互接流程。Stirling-PDF 部分处理需要后端，桌面端纯本地模式不支持 OCR；PDF 转 Word 的复杂版式也可能需要人工调整。
+
+记录日期：2026-09-16；源码参照 [commit f685de11f371d84f5cac63ba0f0e66b3001d7921](https://github.com/Stirling-Tools/Stirling-PDF/tree/f685de11f371d84f5cac63ba0f0e66b3001d7921)。依据：[技术组件](https://docs.stirlingpdf.com/Functionality/The%20Technologies/)、[OCR 能力与限制](https://docs.stirlingpdf.com/Functionality/OCR/)、[格式转换](https://docs.stirlingpdf.com/Functionality/Convert/)。仅阅读文档和关键源码，未部署或运行样本；项目采用开放核心模式，部分目录使用单独许可证，详见[对应版本许可证](https://github.com/Stirling-Tools/Stirling-PDF/blob/f685de11f371d84f5cac63ba0f0e66b3001d7921/LICENSE)。
 
 ## 来源与许可
 

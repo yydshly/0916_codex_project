@@ -6,6 +6,8 @@
 
 [在线演示总入口](https://yydshly.github.io/0916_codex_project/) · [PPT Master 风格展厅](https://yydshly.github.io/0916_codex_project/001-ppt-master/styles.html)
 
+PDF 工具参考：[PDF Craft](projects/002-pdf-craft/README.md) 用于扫描书结构重建与输出；[Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) 是可自建的 PDF 工具箱，支持以 PDF 为中心的格式转换、页面整理、压缩及自动化。[能力引导图与简述](projects/002-pdf-craft/README.md#pdf-工具参考)
+
 ## 项目索引
 
 编号按收录顺序递增，分配后保持不变；默认按编号升序展示。模板不计入正式项目。
@@ -14,13 +16,13 @@
 | 编号 | 项目 | 研究摘要 | 标签 | 状态 | 上游 | 演示 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 001 | [PPT Master 能力实验室](projects/001-ppt-master/README.md) | 把内容策划、18 种视觉风格与原生 PPT 导出串成工作流；附 36 张官方风格预览及可编辑图表、表格、公式实测。 | AI 演示文稿、SVG、原生 PPTX、本地实测 | 已完成 | [hugohe3/ppt\-master](https://github.com/hugohe3/ppt-master) | [访问](https://yydshly.github.io/0916_codex_project/001-ppt-master/styles.html) |
-| 002 | [PDF Craft 扫描文档重建研究](projects/002-pdf-craft/README.md) | 解析 OCR 接入、书籍结构重建与翻译输出；附能力总览图。价值主要在工程集成，暂不继续深挖，未做转换实测。 | OCR 集成、文档重建、EPUB、源码研究 | 已归档 | [oomol\-lab/pdf\-craft](https://github.com/oomol-lab/pdf-craft) | — |
+| 002 | [PDF Craft 扫描文档重建研究](projects/002-pdf-craft/README.md) | 扫描书结构重建与翻译输出；附 PDF 工具引导图及 Stirling\-PDF 格式转换、通用处理参考。主要价值在工程集成，未做转换实测。 | OCR 集成、文档重建、EPUB、源码研究 | 已归档 | [oomol\-lab/pdf\-craft](https://github.com/oomol-lab/pdf-craft) | — |
 | 003 | [WrenAI 业务问数研究](projects/003-wrenai/README.md) | 面向 Agent 的业务问数基础设施：模型理解需求，MDL 统一口径，引擎规划查询；适合销售、运营与库存分析。附原理引导图、方案对比及 36 组引擎实测，未验证完整模型问数。 | 业务问数、语义层、WASM 实测、交互展示 | 已完成 | [Canner/WrenAI](https://github.com/Canner/WrenAI) | [访问](https://yydshly.github.io/0916_codex_project/003-wrenai/) |
 <!-- PROJECT_INDEX:END -->
 
 ## 项目预览
 
-每个子项目可提供一张封面图和一句话摘要，点击名称查看完整研究记录。
+每个子项目提供封面图和摘要，也可附加补充引导图；点击名称查看完整研究记录。
 
 <!-- PROJECT_GALLERY:START -->
 ### 001 · [PPT Master 能力实验室](projects/001-ppt-master/README.md)
@@ -33,11 +35,17 @@
 
 ### 002 · [PDF Craft 扫描文档重建研究](projects/002-pdf-craft/README.md)
 
-解析 OCR 接入、书籍结构重建与翻译输出；附能力总览图。价值主要在工程集成，暂不继续深挖，未做转换实测。
+扫描书结构重建与翻译输出；附 PDF 工具引导图及 Stirling\-PDF 格式转换、通用处理参考。主要价值在工程集成，未做转换实测。
 
 ![研究导读图：OCR 接入、后处理、输出边界与低优先级结论；非运行截图，未做转换实测。](projects/002-pdf-craft/assets/overview.png)
 
 研究导读图：OCR 接入、后处理、输出边界与低优先级结论；非运行截图，未做转换实测。
+
+#### 补充参考：Stirling\-PDF 的能力与价值
+
+![补充引导图：Stirling\-PDF 用于格式转换、页面整理与自动化；PDF Craft 用于扫描书结构重建与输出。非运行截图，未做效果对比实测。](projects/002-pdf-craft/assets/pdf-tools-guide.png)
+
+补充引导图：Stirling\-PDF 用于格式转换、页面整理与自动化；PDF Craft 用于扫描书结构重建与输出。非运行截图，未做效果对比实测。
 
 ### 003 · [WrenAI 业务问数研究](projects/003-wrenai/README.md)
 

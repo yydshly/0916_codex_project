@@ -33,6 +33,8 @@ python scripts/projects.py add example-repo --name "项目名称" --repo https:/
 
 `id` 与 `slug` 共同确定研究目录。封面使用类似 `projects/001-example-repo/assets/cover.png` 的仓库相对路径；`cover_alt` 描述图片展示的内容。`repo` 和 `demo` 使用完整 HTTPS 地址，未部署时 `demo` 保持空字符串。
 
+需要新增补充引导图时，保留原有 `cover`，在条目中增加可选的 `guides` 数组。每项包含 `title`、`image`、`alt`，其中 `image` 为该子项目 `assets/` 内的图片路径。首页会在原封面之后按数组顺序展示补充图。
+
 修改后运行 `python scripts/projects.py sync`。首页标记区内的索引与预览图由脚本生成，其他正文可以手动编辑。运行 `python scripts/projects.py check` 可检查重复编号、目录、图片和首页同步情况；GitHub Actions 也会执行该检查。
 
 ## 研究内容的边界
