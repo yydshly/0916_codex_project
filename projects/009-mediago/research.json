@@ -7,7 +7,7 @@
   "upstream_tests_run": false,
   "application_run": false,
   "real_site_downloads_tested": false,
-  "artifacts": "Chinese research documents, original diagrams, interactive static web guide and actual browser screenshots of the guide; no MediaGo application screenshot or deployed demo",
+  "artifacts": "Chinese research documents, original diagrams, interactive static web guide published on GitHub Pages, and actual browser screenshots of the guide; no MediaGo application screenshot or running downloader deployment",
   "runtime_dependencies": {
     "ffmpeg": {
       "repository": "eugeneware/ffmpeg-static",
@@ -637,6 +637,8 @@
     "scenario_steps": 36,
     "source_categories": 11,
     "pipeline_stages": 8,
-    "published": false
+    "published": true,
+    "url": "https://yydshly.github.io/0916_codex_project/009-mediago/",
+    "deployment_verification": "notes/deployment-verification.json"
   }
 }

@@ -183,7 +183,7 @@
       ],
       "cover": "projects/009-mediago/assets/guide-desktop.jpg",
       "cover_alt": "MediaGo 中文研究网页的真实浏览器截图，展示标题、阅读导航与发现、选择、下载、确认流程；非 MediaGo 客户端运行截图。",
-      "demo": "",
+      "demo": "https://yydshly.github.io/0916_codex_project/009-mediago/",
       "guides": [
         {
           "title": "MediaGo 能力全景：十个模块、来源引擎与使用边界",

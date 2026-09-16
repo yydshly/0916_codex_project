@@ -81,6 +81,8 @@ flowchart TD
 
 ## 网页手册
 
+**已发布：[在线阅读](https://yydshly.github.io/0916_codex_project/009-mediago/) · [资源与下载方式](https://yydshly.github.io/0916_codex_project/009-mediago/#sources) · [能力全景图](https://yydshly.github.io/0916_codex_project/009-mediago/media/capability-map.png)**
+
 网页使用原生 HTML、CSS、JavaScript，无外部字体、CDN 或前端依赖。正文由 [生成脚本](scripts/build_guide.py) 与研究快照生成；生成后的 HTML 已保存，仓库的 Pages 汇总构建可直接复制。页面只展示研究内容，不执行视频发现或下载。
 
 内容包括：
@@ -134,9 +136,13 @@ task dev:all
 | 2026-09-17 | 检查证据定位、文档链接和首页索引 | 结果见 research.json；不计作上游功能测试 |
 | 2026-09-17 | 补充静态网页手册与浏览器检查 | 6 类场景、36 步、11 类来源、8 个流程阶段；桌面与手机布局通过本地检查 |
 
+## 发布验证
+
+内容提交 `5c16daf`，首次 [Pages 工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35128267747) 成功。已核对六个线上主要文件与提交逐字节一致，并检查桌面、手机、六种场景、八步流程、来源筛选、证据锚点刷新；既有总入口、PPT Master、WrenAI 和 PUA 路由正常。详见 [部署验证记录](notes/deployment-verification.json)。发布的是静态研究手册，未部署 MediaGo 下载服务。
+
 ## 图片、演示与许可
 
-本次交付包含中文研究文档、原理图和交互网页。封面是自主研究网页的真实浏览器截图，**不是 MediaGo 客户端运行截图**；图形是源码原理示意。网页已接入本地汇总构建，尚未发布，索引 `demo` 仍为空。“已完成”表示本轮研究与网页整理完成。
+本次交付包含中文研究文档、原理图和交互网页。封面是自主研究网页的真实浏览器截图，**不是 MediaGo 客户端运行截图**；图形是源码原理示意。网页已于 2026-09-17 发布到 GitHub Pages，索引已登记正式地址。“已完成”表示本轮研究与网页整理完成。
 
 ![MediaGo 中文研究网页桌面预览](assets/guide-desktop.jpg)
 

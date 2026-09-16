@@ -79,3 +79,10 @@ GitHub Pages 托管静态文件；需要常驻服务、数据库或服务端密�
 2026-09-16 已发布：[研究展示](https://yydshly.github.io/0916_codex_project/006-skillry/) · [收录方向引导图](https://yydshly.github.io/0916_codex_project/006-skillry/downloads/understanding-guide.png)。
 
 页面区分平台分发功能与技能执行能力，整理四类技能、十二个代表名称、官方案例及低优先级参考的讨论结论。初次内容提交 `f507be9`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35117357281)成功；16 个静态文件与提交逐字节一致。未进行线上浏览器视觉、交互或手机实测，未安装或运行 Skillry 技能。详见 [发布记录](../projects/006-skillry/notes/deployment-verification.json)。
+
+
+## MediaGo 能力、原理与下载方式
+
+2026-09-17 已发布并验证：[中文研究手册](https://yydshly.github.io/0916_codex_project/009-mediago/) · [支持资源与下载方式](https://yydshly.github.io/0916_codex_project/009-mediago/#sources) · [能力全景图](https://yydshly.github.io/0916_codex_project/009-mediago/media/capability-map.png)。
+
+摘要采用“获取输入 → 识别资源类型 → 选择对应引擎 → 解析并下载 → 合并、检查与保存”，明确 MediaGo 主要负责识别、分派和管理，具体解析下载主要由引擎承担。页面含六种下载通道、六类完整场景、来源矩阵与十模块能力图。内容提交 `5c16daf`，[首次工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35128267747) 成功；六项线上主要资源与提交一致，交互、锚点刷新、桌面与手机布局通过检查。详见 [部署验证](../projects/009-mediago/notes/deployment-verification.json)。仅发布静态研究网页，未运行或部署 MediaGo 下载服务，未做真实站点下载。

@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-17",
+  "url": "https://yydshly.github.io/0916_codex_project/009-mediago/",
+  "content_commit": "5c16daf3cd9adcffa663a5cd75e8c0694c3579ee",
+  "workflow_run": "https://github.com/yydshly/0916_codex_project/actions/runs/35128267747",
+  "workflow_conclusion": "success",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 75064,
+      "sha256": "5664265f13a9d347040eb23f01e720ff4e57fcbc81c1d12f0e307472499ceff2",
+      "matches_commit": true
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 13219,
+      "sha256": "2a504b3bea65b7c14f3e96e22532cf1b3521c826853859fe1bbcf1fe1030a98c",
+      "matches_commit": true
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytes": 2542,
+      "sha256": "b68c0c6e8330d76222e2e7ec21dc0955ffe73e31dbf16a1ba8f2353179747741",
+      "matches_commit": true
+    },
+    {
+      "path": "research-snapshot.json",
+      "status": 200,
+      "bytes": 27958,
+      "sha256": "bd3888637c35db8e1f459ab930189e62473fb65d9640d8553bcae4436ffbad84",
+      "matches_commit": true
+    },
+    {
+      "path": "media/capability-map.png",
+      "status": 200,
+      "bytes": 1346208,
+      "sha256": "a9293e838f4fc707450887d4d9d27804cf0e72528398d4ba4069e686b7892999",
+      "matches_commit": true
+    },
+    {
+      "path": "media/capability-map.svg",
+      "status": 200,
+      "bytes": 41692,
+      "sha256": "b4fcbaccf258f7de99368ad90dace80d623690f91237e7ef550ac96a80f38048",
+      "matches_commit": true
+    }
+  ],
+  "existing_routes": [
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "001-ppt-master/",
+      "status": 200
+    },
+    {
+      "route": "003-wrenai/",
+      "status": 200
+    },
+    {
+      "route": "007-pua/",
+      "status": 200
+    }
+  ],
+  "scope": "Static research site only; MediaGo downloader/backend not deployed; no real video downloads",
+  "browser_checks": {
+    "summary_exact_five_step_chain": true,
+    "responsibility_statement": true,
+    "six_download_channels": true,
+    "six_scenarios_six_steps_each": "passed",
+    "eight_pipeline_stages": "passed",
+    "source_filter": "native 5/11; reset all",
+    "source_evidence_anchor_reload": "ref-E05 expanded",
+    "desktop_visual": "passed",
+    "mobile_visual": "390px viewport; no whole-page horizontal overflow",
+    "mobile_scroll_width": 375,
+    "download_table_width": 720,
+    "download_table_container_width": 341,
+    "console_errors_warnings": [],
+    "viewport_override_reset": true
+  },
+  "asset_check_scope": "Initial content deployment at content_commit; publication metadata registered afterward."
+}
