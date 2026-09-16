@@ -2,7 +2,7 @@
 
 **理解摘要：OpenPencil 是开源设计编辑器，通过 MCP / CLI 让 Agent 创建、修改、保存和导出可编辑设计稿。本次已测效果偏传统、规整的商务后台与数据汇报；意义在于把设计纳入可持续迭代、批量操作的自动化工作流。内置 AI 的创意与审美上限尚未验证。**
 
-[查看理解摘要与效果观察网页](app/index.html)：包含实际效果、软件 / 工具 / Skill 的关系、使用场景、与 Claude Design 的定位差异和底层原理。桌面版是设计工具的呈现方式，产物并不限于桌面界面。
+[在线查看理解摘要与效果观察](https://yydshly.github.io/0916_codex_project/012-openpencil/) · [网页源码](app/index.html)：包含实际效果、软件 / 工具 / Skill 的关系、使用场景、与 Claude Design 的定位差异和底层原理。桌面版是设计工具的呈现方式，产物并不限于桌面界面。
 
 已在 Windows 本地运行上游原生桌面版，通过上游 `op` CLI / MCP 实际加载官方模板、创建研究工作台、修改文字、保存 `.op` 并导出 PNG。编辑器与渲染器均来自上游，没有用自制网页冒充软件界面。
 
@@ -127,4 +127,6 @@ python scripts/projects.py sync
 python scripts/projects.py check
 ```
 
-本次运行了本地桌面应用，并提供静态研究网页 `app/index.html`；研究页不是 OpenPencil 在线编辑器。运行 `python scripts/build_web.py` 可将其纳入总仓库网页入口。尚未部署本项目的公网网页，项目清单中的 `demo` 保持空字符串。
+2026-09-17 已通过 GitHub Pages 发布[静态研究网页](https://yydshly.github.io/0916_codex_project/012-openpencil/)。网页使用无额外依赖的 HTML / CSS，运行 `python scripts/build_web.py` 即可纳入总仓库网页入口；研究页不是 OpenPencil 在线编辑器。
+
+内容提交 `687de43`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35138359354)成功。9 个线上文件与提交逐字节一致，总入口摘要、单张引导图及原有 Kun 页面验证通过；未执行线上浏览器视觉、交互或手机测试。详见[发布验证记录](notes/deployment-verification.json)。

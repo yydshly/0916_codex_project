@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-09-16T19:06:15.162767+00:00",
+  "content_commit": "687de43082a7742871569cc7be5790ef47f37089",
+  "url": "https://yydshly.github.io/0916_codex_project/012-openpencil/",
+  "workflow_url": "https://github.com/yydshly/0916_codex_project/actions/runs/35138359354",
+  "workflow_conclusion": "success",
+  "files": [
+    {
+      "file": "index.html",
+      "url": "https://yydshly.github.io/0916_codex_project/012-openpencil/index.html",
+      "status": 200,
+      "bytes": 12318,
+      "sha256": "d37be51b87d1398f19302550842ed1ec577cfdd7c7794dae435cd9b8240a33da",
+      "matches_commit": true
+    },
+    {
+      "file": "LICENSE.openpencil.txt",
+      "url": "https://yydshly.github.io/0916_codex_project/012-openpencil/LICENSE.openpencil.txt",
+      "status": 200,
+      "bytes": 1067,
+      "sha256": "07810262dcd2df061e16ae24c3a9a7a3cd265ddfc2bfb073544cd11af22d7812",
+      "matches_commit": true
+    },
+    {
+      "file": "site.json",
+      "url": "https://yydshly.github.io/0916_codex_project/012-openpencil/site.json",
+      "status": 200,
+      "bytes": 61,
+      "sha256": "057776146e86f288324f06fa223746a8d8b410040f39b8275632680540454fb3",
+      "matches_commit": true
+    },
+    {
+      "file": "styles.css",
+      "url": "https://yydshly.github.io/0916_codex_project/012-openpencil/styles.css",
+      "status": 200,
+      "bytes": 8027,
+      "sha256": "9dcbe5ac38394ab36323f3116459d6a45c373f5f63dcded5375d2ec2754401d9",
+      "matches_commit": true
+    },
+    {
+      "file": "verification.json",
+      "url": "https://yydshly.github.io/0916_codex_project/012-openpencil/verification.json",
+      "status": 200,
+      "bytes": 1240,
+      "sha256": "af2794be4d79d0c3a60108c4388d84dc9d3a30f6d3e33332cef532c7fbf76603",
+      "matches_commit": true
+    },
+    {
+      "file": "media/agent-dashboard-editor.jpg",
+      "url": "https://yydshly.github.io/0916_codex_project/012-openpencil/media/agent-dashboard-editor.jpg",
+      "status": 200,
+      "bytes": 111797,
+      "sha256": "9171fd76e0c1a5ce5bc188faa859d4784af84d0d3b055e74af107257cd98f8cf",
+      "matches_commit": true
+    },
+    {
+      "file": "media/agent-dashboard.png",
+      "url": "https://yydshly.github.io/0916_codex_project/012-openpencil/media/agent-dashboard.png",
+      "status": 200,
+      "bytes": 83539,
+      "sha256": "0956313613bcb015235dd92ab482dc8abcbf6999dd0032e3353f160b22d50a41",
+      "matches_commit": true
+    },
+    {
+      "file": "media/official-template-metrics.png",
+      "url": "https://yydshly.github.io/0916_codex_project/012-openpencil/media/official-template-metrics.png",
+      "status": 200,
+      "bytes": 78782,
+      "sha256": "7db3a1c8803ad3d729855f16a6ee227b6e511451244c36743cd663b504c19101",
+      "matches_commit": true
+    },
+    {
+      "file": "media/understanding-guide.png",
+      "url": "https://yydshly.github.io/0916_codex_project/012-openpencil/media/understanding-guide.png",
+      "status": 200,
+      "bytes": 1417734,
+      "sha256": "308f2c4264245e69e75fa6d9c29696a7c6b2b3bfbd920e8e2c7a2b6349e3c76a",
+      "matches_commit": true
+    }
+  ],
+  "homepage": {
+    "status": 200,
+    "entry_and_summary_verified": true,
+    "single_cover_matches_guide": true
+  },
+  "existing_kun_page_status": 200,
+  "browser_visual_interaction_mobile_tests": "Not run; HTTP and deployed-file verification only.",
+  "scope": "Static research webpage, not an online OpenPencil editor. Built-in AI generation was not tested."
+}

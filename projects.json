@@ -239,7 +239,7 @@
       ],
       "cover": "projects/012-openpencil/assets/understanding-guide.png",
       "cover_alt": "唯一研究引导图：OpenPencil 的设计编辑与 Agent 接口能力、已测传统商务效果、设计自动化意义及五步执行流程；原创整理，非软件截图，内置 AI 未测试。",
-      "demo": ""
+      "demo": "https://yydshly.github.io/0916_codex_project/012-openpencil/"
     }
   ]
 }

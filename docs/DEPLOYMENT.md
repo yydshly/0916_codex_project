@@ -102,3 +102,11 @@ GitHub Pages 托管静态文件；需要常驻服务、数据库或服务端密�
 摘要明确 Kun 自有循环与外部 Agent SDK 并存，整合成果预览、部分编辑和任务管理；16 类界面与交互属于研究分类，不是独有智能数量。引导图与网页包括 API / 网关 / 订阅 / SDK 接入、Pi / Codex / Claude Code 对比及对我们的参考价值。
 
 内容提交 `e1e3e83`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35136141329)成功；7 个主要线上文件与提交逐字节一致，总入口包含项目及引导图。本地检查 1440 / 390 宽度、图片加载、链接和锚点刷新；线上浏览器确认摘要、模型接入、图片加载与锚点刷新。见 [发布验证](../projects/011-kun/notes/deployment-verification.json)。仅发布静态研究内容，未运行 Kun 或验证模型与订阅接入。
+
+## OpenPencil 能力、商务效果与参考意义
+
+2026-09-17 已发布并验证：[研究网页](https://yydshly.github.io/0916_codex_project/012-openpencil/) · [唯一理解引导图](https://yydshly.github.io/0916_codex_project/012-openpencil/media/understanding-guide.png)。
+
+摘要明确其能力是通过编辑器和 MCP / CLI 创建、修改、保存、导出可编辑设计稿；已测效果偏传统、规整的商务后台与数据汇报，价值在设计自动化及批量制作。内置 AI 未测试，商务倾向不能代表生成上限。首页封面与网页使用同一张引导图，实际截图作为详情证据保留。
+
+内容提交 `687de43`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35138359354)成功；9 个线上文件与提交逐字节一致，总入口摘要和引导图验证通过，原有 Kun 页面 HTTP 200。未执行线上浏览器视觉、交互和手机测试。见[发布记录](../projects/012-openpencil/notes/deployment-verification.json)。仅部署静态研究内容，未部署 OpenPencil 在线编辑器或模型服务。
