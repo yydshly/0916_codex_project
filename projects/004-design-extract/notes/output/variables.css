@@ -1,0 +1,132 @@
+:root {
+  /* Colors — Primary */
+  --color-primary: #2563eb;
+  --color-secondary: #0f172a;
+  --color-accent: #cbd5e1;
+
+  /* Ramp — primary (base is 600) */
+  --color-primary-50: #c7f5ff;
+  --color-primary-100: #b7e9ff;
+  --color-primary-200: #a0d7ff;
+  --color-primary-300: #80bcff;
+  --color-primary-400: #5798ff;
+  --color-primary-500: #3777ff;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #164abe;
+  --color-primary-800: #0c3ba1;
+  --color-primary-900: #052d87;
+  --color-primary-950: #001654;
+
+  /* Ramp — secondary (base is 950) */
+  --color-secondary-50: #eef6ff;
+  --color-secondary-100: #e1eafc;
+  --color-secondary-200: #d0d9ed;
+  --color-secondary-300: #b6c0d7;
+  --color-secondary-400: #94a0b8;
+  --color-secondary-500: #77829b;
+  --color-secondary-600: #626c83;
+  --color-secondary-700: #4d576b;
+  --color-secondary-800: #3e4758;
+  --color-secondary-900: #323948;
+  --color-secondary-950: #0f172a;
+
+  /* Ramp — accent (base is 200) */
+  --color-accent-50: #f0f6fe;
+  --color-accent-100: #e4ebf3;
+  --color-accent-200: #cbd5e1;
+  --color-accent-300: #b9c1cb;
+  --color-accent-400: #98a1ac;
+  --color-accent-500: #7a838e;
+  --color-accent-600: #656d77;
+  --color-accent-700: #505760;
+  --color-accent-800: #41474f;
+  --color-accent-900: #343940;
+  --color-accent-950: #1b1f24;
+
+  /* Ramp — neutral (base is 700) */
+  --color-neutral-50: #ecf6ff;
+  --color-neutral-100: #e0ebfb;
+  --color-neutral-200: #cedaec;
+  --color-neutral-300: #b4c1d5;
+  --color-neutral-400: #92a1b6;
+  --color-neutral-500: #748399;
+  --color-neutral-600: #5f6d81;
+  --color-neutral-700: #475569;
+  --color-neutral-800: #3c4757;
+  --color-neutral-900: #303947;
+  --color-neutral-950: #191f28;
+
+  /* Colors — Neutrals */
+  --color-neutral-50: #000000;
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #475569;
+  --color-neutral-300: #94a3b8;
+
+  /* Colors — Backgrounds */
+  --color-bg: #f8fafc;
+  --color-bg-1: #ffffff;
+
+  /* Colors — Text */
+  --color-text: #000000;
+  --color-text-1: #0f172a;
+  --color-text-2: #2563eb;
+  --color-text-3: #475569;
+  --color-text-4: #ffffff;
+
+  /* Semantic pairs */
+  --surface-page-bg: #f8fafc;
+  --surface-page-fg: #000000; /* 20.07:1 AAA */
+  --surface-raised-bg: #ffffff;
+  --surface-raised-fg: #000000; /* 21:1 AAA */
+  --action-primary-bg: #2563eb;
+  --action-primary-fg: #ffffff; /* 5.17:1 AA */
+  --action-secondary-bg: #0f172a;
+  --action-secondary-fg: #ffffff; /* 17.85:1 AAA */
+  --action-accent-bg: #cbd5e1;
+  --action-accent-fg: #000000; /* 14.14:1 AAA */
+
+  /* Typography — Families */
+  --font-sans: 'Arial', sans-serif;
+
+  /* Typography — Named scale */
+  --font-size-h1: 48px;
+  --font-size-h2: 24px;
+  --font-size-title-1: 20px;
+  --font-size-body: 16px;
+  --font-size-body-sm: 12px;
+
+  /* Layout */
+  --container-width: 1120px;
+  --container-gutter: 24px;
+  --section-rhythm: 24px;
+  --grid-columns: 3;
+
+  /* Spacing */
+  --spacing-8: 8px;
+  --spacing-80: 80px;
+
+  /* Border Radius */
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Box Shadows */
+  --shadow-xs: rgba(15, 23, 42, 0.08) 0px 4px 12px 0px;
+
+  /* Original Site Variables */
+  /* — colors — */
+  --muted: #475569;
+  --card-radius: 12px;
+  /* — spacing — */
+  --space: 24px;
+  /* — other — */
+  --brand: #2563eb;
+  --canvas: #f8fafc;
+  --surface: #ffffff;
+  --ink: #0f172a;
+  /* — semantic — */
+  success: [object Object];
+  warning: [object Object];
+  error: [object Object];
+  info: [object Object];
+
+}

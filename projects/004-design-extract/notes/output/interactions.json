@@ -1,0 +1,113 @@
+{
+  "buttons": [
+    {
+      "text": "Start capture",
+      "base": {
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(37, 99, 235)",
+        "borderColor": "rgb(255, 255, 255)",
+        "boxShadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "textDecoration": "none",
+        "scale": "none"
+      },
+      "hasChanges": true,
+      "hover": {
+        "backgroundColor": {
+          "from": "rgb(37, 99, 235)",
+          "to": "rgb(29, 78, 216)"
+        }
+      },
+      "focus": {
+        "backgroundColor": {
+          "from": "rgb(37, 99, 235)",
+          "to": "rgb(29, 78, 216)"
+        },
+        "outline": {
+          "from": "rgb(255, 255, 255) none 3px",
+          "to": "rgb(245, 158, 11) solid 3px"
+        }
+      }
+    },
+    {
+      "text": "Slow transition",
+      "base": {
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(37, 99, 235)",
+        "borderColor": "rgb(255, 255, 255)",
+        "boxShadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "textDecoration": "none",
+        "scale": "none"
+      },
+      "hasChanges": true,
+      "hover": {
+        "backgroundColor": {
+          "from": "rgb(37, 99, 235)",
+          "to": "rgb(35, 94, 230)"
+        }
+      },
+      "focus": {
+        "backgroundColor": {
+          "from": "rgb(37, 99, 235)",
+          "to": "rgb(33, 88, 225)"
+        },
+        "outline": {
+          "from": "rgb(255, 255, 255) none 3px",
+          "to": "rgb(245, 158, 11) solid 3px"
+        }
+      }
+    }
+  ],
+  "links": [
+    {
+      "text": "Tokens",
+      "base": {
+        "color": "rgb(37, 99, 235)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(37, 99, 235)",
+        "boxShadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "outline": "rgb(37, 99, 235) none 3px",
+        "textDecoration": "none",
+        "scale": "none"
+      },
+      "hasChanges": true,
+      "hover": {
+        "textDecoration": {
+          "from": "none",
+          "to": "underline"
+        }
+      },
+      "focus": {}
+    }
+  ],
+  "inputs": [
+    {
+      "base": {
+        "color": "rgb(15, 23, 42)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(148, 163, 184)",
+        "boxShadow": "none",
+        "transform": "none",
+        "opacity": "1",
+        "outline": "rgb(15, 23, 42) none 3px",
+        "textDecoration": "none",
+        "scale": "none"
+      },
+      "hasChanges": true,
+      "hover": {},
+      "focus": {
+        "outline": {
+          "from": "rgb(15, 23, 42) none 3px",
+          "to": "rgb(37, 99, 235) solid 3px"
+        }
+      }
+    }
+  ]
+}

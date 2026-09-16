@@ -57,6 +57,23 @@
       "cover": "projects/003-wrenai/assets/summary-guide.png",
       "cover_alt": "WrenAI 原理引导图：本质、能力、资料准备、内部处理、输入输出、使用场景、价值与方案选择；原创研究图，非官方界面。",
       "demo": "https://yydshly.github.io/0916_codex_project/003-wrenai/"
+    },
+    {
+      "id": 4,
+      "slug": "design-extract",
+      "name": "Design Extract 网站设计提取研究",
+      "summary": "网页设计规范提取与 AI 开发辅助；附真实输出截图、17 项基础检查和 4 项保真问题，已验证提取与导出，未验证完整复刻。",
+      "repo": "https://github.com/Manavarya09/design-extract",
+      "status": "已完成",
+      "tags": [
+        "设计变量",
+        "浏览器提取",
+        "AI 开发辅助",
+        "本地实测"
+      ],
+      "cover": "projects/004-design-extract/assets/extracted-preview-cover.png",
+      "cover_alt": "上游工具提取原创测试页后生成的原生预览截图，展示配色与基础统计；完整结果及四项保真问题见子项目说明。",
+      "demo": ""
     }
   ]
 }

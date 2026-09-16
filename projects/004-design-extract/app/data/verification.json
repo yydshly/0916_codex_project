@@ -1,0 +1,379 @@
+{
+  "recordedAt": "2026-09-16T13:35:18.221Z",
+  "upstreamCommit": "47f75bb68cd6fcb51c172868a3a1b814cd6bdeb4",
+  "version": "13.3.0",
+  "node": "v22.15.0",
+  "platform": "win32",
+  "browser": "149.0.7827.55",
+  "fixtureSha256": "31f2031e804df83fb5831a6fb0dd8f7b69028294b41da207585e0dfcd7aa8d31",
+  "lockSha256": "1a286fcbd4c352be52c9f4d4d6529b656fa6e59e577cd362969a2ebf8dcb7b2b",
+  "elapsedSeconds": 9,
+  "scope": "One original local fixture. No LLM calls. Native/Figma outputs not imported or compiled; clone generated but not built.",
+  "checks": [
+    {
+      "name": "brand colour",
+      "expected": "#2563eb",
+      "actual": "#2563eb",
+      "pass": true
+    },
+    {
+      "name": "heading size",
+      "expected": 48,
+      "actual": [
+        48,
+        24
+      ],
+      "pass": true
+    },
+    {
+      "name": "font family",
+      "expected": "Arial",
+      "actual": [
+        "Arial"
+      ],
+      "pass": true
+    },
+    {
+      "name": "card radius",
+      "expected": 12,
+      "actual": [
+        8,
+        12
+      ],
+      "pass": true
+    },
+    {
+      "name": "spacing observation",
+      "expected": 24,
+      "actual": [
+        8,
+        12,
+        16,
+        24,
+        32,
+        40,
+        80
+      ],
+      "pass": true
+    },
+    {
+      "name": "dark brand colour",
+      "expected": "#60a5fa",
+      "actual": "#60a5fa",
+      "pass": true
+    },
+    {
+      "name": "four sampled viewports",
+      "expected": 4,
+      "actual": 4,
+      "pass": true
+    },
+    {
+      "name": "mobile heading size",
+      "expected": "32px",
+      "actual": "32px",
+      "pass": true
+    },
+    {
+      "name": "desktop grid columns",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "name": "mobile grid columns",
+      "expected": 1,
+      "actual": 1,
+      "pass": true
+    },
+    {
+      "name": "mobile navigation hidden",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "80ms hover reaches target",
+      "expected": "rgb(29, 78, 216)",
+      "actual": "rgb(29, 78, 216)",
+      "pass": true
+    },
+    {
+      "name": "input focus captured",
+      "expected": "nonempty focus changes",
+      "actual": 1,
+      "pass": true
+    },
+    {
+      "name": "intentional contrast failure detected",
+      "expected": "failCount > 0",
+      "actual": 1,
+      "pass": true
+    },
+    {
+      "name": "token primitive and semantic layers",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "all registered emitters return content",
+      "expected": 30,
+      "actual": 30,
+      "pass": true
+    },
+    {
+      "name": "CLI extraction exits successfully",
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    }
+  ],
+  "passed": 17,
+  "total": 17,
+  "fidelityChecks": [
+    {
+      "name": "24px layout spacing retained in normalized scale",
+      "expected": 24,
+      "actual": [
+        8,
+        80
+      ],
+      "pass": false
+    },
+    {
+      "name": "DESIGN.md foreground matches known body text",
+      "expected": "#0f172a",
+      "actual": "#000000",
+      "pass": false
+    },
+    {
+      "name": "400ms hover final colour captured",
+      "expected": "rgb(29, 78, 216)",
+      "actual": "rgb(35, 94, 230)",
+      "pass": false
+    },
+    {
+      "name": "clone copy contains no detected template sentence",
+      "expected": false,
+      "actual": true,
+      "pass": false
+    }
+  ],
+  "fidelityPassed": 0,
+  "fidelityTotal": 4,
+  "groundTruth": {
+    "bodyColor": "rgb(15, 23, 42)",
+    "gridGap": "24px",
+    "slowHoverColor": "rgb(29, 78, 216)"
+  },
+  "emitters": [
+    {
+      "id": "design-md",
+      "type": "string",
+      "bytes": 4678,
+      "success": true
+    },
+    {
+      "id": "design-language-md",
+      "type": "string",
+      "bytes": 11855,
+      "success": true
+    },
+    {
+      "id": "tokens",
+      "type": "string",
+      "bytes": 2068,
+      "success": true
+    },
+    {
+      "id": "dtcg",
+      "type": "string",
+      "bytes": 8921,
+      "success": true
+    },
+    {
+      "id": "tailwind",
+      "type": "string",
+      "bytes": 3069,
+      "success": true
+    },
+    {
+      "id": "tailwind-v4",
+      "type": "string",
+      "bytes": 2721,
+      "success": true
+    },
+    {
+      "id": "css-vars",
+      "type": "string",
+      "bytes": 3451,
+      "success": true
+    },
+    {
+      "id": "css-reset",
+      "type": "string",
+      "bytes": 2162,
+      "success": true
+    },
+    {
+      "id": "ts-defs",
+      "type": "string",
+      "bytes": 1457,
+      "success": true
+    },
+    {
+      "id": "figma",
+      "type": "string",
+      "bytes": 9138,
+      "success": true
+    },
+    {
+      "id": "preview-html",
+      "type": "string",
+      "bytes": 15170,
+      "success": true
+    },
+    {
+      "id": "brand-book-html",
+      "type": "string",
+      "bytes": 42111,
+      "success": true
+    },
+    {
+      "id": "gradients-css",
+      "type": "string",
+      "bytes": 123,
+      "success": true
+    },
+    {
+      "id": "gradients-json",
+      "type": "string",
+      "bytes": 191,
+      "success": true
+    },
+    {
+      "id": "agent-prompt",
+      "type": "string",
+      "bytes": 3594,
+      "success": true
+    },
+    {
+      "id": "motion-lab",
+      "type": "string",
+      "bytes": 6180,
+      "success": true
+    },
+    {
+      "id": "framer-motion",
+      "type": "string",
+      "bytes": 2136,
+      "success": true
+    },
+    {
+      "id": "motion-one",
+      "type": "string",
+      "bytes": 2215,
+      "success": true
+    },
+    {
+      "id": "motion-css",
+      "type": "string",
+      "bytes": 1405,
+      "success": true
+    },
+    {
+      "id": "motion-tailwind",
+      "type": "string",
+      "bytes": 1579,
+      "success": true
+    },
+    {
+      "id": "react-theme",
+      "type": "string",
+      "bytes": 2932,
+      "success": true
+    },
+    {
+      "id": "shadcn-theme",
+      "type": "string",
+      "bytes": 600,
+      "success": true
+    },
+    {
+      "id": "vue-theme",
+      "type": "string",
+      "bytes": 661,
+      "success": true
+    },
+    {
+      "id": "svelte-theme",
+      "type": "string",
+      "bytes": 709,
+      "success": true
+    },
+    {
+      "id": "ios-swiftui",
+      "type": "string",
+      "bytes": 4342,
+      "success": true
+    },
+    {
+      "id": "android-compose",
+      "type": "object",
+      "bytes": 7590,
+      "success": true
+    },
+    {
+      "id": "flutter-dart",
+      "type": "string",
+      "bytes": 4494,
+      "success": true
+    },
+    {
+      "id": "wordpress",
+      "type": "string",
+      "bytes": 2446,
+      "success": true
+    },
+    {
+      "id": "wordpress-theme",
+      "type": "object",
+      "bytes": 4606,
+      "success": true
+    },
+    {
+      "id": "agent-rules",
+      "type": "object",
+      "bytes": 3501,
+      "success": true
+    }
+  ],
+  "observations": {
+    "slowHover": {
+      "expectedSettled": "rgb(29, 78, 216)",
+      "sampled": "rgb(35, 94, 230)",
+      "settled": false
+    },
+    "clone": {
+      "files": [
+        "package.json",
+        "src/app/globals.css",
+        "src/app/layout.js",
+        "src/app/page.js",
+        "next.config.mjs",
+        "postcss.config.mjs",
+        "README.md"
+      ],
+      "order": [
+        "hero",
+        "feature-grid",
+        "footer"
+      ],
+      "hasTemplateCopy": true,
+      "sourceIncludesTemplateCopy": false,
+      "builtOrRun": false
+    },
+    "previewErrors": []
+  }
+}

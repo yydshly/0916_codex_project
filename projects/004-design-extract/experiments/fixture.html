@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Design extraction · controlled specimen</title>
+  <style>
+    :root { --brand:#2563eb; --canvas:#f8fafc; --surface:#ffffff; --ink:#0f172a; --muted:#475569; --card-radius:12px; --space:24px; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.6 Arial,sans-serif; background:var(--canvas); color:var(--ink); }
+    header,main,footer { max-width:1120px; margin:auto; padding:24px; }
+    header { display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #cbd5e1; }
+    .brand { font-size:20px; font-weight:700; } nav { display:flex; gap:24px; }
+    a { color:var(--brand); text-decoration:none; } a:hover { text-decoration:underline; }
+    .hero { padding:40px 0 32px; max-width:850px; }
+    .eyebrow { color:var(--brand); font-size:12px; font-weight:700; letter-spacing:2px; }
+    h1 { font-size:48px; line-height:1.1; margin:16px 0; letter-spacing:-1px; }
+    h2 { font-size:24px; margin:0 0 8px; } h3 { font-size:20px; margin:0 0 8px; }
+    p { margin:0 0 16px; } .muted { color:var(--muted); }
+    .actions { display:flex; gap:16px; margin:24px 0; }
+    button { padding:12px 24px; font:700 16px Arial,sans-serif; border:0; border-radius:8px; cursor:pointer; background:var(--brand); color:#fff; transition:background-color 80ms linear; }
+    button:hover { background:#1d4ed8; } button:focus-visible { outline:3px solid #f59e0b; outline-offset:3px; }
+    .slow { transition-duration:400ms; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--space); }
+    .card { padding:24px; border:1px solid #cbd5e1; border-radius:var(--card-radius); background:var(--surface); box-shadow:0 4px 12px rgba(15,23,42,.08); }
+    .number { color:var(--brand); font-size:12px; letter-spacing:2px; margin-bottom:16px; }
+    label { display:block; font-size:12px; } input { width:100%; border:1px solid #94a3b8; border-radius:8px; padding:12px; font:16px Arial; background:var(--surface); color:var(--ink); }
+    input:focus { outline:3px solid #2563eb; }
+    .contrast-probe { color:#cbd5e1; background:#fff; padding:8px; font-size:12px; }
+    footer { font-size:12px; color:var(--muted); }
+    @media (max-width:700px) { h1 { font-size:32px; } .grid { grid-template-columns:1fr; } nav { display:none; } .actions { flex-wrap:wrap; } }
+    @media (prefers-color-scheme:dark) { :root { --canvas:#0f172a; --surface:#1e293b; --ink:#f8fafc; --muted:#cbd5e1; --brand:#60a5fa; } }
+  </style>
+</head>
+<body>
+  <header><span class="brand">SPECIMEN / 004</span><nav aria-label="Main"><a href="#tokens">Tokens</a><a href="#states">States</a></nav></header>
+  <main>
+    <section class="hero"><span class="eyebrow">CONTROLLED EXTRACTION EXPERIMENT</span><h1>Measure what the browser<br>actually renders.</h1><p class="muted">An original, local test page with known values. No personal data, external assets or model calls.</p><div class="actions"><button id="primary">Start capture</button><button id="slow" class="slow">Slow transition</button></div></section>
+    <section id="tokens" class="grid">
+      <article class="card"><div class="number">01 / COLOUR</div><h2>Known palette</h2><p>Brand #2563EB<br>Canvas #F8FAFC<br>Ink #0F172A</p><p class="muted">Dark mode uses #60A5FA.</p></article>
+      <article class="card"><div class="number">02 / GEOMETRY</div><h2>Known layout</h2><p>24px grid gap<br>12px card radius<br>48px desktop heading</p><p class="muted">Below 700px: one column, 32px heading.</p></article>
+      <article id="states" class="card"><div class="number">03 / INTERACTION</div><h2>Known states</h2><label for="sample">Focus probe</label><input id="sample" type="text" placeholder="No data is submitted"><p class="contrast-probe">Intentional low-contrast probe</p></article>
+    </section>
+  </main>
+  <footer>Research fixture, not an upstream product interface. Buttons are style probes.</footer>
+</body>
+</html>

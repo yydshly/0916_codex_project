@@ -1,0 +1,137 @@
+{
+  "viewports": [
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 812,
+      "bodyFontSize": "16px",
+      "headings": {
+        "h1": {
+          "fontSize": "32px",
+          "lineHeight": "35.2px"
+        },
+        "h2": {
+          "fontSize": "24px",
+          "lineHeight": "38.4px"
+        }
+      },
+      "navVisible": false,
+      "navHeight": 0,
+      "gridCount": 1,
+      "flexCount": 2,
+      "maxColumns": 1,
+      "hasHamburger": false,
+      "scrollHeight": 1469
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "bodyFontSize": "16px",
+      "headings": {
+        "h1": {
+          "fontSize": "48px",
+          "lineHeight": "52.8px"
+        },
+        "h2": {
+          "fontSize": "24px",
+          "lineHeight": "38.4px"
+        }
+      },
+      "navVisible": true,
+      "navHeight": 25.59375,
+      "gridCount": 1,
+      "flexCount": 3,
+      "maxColumns": 3,
+      "hasHamburger": false,
+      "scrollHeight": 1024
+    },
+    {
+      "name": "desktop",
+      "width": 1280,
+      "height": 800,
+      "bodyFontSize": "16px",
+      "headings": {
+        "h1": {
+          "fontSize": "48px",
+          "lineHeight": "52.8px"
+        },
+        "h2": {
+          "fontSize": "24px",
+          "lineHeight": "38.4px"
+        }
+      },
+      "navVisible": true,
+      "navHeight": 25.59375,
+      "gridCount": 1,
+      "flexCount": 3,
+      "maxColumns": 3,
+      "hasHamburger": false,
+      "scrollHeight": 839
+    },
+    {
+      "name": "wide",
+      "width": 1920,
+      "height": 1080,
+      "bodyFontSize": "16px",
+      "headings": {
+        "h1": {
+          "fontSize": "48px",
+          "lineHeight": "52.8px"
+        },
+        "h2": {
+          "fontSize": "24px",
+          "lineHeight": "38.4px"
+        }
+      },
+      "navVisible": true,
+      "navHeight": 25.59375,
+      "gridCount": 1,
+      "flexCount": 3,
+      "maxColumns": 3,
+      "hasHamburger": false,
+      "scrollHeight": 1080
+    }
+  ],
+  "changes": [
+    {
+      "from": "mobile",
+      "to": "tablet",
+      "breakpoint": "375px → 768px",
+      "diffs": [
+        {
+          "property": "H1 size",
+          "from": "32px",
+          "to": "48px"
+        },
+        {
+          "property": "Nav visibility",
+          "from": "hidden",
+          "to": "visible"
+        },
+        {
+          "property": "Max grid columns",
+          "from": "1",
+          "to": "3"
+        },
+        {
+          "property": "Page height",
+          "from": "1469px",
+          "to": "1024px"
+        }
+      ]
+    },
+    {
+      "from": "desktop",
+      "to": "wide",
+      "breakpoint": "1280px → 1920px",
+      "diffs": [
+        {
+          "property": "Page height",
+          "from": "839px",
+          "to": "1080px"
+        }
+      ]
+    }
+  ]
+}

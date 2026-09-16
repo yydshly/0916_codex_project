@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-16",
+  "upstreamCommit": "47f75bb68cd6fcb51c172868a3a1b814cd6bdeb4",
+  "cwd": "upstream/design-extract",
+  "command": "node --test tests/browser.test.js tests/color-ranking.test.js tests/formatters.test.js tests/interaction-states.test.js tests/mcp-v2.test.js tests/routes-reconciliation.test.js tests/site-synthesis.test.js tests/smart.test.js",
+  "tests": 212,
+  "suites": 47,
+  "passed": 212,
+  "failed": 0,
+  "cancelled": 0,
+  "skipped": 0,
+  "todo": 0,
+  "durationMs": 5072.6767,
+  "rawOutputSha256": "31bd6b78ca394e243dfff7e3b36bcbc401c2a7ce4df557305f7e112b8355c6e4",
+  "scope": "Selected upstream tests only; not the complete suite. Mocked MCP/model tests do not prove live client/model integration."
+}
