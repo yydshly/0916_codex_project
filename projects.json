@@ -162,16 +162,9 @@
         "交互讲解",
         "低优先级参考"
       ],
-      "cover": "projects/008-aicodeguide/assets/capability-map.svg",
-      "cover_alt": "原创研究信息图：AI Code Guide 的六类内容与需求、任务、规则、实现、验证流程；非官方界面、非运行截图。",
-      "demo": "",
-      "guides": [
-        {
-          "title": "完整思路与价值：对当前 Codex 工作方式的有限增量",
-          "image": "projects/008-aicodeguide/assets/understanding-guide.png",
-          "alt": "原创研究信息图：六步工作循环、失败反馈、资源导航、新手价值与当前 Codex 工作方式的有限增量；非运行截图，未验证效率提升。"
-        }
-      ]
+      "cover": "projects/008-aicodeguide/assets/understanding-guide.png",
+      "cover_alt": "原创研究信息图：六步工作循环、失败反馈、资源导航、新手价值与当前 Codex 工作方式的有限增量；非运行截图，未验证效率提升。",
+      "demo": ""
     }
   ]
 }
