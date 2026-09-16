@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI Code Guide 中文研究手册：了解指南的六类能力、从想法到验收的工作流程，以及对现有项目的实际参考价值。">
+  <meta name="theme-color" content="#f4f3ec">
+  <title>AI Code Guide · AI 编程方法研究</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳转到正文</a>
+<header class="topbar"><a class="brand" href="#overview"><span class="brand-mark">a<span>i</span></span><span>开源研究室 <span class="muted">/ 008</span></span></a><a class="source-link" href="https://github.com/automata/aicodeguide">上游仓库 <span aria-hidden="true">↗</span></a></header>
+<div class="layout">
+  <aside class="sidebar"><div class="side-title">阅读路线</div><nav aria-label="页内导航"><a href="#overview">01 <span>先看结论</span></a><a href="#capabilities">02 <span>内容与用途</span></a><a href="#workflow">03 <span>流程拆解</span></a><a href="#scenarios">04 <span>怎么用到项目</span></a><a href="#boundaries">05 <span>价值与边界</span></a><a href="#evidence">06 <span>来源与验证</span></a></nav><div class="side-note"><span class="status-dot"></span> 已归档 · 文档型项目<br>原文阅读 · 中文研究<br><span class="muted">2026.09.17</span></div></aside>
+  <main id="main">
+    <section id="overview" class="overview">
+      <div class="eyebrow">FIELD NOTES / AI-ASSISTED DEVELOPMENT</div>
+      <h1>AI Code Guide<span>把想法，变成可验收的任务。</span></h1>
+      <p class="lead">一本组织 AI 编程方法的路线指南。它帮助你说清需求、安排任务、约束实现，再检查结果。</p>
+      <div class="overview-grid"><div class="verdict"><span class="label">最终理解 · 低优先级参考</span><h2>有入门价值，对我们增量有限。</h2><p>它帮助人理解 AI 编程流程。我们已在使用 Codex 的规划、实现与验证能力，以及项目规则；该库没有增加独立可集成或复刻的功能。</p><a href="#summary-guide">一图查看完整思路与价值 ↓</a></div><div class="facts"><div><strong>README</strong><span>研究版本的唯一文件</span></div><div><strong>方法 + 导航</strong><span>提示示例、经验建议与外部资料</span></div><div><strong>参考归档</strong><span>保留研究记录，不继续功能复刻</span></div></div></div>
+      <div class="method-strip" aria-label="指南核心方法"><span>明确需求</span><b aria-hidden="true">→</b><span>拆分任务</span><b aria-hidden="true">→</b><span>约定规则</span><b aria-hidden="true">→</b><span>逐项实现</span><b aria-hidden="true">→</b><span class="last">验证结果</span></div>
+      <p class="caption">依据固定版本整理；步骤分组与中文解读为本项目归纳。<a href="https://github.com/automata/aicodeguide/tree/ec6046726e750dc56ccbeb12d443fe2bb53fd925">研究版本 ec60467 ↗</a></p>
+      <figure class="summary-figure" id="summary-guide"><a href="media/understanding-guide.png" aria-label="打开完整思路与价值总览图"><img src="media/understanding-guide.png" width="1536" height="1024" alt="AI Code Guide 思路与价值总览：从需求、任务、规则到实现、验证和交接的六步循环；对新手有入门价值，对当前 Codex 工作方式新增价值有限；无独立可集成或复刻功能。"></a><figcaption>一图读懂：完整方法与实际价值。原创研究整理，非上游界面。<a href="media/understanding-guide.png" download="aicodeguide-understanding.png">下载图片 ↓</a></figcaption></figure>
+    </section>
+    <section id="capabilities">
+      <div class="section-heading"><div><div class="eyebrow">02 / CONTENT MAP</div><h2>这份指南讲什么，有什么用途？</h2></div><span class="pill">六类内容 · 研究归纳</span></div>
+      <div class="capability-grid">
+        <article class="capability"><span class="card-number">01 / 认识</span><h3>建立 AI 编程地图</h3><p>区分辅助编程、自然语言驱动开发和 Agent 循环，理解人的参与方式。</p><div class="card-result">帮助判断：要让 AI 参与到哪一步</div><a href="https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L79-L133">概念与协作方式 ↗</a></article>
+        <article class="capability"><span class="card-number">02 / 选型</span><h3>找到工具入口</h3><p>汇集编辑器、命令行助手、在线构建平台及辅助工具，提供继续研究的入口。</p><div class="card-result">帮助缩小：下一步要了解的工具范围</div><a href="https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L803-L858">工具目录 ↗</a></article>
+        <article class="capability"><span class="card-number">03 / 规划</span><h3>把想法变成任务</h3><p>通过问答澄清需求，再组织成产品需求文档（PRD）和有依赖关系的任务清单。</p><div class="card-result">目标产物：需求说明 + 有序任务</div><a href="https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L171-L298">提示与任务流程 ↗</a></article>
+        <article class="capability"><span class="card-number">04 / 约束</span><h3>给 AI 项目上下文</h3><p>用项目说明、规则文件和历史记录传递约定；为旧项目按具体功能补充背景。</p><div class="card-result">目标产物：项目规则 + 变更范围</div><a href="https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L359-L453">规则与记录 ↗</a></article>
+        <article class="capability"><span class="card-number">05 / 检查</span><h3>建立实现反馈</h3><p>把错误、测试结果和代码审查送回开发过程，关注需求是否被正确理解。</p><div class="card-result">帮助检查：结果是否满足预期</div><a href="https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L651-L697">测试与安全建议 ↗</a></article>
+        <article class="capability"><span class="card-number">06 / 进阶</span><h3>理解 Agent 生态</h3><p>介绍工具连接、Agent 构建和多 Agent 编排，链接到相应教程与项目。</p><div class="card-result">帮助继续学习：工具如何参与执行</div><a href="https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L757-L793">Agent 与编排 ↗</a></article>
+      </div>
+    </section>
+    <section id="workflow">
+      <div class="section-heading"><div><div class="eyebrow">03 / FROM IDEA TO EVIDENCE</div><h2>一个想法，如何走到验收？</h2></div><span class="pill">交互讲解</span></div>
+      <p class="section-intro">以“个人资料收藏页”为例，点击步骤查看输入、产物和验收条件。以下为我们设计的教学示例，未调用模型或生成真实应用。</p>
+      <div class="workflow">
+        <div class="step-selector" role="group" aria-label="选择流程步骤">
+          <button type="button" data-step="0" aria-pressed="true" aria-controls="step-panel"><span>01</span>澄清需求</button>
+          <button type="button" data-step="1" aria-pressed="false" aria-controls="step-panel"><span>02</span>拆分任务</button>
+          <button type="button" data-step="2" aria-pressed="false" aria-controls="step-panel"><span>03</span>约定规则</button>
+          <button type="button" data-step="3" aria-pressed="false" aria-controls="step-panel"><span>04</span>逐项实现</button>
+          <button type="button" data-step="4" aria-pressed="false" aria-controls="step-panel"><span>05</span>验证结果</button>
+          <button type="button" data-step="5" aria-pressed="false" aria-controls="step-panel"><span>06</span>记录与交接</button>
+        </div>
+        <div id="step-panel" class="step-panel" role="region" aria-labelledby="step-title" aria-live="polite" aria-atomic="true">
+          <div class="step-head"><span class="label" id="step-count">STEP 01 / 06</span><span class="pill">收藏页 · 教学示例</span></div>
+          <h3 id="step-title">先定义“收藏成功”意味着什么</h3>
+          <p id="step-explanation">把“做一个收藏页”变成可以核对的范围。模糊的问题在这里解决，可以减少实现阶段的猜测。</p>
+          <div class="io-grid"><div><div class="small-label">你需要提供</div><p id="step-input">谁来用、需要保存哪些内容、是否跨设备、这次先做什么。</p></div><div><div class="small-label">这一阶段的产物</div><p id="step-output">需求说明：单人使用；保存标题、HTTPS 链接和标签；支持搜索；本版不做登录或云同步。</p></div></div>
+          <div class="example"><span class="small-label">可以这样对 AI 说 · 原创示例</span><p id="step-prompt">我要做一个个人资料收藏页。请先确认数据保存位置、必需字段和搜索范围，再整理功能范围、非目标和验收条件。暂时不要实现。</p></div>
+          <div class="acceptance"><span>验收依据</span><p id="step-check">能明确回答“刷新后数据是否保留”“搜索哪些字段”“输入不合法时怎么办”。</p></div>
+          <a id="step-source" class="detail-link" href="https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L171-L268">对应原文 ↗</a>
+        </div>
+      </div>
+      <noscript><p class="notice">流程切换需要启用 JavaScript。完整六步讲解见<a href="research.html#workflow-text">文字版研究说明</a>。</p></noscript>
+      <div class="feedback-line"><span aria-hidden="true">↶</span><p><strong>测试失败后，回到具体问题。</strong>先核对需求，再检查实现；必要时更新规则与任务。六步是便于理解的整理方式，不代表一次走完就会成功。</p></div>
+      <div class="handoff"><div><span class="small-label">指南提供方法</span><h3>告诉你如何组织工作</h3><p>需求、任务、上下文与验证建议</p></div><span class="handoff-arrow" aria-hidden="true">→</span><div><span class="small-label">人负责判断</span><h3>明确目标与验收标准</h3><p>确认取舍、审查结果、决定是否交付</p></div><span class="handoff-arrow" aria-hidden="true">→</span><div><span class="small-label">外部工具执行</span><h3>编写、运行和修改代码</h3><p>具体能力取决于所用模型、工具和环境</p></div></div>
+    </section>
+    <section id="scenarios">
+      <div class="section-heading"><div><div class="eyebrow">04 / APPLY TO YOUR PROJECT</div><h2>放进实际项目，怎么使用？</h2></div></div>
+      <div class="scenario-list">
+        <article><div class="scenario-title"><span class="card-number">A / 从零开始</span><h3>你只有一个想法</h3></div><div><p>先做一条完整的小流程。例如先完成“新增收藏 → 列表可见 → 刷新仍在”，再增加标签和搜索。</p><span class="scenario-outcome">借鉴重点：需求问答、任务依赖、小步交付</span></div><a href="#workflow">查看流程 ↑</a></article>
+        <article><div class="scenario-title"><span class="card-number">B / 修改旧项目</span><h3>给现有系统加功能</h3></div><div><p>从具体变更开始，提供相关入口、现有约定和受影响部分。例如新增标签筛选，同时保留已有数据格式。</p><span class="scenario-outcome">借鉴重点：局部需求、项目上下文、回归检查</span></div><a href="https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L604-L649">相关原文 ↗</a></article>
+        <article><div class="scenario-title"><span class="card-number">C / 反复修不好</span><h3>AI 一直修改同一个错误</h3></div><div><p>补齐复现步骤、预期表现、实际报错与已尝试的方法。先定位失败环节，再要求验证修复是否有效。</p><span class="scenario-outcome">借鉴重点：错误反馈、测试与人工审查</span></div><a href="https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L524-L537">相关原文 ↗</a></article>
+      </div>
+      <div class="local-value"><span class="label">对我们这个研究仓库的参考价值</span><h3>把已有约定，接到每个子项目的验收上。</h3><p>我们已经有 AGENTS.md、固定编号、项目索引和检查脚本。可进一步在子项目里写清“要研究的问题 → 计划观察什么 → 实际证据 → 结论的边界”，让下一次研究可以接着做。</p><p class="caption">这是本项目结合当前仓库提出的使用建议；研究记录与验收模板并非上游自带功能。</p></div>
+    </section>
+    <section id="boundaries">
+      <div class="section-heading"><div><div class="eyebrow">05 / VALUE & LIMITS</div><h2>值得借鉴，也需要判断。</h2></div><span class="pill">研究结论</span></div>
+      <div class="comparison-wrap"><table><caption>指南、编程工具与当前展示页的职责</caption><thead><tr><th scope="col">你想完成的事</th><th scope="col">这份指南提供什么</th><th scope="col">还需要什么</th></tr></thead><tbody><tr><th scope="row">明确需求、组织任务</th><td>流程建议和提示示例</td><td>具体业务背景与人工决策</td></tr><tr><th scope="row">生成、编辑、运行代码</th><td>工具入口和使用建议</td><td>编程助手与项目运行环境</td></tr><tr><th scope="row">判断质量、修复错误</th><td>测试、审查与反馈思路</td><td>可核对的标准与实际验证</td></tr><tr><th scope="row">连接工具、编排 Agent</th><td>概念介绍与外部教程</td><td>单独配置、集成和运行相关项目</td></tr><tr><th scope="row">浏览这次中文研究</th><td>原文作为研究依据</td><td>当前页面提供原创解读和静态示例</td></tr></tbody></table></div>
+      <div class="limits-grid"><article><span>01</span><h3>没有效果保证</h3><p>流程合理不代表结果自动正确。当前研究版本没有随附基准实验、自动测试或可直接运行的实现。</p></article><article><span>02</span><h3>工具建议有时效</h3><p>正文同时保留 2025 年经验和 2026 年补充。具体价格、模型优劣、命令参数需要查当时的官方资料。</p></article><article><span>03</span><h3>经验不等于通用规则</h3><p>技术栈偏好、全量上下文和多 Agent 方案都要结合项目判断。当前页面不把这些经验当作实测排名。</p></article><article><span>04</span><h3>文档不能代替执行</h3><p>需求文档能帮助减少歧义，但无法消除模型错误。测试设计、代码审查与真实使用反馈仍然重要。</p></article></div>
+      <div class="conclusion"><div class="label">我们的判断</div><p><strong>低优先级参考：对新手有入门价值，对我们当前的 Codex 工作方式，新增价值有限。</strong>它整理的是方法与资源，没有独立功能可直接集成或复刻。规划、读写代码、调试与测试已有工具能力支持；业务目标、约束和验收标准仍需我们明确。</p></div>
+    </section>
+    <section id="evidence">
+      <div class="section-heading"><div><div class="eyebrow">06 / RESEARCH RECORD</div><h2>每个结论，都留一个回看的入口。</h2></div></div>
+      <div class="evidence-grid"><div><span class="small-label">研究依据</span><h3>固定版本，按原文追溯</h3><p>研究日期：2026-09-17<br>提交日期：2026-03-23（UTC）<br>版本：<a href="https://github.com/automata/aicodeguide/commit/ec6046726e750dc56ccbeb12d443fe2bb53fd925"><code>ec60467</code> ↗</a></p><a href="https://github.com/automata/aicodeguide/tree/ec6046726e750dc56ccbeb12d443fe2bb53fd925">查看版本文件树 ↗</a></div><div><span class="small-label">验证范围</span><h3>文档分析与展示页检查</h3><p>已核对文件树、指南正文及许可声明。未运行上游提及的工具，未验证开发效率提升或模型效果。网页交互用于解释流程。</p><a href="research.html">阅读全文与检查记录 ↗</a></div><div><span class="small-label">来源与许可</span><h3>保留作者与原始出处</h3><p>作者：Vilson Vieira、Eric S. Raymond。上游 README 声明 MIT；该版本未提供独立 LICENSE 文件。本页为原创中文归纳，无上游代码或图片复制。</p><a href="https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L911-L913">上游许可声明 ↗</a></div></div>
+    </section>
+  </main>
+</div>
+<footer>008 / AI Code Guide · 独立研究说明，非上游官方产品。研究日期 2026-09-17。</footer>
+</body>
+</html>

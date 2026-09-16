@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-16T16:28:54.450755+00:00",
+  "image_dimensions": [
+    1536,
+    1024
+  ],
+  "sha256": "9d7d773928747dc910134f40984bbe09182704cbb0c0966b5dfe37876ac97c68",
+  "method": "内置 imagegen；原图已可视检查",
+  "visual_review": "六步、反馈箭头、三类价值与能力边界文字清晰完整；非浏览器截图。",
+  "checks": [
+    {
+      "command": "python scripts/projects.py sync",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/projects.py check",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/build_web.py",
+      "exit_code": 0
+    }
+  ],
+  "image_copies_match": true,
+  "deployment": "未公开部署"
+}

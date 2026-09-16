@@ -1,0 +1,68 @@
+{
+  "repository": "https://github.com/automata/aicodeguide",
+  "research_date": "2026-09-17",
+  "commit": "ec6046726e750dc56ccbeb12d443fe2bb53fd925",
+  "committed_at": "2026-03-23T17:11:26Z",
+  "root_tree": [
+    "README.md"
+  ],
+  "tree_api": "https://api.github.com/repos/automata/aicodeguide/git/trees/ec6046726e750dc56ccbeb12d443fe2bb53fd925",
+  "readme_sha256": "c5b8c432a31c4b6832dc520639e1c865a02f1d1ffecf055b0eeeacc15c5a4293",
+  "readme_lines": 913,
+  "license_observation": "README 末尾声明 MIT；版本文件树无独立 LICENSE 文件。",
+  "method": "固定版本正文与文件树分析；无上游程序运行。",
+  "references": [
+    {
+      "topic": "概念与协作",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L79-L133"
+    },
+    {
+      "topic": "入门工具",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L137-L169"
+    },
+    {
+      "topic": "需求与任务",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L171-L304"
+    },
+    {
+      "topic": "项目规则",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L359-L394"
+    },
+    {
+      "topic": "需求文档",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L396-L415"
+    },
+    {
+      "topic": "日志与意图",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L417-L453"
+    },
+    {
+      "topic": "调试反馈",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L524-L537"
+    },
+    {
+      "topic": "工具协议",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L539-L589"
+    },
+    {
+      "topic": "旧项目与分层",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L604-L649"
+    },
+    {
+      "topic": "测试与安全",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L651-L697"
+    },
+    {
+      "topic": "Agent与编排",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L757-L793"
+    },
+    {
+      "topic": "工具目录",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L803-L858"
+    },
+    {
+      "topic": "许可声明",
+      "url": "https://github.com/automata/aicodeguide/blob/ec6046726e750dc56ccbeb12d443fe2bb53fd925/README.md#L911-L913"
+    }
+  ]
+}

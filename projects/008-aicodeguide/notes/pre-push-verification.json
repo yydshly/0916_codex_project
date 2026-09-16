@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-09-16T17:02:20.646488+00:00",
+  "base_commit": "62de4de6a52b199d34bc44433cad73be689705cf",
+  "scope": "从暂存区导出隔离快照检查；仅加入008及其首页索引，不含009或output目录。",
+  "registered_projects": 8,
+  "checks": [
+    {
+      "command": "python scripts/projects.py check",
+      "exit_code": 0
+    },
+    {
+      "command": "node --check projects/008-aicodeguide/app/app.js",
+      "exit_code": 0
+    },
+    {
+      "command": "python scripts/build_web.py",
+      "exit_code": 0
+    }
+  ],
+  "artifact_sha256": {
+    "app.js": "17cc6db55c5bd987c2b63358cd4d365b5cca14bc5814c0c54d82af16fd2b7985",
+    "index.html": "28f0cb8f138e33e79cd93dff135593f053a9f933a477848b3214f0b1c730af88",
+    "research.html": "dc8c98393a33a8be1682c65a18290932fabfa9988a1431985571053fd345fa12",
+    "site.json": "508367b6f8f5404cd46f8104d51db83598eb4d5e2e1f9b24a67b05c44eabc866",
+    "styles.css": "7b7e93cde0fc5051390978faa59e045409193821d9804031a3be3806193de651",
+    "media/understanding-guide.png": "9d7d773928747dc910134f40984bbe09182704cbb0c0966b5dfe37876ac97c68"
+  },
+  "not_performed": [
+    "浏览器视觉和点击实测",
+    "上游工具运行",
+    "模型效果对照"
+  ],
+  "remote_status": "提交前本地检查，不表示已推送或上线"
+}

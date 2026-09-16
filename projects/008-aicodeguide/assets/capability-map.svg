@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+<title id="title">AI Code Guide 能力与工作流程图</title><desc id="desc">原创研究信息图：文档指南提供概念、工具入口、需求、规则、验证及 Agent 生态介绍；人确定目标，外部工具实现，实际证据支持验收。</desc>
+<rect width="1200" height="750" fill="#f4f3ec"/>
+<g font-family="Segoe UI,Microsoft YaHei,sans-serif" fill="#263d35">
+<text x="64" y="70" font-size="18" letter-spacing="3" fill="#25634d">008 / OPEN SOURCE RESEARCH</text>
+<text x="64" y="144" font-size="51" font-weight="600">AI Code Guide</text>
+<text x="64" y="196" font-size="28">把想法，变成可验收的任务。</text>
+<text x="64" y="240" font-size="19" fill="#64726b">文档型指南 · 方法与资源导航 · 需要外部编程工具执行</text>
+<rect x="64" y="282" width="1072" height="120" rx="5" fill="#25634d"/>
+<g font-size="23" fill="#fffefa" text-anchor="middle"><text x="166" y="349">明确需求</text><text x="379" y="349">拆分任务</text><text x="592" y="349">约定规则</text><text x="805" y="349">逐项实现</text><text x="1020" y="349">验证结果</text></g>
+<g font-size="26" fill="#d8eb98" text-anchor="middle"><text x="272" y="350">→</text><text x="486" y="350">→</text><text x="699" y="350">→</text><text x="913" y="350">→</text></g>
+<g stroke="#d9ddd1" fill="#fffefa"><rect x="64" y="438" width="340" height="142" rx="4"/><rect x="430" y="438" width="340" height="142" rx="4"/><rect x="796" y="438" width="340" height="142" rx="4"/></g>
+<g font-size="23" font-weight="600"><text x="88" y="482">认识与选择</text><text x="454" y="482">规划与约束</text><text x="820" y="482">验证与进阶</text></g>
+<g font-size="18" fill="#64726b"><text x="88" y="522">编程概念 / 工具导航</text><text x="454" y="522">需求与任务 / 项目上下文</text><text x="820" y="522">测试反馈 / Agent 生态</text><text x="88" y="554">找到起点与学习路径</text><text x="454" y="554">给执行提供清楚的依据</text><text x="820" y="554">用证据判断工作是否完成</text></g>
+<text x="64" y="634" font-size="20">研究结论：适合借鉴工作方法；未验证开发效率或模型效果。</text>
+<path d="M64 667H1136" stroke="#d9ddd1"/>
+<text x="64" y="706" font-size="15" fill="#64726b">2026-09-17 · 基于 ec60467 · 原创研究信息图，非运行截图</text>
+</g></svg>

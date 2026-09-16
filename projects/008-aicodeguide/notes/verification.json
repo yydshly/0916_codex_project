@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-09-16T16:23:42.778165+00:00",
+  "scope": "本地静态展示与代码层交互状态检查；不包括浏览器视觉或真实点击测试。",
+  "completed_commands": [
+    {
+      "command": "python scripts/projects.py sync",
+      "result": "已同步 8 个项目"
+    },
+    {
+      "command": "python scripts/projects.py check",
+      "result": "8 个项目编号、目录、图片、首页一致"
+    },
+    {
+      "command": "node --check projects/008-aicodeguide/app/app.js",
+      "result": "语法通过"
+    },
+    {
+      "command": "python scripts/build_web.py",
+      "result": "8 个索引条目、7 个演示构建成功"
+    }
+  ],
+  "static_checks": {
+    "html_pages": 2,
+    "local_resource_and_anchor_references": 16,
+    "unique_ids": true,
+    "javascript_targets_exist": true,
+    "svg_xml_valid": true,
+    "build_bytes_match_source": true,
+    "build_index_contains_project": true,
+    "attribution_packaged": true
+  },
+  "interaction_logic": {
+    "method": "Node VM with DOM stand-in",
+    "states_checked": 6,
+    "checks": [
+      "状态内容更新",
+      "对应固定版本来源链接",
+      "恰好一个按钮处于选中状态",
+      "切回第一步"
+    ],
+    "result": "passed",
+    "browser_test": false
+  },
+  "http_checks": {
+    "/": {
+      "status": 200,
+      "bytes": 16330
+    },
+    "/research.html": {
+      "status": 200,
+      "bytes": 6120
+    },
+    "/styles.css": {
+      "status": 200,
+      "bytes": 11633
+    },
+    "/app.js": {
+      "status": 200,
+      "bytes": 6318
+    },
+    "/site.json": {
+      "status": 200,
+      "bytes": 61
+    }
+  },
+  "artifact_sha256": {
+    "app.js": "17cc6db55c5bd987c2b63358cd4d365b5cca14bc5814c0c54d82af16fd2b7985",
+    "index.html": "42e04b675ceaa988941f9a96e2cee002bdadf9e7319d63709d834c423570e916",
+    "research.html": "7519b03bebe3cbddc39eed136254a41095a5247af82000a403f7f824665664c0",
+    "site.json": "f7bcf5a4cf36c8c8ffba1c7355a7ad4808458f4c02871db674caa0d581fb6b48",
+    "styles.css": "c90043c277177288e4b8c665cfd7bb5689025cf44d6b11c975afd35082b8e786"
+  },
+  "not_performed": [
+    "浏览器视觉检查",
+    "浏览器真实点击和手机实测",
+    "上游工具运行",
+    "模型效果与效率对照实验",
+    "公开部署或线上访问验证"
+  ],
+  "deployment": "未发布，demo 保持为空",
+  "later_revision": "2026-09-17 补充思路与价值图并调整结论；本文件的 artifact_sha256 与 HTTP 检查对应初版，补充检查见 understanding-guide-verification.json。"
+}
