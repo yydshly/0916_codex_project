@@ -220,7 +220,7 @@
       ],
       "cover": "projects/011-kun/assets/kun-overview.png",
       "cover_alt": "原创完整理解引导图：任务流程、模型 API 与订阅及 SDK 接入、16 类界面交互、同类产品对比、参考价值与验证边界；不是运行截图，未实测 Kun。",
-      "demo": ""
+      "demo": "https://yydshly.github.io/0916_codex_project/011-kun/"
     }
   ]
 }

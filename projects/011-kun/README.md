@@ -15,6 +15,8 @@
 
 阅读入口：[完整网页手册](app/index.html) · [源码与原理笔记](notes/architecture.md) · [网页来源与核对记录](notes/web-guide.md)。
 
+已发布：[在线研究手册](https://yydshly.github.io/0916_codex_project/011-kun/) · [模型接入与执行引擎](https://yydshly.github.io/0916_codex_project/011-kun/#model-access) · [高清引导图](https://yydshly.github.io/0916_codex_project/011-kun/media/kun-overview.png)。仅发布研究内容，未部署 Kun 应用或模型服务；见[发布验证](notes/deployment-verification.json)。
+
 讨论结论：[我们的完整理解](notes/understanding.md) · [模型接入与执行引擎](notes/model-access.md)。普通 API 与仓库的 ChatGPT 订阅路线使用 Kun 自有循环；Claude 订阅路线由 Claude Agent SDK 控制循环，Kun 桥接额外工具及呈现状态。
 
 全景理解图：[高清 PNG](assets/kun-overview.png) · [可放大 SVG](assets/kun-overview.svg) · [图示来源与说明](notes/infographic.md)。一图梳理底层能力、16 类界面与交互、Pi / Codex / Claude Code 对比及研究意义；16 类是本研究的整理分类，并非独有 AI 能力数量。
@@ -163,12 +165,13 @@ npm run dev
 | 2026-09-17 | 核对 Work、记忆、知识库、Graph 和 Loop | 记录读写边界、检索机制与编排方式 |
 | 2026-09-17 | 建立子项目与源码笔记 | 完成本次能力理解与说明，应用效果未实测 |
 | 2026-09-17 | 扩展为完整网页手册 | 补充展示组件、画布动效、PPT 专用流程、媒体扩展、消息入口与 58 个来源入口；未启动 Kun |
+| 2026-09-17 | 汇总讨论并发布 | 补充自有循环 / 外部 SDK 分路、同类对比、我们的参考价值、完整引导图及 71 条来源；7 个线上文件与提交一致，未实测 Kun |
 
 - **已确认**：相关文档和实现入口存在；“已完成”仅指本次文档与源码研究。
 - **未确认**：安装成功率、任务正确率、模型兼容性、速度、成本、安全隔离强度与跨平台稳定性。
 - **本地优先**：任务与运行数据主要在本机；云模型仍会接收相关上下文，外部工具也可能联网。
 - **文档差异**：GUI/TUI 生命周期以详细架构说明为准；普通 Office 预览与专用 PPT 生成／编辑分开理解；Loop 实现已拆分；视频编辑器 README 的默认打包描述与当前打包脚本不一致，网页按后者归类。
-- **图片与演示**：网页含原创类型与机制示意，无 Kun 运行截图；网页可本地预览，公开地址与封面仍为空，未发布。
+- **图片与演示**：网页与完整引导图为原创研究示意，无 Kun 运行截图；研究手册已发布，公开地址与引导图已登记，不代表部署或实测 Kun 应用。
 
 后续验证顺序：只读检索 → 小文件修改与测试 → 审批拒绝 → 重启恢复 → Design → 知识库 → Graph → Loop。具体待验证项见[源码笔记](notes/architecture.md#8-后续验证清单)。
 

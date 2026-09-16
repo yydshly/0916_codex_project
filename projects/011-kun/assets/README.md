@@ -1,6 +1,6 @@
 # 图片资料
 
-本阶段为文档与源码研究，未运行 Kun，没有应用实测截图。能力导读中的 Mermaid 流程图为原创机制示意，封面与演示地址留空。
+本阶段为文档与源码研究，未运行 Kun，没有应用实测截图。能力导读中的 Mermaid 流程图为原创机制示意；项目封面使用完整理解引导图，演示地址指向研究手册，不是 Kun 应用。
 
 新增原创全景理解图：[kun-overview.png](kun-overview.png) / [kun-overview.svg](kun-overview.svg)，2000 × 3980，包含任务流程、底层能力、16 类展示与交互、产品对比、研究价值与验证边界。这是研究信息图，不是产品截图。来源与制作说明见 [infographic.md](../notes/infographic.md)。
 

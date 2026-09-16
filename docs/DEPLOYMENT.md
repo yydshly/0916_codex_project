@@ -94,3 +94,11 @@ GitHub Pages 托管静态文件；需要常驻服务、数据库或服务端密�
 以浏览器插件接入，按目标平台要求填写、上传并按适配能力提交发布。源码统计为 70 余个平台／服务、110 项内容适配，计数口径及归并清单随研究快照保存。网页包括七步使用流程、三种调用方式、内部机制及平台能力附录。
 
 内容提交 `52929d6`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35130767944)成功；6 个线上文件与提交逐字节一致。已验证 1440px / 390px 布局、单张引导图、标签与键盘切换、锚点刷新，总入口及 MediaGo 原页面 HTTP 200。见 [部署记录](../projects/010-multipost-extension/notes/deployment-verification.json)。仅部署研究网页，未安装或实际执行 MultiPost 发布功能。
+
+## Kun 工作台理解与模型接入
+
+2026-09-17 已发布并验证：[研究手册](https://yydshly.github.io/0916_codex_project/011-kun/) · [模型接入与执行引擎](https://yydshly.github.io/0916_codex_project/011-kun/#model-access) · [完整理解引导图](https://yydshly.github.io/0916_codex_project/011-kun/media/kun-overview.png)。
+
+摘要明确 Kun 自有循环与外部 Agent SDK 并存，整合成果预览、部分编辑和任务管理；16 类界面与交互属于研究分类，不是独有智能数量。引导图与网页包括 API / 网关 / 订阅 / SDK 接入、Pi / Codex / Claude Code 对比及对我们的参考价值。
+
+内容提交 `e1e3e83`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35136141329)成功；7 个主要线上文件与提交逐字节一致，总入口包含项目及引导图。本地检查 1440 / 390 宽度、图片加载、链接和锚点刷新；线上浏览器确认摘要、模型接入、图片加载与锚点刷新。见 [发布验证](../projects/011-kun/notes/deployment-verification.json)。仅发布静态研究内容，未运行 Kun 或验证模型与订阅接入。

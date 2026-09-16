@@ -37,9 +37,9 @@
 
 核对结果见 [静态检查记录](web-verification.json)。检查对象为本手册文件、内部锚点、来源文件存在性、JavaScript 语法、总站点构建与本地 HTTP 可达性。
 
-未执行浏览器截图、点击或视口测试，不能称为视觉与交互验收通过。未启动 Kun、未运行上游测试、未接入模型；所有应用效果与成本仍未实测。
+初版仅完成静态检查；讨论汇总修订后补做了浏览器摘要、模型接入锚点、图片加载及 1440 / 390 宽度检查，见 [release-checks.json](release-checks.json)。这不属于全页视觉审计。未启动 Kun、未运行上游测试、未接入模型；所有应用效果与成本仍未实测。
 
-沿用总仓库静态站点构建方式，构建产物位于被忽略的 `web/011-kun/`，源码在 `app/`。本次未发布线上站点，`projects.json` 的公开 demo 保持为空。
+沿用总仓库静态站点构建方式，构建产物位于被忽略的 `web/011-kun/`，源码在 `app/`。现已发布 [在线研究手册](https://yydshly.github.io/0916_codex_project/011-kun/)，7 个主要文件与内容提交逐字节一致，浏览器确认线上图片加载与模型接入锚点刷新。详情见 [deployment-verification.json](deployment-verification.json)。
 
 ## 讨论汇总修订
 
