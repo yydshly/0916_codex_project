@@ -107,6 +107,30 @@
           "alt": "同一成长墙切换深夜玻璃材质后的实际网页截图；自主概念演示，未接入真实个人记录。"
         }
       ]
+    },
+    {
+      "id": 6,
+      "slug": "skillry",
+      "name": "Skillry 创作技能能力图谱",
+      "summary": "偏视觉创作的 Skill 展示、售卖与分发平台，收录网页、演示、图片和视频技能。附具体方向与代表技能引导图；我们的结论是低优先级参考，付费独有价值未验证。",
+      "repo": "https://skillry.dev/",
+      "status": "已完成",
+      "tags": [
+        "Skill 目录",
+        "视觉创作",
+        "低优先级参考",
+        "公开资料研究"
+      ],
+      "cover": "projects/006-skillry/assets/capability-map.svg",
+      "cover_alt": "Skillry 四类技能数量与工作流程的原创研究示意图；基于官方目录快照，非官网截图，未安装运行技能。",
+      "demo": "",
+      "guides": [
+        {
+          "title": "我们的理解：收录方向、代表技能与参考价值",
+          "image": "projects/006-skillry/assets/understanding-guide.png",
+          "alt": "原创研究引导图：网页、演示、图片、视频四类技能的用途与十二个代表名称；区分平台与执行能力，注明低优先级参考及原创性、转售情况未核实。"
+        }
+      ]
     }
   ]
 }

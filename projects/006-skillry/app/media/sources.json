@@ -1,0 +1,42 @@
+[
+  {
+    "file": "web-official.webp",
+    "source_page": "https://skillry.dev/skills/bs-obsidian-cinema-landing",
+    "source_media": "https://skillry.dev/skills/bs-obsidian-cinema-landing/media/preview-1.webp?v=87356e72-0a9c-4561-85b9-edb206675402&variant=card",
+    "retrieved_at": "2026-09-16T14:54:42.018776+00:00",
+    "content_type": "image/webp",
+    "bytes": 11512,
+    "sha256": "387c4c29c0a1658c270f5025a6bd56308cb7325615725932ce66fb809ba08354",
+    "rights": "Skillry 官方公开案例预览，版权归原权利人；仅作来源明确的研究展示，不代表开源许可或本地实测。"
+  },
+  {
+    "file": "slides-official.webp",
+    "source_page": "https://skillry.dev/skills/bs-editable-visual-deck",
+    "source_media": "https://skillry.dev/skills/bs-editable-visual-deck/media/preview-1.webp?v=ce3e4788-091e-44b6-a894-66f45a1212fc&variant=card",
+    "retrieved_at": "2026-09-16T14:54:42.742438+00:00",
+    "content_type": "image/webp",
+    "bytes": 16136,
+    "sha256": "0dcb9df7992867b51060a20f1f160f71607b00af2ec4830b0dc5a36481e5e907",
+    "rights": "Skillry 官方公开案例预览，版权归原权利人；仅作来源明确的研究展示，不代表开源许可或本地实测。"
+  },
+  {
+    "file": "image-official.webp",
+    "source_page": "https://skillry.dev/skills/bs-paperline-content-illustrator",
+    "source_media": "https://skillry.dev/skills/bs-paperline-content-illustrator/media/preview-1.webp?v=e6660260-dc88-4fac-92c2-2f2a69edcead&variant=card",
+    "retrieved_at": "2026-09-16T14:54:42.941400+00:00",
+    "content_type": "image/webp",
+    "bytes": 29636,
+    "sha256": "d6fdc42ce490e56ea95384f61a68f6f028f4dc17e349ecdf88e77382891b8206",
+    "rights": "Skillry 官方公开案例预览，版权归原权利人；仅作来源明确的研究展示，不代表开源许可或本地实测。"
+  },
+  {
+    "file": "video-official.webp",
+    "source_page": "https://skillry.dev/skills/bs-hyperframes-velocity-sting",
+    "source_media": "https://skillry.dev/skills/bs-hyperframes-velocity-sting/media/preview-1.webp?v=9a811c54-484c-4d94-8608-f641dae9c9b3&variant=card",
+    "retrieved_at": "2026-09-16T14:54:41.642942+00:00",
+    "content_type": "image/webp",
+    "bytes": 5962,
+    "sha256": "e386ed72f9e466403d0584bbcc81cf187d800d91b5f3f13edf555e832567693c",
+    "rights": "Skillry 官方公开案例预览，版权归原权利人；仅作来源明确的研究展示，不代表开源许可或本地实测。"
+  }
+]
