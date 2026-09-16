@@ -84,6 +84,11 @@ def link_url(value):
     return quote(value, safe="/:?=&%#@+;,")
 
 
+def repository_name(url):
+    parsed = urlsplit(url)
+    return parsed.path.strip("/").removesuffix(".git") or parsed.hostname
+
+
 def render(projects):
     if projects:
         rows = ["| 编号 | 项目 | 研究摘要 | 标签 | 状态 | 上游 | 演示 |",
@@ -94,7 +99,7 @@ def render(projects):
             rows.append(
                 f"| {project['id']:03d} | [{markdown(project['name'])}]({project_path(project)}/README.md) "
                 f"| {markdown(project['summary'])} | {markdown(tags)} | {project['status']} "
-                f"| [源码]({link_url(project['repo'])}) | {demo} |")
+                f"| [{markdown(repository_name(project['repo']))}]({link_url(project['repo'])}) | {demo} |")
         index = "\n".join(rows)
     else:
         index = "目前尚未收录项目。首个项目将从 **001** 开始。"
