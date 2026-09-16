@@ -44,8 +44,15 @@ try {
   await page.goto(base+'#architecture',{waitUntil:'networkidle'}); await page.reload({waitUntil:'networkidle'});
   assert.equal(await page.locator('.arch-node').count(),8);
   assert.deepEqual(errors,[]);
+  const siteRoot=new URL('../',base).href;
+  const homepage=await context.request.get(siteRoot);
+  assert.equal(homepage.status(),200);
+  const homeHtml=await homepage.text();
+  assert.ok(homeHtml.includes('003-wrenai/') && homeHtml.includes('001-ppt-master/'));
+  const previousDemo=await context.request.get(siteRoot+'001-ppt-master/styles.html');
+  assert.equal(previousDemo.status(),200);
   const report={verified_at:new Date().toISOString(),url:base,browser:await browser.version(),resources,
-    checks:['HTTPS page and 10 assets match local source SHA-256','summary image loads at 3600px width','all fragment links resolve','summary and expanded alternatives captured','390px layout including expanded comparison has no page overflow','scenario and architecture controls work','direct fragment URL and reload work','no page errors'],
+    checks:['HTTPS page and 10 assets match local source SHA-256','summary image loads at 3600px width','all fragment links resolve','summary and expanded alternatives captured','390px layout including expanded comparison has no page overflow','scenario and architecture controls work','direct fragment URL and reload work','no page errors','site index includes WrenAI and existing PPT Master demo still returns HTTP 200'],
     scope:'Published static research site and snapshot mode; live CDN WASM loading, LLM, RAG and production database are not verified here.'};
   await writeFile(new URL('notes/deployment-verification.json',root),JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify(report,null,2));

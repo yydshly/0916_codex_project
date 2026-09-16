@@ -11,6 +11,8 @@
 | 选择 | 固定问题可用业务接口；灵活问数可用语义层；连续探索可增加 Agent |
 | 边界 | SQL 可执行不等于业务正确；本轮只验证引擎与展示，未验证完整模型问数 |
 
+[在线阅读：30 秒摘要](https://yydshly.github.io/0916_codex_project/003-wrenai/#quickstart) · [原理引导图](https://yydshly.github.io/0916_codex_project/003-wrenai/media/wrenai-summary.png) · [交互架构](https://yydshly.github.io/0916_codex_project/003-wrenai/#architecture)
+
 阅读引导：**下方一图总览 → [理解与方案摘要](notes/summary-and-alternatives.md) → [内部架构](notes/architecture.md) → [实际验证](notes/engine-verification.json)**。
 
 - 上游：[Canner/WrenAI](https://github.com/Canner/WrenAI)
@@ -144,7 +146,15 @@ python scripts/projects.py check
 python scripts/build_web.py
 ```
 
-构建输出为 `web/003-wrenai/`。发布沿用仓库既有 GitHub Pages 工作流；线上验证后在此记录入口，并同步 `projects.json`，不把本地预览当作上线证据。
+构建输出为 `web/003-wrenai/`，沿用仓库 GitHub Pages 流程。**2026-09-16 已上线并核对：[WrenAI 研究展示](https://yydshly.github.io/0916_codex_project/003-wrenai/)**。
+
+首次内容发布提交：`d9cf45d`；[成功部署记录](https://github.com/yydshly/0916_codex_project/actions/runs/35099163612)。线上页面及 10 个静态资源与本地源码校验一致（文本统一 LF 换行），验证了摘要、图片、场景切换、架构、手机布局和锚点刷新；原 PPT Master 展厅仍可访问。[线上验证记录](notes/deployment-verification.json)。线上验证为静态展示与实测结果回放，不代表已连接 LLM、RAG 或生产数据库。
+
+复查线上发布：
+
+```powershell
+node experiments/verify-published.mjs https://yydshly.github.io/0916_codex_project/003-wrenai/
+```
 
 ## 结论与局限
 

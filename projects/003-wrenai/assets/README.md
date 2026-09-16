@@ -14,3 +14,5 @@
 单图汇总位于 `../app/media/wrenai-summary.png`，属于原创研究信息图而非运行截图。image_gen 两次网络失败后改为 HTML/CSS 排版；本次更新导出 3600×3756 PNG，加入本质摘要与方案选择。提示词及最终生成记录保存在 `../notes/`，源稿位于 `../experiments/summary-poster.html`。
 
 全部为合成业务数据。截图时 WASM 请求由测试程序指向同版本本地 npm 包，执行真实 Wren 代码；不表示已验证公网 CDN。生成时间、浏览器版本和检查结果见 `../notes/ui-verification.json`。
+
+线上验证截图（GitHub Pages 实际页面，2026-09-16）：`published-summary.png` 为 30 秒摘要，`published-alternatives.png` 为展开的方案对比，`published-mobile-summary.png` 为 390px 手机摘要。由 `experiments/verify-published.mjs` 生成。

@@ -1,0 +1,81 @@
+{
+  "verified_at": "2026-09-16T13:01:48.173Z",
+  "url": "https://yydshly.github.io/0916_codex_project/003-wrenai/",
+  "browser": "152.0.7977.83",
+  "resources": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "df24ec573cf792e9427ab458b0e33f0c7d38c2a99435fbc6c8616f5a363f832a",
+      "normalization": "LF line endings"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "sha256": "1dbc1d77683ec893bc5d25b3764358e175b5438dc43e1060dd557870b048f172",
+      "normalization": "LF line endings"
+    },
+    {
+      "path": "understanding.css",
+      "status": 200,
+      "sha256": "2cc8b66e237e81b1bb0c6315f7d621d7074e8b1c4e467c41def801d5102c4c53",
+      "normalization": "LF line endings"
+    },
+    {
+      "path": "architecture.css",
+      "status": 200,
+      "sha256": "5defcf24e900973ce887846ac6a750bd1101c28e264171f97d9cd3a158c18ba2",
+      "normalization": "LF line endings"
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "sha256": "e1fa12f4d011133456da2fc23a2546b3f2a8b672e4ed6397ac632cf20686a197",
+      "normalization": "LF line endings"
+    },
+    {
+      "path": "understanding.js",
+      "status": 200,
+      "sha256": "9413dd278a2b3c0ea98fca9cbcec9d446e864f3e55a0fad5045ac38a360a3431",
+      "normalization": "LF line endings"
+    },
+    {
+      "path": "architecture.js",
+      "status": 200,
+      "sha256": "a3e7d73ccb1e829458719fe99091981cc7f7c7fd6fad904e8d23080370136fb5",
+      "normalization": "LF line endings"
+    },
+    {
+      "path": "lab.js",
+      "status": 200,
+      "sha256": "efef18000db4ab147a5a87da549768f1597cb158c897c77f23ec6e9253447883",
+      "normalization": "LF line endings"
+    },
+    {
+      "path": "verified-results.json",
+      "status": 200,
+      "sha256": "d5668a11a754f0d217e96024403df4df96ef0a266bdf06c08a1471013c21ca71",
+      "normalization": "LF line endings"
+    },
+    {
+      "path": "media/wrenai-summary.png",
+      "status": 200,
+      "sha256": "3c79ba32ba810f9d64de907ae722eaff9d28d8dc65d44124a5dac138264627c8",
+      "normalization": "raw bytes"
+    }
+  ],
+  "checks": [
+    "HTTPS page and 10 assets match local source SHA-256",
+    "summary image loads at 3600px width",
+    "all fragment links resolve",
+    "summary and expanded alternatives captured",
+    "390px layout including expanded comparison has no page overflow",
+    "scenario and architecture controls work",
+    "direct fragment URL and reload work",
+    "no page errors",
+    "site index includes WrenAI and existing PPT Master demo still returns HTTP 200"
+  ],
+  "scope": "Published static research site and snapshot mode; live CDN WASM loading, LLM, RAG and production database are not verified here.",
+  "content_commit": "d9cf45dcc51c4120d7cdb100b104a91be34394a1",
+  "github_actions_run": "https://github.com/yydshly/0916_codex_project/actions/runs/35099163612"
+}

@@ -15,7 +15,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | 001 | [PPT Master 能力实验室](projects/001-ppt-master/README.md) | 把内容策划、18 种视觉风格与原生 PPT 导出串成工作流；附 36 张官方风格预览及可编辑图表、表格、公式实测。 | AI 演示文稿、SVG、原生 PPTX、本地实测 | 已完成 | [源码](https://github.com/hugohe3/ppt-master) | [访问](https://yydshly.github.io/0916_codex_project/001-ppt-master/styles.html) |
 | 002 | [PDF Craft 扫描文档重建研究](projects/002-pdf-craft/README.md) | 解析 OCR 接入、书籍结构重建与翻译输出；附能力总览图。价值主要在工程集成，暂不继续深挖，未做转换实测。 | OCR 集成、文档重建、EPUB、源码研究 | 已归档 | [源码](https://github.com/oomol-lab/pdf-craft) | — |
-| 003 | [WrenAI 业务问数研究](projects/003-wrenai/README.md) | 面向 Agent 的业务问数基础设施：模型理解需求，MDL 统一口径，引擎规划查询；适合销售、运营与库存分析。附原理引导图、方案对比及 36 组引擎实测，未验证完整模型问数。 | 业务问数、语义层、WASM 实测、交互展示 | 已完成 | [源码](https://github.com/Canner/WrenAI) | — |
+| 003 | [WrenAI 业务问数研究](projects/003-wrenai/README.md) | 面向 Agent 的业务问数基础设施：模型理解需求，MDL 统一口径，引擎规划查询；适合销售、运营与库存分析。附原理引导图、方案对比及 36 组引擎实测，未验证完整模型问数。 | 业务问数、语义层、WASM 实测、交互展示 | 已完成 | [源码](https://github.com/Canner/WrenAI) | [访问](https://yydshly.github.io/0916_codex_project/003-wrenai/) |
 <!-- PROJECT_INDEX:END -->
 
 ## 项目预览

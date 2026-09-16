@@ -50,3 +50,9 @@ python -m http.server 8766 --bind 127.0.0.1 --directory web
 GitHub Pages 托管静态文件；需要常驻服务、数据库或服务端密钥的项目，使用独立后端或其他托管平台，并在子项目中说明架构与访问地址。不要把密钥写入公开的前端文件。
 
 参考：[GitHub Pages 介绍](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) · [配置发布来源](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
+## WrenAI 研究展示
+
+2026-09-16 已发布并实际验证：[WrenAI 30 秒摘要](https://yydshly.github.io/0916_codex_project/003-wrenai/#quickstart) · [原理与场景引导图](https://yydshly.github.io/0916_codex_project/003-wrenai/media/wrenai-summary.png)。
+
+页面包含能力、原理、价值、本质摘要，交互架构、场景选择、方案对比及合成数据引擎实验。首次内容提交 `d9cf45d`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35099163612)成功；页面与 10 个资源校验一致，桌面、手机、锚点刷新和原有 PPT Master 展厅通过线上检查。详情见 [WrenAI 线上验证记录](../projects/003-wrenai/notes/deployment-verification.json)。仅发布静态研究展示，未部署模型服务或生产数据库。
