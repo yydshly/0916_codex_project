@@ -202,6 +202,25 @@
       "cover": "projects/010-multipost-extension/assets/understanding-guide.png",
       "cover_alt": "原创研究总览图：浏览器扩展的三种接入、四类内容、六步内部流程、代表平台与自动发布边界；110 项为注册条目，非运行截图，未做真实发布实测。",
       "demo": "https://yydshly.github.io/0916_codex_project/010-multipost-extension/"
+    },
+    {
+      "id": 11,
+      "slug": "kun",
+      "name": "Kun AI 工作台能力与原理研究",
+      "summary": "类似 Codex 的 Agent 工作台：自有循环与外部 Agent SDK 并存，整合模型接入、成果预览、部分编辑和任务管理；附完整理解图与 Pi／Codex／Claude Code 对比。主要参考价值在工作流程整合，16 类界面不等于独有智能；源码研究，未实测。",
+      "repo": "https://github.com/KunAgent/Kun",
+      "status": "已完成",
+      "tags": [
+        "Agent 工作台",
+        "工具执行",
+        "多 Agent 编排",
+        "上下文管理",
+        "源码研究",
+        "网页手册"
+      ],
+      "cover": "projects/011-kun/assets/kun-overview.png",
+      "cover_alt": "原创完整理解引导图：任务流程、模型 API 与订阅及 SDK 接入、16 类界面交互、同类产品对比、参考价值与验证边界；不是运行截图，未实测 Kun。",
+      "demo": ""
     }
   ]
 }

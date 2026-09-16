@@ -1,0 +1,359 @@
+{
+  "commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+  "date": "2026-09-17",
+  "scope": "文档与关键源码研究；未运行 Kun 应用",
+  "sources": {
+    "overview": {
+      "title": "项目定位与能力总览",
+      "path": "README.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/README.md"
+    },
+    "runtime": {
+      "title": "运行时与能力配置",
+      "path": "kun/README.zh-CN.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/README.zh-CN.md"
+    },
+    "architecture": {
+      "title": "运行架构、缓存与生命周期",
+      "path": "docs/kun-architecture.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/kun-architecture.md"
+    },
+    "design": {
+      "title": "Design 原型与代码衔接",
+      "path": "docs/DESIGN_MODE.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/DESIGN_MODE.md"
+    },
+    "graph": {
+      "title": "Graph 编排与治理",
+      "path": "docs/graph-mode.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/graph-mode.md"
+    },
+    "loop": {
+      "title": "Loop 循环与批处理",
+      "path": "docs/workflow-loop.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/workflow-loop.md"
+    },
+    "memory": {
+      "title": "记忆存储与检索",
+      "path": "docs/memory-foundation.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/memory-foundation.md"
+    },
+    "knowledge": {
+      "title": "结构化知识库",
+      "path": "docs/knowledge-bases.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/knowledge-bases.md"
+    },
+    "extensions": {
+      "title": "扩展平台",
+      "path": "docs/extensions/README.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/README.md"
+    },
+    "license": {
+      "title": "许可证与授权声明",
+      "path": "LICENSE",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/LICENSE"
+    },
+    "charts": {
+      "title": "会话图表契约",
+      "path": "docs/conversation-charts.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/conversation-charts.md"
+    },
+    "chartRenderer": {
+      "title": "图表渲染实现",
+      "path": "src/renderer/src/components/chat/ChartRenderer.tsx",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/components/chat/ChartRenderer.tsx"
+    },
+    "markdown": {
+      "title": "流式 Markdown 与公式",
+      "path": "src/renderer/src/components/chat/StreamdownAssistant.tsx",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/components/chat/StreamdownAssistant.tsx"
+    },
+    "code": {
+      "title": "代码块与图表块",
+      "path": "src/renderer/src/components/chat/StreamdownCode.tsx",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/components/chat/StreamdownCode.tsx"
+    },
+    "file": {
+      "title": "文件、图片与音视频预览",
+      "path": "src/renderer/src/components/WorkspaceFilePreviewBody.tsx",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/components/WorkspaceFilePreviewBody.tsx"
+    },
+    "pptView": {
+      "title": "PPTX 预览与放映",
+      "path": "src/renderer/src/components/WorkspacePptxPreview.tsx",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/components/WorkspacePptxPreview.tsx"
+    },
+    "sheetView": {
+      "title": "电子表格预览",
+      "path": "src/renderer/src/components/WorkspaceSpreadsheetPreview.tsx",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/components/WorkspaceSpreadsheetPreview.tsx"
+    },
+    "whiteboard": {
+      "title": "Work 白板",
+      "path": "src/renderer/src/components/write/WorkWhiteboardSurface.tsx",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/components/write/WorkWhiteboardSurface.tsx"
+    },
+    "canvas": {
+      "title": "画布图形与样式模型",
+      "path": "src/renderer/src/design/canvas/canvas-types.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/design/canvas/canvas-types.ts"
+    },
+    "motion": {
+      "title": "画布动画模型",
+      "path": "src/renderer/src/design/motion/canvas-motion-types.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/design/motion/canvas-motion-types.ts"
+    },
+    "motionUI": {
+      "title": "动画时间轴",
+      "path": "src/renderer/src/components/design/canvas/CanvasMotionDock.tsx",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/components/design/canvas/CanvasMotionDock.tsx"
+    },
+    "svg": {
+      "title": "SVG 结构编辑与动画工具",
+      "path": "kun/src/adapters/tool/design-svg-tool.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/adapters/tool/design-svg-tool.ts"
+    },
+    "canvasExport": {
+      "title": "画布导出",
+      "path": "src/renderer/src/design/canvas/canvas-export.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/design/canvas/canvas-export.ts"
+    },
+    "trajectory": {
+      "title": "对话轨迹与可观察性",
+      "path": "docs/conversation-trajectory.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/conversation-trajectory.md"
+    },
+    "ui": {
+      "title": "形象工坊与主题包",
+      "path": "docs/UI_PLUGINS.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/UI_PLUGINS.md"
+    },
+    "extUI": {
+      "title": "扩展界面贡献点",
+      "path": "docs/extensions/workbench.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/workbench.md"
+    },
+    "extView": {
+      "title": "Webview、DOM 与权限",
+      "path": "docs/extensions/webview-and-dom.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/webview-and-dom.md"
+    },
+    "media": {
+      "title": "媒体 Broker 与后台任务",
+      "path": "docs/extensions/media-and-jobs.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/media-and-jobs.md"
+    },
+    "video": {
+      "title": "视频编辑器示例",
+      "path": "examples/extensions/kun-video-editor/README.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/examples/extensions/kun-video-editor/README.md"
+    },
+    "slides": {
+      "title": "HTML 演示编辑器示例",
+      "path": "examples/extensions/presentation-studio/README.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/examples/extensions/presentation-studio/README.md"
+    },
+    "social": {
+      "title": "社交网站侧栏",
+      "path": "examples/extensions/social-media-sidebar/README.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/examples/extensions/social-media-sidebar/README.md"
+    },
+    "bundle": {
+      "title": "实际默认扩展目录",
+      "path": "scripts/pack-bundled-extensions.mjs",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/scripts/pack-bundled-extensions.mjs"
+    },
+    "speech": {
+      "title": "本地语音与发布条件",
+      "path": "docs/local-speech-release.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/local-speech-release.md"
+    },
+    "ppt": {
+      "title": "PPT 专用 Agent",
+      "path": "kun/src/adapters/tool/ppt-agent-tool-provider.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/adapters/tool/ppt-agent-tool-provider.ts"
+    },
+    "pptDirection": {
+      "title": "PPT 视觉方向与审阅状态",
+      "path": "kun/src/ppt/ppt-direction-workflow.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/ppt/ppt-direction-workflow.ts"
+    },
+    "pptTools": {
+      "title": "PPT 工具链定位",
+      "path": "kun/src/ppt/ppt-toolchain.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/ppt/ppt-toolchain.ts"
+    },
+    "execution": {
+      "title": "Agent 执行循环",
+      "path": "kun/src/loop/agent-loop-execution.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/loop/agent-loop-execution.ts"
+    },
+    "round": {
+      "title": "模型响应与工具调用收集",
+      "path": "kun/src/loop/model-round-engine.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/loop/model-round-engine.ts"
+    },
+    "dispatch": {
+      "title": "工具分发",
+      "path": "kun/src/loop/tool-call-dispatcher.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/loop/tool-call-dispatcher.ts"
+    },
+    "tool": {
+      "title": "工具执行与结果持久化",
+      "path": "kun/src/loop/tool-execution-service.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/loop/tool-execution-service.ts"
+    },
+    "host": {
+      "title": "本地权限与审批",
+      "path": "kun/src/adapters/tool/local-tool-host-core.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/adapters/tool/local-tool-host-core.ts"
+    },
+    "builtin": {
+      "title": "内置编程工具",
+      "path": "kun/src/adapters/tool/builtin-tools.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/adapters/tool/builtin-tools.ts"
+    },
+    "browser": {
+      "title": "浏览器动作契约",
+      "path": "kun/src/contracts/browser-use.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/contracts/browser-use.ts"
+    },
+    "computer": {
+      "title": "Computer Use 驱动",
+      "path": "docs/computer-use-cua-compatibility.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/computer-use-cua-compatibility.md"
+    },
+    "providers": {
+      "title": "模型 Provider 预设",
+      "path": "docs/model-provider-presets.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/model-provider-presets.md"
+    },
+    "mcp": {
+      "title": "项目 MCP 与 Skills",
+      "path": "docs/project-mcp-skills.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/project-mcp-skills.md"
+    },
+    "hooks": {
+      "title": "Hook 生命周期",
+      "path": "docs/kun-hooks.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/kun-hooks.md"
+    },
+    "work": {
+      "title": "Work 模式权限与回执",
+      "path": "kun/src/loop/work-mode.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/loop/work-mode.ts"
+    },
+    "completion": {
+      "title": "短补全与灵感长补全",
+      "path": "docs/WRITE_INLINE_COMPLETION_MODES.zh-CN.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/WRITE_INLINE_COMPLETION_MODES.zh-CN.md"
+    },
+    "editing": {
+      "title": "选区编辑与检索增强",
+      "path": "docs/WRITE_INLINE_EDIT_RAG.zh-CN.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/WRITE_INLINE_EDIT_RAG.zh-CN.md"
+    },
+    "rag": {
+      "title": "写作 BM25 检索",
+      "path": "docs/WRITE_RETRIEVAL_RAG.zh-CN.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/WRITE_RETRIEVAL_RAG.zh-CN.md"
+    },
+    "research": {
+      "title": "调研能力与未完成规划",
+      "path": "docs/deep-research-options.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/deep-research-options.md"
+    },
+    "tui": {
+      "title": "TUI 与客户端边界",
+      "path": "docs/kun-tui.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/kun-tui.md"
+    },
+    "queue": {
+      "title": "输入排队与送达确认",
+      "path": "docs/queue-delivery-reliability.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/queue-delivery-reliability.md"
+    },
+    "im": {
+      "title": "微信本地发送接口",
+      "path": "docs/weixin-local-send-api.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/weixin-local-send-api.md"
+    },
+    "shell": {
+      "title": "桌面架构与连接入口",
+      "path": "docs/design/desktop-renderer-and-operations.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/design/desktop-renderer-and-operations.md"
+    },
+    "board": {
+      "title": "项目看板界面定义",
+      "path": "src/renderer/src/locales/zh/common/project-board.json",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/renderer/src/locales/zh/common/project-board.json"
+    },
+    "codex": {
+      "title": "Codex 官方：文件编辑与命令执行",
+      "url": "https://learn.chatgpt.com/docs/agent-approvals-security#common-sandbox-and-approval-combinations"
+    },
+    "provider-catalog": {
+      "title": "Provider 目录、认证与运行时类型",
+      "path": "packages/provider-catalog/src/index.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/packages/provider-catalog/src/index.ts"
+    },
+    "model-interface": {
+      "title": "统一模型接口",
+      "path": "kun/src/ports/model-client.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/ports/model-client.ts"
+    },
+    "multi-provider": {
+      "title": "多 Provider 路由与回合固定",
+      "path": "kun/src/adapters/model/multi-provider-model-client.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/adapters/model/multi-provider-model-client.ts"
+    },
+    "request-builder": {
+      "title": "模型请求协议适配",
+      "path": "kun/src/adapters/model/compat-request-builder.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/adapters/model/compat-request-builder.ts"
+    },
+    "oauth": {
+      "title": "ChatGPT 与 Grok OAuth 实现",
+      "path": "kun/src/services/model-connection-oauth.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/services/model-connection-oauth.ts"
+    },
+    "claude-auth": {
+      "title": "Claude 订阅登录",
+      "path": "src/main/claude-subscription-auth.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/src/main/claude-subscription-auth.ts"
+    },
+    "sdk-factory": {
+      "title": "Claude Agent SDK 运行时装配",
+      "path": "kun/src/runtime/agent-sdk/agent-sdk-runtime-factory.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/runtime/agent-sdk/agent-sdk-runtime-factory.ts"
+    },
+    "sdk-bridge": {
+      "title": "SDK 循环与 Kun 工具桥接",
+      "path": "kun/src/runtime/agent-sdk/sdk-tool-bridge.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/runtime/agent-sdk/sdk-tool-bridge.ts"
+    },
+    "sdk-capabilities": {
+      "title": "SDK 路线能力边界",
+      "path": "kun/src/runtime/agent-sdk/agent-sdk-runtime-stream.ts",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/kun/src/runtime/agent-sdk/agent-sdk-runtime-stream.ts"
+    },
+    "provider-extensions": {
+      "title": "扩展模型传输与账号",
+      "path": "docs/extensions/providers-and-accounts.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/extensions/providers-and-accounts.md"
+    },
+    "pi-tui": {
+      "title": "Kun TUI 与 pi-tui",
+      "path": "docs/kun-tui.md",
+      "url": "https://github.com/KunAgent/Kun/blob/e67f656bca573d5e6a4970a5094a30f3afd09011/docs/kun-tui.md"
+    },
+    "pi": {
+      "title": "Pi 官方仓库：工具包与编程 CLI",
+      "url": "https://github.com/earendil-works/pi"
+    },
+    "claude-code": {
+      "title": "Claude Code 官方概述",
+      "url": "https://code.claude.com/docs/en/overview"
+    }
+  }
+}

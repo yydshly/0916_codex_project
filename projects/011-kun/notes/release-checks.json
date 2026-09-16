@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-17",
+  "scope": "Kun 研究手册与理解图的发布前检查；不代表 Kun 应用实测",
+  "source_count": 71,
+  "checks": {
+    "registry_and_readme": "passed",
+    "static_site_build": "passed",
+    "unique_html_ids_and_anchor_targets": "passed",
+    "pinned_source_paths_exist": "passed",
+    "all_sources_linked_from_page": "passed",
+    "markdown_local_links": "passed",
+    "guide_asset_and_web_copy_identical": "passed",
+    "javascript_syntax": "passed",
+    "whitespace_diff": "passed",
+    "final_guide_visual_inspection": "passed",
+    "browser_model_access_link": "passed",
+    "browser_anchor_reload": "passed",
+    "browser_guide_loaded_width": 2000,
+    "browser_viewports": [
+      {"requested_width": 390, "client_width": 375, "document_scroll_width": 375},
+      {"requested_width": 1440, "client_width": 1425, "document_scroll_width": 1425}
+    ]
+  },
+  "limitations": {
+    "kun_application_tested": false,
+    "upstream_tests_run": false,
+    "model_or_subscription_connected": false,
+    "full_page_visual_audit": false,
+    "same_task_product_benchmark": false
+  }
+}

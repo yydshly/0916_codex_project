@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-17",
+  "research_commit": "e67f656bca573d5e6a4970a5094a30f3afd09011",
+  "scope": "Kun 中文能力研究网页的静态检查与本地 HTTP 检查",
+  "sections": 12,
+  "work_directions": 8,
+  "display_capabilities": 16,
+  "core_mechanisms": 12,
+  "source_entries": 58,
+  "pinned_kun_sources": 57,
+  "checks": {
+    "html_containers": "passed",
+    "unique_ids": "passed",
+    "internal_anchors_and_local_assets": "passed",
+    "document_links": "passed",
+    "pinned_source_paths_in_checkout": "passed",
+    "all_sources_linked": "passed",
+    "published_build_matches_source": "passed",
+    "javascript_syntax": "node --check passed",
+    "css_block_balance": "passed",
+    "registry": "projects.py check passed, 11 entries",
+    "site_build": "build_web.py passed, 10 static sites",
+    "git_whitespace": "git diff --check passed"
+  },
+  "local_http_status": {
+    "index.html": 200,
+    "styles.css": 200,
+    "app.js": 200,
+    "sources.json": 200
+  },
+  "local_preview": "http://127.0.0.1:8774/",
+  "browser_visual_or_interaction_testing": false,
+  "kun_application_tested": false,
+  "upstream_tests_run": false,
+  "public_deployment": false,
+  "limitations": [
+    "未执行浏览器视觉或交互测试",
+    "未启动 Kun 或调用模型",
+    "示意图不是应用截图或真实业务数据",
+    "本地预览依赖服务持续运行"
+  ]
+}
