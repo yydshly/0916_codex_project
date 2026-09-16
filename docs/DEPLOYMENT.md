@@ -66,3 +66,9 @@ GitHub Pages 托管静态文件；需要常驻服务、数据库或服务端密�
 同日补充发布：[我们的理解与参考价值](https://yydshly.github.io/0916_codex_project/004-design-extract/understanding.html)。整理库能力、Codex 对比、两种对比、使用场景、建议复刻流程与后续对照实验，并提供 Markdown 文档和 PNG / SVG 引导图下载。原手册保留，总入口指向讨论汇总。
 
 内容提交 `caff200`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35108269776)成功；7 个上线文件与提交逐字节一致。汇总页 11 项本地检查、10 项线上检查通过，原手册 16 项回归检查通过；原有 PPT Master 和 WrenAI 路由返回 HTTP 200。详见 [发布内容核对](../projects/004-design-extract/notes/understanding-deployment.json) 与 [线上界面验证](../projects/004-design-extract/notes/understanding-online-verification.json)。图示为研究整理，未新增在线提取或复刻服务。
+
+## Fridge Magnet 磁贴面板
+
+2026-09-16 已发布并验证：[面板体验](https://yydshly.github.io/0916_codex_project/005-fridgemagnet/) · [项目与日报方案](https://yydshly.github.io/0916_codex_project/005-fridgemagnet/#workbench)。
+
+自主实现的静态概念演示，包含六种材质反馈、焦点／重点／稍后分层、四场景及十二类扩展方向。首次内容提交 `303f5bb`，[工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35115847424)成功；14 个发布文件与提交内容一致，线上图片、注意力操作、场景切换、竞价模拟、锚点刷新及桌面／手机宽度布局已检查。封面与引导图使用实际产品截图；未接入真实账号、记录存储、任务流或支付。详见 [部署验证](../projects/005-fridgemagnet/notes/deployment-verification.json)。

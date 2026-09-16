@@ -1,0 +1,122 @@
+{
+  "date": "2026-09-16",
+  "url": "https://yydshly.github.io/0916_codex_project/005-fridgemagnet/",
+  "content_commit": "303f5bb9c0746dbae013bc1168bbbaf7f38784b5",
+  "files": [
+    {
+      "path": "005-fridgemagnet/app.js",
+      "status": 200,
+      "bytes": 27475,
+      "sha256": "175fbde6022c25d270ca8037726f0b1074ac2300c2650a547b62aeb86a64a0d5",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/attention-model.js",
+      "status": 200,
+      "bytes": 812,
+      "sha256": "317bcef437285060e51a00dfef9de3c5251ded36cf4e9103b7ee0cddc88cfee9",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/attention.css",
+      "status": 200,
+      "bytes": 8311,
+      "sha256": "e380b8fea6e6fa8fc8241b77affcfda42a8b2efb518c56e0db6ca700c95528e3",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/index.html",
+      "status": 200,
+      "bytes": 26156,
+      "sha256": "e0d518ef1b5312a90353d88befcc83c63327a2c360963716eda28a446c17da39",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/media/family-drawing.png",
+      "status": 200,
+      "bytes": 2920421,
+      "sha256": "084a1dd95921bfffb2a44b4b0031183b5c147829112ca2b93c8c1aa4cd8aaaab",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/media/rain-adventure.png",
+      "status": 200,
+      "bytes": 3289459,
+      "sha256": "e755411b329d522536573f13bce9a59f824e8503ece0d31112fdc2c0055b42a6",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/panel-feel.css",
+      "status": 200,
+      "bytes": 4438,
+      "sha256": "dcd80c93c2820b615774f254ceae5fd2b53fd358fdf717c6f017e097c3b15090",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/panel-feel.js",
+      "status": 200,
+      "bytes": 9763,
+      "sha256": "aa87bf8ced213b3beaa87bbe1eac39f991dea1408586f3b1c77ff11f6912210b",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/panel-physics.js",
+      "status": 200,
+      "bytes": 1450,
+      "sha256": "89b5997f256ce7b4aea93306202ebf2b64eb51d004409264d208508c8dc34721",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/panel-themes.css",
+      "status": 200,
+      "bytes": 13824,
+      "sha256": "8ddf434f01b49bc48c49c6d3118f5a672d0a34e19a296e262c39110d17ec9729",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/panel-themes.js",
+      "status": 200,
+      "bytes": 1920,
+      "sha256": "72ebd1255ad104bcee8b23c1eec1f265ba033d0378485fb2f7b6343aa0a7168c",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/style.css",
+      "status": 200,
+      "bytes": 16425,
+      "sha256": "b95f3ae7888f5eb11ac50ef730e38657ef95620e9e803796b1289eeab81ae094",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/workbench.css",
+      "status": 200,
+      "bytes": 3468,
+      "sha256": "ec2bf563d24144b1d7e1d2e4fc55adbc1967eaaec81f3a25ca932af6d0eb73c6",
+      "matches_commit": true
+    },
+    {
+      "path": "005-fridgemagnet/THIRD_PARTY_NOTICES.md",
+      "status": 200,
+      "bytes": 1067,
+      "sha256": "820aa0ab638f1e03862327df791229301509e02acc6f5586697bb11a50a9a30b",
+      "matches_commit": true
+    }
+  ],
+  "workflow_url": "https://github.com/yydshly/0916_codex_project/actions/runs/35115847424",
+  "workflow_conclusion": "success",
+  "browser_checks": [
+    "1440x1080 桌面布局",
+    "390x844 手机宽度导航、卡片堆叠、无横向页面溢出",
+    "两张在线图片加载成功",
+    "关注级别调整、撤销、专注与返回全览",
+    "成长、反思、作品、竞价四场景切换",
+    "模拟出价 12 美元升至首位",
+    "workbench hash 导航与刷新",
+    "浏览器错误日志为空"
+  ],
+  "limitations": [
+    "手机宽度模拟不等于真实触屏测试",
+    "未接入持久化或真实业务流程",
+    "记录对应首次发布；后续文字补充见提交历史"
+  ]
+}

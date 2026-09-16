@@ -15,7 +15,7 @@
 
 ## 网页展示
 
-入口：[磁贴墙体验与扩展方向](app/index.html)。页面为自主编写的概念演示，不是原站源码或上游库的调用结果。
+线上入口：[磁贴墙体验与扩展方向](https://yydshly.github.io/0916_codex_project/005-fridgemagnet/) · [项目与日报方案](https://yydshly.github.io/0916_codex_project/005-fridgemagnet/#workbench) · [本地页面](app/index.html)。页面为自主编写的概念演示，不是原站源码或上游库的调用结果。
 
 - **默认成长墙**：童言童语、第一次、画作、日常与写给未来的信；照片位使用 AI 示例插画。
 - **四种场景**：孩子成长、个人反思、作品展示、原站竞价逻辑；每种场景 6 张虚构卡片。
@@ -86,7 +86,7 @@
 | 上游代码仓库 / 许可证 | 尚未确认，不能认定为开源项目 |
 | 研究版本 / Commit | 暂不可记录；当前仅观察线上页面，尚未取得源码版本 |
 
-清单的 `repo` 字段暂记录官网作为上游来源，不表示已找到代码仓库。未引入上游代码；本地演示已实现，线上地址在发布验证后登记。
+清单的 `repo` 字段暂记录官网作为上游来源，不表示已找到代码仓库。未引入上游代码；演示已发布到 GitHub Pages，正式入口已登记到首页。
 
 ## 本地运行与构建
 
@@ -110,9 +110,15 @@ python scripts/projects.py check
 python scripts/build_web.py
 ```
 
-构建会生成 `web/005-fridgemagnet/` 并在总入口增加按钮。依据[部署约定](../../docs/DEPLOYMENT.md)，实际发布并验证后才填写线上链接。
+构建会生成 `web/005-fridgemagnet/` 并在总入口增加按钮。实际发布并验证后已填写线上链接，详见[部署约定](../../docs/DEPLOYMENT.md)。
 
-## 本地验证边界
+## 部署与版本
+
+2026-09-16 首次内容提交 [`303f5bb`](https://github.com/yydshly/0916_codex_project/commit/303f5bb9c0746dbae013bc1168bbbaf7f38784b5)，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35115847424)成功。14 个发布文件（页面、脚本、样式、两张插画及来源说明）与该提交逐字节一致。
+
+已在线检查默认墙、图片、关注级别调整与撤销、专注模式、四场景切换、竞价滑块升至首位，以及 `#workbench` 刷新；桌面 1440 × 1080 与手机宽度 390 × 844 布局通过所列检查。首次发布记录见 [部署校验](notes/deployment-verification.json)。后续摘要登记补充了网页中的重要度／状态／日期区分，具体修改可沿 Git 历史追溯。
+
+## 验证边界
 
 - JavaScript 语法、仓库索引与静态构建资源检查通过。
 - 对四场景示例数据、动态图片路径、竞价高低值与同价排序进行非浏览器检查。
