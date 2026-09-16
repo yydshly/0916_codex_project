@@ -62,3 +62,7 @@ GitHub Pages 托管静态文件；需要常驻服务、数据库或服务端密�
 2026-09-16 已发布并验证：[能力与原理手册](https://yydshly.github.io/0916_codex_project/004-design-extract/) · [提取原理](https://yydshly.github.io/0916_codex_project/004-design-extract/#principle)。
 
 页面为无额外依赖的静态 HTML / CSS / JavaScript，包含六类能力、五步交互原理、真实样本截图、输出节选和四项保真问题。首次页面内容提交 `29c5269`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35104425412)成功；14 个发布文件与提交内容一致，原有两个子项目入口正常。数据是保存的本地实验结果，未部署在线提取服务。详情见 [发布验证](../projects/004-design-extract/notes/deployment-verification.json)。
+
+同日补充发布：[我们的理解与参考价值](https://yydshly.github.io/0916_codex_project/004-design-extract/understanding.html)。整理库能力、Codex 对比、两种对比、使用场景、建议复刻流程与后续对照实验，并提供 Markdown 文档和 PNG / SVG 引导图下载。原手册保留，总入口指向讨论汇总。
+
+内容提交 `caff200`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35108269776)成功；7 个上线文件与提交逐字节一致。汇总页 11 项本地检查、10 项线上检查通过，原手册 16 项回归检查通过；原有 PPT Master 和 WrenAI 路由返回 HTTP 200。详见 [发布内容核对](../projects/004-design-extract/notes/understanding-deployment.json) 与 [线上界面验证](../projects/004-design-extract/notes/understanding-online-verification.json)。图示为研究整理，未新增在线提取或复刻服务。

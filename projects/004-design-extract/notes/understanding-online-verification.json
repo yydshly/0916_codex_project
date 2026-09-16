@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-16T14:25:19.202Z",
+  "url": "https://yydshly.github.io/0916_codex_project/004-design-extract/understanding.html",
+  "browser": "149.0.7827.55",
+  "checks": [
+    {
+      "name": "summary page loads",
+      "passed": true
+    },
+    {
+      "name": "four scenario recommendations",
+      "passed": true
+    },
+    {
+      "name": "keyboard scenario activation",
+      "passed": true
+    },
+    {
+      "name": "document and both image formats downloadable",
+      "passed": true
+    },
+    {
+      "name": "guide image decoded at expected size",
+      "passed": true
+    },
+    {
+      "name": "desktop tablet and mobile without page overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile direct anchor reload visible below navigation",
+      "passed": true
+    },
+    {
+      "name": "original research page links to summary",
+      "passed": true
+    },
+    {
+      "name": "no script errors or HTTP failures",
+      "passed": true
+    },
+    {
+      "name": "evidence numbers agree with original experiment",
+      "passed": true
+    }
+  ],
+  "passed": 10,
+  "pageErrors": [],
+  "httpFailures": [],
+  "scope": "Original static summary and diagram; proposed cloning workflow was not implemented or evaluated."
+}

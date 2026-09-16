@@ -6,6 +6,8 @@
 
 汇总页包含能力说明、Codex 对照表、两种对比的区别、四类场景选择、建议架构和三组后续实验。保留原手册与真实实验截图；引导图为原创矢量示意图，提供 SVG 和 1600 × 1720 PNG，不是上游界面。网页可下载完整 Markdown 文档。
 
+汇总页已上线验证：10 项线上检查通过，7 个发布文件与内容提交一致，原有项目路由正常。详见 [线上界面验证](notes/understanding-online-verification.json) 与 [发布内容核对](notes/understanding-deployment.json)。
+
 复现引导图：运行 python projects/004-design-extract/experiments/create-guide.py，再运行 node projects/004-design-extract/experiments/check-understanding.mjs --render-only。之后按下文构建网页、启动本地预览，运行 node projects/004-design-extract/experiments/check-understanding.mjs 检查场景切换、键盘、下载、原页入口、锚点刷新与三种屏宽。11 项本地检查通过，详见 [汇总页验证](notes/understanding-local-verification.json)。此验证不代表已经实现或评估完整复刻工具。
 
 **输入网页地址，提取浏览器呈现的颜色、字体、间距、布局和状态，再输出设计变量、设计说明与开发配置。适合为网站改版和 AI 页面开发准备参考资料；自动归纳的设计语义需要人工核对。**
