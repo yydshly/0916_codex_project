@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OpenPencil 研究摘要：可由 Agent 操作的开源设计编辑器，已测效果偏传统商务风格。整理能力、场景、原理、Claude Design 对比与真实运行证据。">
+  <title>OpenPencil｜能力、效果与我们的判断</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="topbar"><a class="brand" href="#summary"><b>012</b> 开源项目研究</a><span>OpenPencil · v0.8.4 实测</span><a href="https://github.com/ZSeven-W/openpencil">上游仓库 ↗</a></header>
+  <div class="layout">
+    <aside class="toc" aria-label="页面目录"><p>本页结论</p><nav><a href="#summary">30 秒理解</a><a href="#evidence">实际效果</a><a href="#identity">它是什么</a><a href="#scenarios">适用场景</a><a href="#comparison">与 Claude Design 比较</a><a href="#mechanism">底层原理</a><a href="#judgment">我们的参考价值</a></nav><div class="toc-note">研究日期<br><strong>2026.09.17</strong><br>基于源码与本地实测</div></aside>
+    <main id="main">
+      <section id="summary" class="summary">
+        <div class="eyebrow">OPENPENCIL / 讨论摘要</div>
+        <h1>可被 Agent 操作的设计器，<br><em>已测效果偏传统、商务。</em></h1>
+        <p class="lead">OpenPencil 把设计编辑器与 MCP / CLI 接口连在一起，让人和 Agent 创建、修改、保存、导出可编辑设计稿。本次样本偏向规整的后台界面、数据看板与商务汇报；它对我们的主要意义，是提供可定位修改、可持续迭代的设计自动化基础。</p>
+        <div class="takeaways">
+          <div><span>本质</span><strong>设计软件 + Agent 接口</strong><p>有独立编辑器；Skill 是配套说明。</p></div>
+          <div><span>效果判断</span><strong>规整、功能导向、商务感</strong><p>本次以模板和工作台为观察样本。</p></div>
+          <div><span>参考意义</span><strong>让设计进入自动化工作流</strong><p>可批量操作、定点修改与保存交付。</p></div>
+        </div>
+        <p class="scope"><strong>结论边界：</strong>“偏传统商务”是我们对已测效果及当前参考价值的判断。官方模板本来偏汇报，我编写的工作台也采用保守布局；内置 AI 尚未测试，不能据此断言它只能生成这种风格。</p>
+        <figure class="overview-guide"><a href="media/understanding-guide.png"><img src="media/understanding-guide.png" alt="OpenPencil 单张理解总览图：能力是设计软件及 Agent 接口；已测效果偏传统商务；价值在设计自动化；内置 AI 创意上限未测试"></a><figcaption>一张图理解能力、效果与意义。原创研究引导图，非软件截图；点击可查看原图。</figcaption></figure>
+      </section>
+
+      <section id="evidence">
+        <div class="section-title"><span>01 / 实际效果</span><h2>传统感，来自哪些具体表现？</h2></div>
+        <p>固定的侧边导航、指标卡、柱状图和表格；规整的栅格、克制的配色、标准化的信息层级。它们适合把业务信息讲清楚，但这次样本没有展示出鲜明的品牌语言、丰富的视觉叙事或复杂的动态交互。</p>
+        <div class="examples">
+          <figure><a href="media/agent-dashboard.png"><img src="media/agent-dashboard.png" width="1320" height="840" alt="Agent 通过 OpenPencil 创建的绿色研究工作台，包含导航、指标卡、柱状图与项目列表"></a><figcaption><span class="label">外部 Agent 创建</span><h3>研究工作台 · 92 个节点</h3><p>脚本由当前 Agent 编写，上游编辑器真实渲染。数字为演示数据，按钮未接业务；不是内置 AI 自主生成。</p></figcaption></figure>
+          <figure><a href="media/official-template-metrics.png"><img src="media/official-template-metrics.png" width="1920" height="1080" alt="OpenPencil 官方数据评审模板的指标页，展示四个业务指标卡"></a><figcaption><span class="label">官方模板加载</span><h3>数据评审 · 七页模板</h3><p>官方 tidemark-slate-deck，351 个节点。内容、公司名称与数据来源文字均来自上游样例，并非真实业务统计。</p></figcaption></figure>
+        </div>
+        <details class="editor-details"><summary>查看实际桌面编辑器，以及这次验证了什么</summary><figure><a href="media/agent-dashboard-editor.jpg"><img src="media/agent-dashboard-editor.jpg" width="1440" height="889" loading="lazy" alt="OpenPencil 原生桌面窗口，左侧为图层树，中间为研究工作台设计"></a><figcaption>真实运行截图；工具外壳是桌面编辑器，画布内容可以面向网页、手机或演示材料。</figcaption></figure><div class="verified"><div><h3>已验证</h3><p>原生程序启动、CLI/MCP 连通、模板加载、节点创建、标题修改、文件保存与重新读取、PNG 导出。最终文档有 2 个页面，共 443 个节点。</p></div><div><h3>尚未验证</h3><p>内置模型对话生成、多 Agent 编排、Figma 导入、框架代码导出、PPTX 导出和实时协作。设计 lint 保留 19 条需要结合设计意图判断的提示。</p></div></div></details>
+      </section>
+
+      <section id="identity">
+        <div class="section-title"><span>02 / 产品本质</span><h2>是一款软件，也能成为 Agent 的工具。</h2></div>
+        <div class="identity-grid"><article><span class="number">A</span><h3>软件本体</h3><p>桌面版与 Web 编辑器，提供画布、图层、属性、矢量图形、自动布局和组件。人可以直接编辑。</p></article><article><span class="number">B</span><h3>工具接口</h3><p>通过 MCP 和命令行，让外部 Agent 读取文档、插入图层、修改属性，再保存和导出。</p></article><article><span class="number">C</span><h3>配套 Skill</h3><p>教 Agent 如何使用 OpenPencil 的知识与工作方法。实际操作由编辑器和工具接口执行。</p></article></div>
+        <div class="note"><h3>为什么看起来像 Qt Designer？</h3><p>工具栏、图层树、属性面板与中央画布，是传统桌面设计器常见的组织方式。OpenPencil 当前采用 Rust、jian 和 Skia；这里的相似是操作形态。设计稿也不等于已经接好业务、可安装使用的软件。</p></div>
+      </section>
+
+      <section id="scenarios">
+        <div class="section-title"><span>03 / 使用场景</span><h2>桌面是工具的载体，产物不只面向桌面。</h2></div>
+        <div class="table-wrap"><table><thead><tr><th>方向</th><th>能制作的内容</th><th>本次如何看待</th></tr></thead><tbody>
+          <tr><td>后台与工作台</td><td>导航、指标卡、表格、管理界面</td><td><span class="tag">已测设计稿</span> 最贴近本次呈现效果</td></tr>
+          <tr><td>业务汇报与演示</td><td>幻灯片、数据报告、流程与对比页</td><td><span class="tag">已测模板</span> 规整商务风格较明确</td></tr>
+          <tr><td>网站与移动界面</td><td>落地页、登录页、App 多屏设计</td><td>有相关能力；未验证实际成品质量</td></tr>
+          <tr><td>内容视觉</td><td>知识卡、海报、教程图、轮播图</td><td>有模板方向；本次未做生成实验</td></tr>
+          <tr><td>设计系统与自动化</td><td>变量、主题、组件，批量修改设计</td><td>结构化文档和 Agent 接口值得参考</td></tr>
+        </tbody></table></div>
+        <p class="caption">范围根据上游功能与模板整理。图片和界面代码的导出，不意味着业务接口、权限、响应式和工程质量已经完成。</p>
+      </section>
+
+      <section id="comparison">
+        <div class="section-title"><span>04 / 产品比较</span><h2>与 Claude Design 同类，但不能等同。</h2></div>
+        <p>共同方向是“描述需求 → 生成视觉方案 → 在画布上修改 → 导出或交接”。两者的产品重心不同，功能列表重叠也不意味着审美、稳定性和工作流体验已经相当。</p>
+        <div class="comparison"><article><span class="label">OPENPENCIL</span><h3>可开放扩展的设计编辑器</h3><p>强调可编辑节点、开放 .op 文档、矢量编辑、多模型与外部 Agent 接入。适合研究如何给 Agent 提供可靠的设计操作环境。</p><p class="assessment">本次观察：后台和汇报式的传统商务效果较突出。</p></article><article><span class="label">CLAUDE DESIGN</span><h3>围绕 Claude 的视觉创作流程</h3><p>官方强调交互原型、演示文稿、品牌设计系统、评审与开发交接。设计成果可以继续进入 Claude Code 或其他工具。</p><p class="assessment">尚未同题实测：不在这里宣称哪一方的生成质量更高。</p></article></div>
+        <p class="caption">参考 <a href="https://claude.com/product/design">Claude Design 官方介绍</a>与 <a href="https://support.claude.com/en/articles/14604416-get-started-with-claude-design">使用指南</a>。此处比较产品重心，不推断其未公开的内部实现。</p>
+      </section>
+
+      <section id="mechanism">
+        <div class="section-title"><span>05 / 实现原理</span><h2>把模型的想法，变成可执行的设计操作。</h2></div>
+        <ol class="pipeline"><li><b>理解与规划</b><span>根据需求、参考材料和风格，拆解页面。</span></li><li><b>生成操作</b><span>输出设计脚本，或通过工具描述节点修改。</span></li><li><b>更新文档</b><span>受限执行环境将操作写入结构化节点树。</span></li><li><b>布局与渲染</b><span>图形引擎计算布局，画出可继续编辑的内容。</span></li><li><b>检查与交付</b><span>按流程检查、修正，保存文件或导出产物。</span></li></ol>
+        <p class="caption">本次验证从“外部 Agent 生成操作”开始；内置模型规划、视觉检查没有运行。源码中的经典编排主要按不同屏幕组并发，同组内顺序执行，另有独立 Agent 扇出路径。</p>
+        <p>文件核心是 JSON 节点树；编辑器管理选择、视口和撤销。桌面与浏览器共享 Rust 核心，分别通过原生 Skia 与 CanvasKit 渲染。它的工程价值，在于让生成结果有明确结构、可以定位修改，并能持久化保存。</p>
+      </section>
+
+      <section id="judgment" class="judgment">
+        <div class="section-title"><span>06 / 我们的判断</span><h2>值得参考的是设计执行能力，<br>视觉创意能力还需要单独验收。</h2></div>
+        <div class="judgment-grid"><div><h3>当前更值得参考</h3><p>商务后台、管理工具、汇报材料的结构化制作；给 Agent 提供可编辑画布；批量修改节点、维护文档、保存与导出。</p></div><div><h3>暂不据此下结论</h3><p>是否能稳定生成有辨识度的品牌官网、复杂交互、创意排版；是否达到 Claude Design 的完整体验；多 Agent 是否真正提升成品质量。</p></div></div>
+        <p class="closing">能操作设计稿，和能持续生成好设计，是两项不同的能力。我们已验证前者；对后者，当前样本呈现出传统商务倾向，仍需用同一份创意需求进行生成、迭代与最终效果对比。</p>
+      </section>
+
+      <footer><h2>来源与验证材料</h2><div class="source-links"><a href="https://github.com/ZSeven-W/openpencil/releases/tag/v0.8.4">实测版本 v0.8.4 ↗</a><a href="https://github.com/ZSeven-W/openpencil/blob/main/crates/CLAUDE.md">上游架构说明 ↗</a><a href="https://github.com/ZSeven-W/openpencil-skill">配套 Skill ↗</a><a href="verification.json">本地验证记录</a><a href="LICENSE.openpencil.txt">上游 MIT 许可证</a></div><p>本页为研究讨论整理，非 OpenPencil 官方页面，也不是在线编辑器。截图来自真实本地运行；官方模板与原创样例分别标注。主分支源码研究版本 e6c9bce，实际运行版本 v0.8.4。</p></footer>
+    </main>
+  </div>
+</body>
+</html>

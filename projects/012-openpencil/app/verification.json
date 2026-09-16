@@ -1,0 +1,44 @@
+{
+  "version": "v0.8.4",
+  "platform": "Windows x64",
+  "page_count": 2,
+  "node_counts": [
+    351,
+    92
+  ],
+  "total_nodes": 443,
+  "saved_title_verified": true,
+  "title_before_after_images_differ": true,
+  "images": {
+    "agent-dashboard-before.png": {
+      "width": 1320,
+      "height": 840,
+      "bytes": 82889,
+      "sha256": "2cb08f008a5d8918b0b2dc9693d0e8b5501163919b5564339894908cc49407f1"
+    },
+    "agent-dashboard.png": {
+      "width": 1320,
+      "height": 840,
+      "bytes": 83539,
+      "sha256": "0956313613bcb015235dd92ab482dc8abcbf6999dd0032e3353f160b22d50a41"
+    },
+    "official-template-metrics.png": {
+      "width": 1920,
+      "height": 1080,
+      "bytes": 78782,
+      "sha256": "7db3a1c8803ad3d729855f16a6ee227b6e511451244c36743cd663b504c19101"
+    }
+  },
+  "screenshots": {
+    "agent-dashboard-editor.jpg": {
+      "bytes": 111797,
+      "sha256": "9171fd76e0c1a5ce5bc188faa859d4784af84d0d3b055e74af107257cd98f8cf"
+    },
+    "official-template-editor.jpg": {
+      "bytes": 119757,
+      "sha256": "8d059440446dc15ccb2c7f8e7c1b98dd32df90081811a6d1b4bddf2b596410e5"
+    }
+  },
+  "lint_count": 19,
+  "scope": "External agent drives upstream native editor via CLI/MCP; no built-in LLM configured."
+}
