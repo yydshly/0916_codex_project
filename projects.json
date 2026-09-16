@@ -165,6 +165,32 @@
       "cover": "projects/008-aicodeguide/assets/understanding-guide.png",
       "cover_alt": "原创研究信息图：六步工作循环、失败反馈、资源导航、新手价值与当前 Codex 工作方式的有限增量；非运行截图，未验证效率提升。",
       "demo": ""
+    },
+    {
+      "id": 9,
+      "slug": "mediago",
+      "name": "MediaGo 视频下载能力与技术原理研究",
+      "summary": "获取输入 → 识别资源类型 → 选择对应引擎 → 解析并下载 → 合并、检查与保存。MediaGo 负责识别、分派和管理；引擎承担主要解析与下载，覆盖 HLS、媒体直链、站点视频及可访问直播。源码研究，未实测下载。",
+      "repo": "https://github.com/mediago-dev/mediago",
+      "status": "已完成",
+      "tags": [
+        "视频下载",
+        "资源嗅探",
+        "多引擎编排",
+        "MCP",
+        "源码研究",
+        "交互手册"
+      ],
+      "cover": "projects/009-mediago/assets/guide-desktop.jpg",
+      "cover_alt": "MediaGo 中文研究网页的真实浏览器截图，展示标题、阅读导航与发现、选择、下载、确认流程；非 MediaGo 客户端运行截图。",
+      "demo": "",
+      "guides": [
+        {
+          "title": "MediaGo 能力全景：十个模块、来源引擎与使用边界",
+          "image": "projects/009-mediago/assets/capability-map.png",
+          "alt": "原创 MediaGo 能力全景图：多入口、发现、任务、来源、引擎、媒体处理、浏览收藏、部署、自动化和运行资源；附六类场景与边界，非下载实测截图。"
+        }
+      ]
     }
   ]
 }

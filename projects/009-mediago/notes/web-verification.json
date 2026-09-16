@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-17",
+  "preview_url": "http://127.0.0.1:8779/009-mediago/",
+  "scope": "Local static research guide only; MediaGo was not run and no real media download was attempted",
+  "published": false,
+  "source_verification": {
+    "commit": "f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088",
+    "evidence_groups": 25,
+    "anchors_checked": 61,
+    "git_byte_hashes_checked": 42,
+    "result": "passed"
+  },
+  "static_checks": {
+    "duplicate_ids": false,
+    "internal_anchors_and_local_assets": "passed",
+    "javascript_syntax": "passed",
+    "registry_sync_and_check": "passed",
+    "aggregate_build": "passed",
+    "generated_snapshot_matches_research": true,
+    "markdown_local_links_checked": 14
+  },
+  "browser_checks": {
+    "browser": "Codex in-app browser",
+    "all_six_scenario_switches": "passed; one panel visible, six steps each",
+    "all_eight_pipeline_switches": "passed; matching single panel",
+    "source_filters": {
+      "native": 5,
+      "protocol": 3,
+      "engine": 2,
+      "boundary": 1,
+      "all": 11
+    },
+    "source_filter_keyboard_enter": "passed",
+    "evidence_anchor_and_reload": "passed; ref-E11 opens details after navigation and reload",
+    "console_warnings_errors": [],
+    "desktop": {
+      "inner_width": 1280,
+      "document_scroll_width": 1265
+    },
+    "mobile": {
+      "inner_width": 390,
+      "document_scroll_width": 375,
+      "source_table_scroll_width": 720,
+      "source_table_container_width": 341,
+      "scenario_switch": "passed"
+    },
+    "narrow_mobile": {
+      "inner_width": 360,
+      "document_scroll_width": 345
+    },
+    "temporary_viewport_override": "reset after testing",
+    "visual_review": "Desktop hero, mobile hero and mobile NAS scenario inspected; no whole-page horizontal overflow"
+  },
+  "screenshots": {
+    "guide-desktop.jpg": {
+      "width": 1265,
+      "height": 712,
+      "sha256": "60bbd237f2261011c2ece766a55f4ff65176e88ff62d23f6dc9e05e42b529b65",
+      "format": "JPEG"
+    },
+    "guide-mobile.jpg": {
+      "width": 375,
+      "height": 812,
+      "sha256": "e62281e8cb9956efe36f793939c4979394a31cc3c3e5d515921e61c3586bcda3",
+      "format": "JPEG"
+    }
+  },
+  "limits": [
+    "No upstream application tests or real-site downloads",
+    "No public deployment",
+    "Not every external URL was probed; source citations point to the verified fixed commit",
+    "No screen-reader or print-output validation"
+  ]
+}

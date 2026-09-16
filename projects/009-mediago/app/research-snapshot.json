@@ -1,0 +1,642 @@
+{
+  "repository": "https://github.com/mediago-dev/mediago",
+  "commit": "f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088",
+  "branch": "master",
+  "research_date": "2026-09-17",
+  "method": "source_static_analysis",
+  "upstream_tests_run": false,
+  "application_run": false,
+  "real_site_downloads_tested": false,
+  "artifacts": "Chinese research documents, original diagrams, interactive static web guide and actual browser screenshots of the guide; no MediaGo application screenshot or deployed demo",
+  "runtime_dependencies": {
+    "ffmpeg": {
+      "repository": "eugeneware/ffmpeg-static",
+      "version": "b6.0"
+    },
+    "N_m3u8DL-RE": {
+      "repository": "nilaoda/N_m3u8DL-RE",
+      "version": "v0.6.0-beta"
+    },
+    "BBDown": {
+      "repository": "nilaoda/BBDown",
+      "version": "1.6.3"
+    },
+    "aria2": {
+      "repository": "AnInsomniacy/aria2-next",
+      "version": "v2.5.5"
+    },
+    "yt-dlp": {
+      "repository": "yt-dlp/yt-dlp",
+      "version": "2026.08.19"
+    },
+    "deno": {
+      "repository": "denoland/deno",
+      "version": "v2.9.5"
+    },
+    "mediago": {
+      "repository": "caorushizi/mediago-core",
+      "version": "v0.2.1"
+    }
+  },
+  "evidence": [
+    {
+      "id": "E01",
+      "topic": "共享识别规则",
+      "sources": [
+        {
+          "path": "packages/common/src/sniff/filter-rules.ts",
+          "anchor": "export const SNIFF_FILTERS",
+          "line": 39,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/packages/common/src/sniff/filter-rules.ts#L39",
+          "sha256": "46386b35563b6be7ad7edc04c26ac66a86a73df77d28bfd856a80603020ce84a"
+        },
+        {
+          "path": "packages/common/src/sniff/filter-rules.ts",
+          "anchor": "export function matchRequestUrl",
+          "line": 115,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/packages/common/src/sniff/filter-rules.ts#L115",
+          "sha256": "46386b35563b6be7ad7edc04c26ac66a86a73df77d28bfd856a80603020ce84a"
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "topic": "桌面请求与响应嗅探",
+      "sources": [
+        {
+          "path": "apps/electron/src/services/sniffing-helper.service.ts",
+          "anchor": "private ensureSessionListener",
+          "line": 383,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/electron/src/services/sniffing-helper.service.ts#L383",
+          "sha256": "12e48f0807dd125de79dd0f99c4762f3f03fde14f8f50845b4038e5b5f1104d0"
+        },
+        {
+          "path": "apps/electron/src/services/sniffing-helper.service.ts",
+          "anchor": "private readonly onHeadersReceived",
+          "line": 432,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/electron/src/services/sniffing-helper.service.ts#L432",
+          "sha256": "12e48f0807dd125de79dd0f99c4762f3f03fde14f8f50845b4038e5b5f1104d0"
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "topic": "Chrome/Edge 扩展",
+      "sources": [
+        {
+          "path": "packages/mediago-extension/src/background/sniffer.ts",
+          "anchor": "async function handleRequest",
+          "line": 126,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/packages/mediago-extension/src/background/sniffer.ts#L126",
+          "sha256": "998e86583ff45d7b95ec8a14865dc7dfee1e26df98699506e2b0d09c021d7363"
+        },
+        {
+          "path": "packages/mediago-extension/package.json",
+          "anchor": "\"name\"",
+          "line": 2,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/packages/mediago-extension/package.json#L2",
+          "sha256": "9294bc66862325c42aa621368c6a8bbc975895c5486759bf290fa4e19601031c"
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "topic": "HLS 清单检查",
+      "sources": [
+        {
+          "path": "apps/core/internal/service/m3u8_inspector.go",
+          "anchor": "inspectTimeout",
+          "line": 19,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/service/m3u8_inspector.go#L19",
+          "sha256": "93d1f1378dad7a44258d2ed190d6b6da6162f63ba152b0d06795ba5c08c11bb5"
+        },
+        {
+          "path": "apps/core/internal/service/m3u8_inspector.go",
+          "anchor": "func (i *M3U8Inspector) Inspect(",
+          "line": 138,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/service/m3u8_inspector.go#L138",
+          "sha256": "93d1f1378dad7a44258d2ed190d6b6da6162f63ba152b0d06795ba5c08c11bb5"
+        },
+        {
+          "path": "apps/core/internal/service/m3u8_inspector.go",
+          "anchor": "func parseM3U8(",
+          "line": 286,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/service/m3u8_inspector.go#L286",
+          "sha256": "93d1f1378dad7a44258d2ed190d6b6da6162f63ba152b0d06795ba5c08c11bb5"
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "topic": "类型推断与引擎映射",
+      "sources": [
+        {
+          "path": "apps/core/internal/core/types.go",
+          "anchor": "func InferDownloadType",
+          "line": 26,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/types.go#L26",
+          "sha256": "501437008ff0c9c902d8769fa2f2825cdec86bc8603c2c5006192b05416777b5"
+        },
+        {
+          "path": "apps/core/internal/core/types.go",
+          "anchor": "var BinaryNames",
+          "line": 136,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/types.go#L136",
+          "sha256": "501437008ff0c9c902d8769fa2f2825cdec86bc8603c2c5006192b05416777b5"
+        },
+        {
+          "path": "apps/core/internal/core/types.go",
+          "anchor": "StatusPending",
+          "line": 158,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/types.go#L158",
+          "sha256": "501437008ff0c9c902d8769fa2f2825cdec86bc8603c2c5006192b05416777b5"
+        }
+      ]
+    },
+    {
+      "id": "E06",
+      "topic": "参数与控制台 schema",
+      "sources": [
+        {
+          "path": "apps/core/internal/core/schema/loader.go",
+          "anchor": "func DefaultSchemas",
+          "line": 80,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/schema/loader.go#L80",
+          "sha256": "efb8b56642c4e999a5904abb345e8d901469ea49e2f8f6f97dbe8188f92b550d"
+        },
+        {
+          "path": "apps/core/internal/core/schema/loader.go",
+          "anchor": "func LoadSchemasFromJSON",
+          "line": 176,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/schema/loader.go#L176",
+          "sha256": "efb8b56642c4e999a5904abb345e8d901469ea49e2f8f6f97dbe8188f92b550d"
+        },
+        {
+          "path": "apps/core/internal/core/downloader.go",
+          "anchor": "func (d *DownloaderSvc) buildArgs",
+          "line": 96,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/downloader.go#L96",
+          "sha256": "39ef41e97f9dd1675caddc1d9941fa0ca10f876a5f1a53b0682b6b65b1fefadd"
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "topic": "任务服务与持久化请求头",
+      "sources": [
+        {
+          "path": "apps/core/internal/service/download_task.go",
+          "anchor": "func (s *DownloadTaskService) AddDownloadTask(",
+          "line": 58,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/service/download_task.go#L58",
+          "sha256": "c32eadde8d9a08fbb06f47ed7bba90869a10550edffba1fd42cb6484ca03c1c8"
+        },
+        {
+          "path": "apps/core/internal/service/download_task.go",
+          "anchor": "func (s *DownloadTaskService) startDownload",
+          "line": 345,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/service/download_task.go#L345",
+          "sha256": "c32eadde8d9a08fbb06f47ed7bba90869a10550edffba1fd42cb6484ca03c1c8"
+        },
+        {
+          "path": "apps/core/internal/service/download_task.go",
+          "anchor": "func PersistentDiscoveryHeaders",
+          "line": 376,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/service/download_task.go#L376",
+          "sha256": "c32eadde8d9a08fbb06f47ed7bba90869a10550edffba1fd42cb6484ca03c1c8"
+        }
+      ]
+    },
+    {
+      "id": "E08",
+      "topic": "内存队列与取消",
+      "sources": [
+        {
+          "path": "apps/core/internal/core/queue.go",
+          "anchor": "type TaskQueue struct",
+          "line": 19,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/queue.go#L19",
+          "sha256": "fcf8d5e5d7c546f5e02a2fb94b586c6a87bb56a739c8bc507a19fbd12bdcebaf"
+        },
+        {
+          "path": "apps/core/internal/core/queue.go",
+          "anchor": "func (q *TaskQueue) Enqueue",
+          "line": 77,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/queue.go#L77",
+          "sha256": "fcf8d5e5d7c546f5e02a2fb94b586c6a87bb56a739c8bc507a19fbd12bdcebaf"
+        },
+        {
+          "path": "apps/core/internal/core/queue.go",
+          "anchor": "func (q *TaskQueue) execute",
+          "line": 223,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/queue.go#L223",
+          "sha256": "fcf8d5e5d7c546f5e02a2fb94b586c6a87bb56a739c8bc507a19fbd12bdcebaf"
+        }
+      ]
+    },
+    {
+      "id": "E09",
+      "topic": "SQLite 与数据模型",
+      "sources": [
+        {
+          "path": "apps/core/internal/db/db.go",
+          "anchor": "func New(",
+          "line": 15,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/db/db.go#L15",
+          "sha256": "51055154746849946f5306964b6b036ba69ce6cdbb8737560c6d8549c8a23522"
+        },
+        {
+          "path": "apps/core/internal/db/models.go",
+          "anchor": "type Video struct",
+          "line": 19,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/db/models.go#L19",
+          "sha256": "3184cc88d50f3b070643b1684e2a73f8a40b6fbf3edb9f1936c25e9cca50735a"
+        }
+      ]
+    },
+    {
+      "id": "E10",
+      "topic": "下载执行、输出检查与直播恢复",
+      "sources": [
+        {
+          "path": "apps/core/internal/core/downloader.go",
+          "anchor": "func (d *DownloaderSvc) Download(",
+          "line": 632,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/downloader.go#L632",
+          "sha256": "39ef41e97f9dd1675caddc1d9941fa0ca10f876a5f1a53b0682b6b65b1fefadd"
+        },
+        {
+          "path": "apps/core/internal/core/downloader.go",
+          "anchor": "func appendYTDLPCookieFile",
+          "line": 212,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/downloader.go#L212",
+          "sha256": "39ef41e97f9dd1675caddc1d9941fa0ca10f876a5f1a53b0682b6b65b1fefadd"
+        },
+        {
+          "path": "apps/core/internal/core/live_recovery.go",
+          "anchor": "func recoverLiveM3U8Segments",
+          "line": 27,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/live_recovery.go#L27",
+          "sha256": "34c7caa2273af9b662e3535f48cd1703ff7bc2ef0f793a68371c376ecf73ef5f"
+        }
+      ]
+    },
+    {
+      "id": "E11",
+      "topic": "FFmpeg 转换",
+      "sources": [
+        {
+          "path": "apps/core/internal/service/converter.go",
+          "anchor": "func (c *Converter) Start(",
+          "line": 46,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/service/converter.go#L46",
+          "sha256": "0bae2809faa1cb29fab077854b8d9a3143b84add2adbe3c18d465371856c4d1a"
+        },
+        {
+          "path": "apps/core/internal/service/converter.go",
+          "anchor": "func buildFFmpegArgs",
+          "line": 261,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/service/converter.go#L261",
+          "sha256": "0bae2809faa1cb29fab077854b8d9a3143b84add2adbe3c18d465371856c4d1a"
+        }
+      ]
+    },
+    {
+      "id": "E12",
+      "topic": "HTTP 路由与发现调度",
+      "sources": [
+        {
+          "path": "apps/core/internal/api/server/router.go",
+          "anchor": "func (s *Server) registerRoutes",
+          "line": 3,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/api/server/router.go#L3",
+          "sha256": "3965e67f7d111a09a3e0afa596d4d212efffd4820d19f114d1ada64551fbb83e"
+        },
+        {
+          "path": "apps/core/internal/discovery/service.go",
+          "anchor": "func (s *Service) Create(",
+          "line": 50,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/discovery/service.go#L50",
+          "sha256": "c7b545c98f71b4e2d507d3237ae51a3193d03bd1f73b5f8c7c27c412cb41e1ea"
+        },
+        {
+          "path": "apps/core/internal/discovery/service.go",
+          "anchor": "func normalizeInput",
+          "line": 275,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/discovery/service.go#L275",
+          "sha256": "c7b545c98f71b4e2d507d3237ae51a3193d03bd1f73b5f8c7c27c412cb41e1ea"
+        }
+      ]
+    },
+    {
+      "id": "E13",
+      "topic": "MCP 工具",
+      "sources": [
+        {
+          "path": "apps/core/internal/mcpserver/server.go",
+          "anchor": "func (m *Manager) serveHTTP",
+          "line": 125,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/mcpserver/server.go#L125",
+          "sha256": "6c6bc7d8acf602b7ffec1306c95ecf9b484a21215f311ddd895729051cb5ba1c"
+        },
+        {
+          "path": "apps/core/internal/mcpserver/server.go",
+          "anchor": "func (m *Manager) registerTools",
+          "line": 221,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/mcpserver/server.go#L221",
+          "sha256": "6c6bc7d8acf602b7ffec1306c95ecf9b484a21215f311ddd895729051cb5ba1c"
+        }
+      ]
+    },
+    {
+      "id": "E14",
+      "topic": "AI Skill 调用说明（研究对象，未安装或执行）",
+      "sources": [
+        {
+          "path": "skills/mediago/SKILL.md",
+          "anchor": "# MediaGo Video Downloader",
+          "line": 16,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/skills/mediago/SKILL.md#L16",
+          "sha256": "acb27aceedc8b2cef0941d5799e28ff8fb7aa40061b9a0aecbeb545bd613d941"
+        }
+      ]
+    },
+    {
+      "id": "E15",
+      "topic": "发现转本地下载",
+      "sources": [
+        {
+          "path": "apps/core/internal/api/handler/discovery.go",
+          "anchor": "func (h *DiscoveryHandler) createDownloads",
+          "line": 131,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/api/handler/discovery.go#L131",
+          "sha256": "f568b542a60ee6b5637e3a262330f8fcaabf74e6ece27e496192a54ffc862274"
+        },
+        {
+          "path": "apps/core/internal/api/handler/discovery.go",
+          "anchor": "func selectedDiscoverySourceURL",
+          "line": 221,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/api/handler/discovery.go#L221",
+          "sha256": "f568b542a60ee6b5637e3a262330f8fcaabf74e6ece27e496192a54ffc862274"
+        }
+      ]
+    },
+    {
+      "id": "E16",
+      "topic": "Docker 任务转交",
+      "sources": [
+        {
+          "path": "apps/core/internal/api/handler/docker.go",
+          "anchor": "func (h *DockerHandler) DiscoveryDownloads",
+          "line": 70,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/api/handler/docker.go#L70",
+          "sha256": "d6342d6feed07d4243719f6d086db9667c8db49465651d4cbeb613f62cb93f6e"
+        },
+        {
+          "path": "apps/core/internal/docker/client.go",
+          "anchor": "type Client struct",
+          "line": 43,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/docker/client.go#L43",
+          "sha256": "c662f743f34a9b5e45a8b84d349231a5af91bf3b37bf755a44b3c53d81141d4d"
+        }
+      ]
+    },
+    {
+      "id": "E17",
+      "topic": "运行时依赖与第三方资料",
+      "sources": [
+        {
+          "path": "packages/tooling/manifests/runtime-deps.json",
+          "anchor": "\"ffmpeg\"",
+          "line": 2,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/packages/tooling/manifests/runtime-deps.json#L2",
+          "sha256": "82f3d0b27347566839fd7fa048ef7319d4d18ad79789261456db34cb85534213"
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.md",
+          "anchor": "# Third-party download tools",
+          "line": 1,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/THIRD_PARTY_NOTICES.md#L1",
+          "sha256": "661cf1e98a2365aae6e29314743067d0df65c0fe75ee8e0a2ed522426b7df160"
+        }
+      ]
+    },
+    {
+      "id": "E18",
+      "topic": "Core 组装与 Docker 启动",
+      "sources": [
+        {
+          "path": "apps/core/internal/api/server/server.go",
+          "anchor": "func New(",
+          "line": 67,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/api/server/server.go#L67",
+          "sha256": "5a5422a5940bb6c76ca44cf9ac67318bbea0f13f2688db5e1b48aec0e9f4b40b"
+        },
+        {
+          "path": "apps/core/internal/app/runtime.go",
+          "anchor": "func NewRuntime",
+          "line": 40,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/app/runtime.go#L40",
+          "sha256": "9f397dde371ea60a8b6f523e07390ee30528c1b3de3d6e1ae624eb65d3531563"
+        },
+        {
+          "path": "docker/docker-entrypoint.sh",
+          "anchor": "exec mediago-core",
+          "line": 11,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/docker/docker-entrypoint.sh#L11",
+          "sha256": "87d9e8c7466da49b01b8b3010f39f6cbc5c235bfd5aeb69350bac0dc61474ecf"
+        },
+        {
+          "path": "Dockerfile",
+          "anchor": "EXPOSE 8899",
+          "line": 115,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/Dockerfile#L115",
+          "sha256": "1ce4f673287f4600205a5468587664a13ef5ce931b1c0ba60a2b367610f69a1c"
+        }
+      ]
+    },
+    {
+      "id": "E19",
+      "topic": "开发环境与根许可证",
+      "sources": [
+        {
+          "path": "CONTRIBUTING.md",
+          "anchor": "## Prerequisites",
+          "line": 7,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/CONTRIBUTING.md#L7",
+          "sha256": "1e74d1a794e213b133eedde90fda96b7393591134fb8183e0373d53df8698b7f"
+        },
+        {
+          "path": "package.json",
+          "anchor": "\"packageManager\"",
+          "line": 9,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/package.json#L9",
+          "sha256": "8d73e9fd183762873b0b67f914aa35715a035507821e46e8eb12d4dd6d838d77"
+        },
+        {
+          "path": "LICENSE",
+          "anchor": "MIT License",
+          "line": 1,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/LICENSE#L1",
+          "sha256": "029419e98f7e94359d2b8e96db62d1482242d51af55bc5c5b5ac3e2448edb4ee"
+        }
+      ]
+    },
+    {
+      "id": "E20",
+      "topic": "共享站点适配包",
+      "sources": [
+        {
+          "path": "packages/browser-extension/src/site-adapters/registry.ts",
+          "anchor": "export const PAGE_ADAPTERS",
+          "line": 8,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/packages/browser-extension/src/site-adapters/registry.ts#L8",
+          "sha256": "f2a51b9077d8f000ae520453bb8f6688e8d0edf71934b1db3e5eb1a830fb5197"
+        },
+        {
+          "path": "packages/browser-extension/package.json",
+          "anchor": "\"name\"",
+          "line": 2,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/packages/browser-extension/package.json#L2",
+          "sha256": "e6b0601a42119d6e32491a9fb9028d8f21cf7ca8e1e43f91bfebc11ae7a58129"
+        }
+      ]
+    },
+    {
+      "id": "E21",
+      "topic": "队列事件与产物持久化",
+      "sources": [
+        {
+          "path": "apps/core/internal/api/server/queue_callbacks.go",
+          "anchor": "s.queue.OnSuccess",
+          "line": 65,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/api/server/queue_callbacks.go#L65",
+          "sha256": "5b4bdd8532864a5b2994fb8d6069fc0a07be44d8507d7a21a7412349dc072864"
+        },
+        {
+          "path": "apps/core/internal/api/sse/hub.go",
+          "anchor": "func (h *Hub) Broadcast",
+          "line": 54,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/api/sse/hub.go#L54",
+          "sha256": "c313b139608901c19a00479de1d6612eff1bb2514f327c0339cddf5f2bcf5f24"
+        }
+      ]
+    },
+    {
+      "id": "E22",
+      "topic": "PTY、输出解析与节流",
+      "sources": [
+        {
+          "path": "apps/core/internal/core/runner/pty.go",
+          "anchor": "func NewPTYRunner",
+          "line": 17,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/runner/pty.go#L17",
+          "sha256": "4568ca91e760fb6cff5942a4a523152d67e5af375a5a91574dd025846fcdcc2f"
+        },
+        {
+          "path": "apps/core/internal/core/runner/exec.go",
+          "anchor": "func (r *ExecRunner) RunWithOptions",
+          "line": 39,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/runner/exec.go#L39",
+          "sha256": "a75bbf52896b29894ee1b1f9f4b3d630fc87254e7e40135aa429428a6e8f078f"
+        },
+        {
+          "path": "apps/core/internal/core/parser/tracker.go",
+          "anchor": "func (pt *ProgressTracker) ShouldUpdate",
+          "line": 32,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/parser/tracker.go#L32",
+          "sha256": "44402df9ef31de61f7006c90ddc7d7bd6b98dedae0d8aaee5b05b7a7003f942f"
+        }
+      ]
+    },
+    {
+      "id": "E23",
+      "topic": "上游契约测试（本次未运行）",
+      "sources": [
+        {
+          "path": "apps/core/internal/core/downloader_contract_test.go",
+          "anchor": "func loadContractFixture",
+          "line": 23,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/downloader_contract_test.go#L23",
+          "sha256": "319dc8e72f28a1ca5a89f163c8711afc7bd830e47a54760808c344fd9865c6fc"
+        },
+        {
+          "path": "apps/core/internal/core/downloader_contract_test.go",
+          "anchor": "func parseContractFixture",
+          "line": 38,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/core/downloader_contract_test.go#L38",
+          "sha256": "319dc8e72f28a1ca5a89f163c8711afc7bd830e47a54760808c344fd9865c6fc"
+        }
+      ]
+    },
+    {
+      "id": "E24",
+      "topic": "Electron 发现执行与会话选择",
+      "sources": [
+        {
+          "path": "apps/electron/src/services/discovery-executor.service.ts",
+          "anchor": "export class DiscoveryExecutorService",
+          "line": 26,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/electron/src/services/discovery-executor.service.ts#L26",
+          "sha256": "2bf7ee27b7b5d5593ae1d84a32b9dbe21add3b04ed2cb6b6d02d78e40b317b2c"
+        },
+        {
+          "path": "apps/electron/src/services/browser-tab-manager.service.ts",
+          "anchor": "async discover(",
+          "line": 568,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/electron/src/services/browser-tab-manager.service.ts#L568",
+          "sha256": "93b98b0efb6ea845cfb116cb78d921354f8fc14dd1273fdd25534c0466817814"
+        }
+      ]
+    },
+    {
+      "id": "E25",
+      "topic": "发现结果存储和私有字段",
+      "sources": [
+        {
+          "path": "apps/core/internal/discovery/types.go",
+          "anchor": "DefaultRetention",
+          "line": 13,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/discovery/types.go#L13",
+          "sha256": "109643f6b53b172f271e96dc71d0e3946f10e90e11497401d075f88758fdd999"
+        },
+        {
+          "path": "apps/core/internal/discovery/types.go",
+          "anchor": "type PrivateSource struct",
+          "line": 104,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/discovery/types.go#L104",
+          "sha256": "109643f6b53b172f271e96dc71d0e3946f10e90e11497401d075f88758fdd999"
+        },
+        {
+          "path": "apps/core/internal/discovery/store.go",
+          "anchor": "func (s *Store) PrivateHeaders",
+          "line": 221,
+          "url": "https://github.com/mediago-dev/mediago/blob/f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088/apps/core/internal/discovery/store.go#L221",
+          "sha256": "3758c74335789fd908d43f76957bd2515f7fc86269ac243be45217f8ef000679"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "source_anchors": "passed",
+    "evidence_groups": 25,
+    "source_locations": 61,
+    "unique_source_files": 42,
+    "upstream_worktree": "clean",
+    "local_document_links": "passed",
+    "project_registry": "passed",
+    "local_link_count": 8,
+    "evidence_id_references": "passed",
+    "markdown_fences": "balanced"
+  },
+  "web_guide": {
+    "entry": "app/index.html",
+    "generator": "scripts/build_guide.py",
+    "verification": "notes/web-verification.json",
+    "scenarios": 6,
+    "scenario_steps": 36,
+    "source_categories": 11,
+    "pipeline_stages": 8,
+    "published": false
+  }
+}

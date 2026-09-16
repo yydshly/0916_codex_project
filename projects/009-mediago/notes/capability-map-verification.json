@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-17",
+  "commit": "f2aa40a8ce7cdd02fae7cf9b13b0860f29eb5088",
+  "png_dimensions": [
+    2400,
+    3830
+  ],
+  "svg_xml": "valid",
+  "card_text_bounds": "passed at generation",
+  "supplementary_sources": [
+    {
+      "path": "README.md",
+      "sha256": "d23fcaa4e8b51e72ba483c6d1f19b3b12e22550d17e9bb83b233fded5a348794"
+    },
+    {
+      "path": "apps/core/internal/api/handler/download.go",
+      "sha256": "63658318b7b2b6f6f40412f7d6ef6b2918dabae2e4710cb32402a9489ab711cc"
+    },
+    {
+      "path": "apps/core/internal/api/server/router.go",
+      "sha256": "3965e67f7d111a09a3e0afa596d4d212efffd4820d19f114d1ada64551fbb83e"
+    },
+    {
+      "path": "apps/core/internal/service/favorite.go",
+      "sha256": "34b626cf822124d4ae30c35e9769e3a7950ce11969b41dce87b57213c1638850"
+    },
+    {
+      "path": "apps/core/internal/video/handler.go",
+      "sha256": "46fde135d538b2e753210557937540fd0c598d2093e795ed0ce798024137a458"
+    },
+    {
+      "path": "apps/core/internal/video/service.go",
+      "sha256": "63a99f8249563d021f6028a5b1d6df330f4eb287061802c70f2747381eb93907"
+    },
+    {
+      "path": "apps/ui/src/pages/setting-page/setting-fields.tsx",
+      "sha256": "cc7d199d12fa2bd7ddeca54549bf25b7b51dea6a302c569cc68f6064b1d5979f"
+    },
+    {
+      "path": "apps/ui/src/pages/source-extract/components/browser-tab-strip.tsx",
+      "sha256": "c26db09ebcb99256e6e63e3de34e61d055631b5c38b0259e2e48fdaeba52cc28"
+    },
+    {
+      "path": "apps/ui/src/pages/source-extract/components/source-filter.ts",
+      "sha256": "dbd3aa55463c0b90932204389b1e44c88bfbf3bf68e746143da568a99e6a4f33"
+    },
+    {
+      "path": "apps/ui/src/pages/source-extract/components/tool-bar.tsx",
+      "sha256": "5790d094f2cbb8ab9a10e3788694458bcd9f40c58c9af29524ced9004dc39582"
+    },
+    {
+      "path": "packages/mediago-extension/src/shared/constants.ts",
+      "sha256": "7dc9ffcc75e1957847b06f45c36715447c842f2811daf3ca47492b01250f8f4c"
+    }
+  ],
+  "original_evidence": "notes/sources.md; E01-E25",
+  "static_asset_copies": "identical",
+  "registry_check": "passed; 10 entries",
+  "aggregate_build": "passed",
+  "upstream_application_run": false,
+  "real_downloads_tested": false,
+  "published": false
+}

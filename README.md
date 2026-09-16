@@ -23,6 +23,7 @@ PDF 工具参考：[PDF Craft](projects/002-pdf-craft/README.md) 用于扫描书
 | 006 | [Skillry 创作技能能力图谱](projects/006-skillry/README.md) | 偏视觉创作的 Skill 展示、售卖与分发平台，收录网页、演示、图片和视频技能。附具体方向与代表技能引导图；我们的结论是低优先级参考，付费独有价值未验证。 | Skill 目录、视觉创作、低优先级参考、公开资料研究 | 已完成 | [skillry\.dev](https://skillry.dev/) | [访问](https://yydshly.github.io/0916_codex_project/006-skillry/) |
 | 007 | [PUA 排查与验收实验室](projects/007-pua/README.md) | 通过 Skill 规则推动 AI 多角度排查、执行与验证；按问题参考作者整理的十几种方法，依据失败证据调整策略，以任务验收结束循环。附理解总览与教学示例，未验证真实模型收益。 | Agent 技能、工作原理、验收标准、适用场景 | 已完成 | [tanweai/pua](https://github.com/tanweai/pua) | [访问](https://yydshly.github.io/0916_codex_project/007-pua/) |
 | 008 | [AI Code Guide 编程方法研究](projects/008-aicodeguide/README.md) | AI 编程入门指南与资源导航；附完整思路与价值总览图。对当前 Codex 工作方式新增价值有限，低优先级参考，无独立可集成功能。 | AI 编程方法、文档研究、交互讲解、低优先级参考 | 已归档 | [automata/aicodeguide](https://github.com/automata/aicodeguide) | — |
+| 009 | [MediaGo 视频下载能力与技术原理研究](projects/009-mediago/README.md) | 获取输入 → 识别资源类型 → 选择对应引擎 → 解析并下载 → 合并、检查与保存。MediaGo 负责识别、分派和管理；引擎承担主要解析与下载，覆盖 HLS、媒体直链、站点视频及可访问直播。源码研究，未实测下载。 | 视频下载、资源嗅探、多引擎编排、MCP、源码研究、交互手册 | 已完成 | [mediago\-dev/mediago](https://github.com/mediago-dev/mediago) | — |
 <!-- PROJECT_INDEX:END -->
 
 ## 项目预览
@@ -117,6 +118,20 @@ AI 编程入门指南与资源导航；附完整思路与价值总览图。对�
 ![原创研究信息图：六步工作循环、失败反馈、资源导航、新手价值与当前 Codex 工作方式的有限增量；非运行截图，未验证效率提升。](projects/008-aicodeguide/assets/understanding-guide.png)
 
 原创研究信息图：六步工作循环、失败反馈、资源导航、新手价值与当前 Codex 工作方式的有限增量；非运行截图，未验证效率提升。
+
+### 009 · [MediaGo 视频下载能力与技术原理研究](projects/009-mediago/README.md)
+
+获取输入 → 识别资源类型 → 选择对应引擎 → 解析并下载 → 合并、检查与保存。MediaGo 负责识别、分派和管理；引擎承担主要解析与下载，覆盖 HLS、媒体直链、站点视频及可访问直播。源码研究，未实测下载。
+
+![MediaGo 中文研究网页的真实浏览器截图，展示标题、阅读导航与发现、选择、下载、确认流程；非 MediaGo 客户端运行截图。](projects/009-mediago/assets/guide-desktop.jpg)
+
+MediaGo 中文研究网页的真实浏览器截图，展示标题、阅读导航与发现、选择、下载、确认流程；非 MediaGo 客户端运行截图。
+
+#### MediaGo 能力全景：十个模块、来源引擎与使用边界
+
+![原创 MediaGo 能力全景图：多入口、发现、任务、来源、引擎、媒体处理、浏览收藏、部署、自动化和运行资源；附六类场景与边界，非下载实测截图。](projects/009-mediago/assets/capability-map.png)
+
+原创 MediaGo 能力全景图：多入口、发现、任务、来源、引擎、媒体处理、浏览收藏、部署、自动化和运行资源；附六类场景与边界，非下载实测截图。
 <!-- PROJECT_GALLERY:END -->
 
 ## 目录结构

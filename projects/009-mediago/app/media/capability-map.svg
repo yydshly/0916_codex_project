@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="3830" viewBox="0 0 2400 3830" role="img" aria-labelledby="title desc">
+<title id="title">MediaGo 能力全景图</title>
+<desc id="desc">从输入、发现、任务管理、来源与引擎、下载处理、浏览收藏、部署、自动化和依赖，到六类场景与能力边界的完整研究图。</desc>
+<rect x="0" y="0" width="2400" height="3830" rx="0" fill="#edf2f7"/>
+<rect x="0" y="0" width="2400" height="242" rx="0" fill="#132b44"/>
+<text x="64" y="36" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#9bbbd6">OPEN-SOURCE FIELD GUIDE  /  009</text>
+<text x="64" y="83" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="76" font-weight="700" fill="#ffffff">MediaGo 能力全景图</text>
+<text x="65" y="184" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="400" fill="#c5d7e7">获取输入 → 识别资源类型 → 选择对应引擎 → 解析并下载 → 合并、检查与保存。</text>
+<text x="1810" y="53" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#ffbc7d">固定源码快照 · 2026.09.17</text>
+<text x="1810" y="99" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#c5d7e7">源码确认 ≠ 下载实测通过</text>
+<rect x="60" y="274" width="548" height="128" rx="16" fill="#ffffff"/>
+<text x="84" y="294" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#285ac4">01  输入</text>
+<text x="84" y="345" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#52687b">网页 / 站点链接 / 媒体 URL</text>
+<text x="612" y="313" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="42" font-weight="700" fill="#285ac4">›</text>
+<rect x="638" y="274" width="548" height="128" rx="16" fill="#ffffff"/>
+<text x="662" y="294" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#285ac4">02  发现与选择</text>
+<text x="662" y="345" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#52687b">浏览器嗅探 / 引擎解析 / 清单</text>
+<text x="1190" y="313" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="42" font-weight="700" fill="#285ac4">›</text>
+<rect x="1216" y="274" width="548" height="128" rx="16" fill="#ffffff"/>
+<text x="1240" y="294" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#285ac4">03  匹配与执行</text>
+<text x="1240" y="345" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#52687b">选引擎 → 排队 → 下载 / 合并</text>
+<text x="1768" y="313" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="42" font-weight="700" fill="#285ac4">›</text>
+<rect x="1794" y="274" width="548" height="128" rx="16" fill="#ffffff"/>
+<text x="1818" y="294" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#285ac4">04  确认与使用</text>
+<text x="1818" y="345" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#52687b">检查产物 → 保存 / 播放 / 转换</text>
+<text x="66" y="424" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">两条路径：普通网页先发现媒体；已支持的站点页可直接交给解析引擎，不必先嗅探最终文件地址。</text>
+<rect x="60" y="482" width="736" height="680" rx="22" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<rect x="85" y="508" width="54" height="48" rx="9" fill="#285ac4"/>
+<text x="94" y="514" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#ffffff">01</text>
+<text x="154" y="512" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#18324b">多入口与输入</text>
+<text x="90" y="577" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">桌面与 Web</text>
+<text x="90" y="617" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">Windows / macOS / Linux；局域网浏览器可访问运行</text>
+<text x="90" y="655" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">中的服务。</text>
+<text x="90" y="701" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">Chrome / Edge 扩展</text>
+<text x="90" y="741" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">检测候选、显示数量，单条或批量发送；HTTP 与桌面协</text>
+<text x="90" y="779" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">议入口。</text>
+<text x="90" y="825" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">手动输入与自动化</text>
+<text x="90" y="865" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">网页、视频页、m3u8、文件直链；单任务、批量 URL、</text>
+<text x="90" y="903" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">HTTP、Skill、MCP。</text>
+<text x="90" y="949" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">任务启动方式</text>
+<text x="90" y="989" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">立即下载或先加入列表；扩展默认先加入列表。</text>
+<text x="90" y="1125" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#52687b">依据 E03 / E12–E14 / E18；S1</text>
+<rect x="832" y="482" width="736" height="680" rx="22" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<rect x="857" y="508" width="54" height="48" rx="9" fill="#097d78"/>
+<text x="866" y="514" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#ffffff">02</text>
+<text x="926" y="512" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#18324b">资源发现与访问上下文</text>
+<text x="862" y="577" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">观察浏览器真实请求</text>
+<text x="862" y="617" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">URL 规则、请求头；桌面额外识别 HLS 响应类型。</text>
+<text x="862" y="663" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">页面识别与候选整理</text>
+<text x="862" y="703" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">站点适配、标题 / 类型 / 页面关联，选择要保存的资源。</text>
+<text x="862" y="749" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">HLS 清单检查</text>
+<text x="862" y="789" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">主列表 / 媒体列表、变体 URL、分辨率、带宽与编码信</text>
+<text x="862" y="827" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">息。</text>
+<text x="862" y="873" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">传递下载所需上下文</text>
+<text x="862" y="913" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">Cookie / Referer / User-Agent / 签名等按通道处理；</text>
+<text x="862" y="951" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">支持情况有差异。</text>
+<text x="862" y="1125" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#52687b">依据 E01–E05 / E15 / E20 / E24–E25</text>
+<rect x="1604" y="482" width="736" height="680" rx="22" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<rect x="1629" y="508" width="54" height="48" rx="9" fill="#285ac4"/>
+<text x="1638" y="514" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#ffffff">03</text>
+<text x="1698" y="512" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#18324b">任务与队列管理</text>
+<text x="1634" y="577" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">创建、编辑与记录</text>
+<text x="1634" y="617" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">命名、保存目录、重复 URL 检查；列表 / 单项 / 活动任</text>
+<text x="1634" y="655" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">务查询。</text>
+<text x="1634" y="701" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">控制执行</text>
+<text x="1634" y="741" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">启动、停止、再次启动；内存队列控制并发，SQLite 保</text>
+<text x="1634" y="779" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">存记录。</text>
+<text x="1634" y="825" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">状态、进度与日志</text>
+<text x="1634" y="865" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">等待 / 下载中 / 成功 / 失败 / 已停止；速度、错误、SSE</text>
+<text x="1634" y="903" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b"> 事件推送。</text>
+<text x="1634" y="949" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">整理与维护</text>
+<text x="1634" y="989" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">删除任务、导出任务列表、目录查询；支持直播标记。</text>
+<text x="1634" y="1125" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#52687b">依据 E07–E10 / E21–E22；S2</text>
+<rect x="60" y="1192" width="2280" height="458" rx="22" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<text x="91" y="1222" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="40" font-weight="700" fill="#18324b">04  来源支持地图</text>
+<text x="541" y="1232" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">专门规则、媒体协议与引擎覆盖是不同层次；网站名不代表任意页面都可下载。</text>
+<text x="91" y="1298" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#097d78">媒体协议 / 文件直链</text>
+<text x="91" y="1344" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#52687b">HLS / m3u8：点播、可访问直播流</text>
+<text x="91" y="1384" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#52687b">MP4、FLV、MOV、AVI、MKV、WMV、M4A、</text>
+<text x="91" y="1424" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#52687b">OGG 等</text>
+<text x="91" y="1489" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#097d78">Bilibili → BBDown</text>
+<text x="91" y="1535" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#52687b">video 页面；Core 也推断 b23.tv</text>
+<text x="863" y="1298" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#097d78">YouTube → yt-dlp</text>
+<text x="863" y="1344" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#52687b">watch / shorts / live / embed / youtu.be</text>
+<text x="863" y="1409" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#097d78">X、抖音 / TikTok → yt-dlp</text>
+<text x="863" y="1455" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#52687b">X / Twitter status；短视频单条与分享链接</text>
+<text x="1635" y="1298" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#097d78">小红书 → yt-dlp</text>
+<text x="1635" y="1344" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#52687b">explore / discovery/item、部分个人页内笔记、</text>
+<text x="1635" y="1384" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#52687b">xhslink；保留签名参数</text>
+<text x="1635" y="1449" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#097d78">Instagram、Reddit 与其他站点</text>
+<text x="1635" y="1495" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#52687b">来自 yt-dlp 解析器的扩展范围；“千余站点”为上游</text>
+<text x="1635" y="1535" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="400" fill="#52687b">声明，非逐站实测</text>
+<text x="92" y="1597" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#ad5c21">未知网页可能被推断为 direct，不会全部自动转交 yt-dlp。  ·  依据 E01 / E05 / E06 / E20</text>
+<rect x="60" y="1680" width="736" height="660" rx="22" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<rect x="85" y="1706" width="54" height="48" rx="9" fill="#285ac4"/>
+<text x="94" y="1712" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#ffffff">05</text>
+<text x="154" y="1710" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#18324b">六种类型，五个下载入口</text>
+<text x="90" y="1775" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">m3u8 → N_m3u8DL-RE</text>
+<text x="90" y="1815" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">HLS 数据下载与合并流程。</text>
+<text x="90" y="1861" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">bilibili → BBDown</text>
+<text x="90" y="1901" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">B 站专用页面解析与下载。</text>
+<text x="90" y="1947" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">youtube / xiaohongshu → yt-dlp</text>
+<text x="90" y="1987" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">多站点解析；小红书为独立任务类型。</text>
+<text x="90" y="2033" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">direct → aria2c；mediago → mediago</text>
+<text x="90" y="2073" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">文件直链 / 另一外部引擎通道。</text>
+<text x="90" y="2119" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">Schema 统一参数与输出</text>
+<text x="90" y="2159" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">将任务字段映射为 CLI 参数及进度规则。</text>
+<text x="90" y="2303" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#52687b">依据 E05–E06 / E10 / E17</text>
+<rect x="832" y="1680" width="736" height="660" rx="22" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<rect x="857" y="1706" width="54" height="48" rx="9" fill="#097d78"/>
+<text x="866" y="1712" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#ffffff">06</text>
+<text x="926" y="1710" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#18324b">媒体处理与产物确认</text>
+<text x="862" y="1775" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">下载、合并与直播收尾</text>
+<text x="862" y="1815" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">引擎传输数据；直播温和停止、收尾检查，部分异常尝试</text>
+<text x="862" y="1853" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">分片恢复。</text>
+<text x="862" y="1899" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">确认真实文件</text>
+<text x="862" y="1939" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">解析引擎输出路径，检查实际产物并保存；无有效产物可</text>
+<text x="862" y="1977" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">报错。</text>
+<text x="862" y="2023" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">视频转换</text>
+<text x="862" y="2063" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">FFmpeg：MP4 / MKV → H.264 + AAC；WebM → </text>
+<text x="862" y="2101" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">VP9 + Opus。</text>
+<text x="862" y="2147" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">音频提取与输出</text>
+<text x="862" y="2187" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">MP3 / AAC / FLAC / WAV；质量参数、转换任务及开始</text>
+<text x="862" y="2225" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b"> / 停止控制。</text>
+<text x="862" y="2303" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#52687b">依据 E10–E11 / E21–E22；S2</text>
+<rect x="1604" y="1680" width="736" height="660" rx="22" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<rect x="1629" y="1706" width="54" height="48" rx="9" fill="#285ac4"/>
+<text x="1638" y="1712" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#ffffff">07</text>
+<text x="1698" y="1710" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#18324b">浏览、收藏与成品使用</text>
+<text x="1634" y="1775" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">内置浏览器操作</text>
+<text x="1634" y="1815" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">多标签、地址导航、刷新、桌面 / 手机模式切换，资源面</text>
+<text x="1634" y="1853" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">板与筛选。</text>
+<text x="1634" y="1899" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">收藏常用网页</text>
+<text x="1634" y="1939" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">新增 / 删除、标题与图标、导入 / 导出；便于再次访问来</text>
+<text x="1634" y="1977" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">源。</text>
+<text x="1634" y="2023" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">内置播放器与文件服务</text>
+<text x="1634" y="2063" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">查询可播放成品、按任务查看文件；Web 播放依赖正确</text>
+<text x="1634" y="2101" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">配置视频目录。</text>
+<text x="1634" y="2147" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">界面与运行设置</text>
+<text x="1634" y="2187" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">中 / 英 / 意语言、主题、目录、终端显示、并发数及代理</text>
+<text x="1634" y="2225" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">等设置入口。</text>
+<text x="1634" y="2303" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#52687b">依据 E09 / E18；S1–S6</text>
+<rect x="60" y="2370" width="736" height="760" rx="22" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<rect x="85" y="2396" width="54" height="48" rx="9" fill="#097d78"/>
+<text x="94" y="2402" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#ffffff">08</text>
+<text x="154" y="2400" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#18324b">桌面、Docker 与 NAS 协作</text>
+<text x="90" y="2465" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">本地发现 → 远端下载</text>
+<text x="90" y="2505" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">桌面或扩展发现资源，向配置的远端 Core 转交任务。</text>
+<text x="90" y="2551" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">远端任务管理</text>
+<text x="90" y="2591" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">创建 / 查询 / 编辑 / 删除 / 开始 / 停止；活动状态、直</text>
+<text x="90" y="2629" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">播标记与日志。</text>
+<text x="90" y="2675" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">服务器与局域网使用</text>
+<text x="90" y="2715" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">Docker amd64 / arm64；Web 入口；文件保存到执行</text>
+<text x="90" y="2753" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">端或服务器挂载目录。</text>
+<text x="90" y="2799" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">配置连接与访问</text>
+<text x="90" y="2839" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">服务地址、API Key、可选鉴权；MCP 另需启用和 </text>
+<text x="90" y="2877" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">token。</text>
+<text x="90" y="2923" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">关键条件</text>
+<text x="90" y="2963" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">动态网页发现仍需要浏览器执行端；Docker 本身不等于</text>
+<text x="90" y="3001" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">完整桌面浏览器。</text>
+<text x="90" y="3093" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#52687b">依据 E03 / E12–E13 / E16 / E18；S2</text>
+<rect x="832" y="2370" width="736" height="760" rx="22" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<rect x="857" y="2396" width="54" height="48" rx="9" fill="#285ac4"/>
+<text x="866" y="2402" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#ffffff">09</text>
+<text x="926" y="2400" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#18324b">HTTP、Skill 与 9 个 MCP 工具</text>
+<text x="862" y="2465" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">服务健康</text>
+<text x="862" y="2505" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">health_check</text>
+<text x="862" y="2551" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">发现 / 结果 / 取消发现</text>
+<text x="862" y="2591" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">discover_media · get_media_discovery</text>
+<text x="862" y="2629" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">cancel_media_discovery</text>
+<text x="862" y="2675" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">选中资源下载 / 直接建任务</text>
+<text x="862" y="2715" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">download_discovered_media</text>
+<text x="862" y="2753" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">create_download</text>
+<text x="862" y="2799" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">查询 / 列表 / 停止下载</text>
+<text x="862" y="2839" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">get_download · list_downloads</text>
+<text x="862" y="2877" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">stop_download</text>
+<text x="862" y="2923" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#285ac4">HTTP 与 AI Skill</text>
+<text x="862" y="2963" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">脚本接入任务、发现、配置、收藏、转换等；AI 负责调</text>
+<text x="862" y="3001" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">用已有服务。</text>
+<text x="862" y="3093" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#52687b">依据 E12–E14；S2</text>
+<rect x="1604" y="2370" width="736" height="760" rx="22" fill="#ffffff" stroke="#cbd8e5" stroke-width="2"/>
+<rect x="1629" y="2396" width="54" height="48" rx="9" fill="#097d78"/>
+<text x="1638" y="2402" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#ffffff">10</text>
+<text x="1698" y="2400" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#18324b">依赖、运行资源与工程机制</text>
+<text x="1634" y="2465" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">7 项运行依赖</text>
+<text x="1634" y="2505" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">N_m3u8DL-RE、BBDown、aria2-next、yt-dlp、</text>
+<text x="1634" y="2543" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">mediago、FFmpeg、Deno。</text>
+<text x="1634" y="2589" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">从哪里获取</text>
+<text x="1634" y="2629" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">GitHub Releases 固定版本 / 平台资源；下载、解包、</text>
+<text x="1634" y="2667" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">SHA-256 校验。</text>
+<text x="1634" y="2713" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">服务与状态层</text>
+<text x="1634" y="2753" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">Go / Gin、GORM / SQLite、SSE；React / Electron 提</text>
+<text x="1634" y="2791" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">供交互与浏览器。</text>
+<text x="1634" y="2837" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">进程适配与生命周期</text>
+<text x="1634" y="2877" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">PTY / 管道 Runner、参数构造、日志解析、取消及进度</text>
+<text x="1634" y="2915" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">更新。</text>
+<text x="1634" y="2961" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#097d78">实际资源消耗</text>
+<text x="1634" y="3001" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">媒体来自对应站点 / CDN；带宽、磁盘和转码 CPU 由执</text>
+<text x="1634" y="3039" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#52687b">行机器承担。</text>
+<text x="1634" y="3093" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#52687b">依据 E09–E10 / E17–E19 / E22–E23</text>
+<rect x="60" y="3160" width="2280" height="142" rx="20" fill="#132b44"/>
+<text x="92" y="3183" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#ffbc7d">六类完整使用场景</text>
+<text x="92" y="3238" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#ffffff">网页视频保存     /     站点链接下载     /     批量资料整理     /     直播录制     /     NAS 远端保存     /     AI 自动化获取</text>
+<rect x="60" y="3332" width="2280" height="294" rx="20" fill="#fff3e6"/>
+<text x="92" y="3357" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="37" font-weight="700" fill="#ad5c21">理解这些边界，才算看全能力</text>
+<text x="92" y="3418" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#18324b">• 不保证任意网页、会员内容或 DRM 可下载；专门规则覆盖小于外部引擎覆盖。</text>
+<text x="92" y="3455" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#18324b">• 会话、签名和网络影响下载；默认 direct 参数未映射 headers / proxy；本地与远端凭据保存路径不同。</text>
+<text x="92" y="3492" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#18324b">• 成功找到文件 ≠ 视频完整；直播恢复 ≠ 整场无缺失；内存队列 ≠ 已验证的宕机恢复或分布式调度。</text>
+<text x="92" y="3529" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#18324b">• AI 接口不提供视频理解；转写、摘要、字幕翻译、知识库检索未被本次研究确认为内置能力。</text>
+<text x="92" y="3566" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#18324b">• 画质选择是选已有版本；转码不能恢复源中没有的细节。根 MIT 许可不替代各依赖的许可。</text>
+<text x="63" y="3658" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52687b">研究范围：f2aa40a8ce7c（2026-08-29 master 快照）  ·  整理：2026-09-17  ·  未运行 MediaGo / 未做真实站点下载</text>
+<text x="63" y="3700" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52687b">E01–E25：已有源码证据表；S1–S6：本图补充核对。全部来源与永久链接见 notes/capability-map.md。</text>
+<text x="63" y="3742" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52687b">mediago-dev/mediago  ·  原创研究图，不是官方界面截图；不同发布包与此源码快照的能力可能不同。</text>
+</svg>
