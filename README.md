@@ -4,6 +4,8 @@
 
 这里是研究总项目库：首页提供摘要、有序索引和图片预览；每个子项目独立保存研究记录、实验代码和演示说明。
 
+[在线演示总入口](https://yydshly.github.io/0916_codex_project/) · [PPT Master 风格展厅](https://yydshly.github.io/0916_codex_project/001-ppt-master/styles.html)
+
 ## 项目索引
 
 编号按收录顺序递增，分配后保持不变；默认按编号升序展示。模板不计入正式项目。
@@ -11,7 +13,7 @@
 <!-- PROJECT_INDEX:START -->
 | 编号 | 项目 | 研究摘要 | 标签 | 状态 | 上游 | 演示 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 001 | [PPT Master 能力实验室](projects/001-ppt-master/README.md) | 把内容策划、18 种视觉风格与原生 PPT 导出串成工作流；附 36 张官方风格预览及可编辑图表、表格、公式实测。 | AI 演示文稿、SVG、原生 PPTX、本地实测 | 已完成 | [源码](https://github.com/hugohe3/ppt-master) | — |
+| 001 | [PPT Master 能力实验室](projects/001-ppt-master/README.md) | 把内容策划、18 种视觉风格与原生 PPT 导出串成工作流；附 36 张官方风格预览及可编辑图表、表格、公式实测。 | AI 演示文稿、SVG、原生 PPTX、本地实测 | 已完成 | [源码](https://github.com/hugohe3/ppt-master) | [访问](https://yydshly.github.io/0916_codex_project/001-ppt-master/styles.html) |
 | 002 | [PDF Craft 扫描文档重建研究](projects/002-pdf-craft/README.md) | 解析 OCR 接入、书籍结构重建与翻译输出；附能力总览图。价值主要在工程集成，暂不继续深挖，未做转换实测。 | OCR 集成、文档重建、EPUB、源码研究 | 已归档 | [源码](https://github.com/oomol-lab/pdf-craft) | — |
 <!-- PROJECT_INDEX:END -->
 

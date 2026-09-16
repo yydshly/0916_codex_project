@@ -21,6 +21,8 @@ PPT Master 将「理解材料 → 组织叙事 → 选择视觉方向 → 设计
 
 ## 直接看效果
 
+**在线入口：[18 种风格展厅](https://yydshly.github.io/0916_codex_project/001-ppt-master/styles.html) · [一页总览](https://yydshly.github.io/0916_codex_project/001-ppt-master/overview.html) · [原生 PPT 实测与下载](https://yydshly.github.io/0916_codex_project/001-ppt-master/) 。**
+
 ![PPT Master 18 种视觉风格汇总截图](assets/styles-overview.png)
 
 引导图是[多风格汇总页](app/overview.html)的实际浏览器截图，包含 18 种官方案例的完整封面静态预览，不是同一内容批量生成的对照实验。交互展厅可继续查看 36 张封面与内容页；原生 PPT 实测区的五页预览则来自 Microsoft PowerPoint 16.0 对本地生成文件的实际渲染。
@@ -65,6 +67,12 @@ python -m http.server 8765 --bind 127.0.0.1 --directory projects/001-ppt-master/
 网页使用独立静态文件，不依赖模型密钥或服务端。仓库通过 `python scripts/build_web.py` 汇总所有已收录静态演示，GitHub Actions 将 `web/` 发布到 Pages；本站位于 `001-ppt-master/` 子路径，默认演示入口为 `styles.html`。发布不会运行模型或重新生成 PPT，已验证的文件随站点提供下载。
 
 本地预览完整发布目录：运行构建脚本后执行 `python -m http.server 8766 --bind 127.0.0.1 --directory web`。发布配置和接入说明见[部署文档](../../docs/DEPLOYMENT.md)。
+
+2026-09-16 已上线并通过真实浏览器检查：36 张预览与本地文件逐字节一致、两份 PPT 下载哈希一致，类别筛选、内容页切换、详情直达与刷新、移动布局正常。记录见[线上验证报告](notes/deployment-verification.json)。如需复查，使用带 Playwright 的 Node.js 环境运行：
+
+```powershell
+node projects/001-ppt-master/scripts/check_site.cjs https://yydshly.github.io/0916_codex_project/
+```
 
 ## 重新生成 PPT
 
@@ -122,7 +130,7 @@ THIRD_PARTY_NOTICES.md   来源与许可说明
 - 可编辑性对应下载的 PPTX，网页预览是图片。
 - 原生图表可能改变布局细节，两种版本不保证逐像素一致。流程图连接线没有自动吸附关系。
 - 未复现：模板、原稿编辑、旁白、复杂动画、图片重建、完整 AI 策划。扩展能力指向官方案例。
-- 当前仅提供本地展示，尚未部署公网地址；`projects.json` 的 `demo` 保持为空。
+- 已发布到 GitHub Pages，提供公开静态展示和现成文件下载；不提供在线 AI 生成或云端编辑服务。
 
 ## 来源与许可
 

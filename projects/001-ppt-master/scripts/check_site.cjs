@@ -16,6 +16,7 @@ const reportPath=process.argv[3];
  assert.equal((await page.goto(base,{waitUntil:'networkidle'})).status(),200);
  assert.equal(await page.locator('article').count(),2);
  await page.locator('a.primary').click();
+ await page.locator('.style-card').nth(17).waitFor();
  assert.equal(new URL(page.url()).pathname,new URL(url('001-ppt-master/styles.html')).pathname);
  assert.equal(await page.locator('.style-card').count(),18);
  await page.locator('[data-category="手绘与笔触"]').click();

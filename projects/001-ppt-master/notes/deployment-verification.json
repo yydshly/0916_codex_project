@@ -1,0 +1,33 @@
+{
+  "verifiedAt": "2026-09-16T11:46:48.805Z",
+  "baseUrl": "https://yydshly.github.io/0916_codex_project/",
+  "verifiedDeploymentCommit": "c18ac7203b714d81b7ff8fb7232096122669604f",
+  "workflowRun": "https://github.com/yydshly/0916_codex_project/actions/runs/35091957702",
+  "browser": "153.0.4234.32",
+  "result": "passed",
+  "stylePreviewImages": 36,
+  "downloads": [
+    {
+      "filename": "native-data.pptx",
+      "sha256": "e50ebf2f99a6ba932f4e6e5aa8f4e793516dd506db3073d275a1d47f69248bd1",
+      "bytes": 38678
+    },
+    {
+      "filename": "editable-shapes.pptx",
+      "sha256": "5aaf9ee7098d453ccae77786d73eda74fab4c1e9a5439c4d86131be77847c0bc",
+      "bytes": 33078
+    }
+  ],
+  "checks": [
+    "site index links to style gallery",
+    "category filtering and content-page preview",
+    "deep-link refresh opens selected style",
+    "mobile layout without horizontal overflow",
+    "18-style overview loads all images",
+    "36 hosted preview files match local bytes",
+    "native vs shapes preview switches",
+    "2 hosted PPT files match local SHA256",
+    "licenses and attribution available",
+    "no JavaScript errors"
+  ]
+}

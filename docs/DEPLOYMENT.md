@@ -12,7 +12,7 @@ https://yydshly.github.io/0916_codex_project/001-ppt-master/styles.html 风格�
 https://yydshly.github.io/0916_codex_project/001-ppt-master/             原生 PPT 实测
 ```
 
-以上为 Pages 配置对应路径；首次部署验证后才将可用演示写入 `projects.json`。没有 `app/index.html` 的项目只在总入口链接研究记录，不生成虚构演示页面。
+以上地址于 2026-09-16 完成首次发布并验证，正式演示已写入 `projects.json`。没有 `app/index.html` 的项目只在总入口链接研究记录，不生成虚构演示页面。PPT Master 的 36 张预览与两份 PPT 下载已核对本地内容，详见[线上验证记录](../projects/001-ppt-master/notes/deployment-verification.json)。
 
 ## 源码与发布目录
 
