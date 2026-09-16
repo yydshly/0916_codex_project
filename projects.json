@@ -62,7 +62,7 @@
       "id": 4,
       "slug": "design-extract",
       "name": "Design Extract 网站设计提取研究",
-      "summary": "网页设计提取研究：中文交互手册梳理能力与五步原理，附真实输出、17 项基础检查和 4 项保真问题；未验证完整复刻。",
+      "summary": "浏览器采集与设计资料导出；附 Codex 对比、使用场景和网页复刻参考流程引导图。17 项基础检查通过，另有 4 项保真问题；完整复刻未验证。",
       "repo": "https://github.com/Manavarya09/design-extract",
       "status": "已完成",
       "tags": [
@@ -74,7 +74,14 @@
       ],
       "cover": "projects/004-design-extract/assets/extracted-preview-cover.png",
       "cover_alt": "上游工具提取原创测试页后生成的原生预览截图，展示配色与基础统计；完整结果及四项保真问题见子项目说明。",
-      "demo": "https://yydshly.github.io/0916_codex_project/004-design-extract/"
+      "demo": "https://yydshly.github.io/0916_codex_project/004-design-extract/",
+      "guides": [
+        {
+          "title": "讨论汇总：能力、Codex 对比与我们的参考价值",
+          "image": "projects/004-design-extract/assets/understanding-guide.png",
+          "alt": "原创研究引导图：库的采集归纳导出能力、Codex 对比、四类场景和复刻工具参考流程；非运行截图，完整复刻尚未验证。"
+        }
+      ]
     }
   ]
 }

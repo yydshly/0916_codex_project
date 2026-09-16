@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1720" viewBox="0 0 1600 1720" role="img" aria-labelledby="title desc">
+<title id="title">Design Extract：从网页采集到复刻验证</title><desc id="desc">库能力、Codex 对比、使用场景和我们构建网页复刻能力的参考价值。原创研究图，非运行截图。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#8091ac"/></marker><marker id="green" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#7ee0c7"/></marker></defs>
+<rect x="0" y="0" width="1600" height="1720" rx="0" fill="#f3f6fb" stroke="#f3f6fb"/>
+<rect x="60" y="53" width="54" height="54" rx="12" fill="#2454e6" stroke="#2454e6"/>
+<text x="69" y="91" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="white">de.</text>
+<text x="135" y="89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#2454e6">DESIGN EXTRACT  /  004 研究引导</text>
+<text x="60" y="169" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="52" font-weight="700" fill="#172d49">获取设计信息，走向可验证的网页复刻。</text>
+<text x="62" y="219" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#172d49">我们的判断：单次复刻先直接用 Codex；重复采集和复用时，再评估这个库。</text>
+<rect x="60" y="255" width="1480" height="243" rx="16" fill="#ffffff" stroke="#dae3ee"/>
+<text x="88" y="298" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#2454e6">01  库的能力：采集 → 归纳 → 导出</text>
+<text x="90" y="356" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#172d49">浏览器采集</text>
+<text x="90" y="400" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52657c">结构、计算样式、布局</text>
+<text x="90" y="438" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52657c">多视口、主题、悬停与聚焦</text>
+<text x="585" y="356" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#172d49">设计信息整理</text>
+<text x="585" y="400" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52657c">颜色与间距统计、角色推断</text>
+<text x="585" y="438" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52657c">保留观测值，核对归纳结果</text>
+<text x="1080" y="356" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#172d49">资料与配置导出</text>
+<text x="1080" y="400" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52657c">设计文档、变量、主题配置</text>
+<text x="1080" y="438" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52657c">另有模板与差异相关功能</text>
+<path d="M478,371 L543,371" stroke="#8091ac" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M973,371 L1038,371" stroke="#8091ac" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<text x="89" y="476" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#52657c">基础提取主要读取结构和样式；截图是视觉参考，可选模型辅助部分分类。</text>
+<rect x="60" y="520" width="1480" height="292" rx="16" fill="#ffffff" stroke="#dae3ee"/>
+<text x="88" y="565" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#2454e6">02  与 Codex 的差别：组织方式不同，采集方法可以相同</text>
+<rect x="88" y="590" width="694" height="146" rx="10" fill="#eef3ff" stroke="#eef3ff"/>
+<rect x="802" y="590" width="710" height="146" rx="10" fill="#eaf5f1" stroke="#eaf5f1"/>
+<text x="111" y="630" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#172d49">Design Extract</text>
+<text x="111" y="670" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52657c">预设采集项 → 规则归纳 → 统一格式</text>
+<text x="111" y="707" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52657c">适合标准化提取与反复调用</text>
+<text x="825" y="630" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#172d49">Codex（具备相应工具时）</text>
+<text x="825" y="670" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52657c">按任务观察 → 补充测量 → 实现 → 对照修改</text>
+<text x="825" y="707" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#52657c">适合围绕当前目标动态完成开发</text>
+<text x="89" y="780" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#52657c">实际测量可以精确；视觉估计、分类和归纳都可能出错。尚无两种流程的效果对照实验。</text>
+<rect x="60" y="834" width="1480" height="220" rx="16" fill="#ffffff" stroke="#dae3ee"/>
+<text x="88" y="879" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#2454e6">03  使用场景：什么时候值得引入？</text>
+<text x="91" y="932" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#172d49">一个喜欢的网页</text>
+<text x="91" y="976" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#52657c">先直接交给 Codex</text>
+<text x="91" y="1012" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#52657c">要求测量和截图检查</text>
+<text x="455" y="932" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#172d49">多个项目复用风格</text>
+<text x="455" y="976" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#52657c">提取并核对设计规范</text>
+<text x="455" y="1012" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#52657c">保存变量、字体和组件参数</text>
+<text x="819" y="932" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#172d49">批量分析与旧站盘点</text>
+<text x="819" y="976" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#52657c">统一采集、记录来源</text>
+<text x="819" y="1012" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#52657c">抽查结果，处理遗漏</text>
+<text x="1183" y="932" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#172d49">开发复刻工具</text>
+<text x="1183" y="976" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#52657c">候选采集模块</text>
+<text x="1183" y="1012" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#52657c">补齐生成与修正</text>
+<rect x="60" y="1076" width="1480" height="361" rx="16" fill="#172d49" stroke="#172d49"/>
+<text x="88" y="1124" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#ffffff">04  我们的参考价值：借鉴前段能力，补齐完整工作流程</text>
+<text x="90" y="1167" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#a9c5ef">建议架构 · 尚未端到端验证</text>
+<rect x="90" y="1192" width="250" height="94" rx="10" fill="#28456a" stroke="#446182"/>
+<text x="109" y="1230" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#ffffff">浏览器采集</text>
+<text x="109" y="1265" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#d4e0f0">截图 + 结构样式</text>
+<path d="M347,1238 L373,1238" stroke="#8091ac" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="381" y="1192" width="250" height="94" rx="10" fill="#28456a" stroke="#446182"/>
+<text x="400" y="1230" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#ffffff">有来源的资料</text>
+<text x="400" y="1265" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#d4e0f0">观测 / 推断分开</text>
+<path d="M638,1238 L664,1238" stroke="#8091ac" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="672" y="1192" width="250" height="94" rx="10" fill="#28456a" stroke="#446182"/>
+<text x="691" y="1230" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#ffffff">生成代码</text>
+<text x="691" y="1265" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#d4e0f0">按区域与组件</text>
+<path d="M929,1238 L955,1238" stroke="#8091ac" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="963" y="1192" width="250" height="94" rx="10" fill="#28456a" stroke="#446182"/>
+<text x="982" y="1230" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#ffffff">运行预览</text>
+<text x="982" y="1265" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#d4e0f0">检查构建与交互</text>
+<path d="M1220,1238 L1246,1238" stroke="#8091ac" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1254" y="1192" width="250" height="94" rx="10" fill="#28456a" stroke="#446182"/>
+<text x="1273" y="1230" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#ffffff">同条件比较</text>
+<text x="1273" y="1265" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#d4e0f0">同视口、同状态</text>
+<path d="M1379,1297 V1326 H797 V1297" stroke="#7ee0c7" stroke-width="3" fill="none" marker-end="url(#green)"/>
+<text x="915" y="1363" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#7ee0c7">定位差异 → 修改代码 → 再次验证</text>
+<text x="90" y="1405" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#d4e0f0">原站操作前后对比：理解状态变化。原站与复刻页对比：验证还原效果。</text>
+<rect x="60" y="1459" width="1480" height="140" rx="16" fill="#e9efff" stroke="#d8e2fb"/>
+<text x="89" y="1503" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#2454e6">下一步实验：同一批页面，比较三种输入方式</text>
+<text x="91" y="1545" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#172d49">A  仅截图</text>
+<text x="422" y="1545" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#172d49">B  截图 + 自行采集</text>
+<text x="1007" y="1545" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#172d49">C  截图 + 本库输出</text>
+<text x="91" y="1580" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#52657c">固定模型、框架与修正轮次；比较视觉、交互、人工修改、耗时和成本。</text>
+<text x="62" y="1641" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#52657c">实测边界：1 个原创样本；17 项基础检查通过，另有 4 项保真问题。未验证完整复刻。</text>
+<text x="62" y="1682" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#52657c">2026.09.16  ·  designlang 13.3.0 / 47f75bb  ·  原创研究示意图，非上游界面</text>
+</svg>

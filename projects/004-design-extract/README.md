@@ -1,5 +1,13 @@
 # 004 · Design Extract 网站设计提取研究
 
+**本次讨论汇总**：[我们的理解与参考价值](notes/understanding.md) · [网页阅读](https://yydshly.github.io/0916_codex_project/004-design-extract/understanding.html) · [引导图 PNG](assets/understanding-guide.png) · [可编辑 SVG](assets/understanding-guide.svg)。
+
+核心判断：单次复刻先直接用 Codex；重复提取、批量整理或多项目复用时，再评估该库。我们可以借鉴其采集、数据组织与导出方式，完整复刻还需补齐生成、运行、同状态比较与修改验证。尚未做两种方案的效果或效率对照实验。
+
+汇总页包含能力说明、Codex 对照表、两种对比的区别、四类场景选择、建议架构和三组后续实验。保留原手册与真实实验截图；引导图为原创矢量示意图，提供 SVG 和 1600 × 1720 PNG，不是上游界面。网页可下载完整 Markdown 文档。
+
+复现引导图：运行 python projects/004-design-extract/experiments/create-guide.py，再运行 node projects/004-design-extract/experiments/check-understanding.mjs --render-only。之后按下文构建网页、启动本地预览，运行 node projects/004-design-extract/experiments/check-understanding.mjs 检查场景切换、键盘、下载、原页入口、锚点刷新与三种屏宽。11 项本地检查通过，详见 [汇总页验证](notes/understanding-local-verification.json)。此验证不代表已经实现或评估完整复刻工具。
+
 **输入网页地址，提取浏览器呈现的颜色、字体、间距、布局和状态，再输出设计变量、设计说明与开发配置。适合为网站改版和 AI 页面开发准备参考资料；自动归纳的设计语义需要人工核对。**
 
 本轮结论：**基础提取可用，完整还原不可直接相信。** 本地受控实验的 17 项基础检查通过；另外 4 项保真检查暴露了间距丢失、正文色误选、慢动画中间态和复刻模板文案。30 个 API 导出器返回了内容，CLI 实际生成 34 个顶层文件。这些数字代表本次样本的运行结果，不代表复杂网站准确率或跨平台兼容率。
