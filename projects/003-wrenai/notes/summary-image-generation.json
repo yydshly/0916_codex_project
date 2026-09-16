@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-09-16T12:58:08.723Z",
+  "method": "Deterministic HTML/CSS layout rendered to PNG using Playwright / Chrome",
+  "imagegen_attempts": 2,
+  "imagegen_status": "Both built-in attempts failed with a network error. Final image is an original HTML/CSS composition exported to PNG; no image-generation API fallback used.",
+  "source": "experiments/summary-poster.html",
+  "prompt_record": "notes/summary-image-prompt.txt",
+  "width": 3600,
+  "height": 3756,
+  "sha256": "3c79ba32ba810f9d64de907ae722eaff9d28d8dc65d44124a5dac138264627c8",
+  "description": "Original research infographic, not upstream UI or execution screenshot. Exact Chinese text and numbers use repository research evidence."
+}

@@ -1,0 +1,17 @@
+{
+  "name": "wrenai-research-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "experiment": "node experiments/verify-engine.mjs",
+    "render:summary": "node experiments/render-summary.mjs",
+    "test:ui": "node experiments/verify-ui.mjs"
+  },
+  "dependencies": {
+    "@wrenai/wren-core-wasm": "0.4.1"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}

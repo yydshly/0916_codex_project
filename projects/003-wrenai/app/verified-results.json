@@ -1,0 +1,798 @@
+{
+  "metadata": {
+    "generated_at": "2026-09-16T12:05:27.406Z",
+    "engine": "@wrenai/wren-core-wasm@0.4.1",
+    "upstream_commit": "871118e94f1525c401d867074c05e7e8eefca1cc",
+    "node": "v22.15.0",
+    "platform": "win32",
+    "wasm_sha256": "0dfc242c486c2926afa612676ebf51f1ca2ad12f41de204e58d24f04ad27715f",
+    "fixture": "39 synthetic orders, 6 synthetic customers; no personal or production data",
+    "validated_query_count": 36,
+    "checks": [
+      {
+        "test": "unknown-column-net",
+        "passed": true,
+        "error": "Error: SQL error: Schema error: No field named nonexistent_column. Valid fields are \"Orders\".order_id, \"Orders\".customer_id, \"Orders\".order_date, \"Orders\".paid_amount, \"Orders\".refund_amount, \"Orders\".status, \"Orders\".is_internal, \"Orders\".revenue."
+      },
+      {
+        "test": "unknown-column-gross",
+        "passed": true,
+        "error": "Error: SQL error: Schema error: No field named nonexistent_column. Valid fields are \"Orders\".order_id, \"Orders\".customer_id, \"Orders\".order_date, \"Orders\".paid_amount, \"Orders\".refund_amount, \"Orders\".status, \"Orders\".is_internal, \"Orders\".revenue."
+      },
+      {
+        "test": "refund-definition-changes-result",
+        "passed": true,
+        "net": 47250,
+        "gross": 50500,
+        "difference": 3250
+      }
+    ],
+    "scope": "Real WASM engine: MDL calculated fields, explicit joins, filters, aggregation, top-N, invalid column. No LLM or RAG executed."
+  },
+  "snapshots": {
+    "region|2026-07|全部|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "region",
+        "month": "2026-07",
+        "region": "全部"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华西",
+          "revenue": 16150
+        },
+        {
+          "label": "华南",
+          "revenue": 12750
+        },
+        {
+          "label": "华东",
+          "revenue": 9350
+        }
+      ]
+    },
+    "region|2026-07|华东|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "region",
+        "month": "2026-07",
+        "region": "华东"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华东",
+          "revenue": 9350
+        }
+      ]
+    },
+    "region|2026-07|华南|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "region",
+        "month": "2026-07",
+        "region": "华南"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华南",
+          "revenue": 12750
+        }
+      ]
+    },
+    "region|2026-08|全部|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "region",
+        "month": "2026-08",
+        "region": "全部"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华西",
+          "revenue": 19150
+        },
+        {
+          "label": "华南",
+          "revenue": 15750
+        },
+        {
+          "label": "华东",
+          "revenue": 12350
+        }
+      ]
+    },
+    "region|2026-08|华东|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "region",
+        "month": "2026-08",
+        "region": "华东"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华东",
+          "revenue": 12350
+        }
+      ]
+    },
+    "region|2026-08|华南|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "region",
+        "month": "2026-08",
+        "region": "华南"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华南",
+          "revenue": 15750
+        }
+      ]
+    },
+    "customer|2026-07|全部|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "customer",
+        "month": "2026-07",
+        "region": "全部"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "星野选品",
+          "revenue": 8500
+        },
+        {
+          "label": "远山集市",
+          "revenue": 7650
+        },
+        {
+          "label": "木棉生活",
+          "revenue": 6800
+        },
+        {
+          "label": "南风百货",
+          "revenue": 5950
+        },
+        {
+          "label": "山海零售",
+          "revenue": 5100
+        }
+      ]
+    },
+    "customer|2026-07|华东|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "customer",
+        "month": "2026-07",
+        "region": "华东"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "山海零售",
+          "revenue": 5100
+        },
+        {
+          "label": "青禾商店",
+          "revenue": 4250
+        }
+      ]
+    },
+    "customer|2026-07|华南|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "customer",
+        "month": "2026-07",
+        "region": "华南"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "木棉生活",
+          "revenue": 6800
+        },
+        {
+          "label": "南风百货",
+          "revenue": 5950
+        }
+      ]
+    },
+    "customer|2026-08|全部|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "customer",
+        "month": "2026-08",
+        "region": "全部"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "星野选品",
+          "revenue": 10000
+        },
+        {
+          "label": "远山集市",
+          "revenue": 9150
+        },
+        {
+          "label": "木棉生活",
+          "revenue": 8300
+        },
+        {
+          "label": "南风百货",
+          "revenue": 7450
+        },
+        {
+          "label": "山海零售",
+          "revenue": 6600
+        }
+      ]
+    },
+    "customer|2026-08|华东|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "customer",
+        "month": "2026-08",
+        "region": "华东"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "山海零售",
+          "revenue": 6600
+        },
+        {
+          "label": "青禾商店",
+          "revenue": 5750
+        }
+      ]
+    },
+    "customer|2026-08|华南|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "customer",
+        "month": "2026-08",
+        "region": "华南"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "木棉生活",
+          "revenue": 8300
+        },
+        {
+          "label": "南风百货",
+          "revenue": 7450
+        }
+      ]
+    },
+    "trend|2026-07|全部|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "trend",
+        "month": "2026-07",
+        "region": "全部"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-07-05",
+          "revenue": 12300
+        },
+        {
+          "label": "2026-07-15",
+          "revenue": 11250
+        },
+        {
+          "label": "2026-07-25",
+          "revenue": 14700
+        }
+      ]
+    },
+    "trend|2026-07|华东|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "trend",
+        "month": "2026-07",
+        "region": "华东"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-07-05",
+          "revenue": 2900
+        },
+        {
+          "label": "2026-07-15",
+          "revenue": 2750
+        },
+        {
+          "label": "2026-07-25",
+          "revenue": 3700
+        }
+      ]
+    },
+    "trend|2026-07|华南|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "trend",
+        "month": "2026-07",
+        "region": "华南"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-07-05",
+          "revenue": 4100
+        },
+        {
+          "label": "2026-07-15",
+          "revenue": 3750
+        },
+        {
+          "label": "2026-07-25",
+          "revenue": 4900
+        }
+      ]
+    },
+    "trend|2026-08|全部|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "trend",
+        "month": "2026-08",
+        "region": "全部"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-08-05",
+          "revenue": 15300
+        },
+        {
+          "label": "2026-08-15",
+          "revenue": 14250
+        },
+        {
+          "label": "2026-08-25",
+          "revenue": 17700
+        }
+      ]
+    },
+    "trend|2026-08|华东|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "trend",
+        "month": "2026-08",
+        "region": "华东"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-08-05",
+          "revenue": 3900
+        },
+        {
+          "label": "2026-08-15",
+          "revenue": 3750
+        },
+        {
+          "label": "2026-08-25",
+          "revenue": 4700
+        }
+      ]
+    },
+    "trend|2026-08|华南|net": {
+      "params": {
+        "metric": "net",
+        "scenario": "trend",
+        "month": "2026-08",
+        "region": "华南"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-08-05",
+          "revenue": 5100
+        },
+        {
+          "label": "2026-08-15",
+          "revenue": 4750
+        },
+        {
+          "label": "2026-08-25",
+          "revenue": 5900
+        }
+      ]
+    },
+    "region|2026-07|全部|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "region",
+        "month": "2026-07",
+        "region": "全部"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华西",
+          "revenue": 17100
+        },
+        {
+          "label": "华南",
+          "revenue": 13500
+        },
+        {
+          "label": "华东",
+          "revenue": 9900
+        }
+      ]
+    },
+    "region|2026-07|华东|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "region",
+        "month": "2026-07",
+        "region": "华东"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华东",
+          "revenue": 9900
+        }
+      ]
+    },
+    "region|2026-07|华南|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "region",
+        "month": "2026-07",
+        "region": "华南"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华南",
+          "revenue": 13500
+        }
+      ]
+    },
+    "region|2026-08|全部|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "region",
+        "month": "2026-08",
+        "region": "全部"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华西",
+          "revenue": 20100
+        },
+        {
+          "label": "华南",
+          "revenue": 17500
+        },
+        {
+          "label": "华东",
+          "revenue": 12900
+        }
+      ]
+    },
+    "region|2026-08|华东|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "region",
+        "month": "2026-08",
+        "region": "华东"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华东",
+          "revenue": 12900
+        }
+      ]
+    },
+    "region|2026-08|华南|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "region",
+        "month": "2026-08",
+        "region": "华南"
+      },
+      "sql": "SELECT c.region AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY c.region\nORDER BY revenue DESC, label ASC",
+      "rows": [
+        {
+          "label": "华南",
+          "revenue": 17500
+        }
+      ]
+    },
+    "customer|2026-07|全部|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "customer",
+        "month": "2026-07",
+        "region": "全部"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "星野选品",
+          "revenue": 9000
+        },
+        {
+          "label": "远山集市",
+          "revenue": 8100
+        },
+        {
+          "label": "木棉生活",
+          "revenue": 7200
+        },
+        {
+          "label": "南风百货",
+          "revenue": 6300
+        },
+        {
+          "label": "山海零售",
+          "revenue": 5400
+        }
+      ]
+    },
+    "customer|2026-07|华东|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "customer",
+        "month": "2026-07",
+        "region": "华东"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "山海零售",
+          "revenue": 5400
+        },
+        {
+          "label": "青禾商店",
+          "revenue": 4500
+        }
+      ]
+    },
+    "customer|2026-07|华南|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "customer",
+        "month": "2026-07",
+        "region": "华南"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "木棉生活",
+          "revenue": 7200
+        },
+        {
+          "label": "南风百货",
+          "revenue": 6300
+        }
+      ]
+    },
+    "customer|2026-08|全部|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "customer",
+        "month": "2026-08",
+        "region": "全部"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "星野选品",
+          "revenue": 10500
+        },
+        {
+          "label": "远山集市",
+          "revenue": 9600
+        },
+        {
+          "label": "南风百货",
+          "revenue": 8800
+        },
+        {
+          "label": "木棉生活",
+          "revenue": 8700
+        },
+        {
+          "label": "山海零售",
+          "revenue": 6900
+        }
+      ]
+    },
+    "customer|2026-08|华东|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "customer",
+        "month": "2026-08",
+        "region": "华东"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "山海零售",
+          "revenue": 6900
+        },
+        {
+          "label": "青禾商店",
+          "revenue": 6000
+        }
+      ]
+    },
+    "customer|2026-08|华南|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "customer",
+        "month": "2026-08",
+        "region": "华南"
+      },
+      "sql": "SELECT c.customer_name AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY c.customer_name\nORDER BY revenue DESC, label ASC\nLIMIT 5",
+      "rows": [
+        {
+          "label": "南风百货",
+          "revenue": 8800
+        },
+        {
+          "label": "木棉生活",
+          "revenue": 8700
+        }
+      ]
+    },
+    "trend|2026-07|全部|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "trend",
+        "month": "2026-07",
+        "region": "全部"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-07-05",
+          "revenue": 12300
+        },
+        {
+          "label": "2026-07-15",
+          "revenue": 13500
+        },
+        {
+          "label": "2026-07-25",
+          "revenue": 14700
+        }
+      ]
+    },
+    "trend|2026-07|华东|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "trend",
+        "month": "2026-07",
+        "region": "华东"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-07-05",
+          "revenue": 2900
+        },
+        {
+          "label": "2026-07-15",
+          "revenue": 3300
+        },
+        {
+          "label": "2026-07-25",
+          "revenue": 3700
+        }
+      ]
+    },
+    "trend|2026-07|华南|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "trend",
+        "month": "2026-07",
+        "region": "华南"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-07-01'\n  AND o.order_date < '2026-08-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-07-05",
+          "revenue": 4100
+        },
+        {
+          "label": "2026-07-15",
+          "revenue": 4500
+        },
+        {
+          "label": "2026-07-25",
+          "revenue": 4900
+        }
+      ]
+    },
+    "trend|2026-08|全部|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "trend",
+        "month": "2026-08",
+        "region": "全部"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-08-05",
+          "revenue": 15300
+        },
+        {
+          "label": "2026-08-15",
+          "revenue": 16500
+        },
+        {
+          "label": "2026-08-25",
+          "revenue": 18700
+        }
+      ]
+    },
+    "trend|2026-08|华东|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "trend",
+        "month": "2026-08",
+        "region": "华东"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华东'\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-08-05",
+          "revenue": 3900
+        },
+        {
+          "label": "2026-08-15",
+          "revenue": 4300
+        },
+        {
+          "label": "2026-08-25",
+          "revenue": 4700
+        }
+      ]
+    },
+    "trend|2026-08|华南|gross": {
+      "params": {
+        "metric": "gross",
+        "scenario": "trend",
+        "month": "2026-08",
+        "region": "华南"
+      },
+      "sql": "SELECT o.order_date AS label,\n       SUM(o.revenue) AS revenue\nFROM \"Orders\" o\nJOIN \"Customers\" c ON o.customer_id = c.customer_id\nWHERE o.order_date >= '2026-08-01'\n  AND o.order_date < '2026-09-01'\n  AND o.status = 'paid'\n  AND o.is_internal = false\n  AND c.region = '华南'\nGROUP BY o.order_date\nORDER BY label ASC",
+      "rows": [
+        {
+          "label": "2026-08-05",
+          "revenue": 5100
+        },
+        {
+          "label": "2026-08-15",
+          "revenue": 5500
+        },
+        {
+          "label": "2026-08-25",
+          "revenue": 6900
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "verified_at": "2026-09-16T12:58:26.001Z",
+  "browser": "152.0.7977.83",
+  "desktop": [
+    1440,
+    1000
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "engine_asset_delivery": "Playwright route serves exact installed npm package, not CDN availability verification",
+  "results": [
+    {
+      "test": "six business scenarios, reliability content, summary image loads and downloads",
+      "passed": true
+    },
+    {
+      "test": "architecture 8 system and 5 experiment stages, navigation and SQL expansion example",
+      "passed": true
+    },
+    {
+      "test": "36 snapshot control combinations",
+      "passed": true
+    },
+    {
+      "test": "CSV export contains current result",
+      "passed": true
+    },
+    {
+      "test": "real browser WASM net/gross MDL switch",
+      "passed": true
+    },
+    {
+      "test": "mobile scenario switch and summary image fit viewport",
+      "passed": true
+    },
+    {
+      "test": "architecture mobile layout and route-specific visibility",
+      "passed": true
+    },
+    {
+      "test": "390px layout and mobile controls",
+      "passed": true
+    },
+    {
+      "test": "CDN failure clearly retains snapshot mode",
+      "passed": true
+    },
+    {
+      "test": "no browser page errors",
+      "passed": true
+    }
+  ]
+}

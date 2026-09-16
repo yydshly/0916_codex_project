@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="WrenAI 是面向 Agent 的业务问数基础设施：用 MDL 统一业务口径，把自然语言需求接到可执行查询。了解能力、原理、价值、场景和替代方案。">
+  <title>WrenAI · 从业务问题到可信数据</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="architecture.css">
+  <link rel="stylesheet" href="understanding.css">
+  <script type="module" src="app.js"></script>
+  <script type="module" src="architecture.js"></script>
+  <script type="module" src="understanding.js"></script>
+</head>
+<body>
+<header class="header"><a class="brand" href="#"><span class="mark">W</span> WrenAI <span class="brand-sub">研究手记 / 003</span></a><nav aria-label="页面导航"><a href="#quickstart">30 秒摘要</a><a href="#understanding">核心理解</a><a href="#fit">业务适配</a><a href="#reliability">可靠性</a><a href="#architecture">内部架构</a><a href="#lab">问数实验</a><a href="#alternatives">方案选择</a><a href="#summary">一图总览</a></nav></header>
+<main>
+  <section class="hero">
+    <div><div class="eyebrow">BUSINESS INTELLIGENCE, WITH CONTEXT</div><h1>自然语言问业务，<br>按统一口径查数据。</h1><p class="lead">WrenAI 是面向 Agent 的业务问数基础设施。模型理解问题，MDL 定义业务怎么算，Wren 展开并规划查询，数据库返回真实数字，上层应用解释和展示。</p><div class="hero-actions"><a class="button primary" href="#summary">先看一图总览 <span>↗</span></a><a class="text-link" href="#prepare">看看需要准备什么 ↓</a></div><div class="hero-note"><span class="dot"></span> 当前主分支研究 · 引擎 0.4.1 · 全部使用合成数据</div></div>
+    <div class="hero-diagram" aria-label="用户问题到查询结果的流程"><div class="diagram-top"><span>一个问题，四层协作</span><span>01 → 04</span></div><div class="question-bubble">“上个月，哪些客户贡献了最多净收入？”</div><div class="diagram-row"><span class="num">01</span><div><strong>模型 + Agent</strong><small>理解意图，选择工具，生成查询</small></div><span class="tag">规划</span></div><div class="diagram-row"><span class="num">02</span><div><strong>MDL + 业务知识</strong><small>定义指标，提供规则与历史案例</small></div><span class="tag">口径</span></div><div class="diagram-row"><span class="num">03</span><div><strong>Wren 引擎</strong><small>展开模型，校验与规划 SQL</small></div><span class="tag">编译</span></div><div class="diagram-row last"><span class="num">04</span><div><strong>数据计算 → 表格 / 图表</strong><small>服务端由数据库执行；本实验在浏览器计算</small></div><span class="tag">结果</span></div></div>
+  </section>
+  <section id="quickstart" class="section quickstart">
+    <div class="section-title"><div><div class="eyebrow">START HERE / 30 秒读懂</div><h2>先记住这四件事。</h2></div><a class="text-link" href="#architecture">逐步看内部处理 ↓</a></div>
+    <div class="summary-cards">
+      <article><span>能力 / 能做什么</span><h3>把业务问题接到数据查询</h3><p>围绕结构化数据查收入、排名、趋势、库存等。核心提供业务模型和查询工具；自然语言理解与图表由模型、Agent 和应用配合完成。</p></article>
+      <article><span>原理 / 怎么实现</span><h3>上下文 + 模型 + 语义引擎</h3><p>准备 MDL 和业务知识 → 按需检索 → 模型生成查询 → Agent 调工具 → Wren 展开定义 → 数据库计算 → 返回答案。</p></article>
+      <article><span>价值 / 为什么需要</span><h3>口径复用，结果可核对</h3><p>降低查数门槛，把净收入等定义统一管理，减少重复编写查询。保留 SQL、筛选条件和结果，让人能检查答案依据。</p></article>
+      <article><span>本质 / 如何理解</span><h3>将语言意图接到程序能力</h3><p>共同思路是理解需求、补充知识、形成可执行请求、查询并解释。Wren 的特色是语义层；RAG 和复杂 Agent 按需要加入。</p></article>
+    </div>
+    <div class="reading-path"><strong>下次从这里回看</strong><a href="#summary">① 一张图记住全貌</a><a href="#fit">② 对照自己的业务</a><a href="#architecture">③ 点击模块看输入输出</a><a href="#lab">④ 核对 SQL 与实际数字</a></div>
+    <p class="insight-lead"><strong>优先场景：</strong>结构化数据、口径明确、反复发生的销售 / 运营 / 库存分析。<strong>准备：</strong>数据连接、指标定义、模型与工具、标准答案。<strong>边界：</strong>完整问数准确率尚未实测；预测、文档解析和业务交易需额外能力。</p>
+  </section>
+  <section id="understanding" class="section understanding">
+    <div class="section-title"><div><div class="eyebrow">01 / WHAT MAKES IT WORK</div><h2>把模型的理解，接到可执行的业务能力。</h2></div><span class="pill">我们的研究理解</span></div>
+    <p class="insight-lead">WrenAI 展示了一种落地方式：给模型足够的业务知识，将关键计算写成明确的定义，再通过工具执行操作、核对结果。可靠性来自这些环节共同工作。</p>
+    <div class="principles"><article><span>01 / 知识</span><h3>告诉模型业务是什么</h3><p>字段含义、术语、枚举、业务口径和正确案例，帮助模型理解问题。</p></article><article><span>02 / 定义</span><h3>规定业务怎么算</h3><p>MDL 固定表映射、关联和指标公式，让计算方式可以审核和复用。</p></article><article><span>03 / 执行</span><h3>把操作交给程序</h3><p>模型提出 SQL 或工具请求；Agent 真正调用，Wren 与数据库处理。</p></article><article><span>04 / 反馈</span><h3>核对并修正答案</h3><p>保留条件、SQL、结果和错误。问题不清楚时追问，确认后积累案例。</p></article></div>
+    <div class="meaning-grid"><article><div class="eyebrow">资料准备 / 可重复使用</div><h3>一次准备，两条知识路径。</h3><p><strong>数据与结构：</strong>整理业务表 → 定义 MDL → 编译给引擎使用。</p><p><strong>文字与案例：</strong>规则、术语、正确 SQL → 可选分块和语义索引 → 按问题检索给模型。</p><p>RAG 通常检索模型说明和业务知识；经营数字仍来自数据查询。</p></article><article><div class="eyebrow">“规则匹配” / 三个不同动作</div><h3>找到、理解、执行，要分开看。</h3><ol><li><strong>RAG 找相关规则：</strong>检索结果不代表规则已经执行。</li><li><strong>模型应用规则：</strong>例如把“排除内部订单”转成筛选条件。</li><li><strong>引擎执行定义：</strong>按 MDL 将净收入展开为实付减退款。</li></ol><p>文字要求依赖模型遵循；结构化计算、校验和数据库权限由程序执行。</p></article></div>
+    <div class="calculation-split"><strong>数值汇总与结果解释也要分工</strong><p>金额、排名、占比尽量由数据库计算；模型结合问题与口径解释数字。只有当期收入，就不足以证明“收入增长”，更不能直接推断增长原因。</p></div>
+    <p class="insight-source">依据已阅读的 <a href="https://github.com/Canner/WrenAI/blob/871118e94f1525c401d867074c05e7e8eefca1cc/docs/core/reference/architecture.md">架构说明</a>、<a href="https://github.com/Canner/WrenAI/blob/871118e94f1525c401d867074c05e7e8eefca1cc/docs/core/reference/mdl.md">MDL 定义</a>与本地实验整理。下方的场景建议属于研究判断。</p>
+  </section>
+  <section id="fit" class="section">
+    <div class="section-title"><div><div class="eyebrow">02 / WHERE IT FITS</div><h2>适合那些反复被问到的数据问题。</h2></div><p>已有结构化数据，业务口径可以讲清楚，<br>答案能通过查询计算出来。</p></div>
+    <div class="usecases"><article><span class="case-icon">↗</span><h3>销售与经营</h3><p>地区收入、客户贡献、退款占比、月度经营趋势。</p><small>输入：订单 / 客户 / 退款</small></article><article><span class="case-icon">◎</span><h3>产品与订阅运营</h3><p>活跃、留存、续费和流失；先定义用户与统计周期。</p><small>输入：事件 / 账户 / 订阅</small></article><article><span class="case-icon">▦</span><h3>库存与履约</h3><p>库存周转、缺货清单、交付时长和渠道对比。</p><small>输入：库存 / 出入库 / 发货</small></article></div>
+    <div class="boundary"><strong>业务边界</strong><p>这些是基于架构的适用性判断。本项目实测销售案例。扫描件识别、自由文档问答、预测算法和自动下单需要其他能力配合；Wren 的核心是分析查询。</p></div>
+    <div class="scenario-inspector"><div class="scenario-selector"><div class="eyebrow">按你的业务看接入方式</div><label for="business-scenario">选择一个场景</label><select id="business-scenario"><option value="sales">销售与经营问数</option><option value="operations">运营与订阅报表</option><option value="inventory">库存与履约分析</option><option value="exploration">分析师探索与复杂指标</option><option value="transactions">付款、审批与自动下单</option><option value="prediction">预测、归因与经营建议</option></select><p>这里给出条件与边界，不是对业务系统的自动测评。</p></div><div class="scenario-content" aria-live="polite"><span id="scenario-grade" class="pill"></span><h3 id="scenario-title"></h3><dl><div><dt>输入</dt><dd id="scenario-input"></dd></div><div><dt>先准备</dt><dd id="scenario-prepare"></dd></div><div><dt>可以交付</dt><dd id="scenario-output"></dd></div><div><dt>如何核对</dt><dd id="scenario-check"></dd></div></dl></div></div>
+    <div class="value-band"><strong>主要价值</strong><span>降低查数门槛</span><span>复用指标定义</span><span>保留 SQL 与结果依据</span><span>减少重复分析工作</span></div>
+  </section>
+  <section id="reliability" class="section reliability">
+    <div class="section-title"><div><div class="eyebrow">03 / TRUST, LAYER BY LAYER</div><h2>能执行，不等于业务上正确。</h2></div><span class="pill">分层验收</span></div>
+    <p class="insight-lead">这套架构有工程价值，但“引擎算对 SQL”与“系统答对用户问题”需要分别验证。不能把底层的成功查询直接解释成端到端问数准确率。</p>
+    <div class="reliability-table table-scroll"><table><caption class="sr-only">各模块的可靠性条件与检查方式</caption><thead><tr><th>环节</th><th>可能错在哪里</th><th>怎样验证</th></tr></thead><tbody><tr><td>数据与 MDL</td><td>退款归属月、单位或 JOIN 粒度不对</td><td>业务负责人确认口径；与已有报表、原始记录对账</td></tr><tr><td>RAG 检索</td><td>漏掉适用规则，或找到过时、冲突的说明</td><td>检查检索片段的相关性、版本与适用范围</td></tr><tr><td>模型生成</td><td>日期、分组、过滤条件不符合问题</td><td>用真实问题和标准答案核对结果，并检查 SQL</td></tr><tr><td>引擎与数据库</td><td>字段和语法通过，但业务口径用错</td><td>校验、执行测试与业务验收结合；不能只看是否报错</td></tr><tr><td>结果解释</td><td>擅自添加增长、原因或建议</td><td>逐项核对结论是否有返回数据支持</td></tr></tbody></table></div>
+    <div class="trust-example"><span class="eyebrow">同样合法的 SQL，也可能回答不同问题</span><h3>“按订单月扣退款”与“按退款发生月扣退款”</h3><p>两种查询都能执行，跨月退款时却会得到不同收入。需要事先明确口径，再用标准结果验收；语法检查无法替你做这个业务选择。</p></div>
+    <div class="evidence-split"><article><span class="eyebrow">已验证 / 有实际结果</span><h3>36 组固定查询，逐项核对。</h3><p>合成订单上的 MDL 计算字段、显式关联、筛选、聚合、排序与字段错误；桌面和手机展示。</p><a href="verified-results.json" target="_blank">查看实际 SQL 与结果 ↗</a></article><article><span class="eyebrow">未验证 / 不作准确率承诺</span><h3>完整自然语言问数仍待接入。</h3><p>模型理解、RAG 命中、SQL 自动生成与修正、模型解释、生产数据库和业务权限，尚未端到端实测。</p></article></div>
+    <div class="pilot"><strong>建议的首个试点</strong><p>固定指标 + 少量核心表 + 只读查询 + 可核对的标准答案。先验证日期、退款、多表重复计数、歧义追问和空结果；重要结果保留人工复核，再逐步扩大范围。</p></div>
+  </section>
+  <section id="architecture" class="section architecture">
+    <div class="section-title"><div><div class="eyebrow">04 / INSIDE THE SYSTEM</div><h2>一句话进来，哪些模块接力？</h2></div><span class="pill">可逐步查看的架构说明</span></div>
+    <p class="arch-lead">沿着“2026 年 8 月各地区净收入是多少？”这一个问题，查看每一步接收什么、如何处理、把什么交给下一步。</p>
+    <div class="arch-modes" role="group" aria-label="架构路径"><button type="button" data-arch-mode="system" aria-pressed="true" class="active">完整问数系统 <small>Agent + Wren + 数据库</small></button><button type="button" data-arch-mode="experiment" aria-pressed="false">本次实际演示 <small>预设 SQL + Wren WASM</small></button></div>
+    <p id="arch-scope" class="arch-scope"></p>
+    <div class="arch-foundation"><div class="foundation-label"><strong>事先准备</strong><small>每次提问都可复用</small></div><div><strong>业务模型 → 引擎</strong><span>模型 YAML → context build → mdl.json</span></div><div><strong>业务知识 → Agent</strong><span>规则 / 术语 / 正确 SQL → 可选检索索引</span></div><div><strong>连接与运行环境</strong><span>模型服务供 Agent 调用；连接配置供 Wren 使用</span></div></div>
+    <div class="arch-flow-caption"><span>按编号从左到右、逐行阅读 <strong>点击任意模块展开</strong></span><span>请求发往工具，结果与错误返回 Agent</span></div>
+    <ol id="arch-flow" class="arch-flow" aria-label="处理模块顺序"></ol>
+    <div class="arch-detail" id="arch-detail" role="region" aria-labelledby="arch-title">
+      <div class="arch-detail-heading"><div><div id="arch-owner" class="eyebrow"></div><h3 id="arch-title"></h3></div><span id="arch-evidence" class="pill"></span></div>
+      <div class="arch-io"><div><span class="arch-label">收到什么</span><p id="arch-input"></p><pre id="arch-input-code"></pre></div><div><span class="arch-label">内部怎么处理</span><ol id="arch-actions"></ol><div id="arch-components" class="arch-components"></div></div><div><span class="arch-label">交出什么</span><p id="arch-output"></p><pre id="arch-output-code"></pre></div></div>
+      <div class="arch-outcome"><strong>这一步如何贡献最终效果</strong><p id="arch-why"></p></div>
+      <div class="arch-step-nav"><button type="button" class="small-button" id="arch-prev">← 上一步</button><span id="arch-progress" aria-live="polite"></span><button type="button" class="small-button" id="arch-next">下一步 →</button></div>
+    </div>
+    <div class="arch-loops"><article><span>↶ 问题不明确</span><strong>回到用户确认</strong><p>“收入”口径或日期不清楚 → Agent 追问 → 用户补充 → 再检索 / 生成。</p></article><article><span>↶ SQL 校验失败</span><strong>回到上下文与生成</strong><p>字段不存在或方言错误 → 工具返回错误 → Agent 获取定义 → 模型修正 → 再校验。</p></article><article><span>↶ 业务结果有误</span><strong>修正定义，再验收</strong><p>能执行却不符合口径 → 核对源数据和 MDL → 人工确认 → 重跑；只保存确认过的案例。</p></article></div>
+    <div class="arch-conclusion"><strong>怎样才会得到我们要的效果？</strong><p>检索提供相关知识，模型生成操作，Agent 执行工具，Wren 展开业务定义，计算层给出数字，应用把数字变成可读的表格和图表。每一层都要有明确输入和验收依据。</p><a href="#lab">到下方对照实际 SQL 与结果 ↓</a></div>
+    <p class="arch-source">完整链路是基于上游架构整理的示意，不是一次真实 Agent 执行日志。查看 <a href="https://github.com/Canner/WrenAI/blob/871118e94f1525c401d867074c05e7e8eefca1cc/docs/core/reference/architecture.md">架构来源 ↗</a> · <a href="https://github.com/Canner/WrenAI/blob/871118e94f1525c401d867074c05e7e8eefca1cc/core/wren/src/wren/mcp_server.py">工具接口源码 ↗</a>。</p>
+  </section>
+  <section id="lab" class="section lab">
+    <div class="section-title"><div><div class="eyebrow">05 / FOLLOW THE QUERY</div><h2>一个销售问题，拆开给你看。</h2></div><span id="mode-badge" class="pill">实测结果回放</span></div>
+    <div class="lab-intro"><p><strong>39 笔合成订单 · 6 个虚构客户</strong>。切换问题、时间、地区和收入口径，对照同一组数据的答案。</p><p>问题与 SQL 使用预设模板，未调用大模型或 RAG。默认显示真实 Wren 引擎的已验证输出；可启动浏览器引擎重新执行。</p></div>
+    <div class="workbench">
+      <aside class="controls"><div class="eyebrow">INPUT / 输入</div><h3>你想了解什么？</h3><div id="scenarios" class="scenario-group" role="group" aria-label="问题类型"><button data-case="region" class="selected" aria-pressed="true">地区收入 <span>↗</span></button><button data-case="customer" aria-pressed="false">客户排名 <span>↗</span></button><button data-case="trend" aria-pressed="false">日期趋势 <span>↗</span></button></div>
+        <label for="month">统计月份</label><select id="month"><option value="2026-08">2026 年 8 月</option><option value="2026-07">2026 年 7 月</option></select>
+        <label for="region">地区范围</label><select id="region"><option>全部</option><option>华东</option><option>华南</option></select>
+        <label for="metric">业务口径</label><select id="metric"><option value="net">净收入 · 扣除退款</option><option value="gross">实付金额 · 不扣退款</option></select>
+        <p class="control-note">统一排除取消订单与内部订单。退款按订单日期归属，是本实验约定，不代表通用会计口径。</p>
+      </aside>
+      <div class="result-panel"><div class="result-top"><div><div class="eyebrow">OUTPUT / 输出</div><h3 id="question">正在读取实验结果…</h3></div><button id="download" class="small-button" disabled>下载 CSV ↓</button></div><div class="metric-row"><div><div id="metric-label" class="muted">净收入</div><div id="total" class="big-number">—</div></div><div class="metric-context"><span id="result-count">—</span><small id="result-scope">人民币 · 合成数据</small></div></div><div id="chart" class="chart" aria-label="查询结果条形图"></div><div class="table-scroll"><table><caption class="sr-only">本次查询结果</caption><thead><tr><th id="dimension">地区</th><th id="value-heading">净收入（元）</th></tr></thead><tbody id="rows"></tbody></table></div><p id="answer" class="answer"></p><p id="status" role="status" aria-live="polite">正在加载已验证结果。</p></div>
+    </div>
+    <div class="trace"><div><div class="eyebrow">CONTEXT / 业务定义</div><h3>换口径，计算字段跟着变。</h3><pre id="mdl"></pre><p>这部分由 Wren 引擎解释执行。文字规则则交给 Agent 阅读，不能代替权限和数据库约束。</p><details><summary>查看完整实验 MDL</summary><pre id="full-mdl"></pre></details></div><div><div class="eyebrow">ACTION / 查询操作</div><h3>预设问题 → 模型 SQL</h3><pre id="sql"></pre><p>这里使用显式 JOIN；未验证自动关系展开。生产接入时，这段 SQL 由模型结合上下文生成，并经 Agent 调用。</p></div></div>
+    <div class="runtime"><div><strong>用真实 Wren 引擎重新执行</strong><p>按需下载约 72 MB 的 WebAssembly 模块。在当前浏览器处理合成数据，无需模型密钥。</p></div><button id="start-engine" class="button primary">启动真实引擎 ↗</button></div>
+    <details class="evidence"><summary>验证证据与原始数据</summary><p id="verification"></p><p><a href="verified-results.json" target="_blank">查看全部已验证 SQL 与结果 ↗</a> · <a href="lab.js" target="_blank">查看合成数据与模型定义 ↗</a></p><p>实测覆盖计算字段、显式关联、聚合、时间和地区筛选、前五排名、未知字段报错。未实测自然语言准确率、向量检索、生产数据库或企业权限。</p></details>
+  </section>
+  <section id="prepare" class="section">
+    <div class="section-title"><div><div class="eyebrow">06 / BEFORE YOU CONNECT</div><h2>接入之前，先准备这五件事。</h2></div><p>数据、口径、模型、连接、验收样题。<br>最主要的工作是把业务定义整理清楚。</p></div>
+    <div class="preparation"><article><span>01</span><h3>整理可查询数据</h3><p>准备数据库或结构化文件，核对主键、日期、金额单位、空值和重复记录。</p></article><article><span>02</span><h3>确定业务口径</h3><p>明确收入是否扣退款、时间归属、有效订单、客户身份和统计粒度，并由业务负责人确认。</p></article><article><span>03</span><h3>建立 MDL 和知识</h3><p>映射表与字段，定义计算指标和关联；保存术语解释、业务规则及已确认的问答 SQL。</p></article><article><span>04</span><h3>接上模型与工具</h3><p>选择 MCP 或 Python SDK。准备具备工具调用能力的模型、Agent、数据库连接和凭据。</p></article><article><span>05</span><h3>用标准答案验收</h3><p>准备代表性的业务问题和正确结果，覆盖歧义、空结果、退款、跨月和多表重复计数。</p></article></div>
+    <div class="io-grid"><div><span class="eyebrow">INPUT</span><h3>实际输入</h3><p>用户问题 + 数据库连接 + MDL + 业务规则 + 可选历史案例。原始业务数据位于数据库；检索提供相关知识。</p></div><div><span class="eyebrow">OUTPUT</span><h3>实际输出</h3><p>SQL、查询数据表、自然语言分析，以及由上层应用生成的图表 / 看板。遇到缺信息或错误，也可能输出澄清问题或错误信息。</p></div></div>
+  </section>
+  <section id="alternatives" class="section alternatives">
+    <div class="section-title"><div><div class="eyebrow">CHOOSING A ROUTE / 不只有一种做法</div><h2>思路相通，规则的执行方式不同。</h2></div><span class="pill">架构判断，非产品性能排名</span></div>
+    <p class="insight-lead">自然语言需求 → 补充业务知识 → 可执行请求 → 查询计算 → 展示解释。帮助模型理解的资料，与程序必须执行的规则，要分开设计。RAG 检索到规则，不代表规则已经生效。</p>
+    <div class="route-grid">
+      <article><span>固定需求</span><h3>模型 + 业务接口</h3><p>模型选择接口并填写月份、地区等参数，后端执行固定查询和公式。问题类型少时容易控制；可不使用 RAG。</p><small>例：查净销售额 → sales_summary(月份, 地区)</small></article>
+      <article><span>自由查询</span><h3>模型生成 SQL</h3><p>提供表结构、术语和正确案例，模型自行编写查询；表和知识很多时按需加入 RAG。口径理解和 SQL 都需要核对。</p><small>适合简单库试验、分析师辅助查询</small></article>
+      <article><span>口径复用 / Wren 路线</span><h3>模型 + 语义层</h3><p>模型组织查询，语义层展开已经定义的指标和关联。适合多人共享口径、多种维度组合；前期需要建模和维护。</p><small>净收入定义一次，在多个问题中复用</small></article>
+      <article><span>连续探索</span><h3>Agent + 多种工具</h3><p>拆解问题、多次查询、比较和解释。可以调用固定接口或 Wren；需要逐步核对结果，控制成本和执行范围。</p><small>固定报表也可直接使用 BI，无需大模型</small></article>
+    </div>
+    <div class="trust-example"><div class="eyebrow">一个例子，理解差异</div><h3>“净销售额要扣除退款”，写在哪里？</h3><p>写在提示词里，依赖模型转成正确查询；写进 MDL 指标或业务接口里，由程序展开和执行计算。模型仍可能选错指标或日期，因此“能执行”不等于“回答了正确的问题”。这些差异影响可靠性、灵活性和维护成本。</p></div>
+    <details class="product-comparison"><summary>对照产品与开发库：哪些相似，哪些只是构建零件？</summary><div class="table-scroll"><table><thead><tr><th>产品 / 库</th><th>路线与定位</th><th>选型时看什么</th></tr></thead><tbody>
+      <tr><td><a href="https://docs.cube.dev/docs/introduction">Cube / Cube Core ↗</a></td><td>集中管理指标、关联和访问规则的语义层</td><td>适合多应用复用口径；区分开源 Core 与完整产品功能</td></tr>
+      <tr><td><a href="https://github.com/dataease/SQLBot">SQLBot ↗</a></td><td>大模型 + RAG + SQL，提供问数和图表应用</td><td>适合先体验完整问数流程；术语、SQL 示例仍需整理</td></tr>
+      <tr><td><a href="https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst">Snowflake Cortex ↗</a></td><td>语义视图、指标和示例支持自然语言查询</td><td>面向 Snowflake 数据；官方目前建议转向 Cortex Agents</td></tr>
+      <tr><td><a href="https://docs.databricks.com/aws/en/genie">Databricks Genie ↗</a></td><td>基于可信数据、业务规则和查询示例的问数产品</td><td>适合已经采用 Databricks 的团队</td></tr>
+      <tr><td><a href="https://docs.langchain.com/oss/python/langchain/sql-agent">LangChain / LangGraph ↗</a></td><td>查表结构、生成、执行与修正 SQL 的开发框架</td><td>业务口径、权限与界面需要自己设计</td></tr>
+      <tr><td><a href="https://github.com/vanna-ai/vanna">Vanna ↗</a></td><td>围绕 SQL 工具、检索和用户上下文的 Agent 库</td><td>仓库已于 2026-03-29 归档；可研究架构，选型需考虑维护</td></tr>
+    </tbody></table></div><p class="insight-source">官方资料核对日期：2026-09-16。产品对比为文档研究，未做横向运行或准确率测试。</p></details>
+  </section>
+  <section id="summary" class="section summary-section"><div class="section-title"><div><div class="eyebrow">07 / THE WHOLE PICTURE</div><h2>一张图，带走完整理解。</h2></div><a class="button primary" href="media/wrenai-summary.png" download="WrenAI-原理与场景总览.png">下载总览图 ↓</a></div><p class="insight-lead">按“本质 → 能力与准备 → 内部处理 → 输入输出 → 场景与价值 → 方案选择”阅读；下次从这张图恢复完整理解。</p><figure class="summary-figure"><a href="media/wrenai-summary.png" target="_blank" aria-label="打开 WrenAI 总览图原图"><img id="summary-image" src="media/wrenai-summary.png" alt="WrenAI 研究总览：资料准备后，依次理解问题、检索上下文、生成 SQL、调用工具、规划校验、计算、解释展示和确认回写；适合有清晰口径的结构化问数。已验证合成数据的 36 组 WASM 查询，未验证完整模型问数。" loading="lazy"></a><figcaption>原创排版的研究信息图，非官方 UI 或运行截图。点击查看原图；具体流程、实测数据与适用边界见本页文字和验证记录。</figcaption></figure></section>
+  <section class="section sources"><div class="eyebrow">RESEARCH / 来源与范围</div><h2>读过源码，也核对了计算结果。</h2><p>研究基准：<code>871118e94f15</code>；运行依赖：<code>@wrenai/wren-core-wasm@0.4.1</code>。npm 构建与该提交不假定为完全同一版本。本页为独立研究展示，非 Wren 官方产品界面。</p><div class="source-links"><a href="https://github.com/Canner/WrenAI/blob/871118e94f1525c401d867074c05e7e8eefca1cc/docs/core/reference/architecture.md">架构与调用关系 ↗</a><a href="https://github.com/Canner/WrenAI/blob/871118e94f1525c401d867074c05e7e8eefca1cc/docs/core/reference/mdl.md">MDL 参考 ↗</a><a href="https://docs.getwren.ai/oss/sdk/wasm">浏览器引擎文档 ↗</a><a href="https://docs.getwren.ai/oss/guides/mcp">MCP 接入 ↗</a></div><p>当前开源主线面向 Agent；旧聊天产品已保留在 legacy/v1。商业产品的用户 / 组权限、行列级安全和完整 BI 界面不在本实验覆盖范围。</p></section>
+</main>
+<footer><span>003 / OPEN SOURCE RESEARCH</span><span>WrenAI 业务问数研究 · 示例数据，不用于经营决策</span><a href="#">回到顶部 ↑</a></footer>
+</body></html>

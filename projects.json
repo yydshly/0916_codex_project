@@ -33,6 +33,23 @@
       "cover": "projects/002-pdf-craft/assets/overview.png",
       "cover_alt": "研究导读图：OCR 接入、后处理、输出边界与低优先级结论；非运行截图，未做转换实测。",
       "demo": ""
+    },
+    {
+      "id": 3,
+      "slug": "wrenai",
+      "name": "WrenAI 业务问数研究",
+      "summary": "面向 Agent 的业务问数基础设施：模型理解需求，MDL 统一口径，引擎规划查询；适合销售、运营与库存分析。附原理引导图、方案对比及 36 组引擎实测，未验证完整模型问数。",
+      "repo": "https://github.com/Canner/WrenAI",
+      "status": "已完成",
+      "tags": [
+        "业务问数",
+        "语义层",
+        "WASM 实测",
+        "交互展示"
+      ],
+      "cover": "projects/003-wrenai/assets/summary-guide.png",
+      "cover_alt": "WrenAI 原理引导图：本质、能力、资料准备、内部处理、输入输出、使用场景、价值与方案选择；原创研究图，非官方界面。",
+      "demo": ""
     }
   ]
 }

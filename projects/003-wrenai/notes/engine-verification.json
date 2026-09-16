@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-09-16T12:05:27.406Z",
+  "engine": "@wrenai/wren-core-wasm@0.4.1",
+  "upstream_commit": "871118e94f1525c401d867074c05e7e8eefca1cc",
+  "node": "v22.15.0",
+  "platform": "win32",
+  "wasm_sha256": "0dfc242c486c2926afa612676ebf51f1ca2ad12f41de204e58d24f04ad27715f",
+  "fixture": "39 synthetic orders, 6 synthetic customers; no personal or production data",
+  "validated_query_count": 36,
+  "checks": [
+    {
+      "test": "unknown-column-net",
+      "passed": true,
+      "error": "Error: SQL error: Schema error: No field named nonexistent_column. Valid fields are \"Orders\".order_id, \"Orders\".customer_id, \"Orders\".order_date, \"Orders\".paid_amount, \"Orders\".refund_amount, \"Orders\".status, \"Orders\".is_internal, \"Orders\".revenue."
+    },
+    {
+      "test": "unknown-column-gross",
+      "passed": true,
+      "error": "Error: SQL error: Schema error: No field named nonexistent_column. Valid fields are \"Orders\".order_id, \"Orders\".customer_id, \"Orders\".order_date, \"Orders\".paid_amount, \"Orders\".refund_amount, \"Orders\".status, \"Orders\".is_internal, \"Orders\".revenue."
+    },
+    {
+      "test": "refund-definition-changes-result",
+      "passed": true,
+      "net": 47250,
+      "gross": 50500,
+      "difference": 3250
+    }
+  ],
+  "scope": "Real WASM engine: MDL calculated fields, explicit joins, filters, aggregation, top-N, invalid column. No LLM or RAG executed."
+}

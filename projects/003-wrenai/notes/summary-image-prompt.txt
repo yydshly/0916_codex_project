@@ -1,0 +1,60 @@
+Use case: infographic-diagram.
+Create ONE polished high-resolution Chinese landscape infographic for the WrenAI research project. Aim for 3840×2400 or comparable large landscape canvas, a single complete image, with excellent legibility of Chinese text. Editorial systems diagram style, cream background #f7f7f0, dark forest green #173a32, sage panels, muted amber for caveats; match a calm research website. Sharp simplified Chinese typography, clear hierarchy, generous margins and aligned panels, thin intentional arrows, small minimal line icons. No decorative AI brains, no robots, no official logo, no watermark. All text below must be accurately rendered, no invented facts, avoid dense paragraphs. This is a research synthesis, not an official product screenshot.
+
+Title: “WrenAI：从业务问题到可信查询”
+Subtitle: “模型理解与规划 · 业务定义统一口径 · 程序执行与检查”
+
+Top band, “01 事先准备” with four cards:
+“业务数据” / “订单、客户、退款；核对主键与质量”
+“MDL 业务模型” / “表映射、关联、指标公式 → 引擎”
+“规则与案例” / “术语、口径、正确 SQL → 可选检索索引”
+“工具与连接” / “模型服务、Agent、数据库连接与权限”
+
+Main center band titled “02 内部处理链路”. Eight compact modules numbered in a single left-to-right row with arrows (prefer this to confusing wrapped arrows):
+“1 理解问题” / “明确指标、时间、范围”
+“2 检索上下文” / “RAG 找模型、规则、案例”
+“3 模型生成” / “结合规则生成 SQL”
+“4 Agent 调用” / “执行工具请求”
+“5 Wren 规划” / “展开 MDL、转换与校验”
+“6 数据库计算” / “筛选、关联、汇总”
+“7 解释与展示” / “模型解释、表格与图表”
+“8 确认与积累” / “确认后保存问答与 SQL”
+Clear supporting annotation under module 5: “sqlglot + CTE + Rust 核心”
+Return arrow from validation near 5 back to model generation 3 labelled “错误反馈 → 修正重试”.
+Small return annotation from 1: “信息不足 → 向用户澄清”.
+Return dotted arrow from 8 to 2 labelled “已确认案例供后续检索”.
+Keep arrows readable and no overlap through text.
+Under pipeline place a clear distinction strip:
+“RAG 找知识；模型应用规则；MDL 固定计算；数据库产生数字。”
+“文字规则依赖模型遵循，结构化定义与权限由程序执行。”
+
+Next band two input/output cards:
+“输入” / “自然语言问题 + 结构化数据 + MDL + 业务规则 + 可选历史案例”
+“输出” / “SQL + 查询结果 + 分析解释 + 图表 / 看板；必要时追问或报错”
+A small concrete example bridging them:
+“问：2026 年 8 月各地区净收入？”
+“口径：实付 − 退款，排除取消与内部订单”
+“实验结果：净收入 47,250 元；实付 50,500 元”
+
+Bottom band, three balanced cards:
+Card A title “适用场景”
+“优先试点：销售经营、常规运营报表”
+“辅助使用：分析师探索、复杂指标分析”
+“前提：数据结构化、口径清楚、答案可核对”
+“预测、自动付款与审批需要额外系统”
+Card B title “业务价值”
+“自然语言连接业务工具”
+“指标定义复用，减少口径漂移”
+“SQL 与结果可追溯”
+“正确案例积累，降低重复分析成本”
+Card C title “可靠性与边界”
+“可执行 ≠ 业务正确”
+“逐层检查数据、检索、生成与解释”
+“固定指标 + 只读查询 + 标准答案验收”
+“重要结果保留人工复核”
+
+Footer prominent but compact verification note:
+“本次已验证：合成数据上的 36 组 Wren WASM 查询与独立计算一致。”
+“尚未验证：大模型问数、RAG、生产数据库；不能据此声称端到端准确率。”
+Small footer: “003 / 独立研究汇总 · 2026-09-16 · 原理示意，非官方 UI”
+Technical truth: The eight-step pipeline describes the SERVER-side architecture with database connectors. Explicitly include a small distinct note by verification footer: “本地演示：预设 SQL → MDL → WASM / DataFusion 本地计算 → 展示”. Do not imply the local demo uses the full server pipeline or executed an LLM.
