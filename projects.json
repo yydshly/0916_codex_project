@@ -240,6 +240,23 @@
       "cover": "projects/012-openpencil/assets/understanding-guide.png",
       "cover_alt": "唯一研究引导图：OpenPencil 的设计编辑与 Agent 接口能力、已测传统商务效果、设计自动化意义及五步执行流程；原创整理，非软件截图，内置 AI 未测试。",
       "demo": "https://yydshly.github.io/0916_codex_project/012-openpencil/"
+    },
+    {
+      "id": 13,
+      "slug": "aya",
+      "name": "AYA 电脑控制 Android 手机能力研究",
+      "summary": "电脑通过 ADB（USB / Wi-Fi）连接并控制 Android 手机，支持投屏操控、文件与应用管理、截图录屏和调试监控；为我们构建手机自动化、批量设备管理及 AI 操作工具提供连接与执行层参考。源码研究，未做真机实测。",
+      "repo": "https://github.com/liriliri/aya",
+      "status": "已完成",
+      "tags": [
+        "ADB 设备控制",
+        "USB / Wi-Fi",
+        "Android 自动化参考",
+        "源码研究"
+      ],
+      "cover": "projects/013-aya/assets/aya-capability-map.png",
+      "cover_alt": "原创研究全景图：电脑通过 USB 或 Wi-Fi 使用 ADB 控制 Android 设备，展示九类能力及输出、内部服务和扩展边界；非运行截图，未做真机实测。",
+      "demo": ""
     }
   ]
 }

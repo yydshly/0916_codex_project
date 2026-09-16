@@ -27,6 +27,7 @@ PDF 工具参考：[PDF Craft](projects/002-pdf-craft/README.md) 用于扫描书
 | 010 | [MultiPost 多平台内容分发研究](projects/010-multipost-extension/README.md) | 以浏览器插件接入，将用户的文章、图文、视频和播客按平台要求自动填写、上传，并按适配能力提交发布；源码覆盖70余个平台／服务、110项内容适配，未做真实发布实测。 | 内容分发、浏览器扩展、平台适配、源码研究、网页手册 | 已完成 | [leaperone/MultiPost\-Extension](https://github.com/leaperone/MultiPost-Extension) | [访问](https://yydshly.github.io/0916_codex_project/010-multipost-extension/) |
 | 011 | [Kun AI 工作台能力与原理研究](projects/011-kun/README.md) | 类似 Codex 的 Agent 工作台：自有循环与外部 Agent SDK 并存，整合模型接入、成果预览、部分编辑和任务管理；附完整理解图与 Pi／Codex／Claude Code 对比。主要参考价值在工作流程整合，16 类界面不等于独有智能；源码研究，未实测。 | Agent 工作台、工具执行、多 Agent 编排、上下文管理、源码研究、网页手册 | 已完成 | [KunAgent/Kun](https://github.com/KunAgent/Kun) | [访问](https://yydshly.github.io/0916_codex_project/011-kun/) |
 | 012 | [OpenPencil AI 设计编辑器实测](projects/012-openpencil/README.md) | 开源设计编辑器，以 MCP / CLI 让 Agent 创建、修改、保存和导出可编辑设计稿。已测效果偏传统、规整的商务后台与数据汇报；价值在设计自动化与批量制作，内置 AI 的创意上限未验证。 | AI 设计编辑器、MCP、Agent 工具、原生画布、本地实测、理解摘要 | 已完成 | [ZSeven\-W/openpencil](https://github.com/ZSeven-W/openpencil) | [访问](https://yydshly.github.io/0916_codex_project/012-openpencil/) |
+| 013 | [AYA 电脑控制 Android 手机能力研究](projects/013-aya/README.md) | 电脑通过 ADB（USB / Wi\-Fi）连接并控制 Android 手机，支持投屏操控、文件与应用管理、截图录屏和调试监控；为我们构建手机自动化、批量设备管理及 AI 操作工具提供连接与执行层参考。源码研究，未做真机实测。 | ADB 设备控制、USB / Wi\-Fi、Android 自动化参考、源码研究 | 已完成 | [liriliri/aya](https://github.com/liriliri/aya) | — |
 <!-- PROJECT_INDEX:END -->
 
 ## 项目预览
@@ -153,6 +154,14 @@ AI 编程入门指南与资源导航；附完整思路与价值总览图。对�
 ![唯一研究引导图：OpenPencil 的设计编辑与 Agent 接口能力、已测传统商务效果、设计自动化意义及五步执行流程；原创整理，非软件截图，内置 AI 未测试。](projects/012-openpencil/assets/understanding-guide.png)
 
 唯一研究引导图：OpenPencil 的设计编辑与 Agent 接口能力、已测传统商务效果、设计自动化意义及五步执行流程；原创整理，非软件截图，内置 AI 未测试。
+
+### 013 · [AYA 电脑控制 Android 手机能力研究](projects/013-aya/README.md)
+
+电脑通过 ADB（USB / Wi\-Fi）连接并控制 Android 手机，支持投屏操控、文件与应用管理、截图录屏和调试监控；为我们构建手机自动化、批量设备管理及 AI 操作工具提供连接与执行层参考。源码研究，未做真机实测。
+
+![原创研究全景图：电脑通过 USB 或 Wi\-Fi 使用 ADB 控制 Android 设备，展示九类能力及输出、内部服务和扩展边界；非运行截图，未做真机实测。](projects/013-aya/assets/aya-capability-map.png)
+
+原创研究全景图：电脑通过 USB 或 Wi\-Fi 使用 ADB 控制 Android 设备，展示九类能力及输出、内部服务和扩展边界；非运行截图，未做真机实测。
 <!-- PROJECT_GALLERY:END -->
 
 ## 目录结构

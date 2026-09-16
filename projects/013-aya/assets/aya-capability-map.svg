@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="2110" viewBox="0 0 2400 2110">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<text x="64" y="43" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="66" font-weight="700" fill="#172B49">AYA</text>
+<text x="236" y="52" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="51" font-weight="700" fill="#172B49">连接 · 能力 · 输出全景图</text>
+<text x="66" y="130" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="400" fill="#53647A">通过 USB 或 Wi-Fi，把电脑变成 Android 设备的控制与调试台</text>
+<rect x="1760" y="54" width="572" height="55" rx="14" fill="#E8EEF9"/>
+<text x="1867.3671875" y="66" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#3266CE">开源桌面应用  /  Android ADB</text>
+<rect x="64" y="192" width="2272" height="65" rx="14" fill="#E6F2F4"/>
+<text x="663.8671875" y="209" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#087F8C">USB / Wi-Fi 负责连接     ·     ADB 负责通信与执行     ·     AYA 负责界面与整合</text>
+<rect x="64" y="291" width="52" height="46" rx="12" fill="#087F8C"/>
+<text x="73.96875" y="297" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">01</text>
+<text x="134" y="293" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#172B49">怎样连接与工作</text>
+<text x="970" y="301" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647A">无线连接已内置；连接方式改变，上层能力大体复用</text>
+<rect x="64" y="354" width="2272" height="376" rx="20" fill="#FFFFFF"/>
+<rect x="91" y="412" width="355" height="154" rx="17" fill="#EDF2FB"/>
+<text x="167.890625" y="432" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172B49">AYA 桌面界面</text>
+<text x="120.046875" y="484" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647A">Windows / macOS / Linux</text>
+<text x="178.4921875" y="523" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#53647A">Electron + React</text>
+<rect x="493" y="412" width="338" height="154" rx="17" fill="#EDF2FB"/>
+<text x="552.8359375" y="432" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172B49">电脑 ADB 服务</text>
+<text x="556.0" y="484" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647A">管理连接 · 执行请求</text>
+<text x="599.5859375" y="523" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#53647A">ADB Server</text>
+<rect x="1574" y="412" width="302" height="154" rx="17" fill="#EAF5F2"/>
+<text x="1647.0703125" y="432" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172B49">手机 adbd</text>
+<text x="1641.0" y="484" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647A">接收并执行请求</text>
+<text x="1644.5" y="523" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#53647A">设备端调试服务</text>
+<rect x="1923" y="412" width="385" height="154" rx="17" fill="#EAF5F2"/>
+<text x="2013.1171875" y="432" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172B49">Android 设备</text>
+<text x="2007.265625" y="484" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647A">系统命令 / 辅助程序</text>
+<text x="2046.5" y="523" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#53647A">真机或模拟器</text>
+<line x1="446" y1="489" x2="490" y2="489" stroke="#3266CE" stroke-width="4"/>
+<polygon points="490,489 477.7138441335348,495.71195754045885 477.7138441335348,482.28804245954115" fill="#3266CE"/>
+<line x1="1876" y1="489" x2="1920" y2="489" stroke="#087F8C" stroke-width="4"/>
+<polygon points="1920,489 1907.7138441335348,495.71195754045885 1907.7138441335348,482.28804245954115" fill="#087F8C"/>
+<rect x="920" y="385" width="558" height="86" rx="14" fill="#E9F0FC"/>
+<text x="1121.28125" y="398" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#3266CE">USB 数据线</text>
+<text x="1072.0234375" y="440" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647A">开启 USB 调试并授权电脑</text>
+<rect x="920" y="498" width="558" height="104" rx="14" fill="#E8F5F4"/>
+<text x="1098.078125" y="510" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#087F8C">Wi-Fi 无线网络</text>
+<text x="1022.109375" y="551" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647A">Android 11+：开启无线调试并配对</text>
+<text x="1079.0" y="578" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#53647A">旧式方式：通常先插线开启</text>
+<line x1="831" y1="489" x2="875" y2="489" stroke="#3266CE" stroke-width="3"/>
+<line x1="875" y1="428" x2="875" y2="550" stroke="#3266CE" stroke-width="3"/>
+<line x1="875" y1="428" x2="916" y2="428" stroke="#3266CE" stroke-width="3"/>
+<polygon points="916,428 903.7138441335347,434.71195754045885 903.7138441335347,421.28804245954115" fill="#3266CE"/>
+<line x1="875" y1="550" x2="916" y2="550" stroke="#087F8C" stroke-width="3"/>
+<polygon points="916,550 903.7138441335347,556.7119575404588 903.7138441335347,543.2880424595412" fill="#087F8C"/>
+<line x1="1478" y1="428" x2="1525" y2="428" stroke="#3266CE" stroke-width="3"/>
+<line x1="1478" y1="550" x2="1525" y2="550" stroke="#087F8C" stroke-width="3"/>
+<line x1="1525" y1="428" x2="1525" y2="550" stroke="#087F8C" stroke-width="3"/>
+<line x1="1525" y1="489" x2="1570" y2="489" stroke="#087F8C" stroke-width="3"/>
+<polygon points="1570,489 1557.7138441335348,495.71195754045885 1557.7138441335348,482.28804245954115" fill="#087F8C"/>
+<text x="799.84375" y="366" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#53647A">操作指令发往手机  →                                     ←  画面、文件与状态返回电脑</text>
+<line x1="91" y1="628" x2="2308" y2="628" stroke="#DFE6F0" stroke-width="2"/>
+<text x="91" y="650" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#172B49">ADB Shell / 文件传输</text>
+<text x="91" y="691" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#53647A">系统命令、日志、文件与端口转发</text>
+<text x="841" y="650" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#172B49">scrcpy 投屏服务</text>
+<text x="841" y="691" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#53647A">视频、音频与输入控制，经 ADB 通道传输</text>
+<text x="1591" y="650" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#172B49">AYA 辅助服务</text>
+<text x="1591" y="691" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#53647A">设备端 Kotlin 服务；应用信息与文件访问</text>
+<rect x="64" y="773" width="52" height="46" rx="12" fill="#087F8C"/>
+<text x="73.96875" y="779" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">02</text>
+<text x="134" y="775" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#172B49">支持什么 → 能得到什么</text>
+<text x="970" y="783" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647A">蓝绿色区域：AYA 现有功能；输出为效果示意</text>
+<rect x="64" y="839" width="736" height="196" rx="20" fill="#FFFFFF"/>
+<rect x="86" y="860" width="48" height="43" rx="11" fill="#E8F1F9"/>
+<text x="95.8125" y="867" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3266CE">01</text>
+<text x="151" y="862" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#172B49">投屏与操控</text>
+<text x="88" y="919" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#172B49">实时画面 · 鼠标键盘 · 点击滑动</text>
+<text x="88" y="960" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647A">scrcpy 视频流 + 输入控制</text>
+<rect x="80" y="995" width="704" height="32" rx="7" fill="#E9F5F2"/>
+<text x="90" y="997" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#087F8C">输出：可操作的手机画面</text>
+<rect x="832" y="839" width="736" height="196" rx="20" fill="#FFFFFF"/>
+<rect x="854" y="860" width="48" height="43" rx="11" fill="#E8F1F9"/>
+<text x="863.8125" y="867" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3266CE">02</text>
+<text x="919" y="862" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#172B49">截图与录屏</text>
+<text x="856" y="919" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#172B49">屏幕截图 · 视频录制 · 音频传输</text>
+<text x="856" y="960" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647A">系统截图 + scrcpy 媒体流</text>
+<rect x="848" y="995" width="704" height="32" rx="7" fill="#E9F5F2"/>
+<text x="858" y="997" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#087F8C">输出：截图文件 / 录屏文件</text>
+<rect x="1600" y="839" width="736" height="196" rx="20" fill="#FFFFFF"/>
+<rect x="1622" y="860" width="48" height="43" rx="11" fill="#E8F1F9"/>
+<text x="1631.8125" y="867" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3266CE">03</text>
+<text x="1687" y="862" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#172B49">文件管理</text>
+<text x="1624" y="919" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#172B49">目录浏览 · 文件预览 · 上传下载</text>
+<text x="1624" y="960" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647A">ADB 文件传输 + 文件服务</text>
+<rect x="1616" y="995" width="704" height="32" rx="7" fill="#E9F5F2"/>
+<text x="1626" y="997" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#087F8C">输出：电脑与手机之间的文件</text>
+<rect x="64" y="1055" width="736" height="196" rx="20" fill="#FFFFFF"/>
+<rect x="86" y="1076" width="48" height="43" rx="11" fill="#E8F1F9"/>
+<text x="95.8125" y="1083" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3266CE">04</text>
+<text x="151" y="1078" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#172B49">应用管理</text>
+<text x="88" y="1135" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#172B49">安装卸载 · 启停 · 清除数据 · 导出 APK</text>
+<text x="88" y="1176" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647A">Android 包管理与应用管理</text>
+<rect x="80" y="1211" width="704" height="32" rx="7" fill="#E9F5F2"/>
+<text x="90" y="1213" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#087F8C">输出：应用状态变化 / APK 文件</text>
+<rect x="832" y="1055" width="736" height="196" rx="20" fill="#FFFFFF"/>
+<rect x="854" y="1076" width="48" height="43" rx="11" fill="#E8F1F9"/>
+<text x="863.8125" y="1083" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3266CE">05</text>
+<text x="919" y="1078" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#172B49">设备与连接</text>
+<text x="856" y="1135" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#172B49">设备切换 · 信息查看 · 配对 · 端口映射</text>
+<text x="856" y="1176" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647A">设备属性 + ADB 连接与转发</text>
+<rect x="848" y="1211" width="704" height="32" rx="7" fill="#E9F5F2"/>
+<text x="858" y="1213" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#087F8C">输出：设备信息 / 通信通道</text>
+<rect x="1600" y="1055" width="736" height="196" rx="20" fill="#FFFFFF"/>
+<rect x="1622" y="1076" width="48" height="43" rx="11" fill="#E8F1F9"/>
+<text x="1631.8125" y="1083" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3266CE">06</text>
+<text x="1687" y="1078" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#172B49">进程与性能</text>
+<text x="1624" y="1135" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#172B49">进程列表 · CPU · 内存 · FPS</text>
+<text x="1624" y="1176" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647A">top / proc / SurfaceFlinger</text>
+<rect x="1616" y="1211" width="704" height="32" rx="7" fill="#E9F5F2"/>
+<text x="1626" y="1213" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#087F8C">输出：实时列表与趋势图</text>
+<rect x="64" y="1271" width="736" height="196" rx="20" fill="#FFFFFF"/>
+<rect x="86" y="1292" width="48" height="43" rx="11" fill="#E8F1F9"/>
+<text x="95.8125" y="1299" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3266CE">07</text>
+<text x="151" y="1294" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#172B49">日志与终端</text>
+<text x="88" y="1351" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#172B49">Logcat 筛选导出 · 多会话 Shell</text>
+<text x="88" y="1392" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647A">日志读取 + 交互式命令执行</text>
+<rect x="80" y="1427" width="704" height="32" rx="7" fill="#E9F5F2"/>
+<text x="90" y="1429" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#087F8C">输出：日志文件 / 命令结果</text>
+<rect x="832" y="1271" width="736" height="196" rx="20" fill="#FFFFFF"/>
+<rect x="854" y="1292" width="48" height="43" rx="11" fill="#E8F1F9"/>
+<text x="863.8125" y="1299" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3266CE">08</text>
+<text x="919" y="1294" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#172B49">界面布局检查</text>
+<text x="856" y="1351" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#172B49">控件层级 · 属性 · 界面边界</text>
+<text x="856" y="1392" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647A">UIAutomator 导出的层级 XML</text>
+<rect x="848" y="1427" width="704" height="32" rx="7" fill="#E9F5F2"/>
+<text x="858" y="1429" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#087F8C">输出：界面结构 / 布局快照</text>
+<rect x="1600" y="1271" width="736" height="196" rx="20" fill="#FFFFFF"/>
+<rect x="1622" y="1292" width="48" height="43" rx="11" fill="#E8F1F9"/>
+<text x="1631.8125" y="1299" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#3266CE">09</text>
+<text x="1687" y="1294" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#172B49">WebView 调试</text>
+<text x="1624" y="1351" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#172B49">发现可调试页面 · 接入 DevTools</text>
+<text x="1624" y="1392" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647A">仅适用于开启调试的活动 WebView</text>
+<rect x="1616" y="1427" width="704" height="32" rx="7" fill="#E9F5F2"/>
+<text x="1626" y="1429" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#087F8C">输出：网页调试界面</text>
+<rect x="64" y="1533" width="52" height="46" rx="12" fill="#087F8C"/>
+<text x="73.96875" y="1539" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">03</text>
+<text x="134" y="1535" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#172B49">能力如何继续扩展</text>
+<text x="970" y="1543" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647A">以下为可构建方向，需要额外开发，不是现成的完整功能</text>
+<rect x="64" y="1600" width="1394" height="263" rx="20" fill="#F0ECFA" stroke="#7051B4" stroke-width="2" stroke-dasharray="10 8"/>
+<text x="91" y="1621" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#7051B4">在连接与基础操作之上，增加任务编排</text>
+<text x="91" y="1679" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#172B49">自动化任务</text>
+<text x="313" y="1679" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#172B49">识别界面 → 执行动作 → 验证结果</text>
+<text x="91" y="1729" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#172B49">多设备任务</text>
+<text x="313" y="1729" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#172B49">批量安装、截图、测试与调度</text>
+<text x="91" y="1779" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#172B49">网页 / AI 控制台</text>
+<text x="365" y="1779" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#172B49">补充后端、视频传输或模型决策</text>
+<text x="91" y="1824" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#7051B4">无线只是连接方式；自动执行任务还需要上层逻辑。</text>
+<rect x="1490" y="1600" width="846" height="263" rx="20" fill="#FFF4E5"/>
+<text x="1519" y="1621" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#946019">使用条件与能力边界</text>
+<text x="1519" y="1680" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#775727">• 需要开启调试、授权或配对</text>
+<text x="1519" y="1724" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#775727">• 无线需要网络可达；跨互联网需额外连接方案</text>
+<text x="1519" y="1768" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#775727">• 受系统版本与权限限制；不会自动获得 root</text>
+<text x="1519" y="1812" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#775727">• 布局、性能与媒体能力以设备实际支持为准</text>
+<rect x="64" y="1900" width="2272" height="91" rx="17" fill="#172B49"/>
+<text x="89" y="1928" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">一次完整操作</text>
+<text x="354" y="1930" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#FFFFFF">电脑点击「安装」 → ADB 经 USB / Wi-Fi 传输 → 手机安装应用 → AYA 显示结果</text>
+<text x="64" y="2031" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#53647A">依据：官方文档与源码阅读  ·  研究版本 44c02f7  ·  未进行真机实测</text>
+<text x="1430" y="2031" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#53647A">github.com/liriliri/aya  ·  aya.liriliri.io</text>
+</svg>
