@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-16",
+  "browser": "Microsoft Edge (headless)",
+  "result": "passed",
+  "tested_variant_page_states": 10,
+  "viewport_widths": [
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "checks": [
+    "all local links return HTTP 200",
+    "native chart count shown",
+    "dialog opens and Escape closes",
+    "arrow-key navigation",
+    "native PPTX download",
+    "no horizontal overflow at tested widths",
+    "file:// offline gallery works",
+    "no JavaScript page errors"
+  ],
+  "screenshots": [
+    "assets/cover.png",
+    "assets/gallery.png",
+    "assets/mobile.png"
+  ]
+}

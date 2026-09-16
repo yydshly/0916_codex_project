@@ -1,0 +1,5 @@
+# Raw upstream reports contain machine-specific paths; public evidence is app/*.json.
+sample/validation/
+sample/backup/
+.venv/
+.local/

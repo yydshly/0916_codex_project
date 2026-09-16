@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-16T11:34:48.254Z",
+  "browser": "153.0.4234.32",
+  "result": "passed",
+  "styles": 18,
+  "previewImages": 36,
+  "categoryCounts": [
+    18,
+    5,
+    4,
+    4,
+    4,
+    1
+  ],
+  "viewportWidths": [
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "checks": [
+    "all preview images decode",
+    "category filters and keyword search",
+    "empty state and reset",
+    "18 detail dialogs with 2 pages each",
+    "Escape closes dialog",
+    "deep link opens selected style",
+    "no horizontal overflow",
+    "mobile portrait detail",
+    "file:// offline works",
+    "no JavaScript errors"
+  ]
+}

@@ -1,6 +1,23 @@
 {
   "projects": [
     {
+      "id": 1,
+      "slug": "ppt-master",
+      "name": "PPT Master 能力实验室",
+      "summary": "把内容策划、18 种视觉风格与原生 PPT 导出串成工作流；附 36 张官方风格预览及可编辑图表、表格、公式实测。",
+      "repo": "https://github.com/hugohe3/ppt-master",
+      "status": "已完成",
+      "tags": [
+        "AI 演示文稿",
+        "SVG",
+        "原生 PPTX",
+        "本地实测"
+      ],
+      "cover": "projects/001-ppt-master/assets/styles-overview.png",
+      "cover_alt": "18 种视觉风格汇总页的实际浏览器截图，展示官方案例外观；不是同题生成对比，原生可编辑性另有本地实验验证。",
+      "demo": ""
+    },
+    {
       "id": 2,
       "slug": "pdf-craft",
       "name": "PDF Craft 扫描文档重建研究",

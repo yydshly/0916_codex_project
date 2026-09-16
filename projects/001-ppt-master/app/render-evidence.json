@@ -1,0 +1,20 @@
+[
+  {
+    "variant": "editable-shapes",
+    "slides": 5,
+    "renderer": "Microsoft PowerPoint",
+    "version": "16.0",
+    "width": 1600,
+    "height": 900,
+    "input_sha256": "5aaf9ee7098d453ccae77786d73eda74fab4c1e9a5439c4d86131be77847c0bc"
+  },
+  {
+    "variant": "native-data",
+    "slides": 5,
+    "renderer": "Microsoft PowerPoint",
+    "version": "16.0",
+    "width": 1600,
+    "height": 900,
+    "input_sha256": "e50ebf2f99a6ba932f4e6e5aa8f4e793516dd506db3073d275a1d47f69248bd1"
+  }
+]

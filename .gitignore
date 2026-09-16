@@ -29,3 +29,7 @@ upstream/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Generated Pages artifacts; source remains in projects/*/app/.
+/web/*
+!/web/README.md

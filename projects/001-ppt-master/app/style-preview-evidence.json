@@ -1,0 +1,332 @@
+{
+  "date": "2026-09-16T11:31:16.513Z",
+  "browser": "153.0.4234.32",
+  "method": "Pinned upstream SVG rendered in local Microsoft Edge; not newly generated decks or PowerPoint render verification.",
+  "fontNote": "Local Windows font substitutions may differ from the author environment.",
+  "records": [
+    {
+      "style": "swiss-minimal",
+      "page": 1,
+      "preview": "style-previews/swiss-minimal-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "23201e36430277f7aa8c085e250118655d0060e4d12c454e54d211da40144bca",
+      "previewSHA256": "5ff1b62793a9d88442432858dbb2855524ce894e5af7d3b10dcfc4e21f8df858"
+    },
+    {
+      "style": "swiss-minimal",
+      "page": 2,
+      "preview": "style-previews/swiss-minimal-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "326c09431226c2d8ae6870f09d70f18345b654fabc12c8518294bb327a4d1076",
+      "previewSHA256": "075f558dec34b72e89a34ede708508418de6a8620c2d56a373e09113db684b89"
+    },
+    {
+      "style": "soft-rounded",
+      "page": 1,
+      "preview": "style-previews/soft-rounded-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "44dbd1be836b2a80c3c911708292e7e73a28fab32f7c158a2d7c5157f4d3a346",
+      "previewSHA256": "a363c35aa88a1148226367db08b815e38a968fadd9fee0fcdd03e3e51bb495e7"
+    },
+    {
+      "style": "soft-rounded",
+      "page": 2,
+      "preview": "style-previews/soft-rounded-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "6e3f2e1d2f549e595fc94136f59918f5c982c6ec92761aa4d4d6220d95a24021",
+      "previewSHA256": "2a4fdd5e52dd2e86a7c46509c6c67a613f1bfdc6299e202f338adc934a965d35"
+    },
+    {
+      "style": "glassmorphism",
+      "page": 1,
+      "preview": "style-previews/glassmorphism-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "d17c0a5996659a1ecc7c2f399e05c8579a4e8b7964dc4ff39f98e6de77e3e371",
+      "previewSHA256": "edcfa5f59cfc468d2491c42347f93905de7df68e49c2ee4c161ced99f8c19487"
+    },
+    {
+      "style": "glassmorphism",
+      "page": 2,
+      "preview": "style-previews/glassmorphism-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "6d26963acec723737db2cd1d0d7886a3ac4718b8908816d92a1c8f284e784162",
+      "previewSHA256": "2ea790d255621b2283f0cf0fef7b675dba77828a14ac6d0068d6fe91de90374d"
+    },
+    {
+      "style": "dark-tech",
+      "page": 1,
+      "preview": "style-previews/dark-tech-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "ea04603c5748c8f473e97134b529562b6598f9b8f8a42a2c741dd7c4c9da573e",
+      "previewSHA256": "21068265f1fe790cb8d11cede81bd9e4824824938f1ae9fa3c4d85532200ef85"
+    },
+    {
+      "style": "dark-tech",
+      "page": 2,
+      "preview": "style-previews/dark-tech-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "8e68ada9fe176ee00c52123750487575456f2abf43d9c11c4e498573d6fc9667",
+      "previewSHA256": "ee788679d85c4b26b9e3668310f9ff0df1571ea1119d1766c01688995973c5b5"
+    },
+    {
+      "style": "blueprint",
+      "page": 1,
+      "preview": "style-previews/blueprint-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "ef57825336638ab8c9517f3762d2cddc21dc026d3d0d003616178187356cf736",
+      "previewSHA256": "b96e27f600a0ee6418aaa19e60d0d04f191367873ee7090576ec3eea5e35650d"
+    },
+    {
+      "style": "blueprint",
+      "page": 2,
+      "preview": "style-previews/blueprint-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "b51895a40ef40bfecf7fa76e56b23d24fdbce3731a4b5ef297408782d5c4484e",
+      "previewSHA256": "8eec3a26200b61b7cba3cb1cd93b752e3a7e8cf86080389101a261ad034afc3a"
+    },
+    {
+      "style": "editorial",
+      "page": 1,
+      "preview": "style-previews/editorial-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "ebc640c26fe057089cd2bbe0d6df45bc0498fc8df2f76c1655cd0f7890aa4139",
+      "previewSHA256": "4b9447b38efa7c81378dfc6d86c19fe941320e753f01bbec42250afb68d4f671"
+    },
+    {
+      "style": "editorial",
+      "page": 2,
+      "preview": "style-previews/editorial-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "bdfe59bcfef59ee41058687544ae8179ab97ea145b43cd24f000a511a7f58d08",
+      "previewSHA256": "df048d015840e8eaf8d20a163bb3be33aa14739a9c171b1b2498b657b1e71fef"
+    },
+    {
+      "style": "photo-editorial",
+      "page": 1,
+      "preview": "style-previews/photo-editorial-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "9affc46a32a6e4116586b8c64a3f2335899985f909d18e801bf81672c0785558",
+      "previewSHA256": "599728f18ff5ad16bfd80ef359064fecdc31250c887f2eff655b7cbc5ce8e4f4"
+    },
+    {
+      "style": "photo-editorial",
+      "page": 2,
+      "preview": "style-previews/photo-editorial-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "4a87f6370af016d5fd65b6021cf96ac0807f6f17e7a33b3afaf2c73f2067fc8f",
+      "previewSHA256": "2423f74b71b8c6f9fa61e29caf3dc2e3eb7d304bc29ed79d3e1ed85f7e6203d8"
+    },
+    {
+      "style": "data-journalism",
+      "page": 1,
+      "preview": "style-previews/data-journalism-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "847c1bc6017de1ac863e3669bceefdfba859abb0309f4d49f2dd894f0c14df4e",
+      "previewSHA256": "d2b1f78efed56db37be13410057688bbfd8121109dae5fdb9f6695b0085dc810"
+    },
+    {
+      "style": "data-journalism",
+      "page": 2,
+      "preview": "style-previews/data-journalism-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "7d71cff598adb063302e63b444dff8e3d93e5808c2254cc2745553ef52c09a0f",
+      "previewSHA256": "5d7f3adb5716f622ebd41389574b688faa18e57c8ab3cdefaa8c8a8a49d19e8f"
+    },
+    {
+      "style": "brutalist",
+      "page": 1,
+      "preview": "style-previews/brutalist-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "06ad0e5deeae67839dc3f9b8e2e298aada36898e210bbfa50bc051e9dc0f63b9",
+      "previewSHA256": "400136ef4bda072cdf991bbcd342f8a81bd98e4a7900c32f6862c6006adc9ade"
+    },
+    {
+      "style": "brutalist",
+      "page": 2,
+      "preview": "style-previews/brutalist-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "6fe08f831e5c5c202158a865a2e3674f3ae9d2eab131c357a0eaaaad9491bb1f",
+      "previewSHA256": "1a657b727ebfa8c045e1502ff2299ae98020d84f53fbf84ebc1778ba442476d9"
+    },
+    {
+      "style": "memphis",
+      "page": 1,
+      "preview": "style-previews/memphis-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "2dfcdb471a36f7a4e5608a0974f80d0eb70cdc909ebaca9cab936eb658bb773e",
+      "previewSHA256": "94154ee09985d6841ab0cac2634bcbff1cb87f7c9e9acd3f021e75d5ab0a71ee"
+    },
+    {
+      "style": "memphis",
+      "page": 2,
+      "preview": "style-previews/memphis-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "ae99821d8c18c83a3f7a113ed0184afbae78d0846506e0b581a8d75cfaba126d",
+      "previewSHA256": "1e198dcbcbf6b4492d2cc87df1bedc6c32e5a28d116da4790776efa0132accbe"
+    },
+    {
+      "style": "zine",
+      "page": 1,
+      "preview": "style-previews/zine-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "357c4c73478b51db19357612f9a8f9a8a13e28e203485858f6fb6cd1e26b9f07",
+      "previewSHA256": "380706a3b5079fbcb342d4d55fcaa25824ff2a56ef80a704d873ccf1cc004939"
+    },
+    {
+      "style": "zine",
+      "page": 2,
+      "preview": "style-previews/zine-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "230b3b252023fddeefe71efd8b5ffa36f16f35fe29f4c2e4a75335f64e41419c",
+      "previewSHA256": "4e7fa2b269a9b7a2b2564ffe91aa086cbea1269dae18a35f2d846736b4d046d6"
+    },
+    {
+      "style": "vintage-poster",
+      "page": 1,
+      "preview": "style-previews/vintage-poster-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "a39056127fbbe3a9ef517195ea06722ee8659f54ee4e3e0535dd2e3c6efa2238",
+      "previewSHA256": "fbe48da610bb523cb77de9f61d4c51b66924103e32756886ce2b4d1c7783088a"
+    },
+    {
+      "style": "vintage-poster",
+      "page": 2,
+      "preview": "style-previews/vintage-poster-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "6887ab7e7d22ad5c3b0d0ab8fe921a71a2ef27bf06acd8ea6b50ea6dc8ddf280",
+      "previewSHA256": "561eb64853eb2880ce719a9e99c92ff4f46f04abff1cfbeacbb988259a141433"
+    },
+    {
+      "style": "paper-cut",
+      "page": 1,
+      "preview": "style-previews/paper-cut-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "bdcc55bd3678682f086272256d34671e83a9f70d925848af9c552740a64dc0f0",
+      "previewSHA256": "1e1c0e08cb1fa942cc68c0e1c1b297d575bb32c549db778b95ff38451088d633"
+    },
+    {
+      "style": "paper-cut",
+      "page": 2,
+      "preview": "style-previews/paper-cut-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "f647db53d7a77c88b714ececbe8ab5538b776edac77936b62189d4d77158a865",
+      "previewSHA256": "d1c8f4fc66e1ab5c5aa115cf24f350cd1e40456077db9f40b6f3236632f090b4"
+    },
+    {
+      "style": "sketch-notes",
+      "page": 1,
+      "preview": "style-previews/sketch-notes-1.jpg",
+      "width": 619,
+      "height": 1100,
+      "sourceSHA256": "49698c1529701bc7abd83b5932968bfae10419ad7d631aa609dd801a13ddb781",
+      "previewSHA256": "bb8467b825669c654b20c744a88e7a1c485a76a885624b39bff46d6b125aa6ce"
+    },
+    {
+      "style": "sketch-notes",
+      "page": 2,
+      "preview": "style-previews/sketch-notes-2.jpg",
+      "width": 619,
+      "height": 1100,
+      "sourceSHA256": "56619126b2bc70d827ed275c4081ce795d3fc9f1816de8466c8810c8bc030339",
+      "previewSHA256": "3e19167675e2a906c2503311a19ef7fc98c978960d2fdc66e640bf486b1f7081"
+    },
+    {
+      "style": "ink-notes",
+      "page": 1,
+      "preview": "style-previews/ink-notes-1.jpg",
+      "width": 778,
+      "height": 1100,
+      "sourceSHA256": "17c9e6d751f24591f679cc0c7e67a028174da38acc26483012141b7db4c72d86",
+      "previewSHA256": "90bbf5f1661757ba0e61c04fabdbd7cec04b57f3b1eb9ebd7c7d6d46955734a3"
+    },
+    {
+      "style": "ink-notes",
+      "page": 2,
+      "preview": "style-previews/ink-notes-2.jpg",
+      "width": 778,
+      "height": 1100,
+      "sourceSHA256": "d1bb0aebe0509ffc2ef43bfc3d5dfe79c3b0abf7a56e715c92d82ec243518dfa",
+      "previewSHA256": "bc10f2591d9f3b4fc53662899f3522a73a632b90df1b04bac9b53e347d999651"
+    },
+    {
+      "style": "chalkboard",
+      "page": 1,
+      "preview": "style-previews/chalkboard-1.jpg",
+      "width": 1200,
+      "height": 900,
+      "sourceSHA256": "0deeb111f08c774f768d8e801aecfdf6338ee69dd76e79bc2d28a61b04802b7d",
+      "previewSHA256": "e8d2b7e756af2549b6c41e7d3741b926ba34df317fb5507782cc2c4768579648"
+    },
+    {
+      "style": "chalkboard",
+      "page": 2,
+      "preview": "style-previews/chalkboard-2.jpg",
+      "width": 1200,
+      "height": 900,
+      "sourceSHA256": "37885e0538d9749210eebff2aa4e795b7ead9b7914a1e73e5ad8215304113468",
+      "previewSHA256": "47e134cd03c202b32b5a489c04cbb2bdf1b325558abddd535c889d252af8279d"
+    },
+    {
+      "style": "ink-wash",
+      "page": 1,
+      "preview": "style-previews/ink-wash-1.jpg",
+      "width": 823,
+      "height": 1100,
+      "sourceSHA256": "0a3d4fa069485dd8fb6ac7d2a2edf47a823a475549e4eb36044205ecddf674ef",
+      "previewSHA256": "06cb95a125449daf678abde2f44d0941b2d8605688cffb7335646254572b3049"
+    },
+    {
+      "style": "ink-wash",
+      "page": 2,
+      "preview": "style-previews/ink-wash-2.jpg",
+      "width": 823,
+      "height": 1100,
+      "sourceSHA256": "04ff51e08aa23fe0514707742fd9331de66edb6c69ca9eef9a2b0f85971f9385",
+      "previewSHA256": "2a75e6000652225266e3c07a7375e59ecb44c63822dc40c0e273f939af9aa20c"
+    },
+    {
+      "style": "pixel-art",
+      "page": 1,
+      "preview": "style-previews/pixel-art-1.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "83bb0c314eb3b9558c4a471249cd1a1dd7335dd7512f17b238db18bd5cb57de7",
+      "previewSHA256": "bd213edc9e0902bf8fc08e717313021cb602bb0e442e1b9bf0b210b004235431"
+    },
+    {
+      "style": "pixel-art",
+      "page": 2,
+      "preview": "style-previews/pixel-art-2.jpg",
+      "width": 1200,
+      "height": 675,
+      "sourceSHA256": "4d6ec433ae9394021edf93bc0c1c62e4f75ece11ed57259251d7f63dfd9b5acf",
+      "previewSHA256": "dd9ad2aa7a36918c8dafb1a1bbf2aefad8fe80d9cc3e5d413cadbba69ab56b16"
+    }
+  ]
+}

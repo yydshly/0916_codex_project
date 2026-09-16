@@ -1,0 +1,5 @@
+# Minimal dependencies for this isolated converter fixture.
+# Full upstream Agent workflows have additional dependencies.
+python-pptx>=1.0.2
+XlsxWriter>=3.0.0
+Pillow>=9.0.0

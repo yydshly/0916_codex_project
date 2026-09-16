@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PPT Master 本地能力实验：查看真实 PowerPoint 渲染，对比形状版与原生数据版，下载可编辑 PPT。">
+  <title>PPT Master · 能力实验室</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style-gallery.css">
+  <script src="evidence.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#showcase">跳到效果展示</a>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">P<span>·</span></span><span>PPT Master <small>能力实验室</small></span></a>
+    <nav aria-label="主导航"><a href="#showcase">效果展示</a><a href="#how-it-works">实现原理</a><a href="styles.html">18 种风格</a></nav>
+    <a class="repo-link" href="https://github.com/hugohe3/ppt-master" target="_blank" rel="noopener noreferrer">上游仓库 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> OPEN SOURCE STUDY <span class="issue">/ 001</span></p>
+        <h1 id="hero-title">可编辑 PPT，<br><em>实际效果在这里。</em></h1>
+        <p class="hero-description">从 SVG 页面设计，到 PowerPoint 原生对象。<br>用五页真实导出样例，看看它能做什么、怎么做到。</p>
+        <div class="hero-actions"><a class="button primary" href="#showcase">查看效果 <span aria-hidden="true">↓</span></a><a class="button secondary" href="downloads/native-data.pptx" download>下载示例 PPT <span aria-hidden="true">↗</span></a></div>
+        <p class="hero-note">本地实测 · Microsoft PowerPoint 真实渲染</p>
+      </div>
+      <div class="hero-visual">
+        <div class="preview-label"><span>THE OUTPUT</span><span>16:9 · EDITABLE PPTX</span></div>
+        <img class="hero-slide" src="previews/native-data/slide-1.png" width="1600" height="900" alt="PPT Master 示例封面，标题为可编辑 PowerPoint，从页面设计到原生对象">
+        <div class="visual-caption"><span class="file-icon" aria-hidden="true">P</span><div><strong>native-data.pptx</strong><span>5 页 · 图表、表格、公式均保留原生结构</span></div><span class="checkmark" aria-hidden="true">✓</span></div>
+      </div>
+    </section>
+    <div class="summary-strip wrap" aria-label="本地示例验证结果"><div><strong>05</strong><span>真实导出的页面</span></div><div><strong>02</strong><span>可下载的编辑版本</span></div><div><strong>01</strong><span>内嵌图表工作簿</span></div><div><strong>00</strong><span>PPT 内的图片对象</span></div></div>
+
+    <section id="showcase" class="section wrap" aria-labelledby="showcase-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / LIVE GALLERY</p><h2 id="showcase-title">逐页看效果，切换看差异</h2></div><p>选择一页，再切换导出版本。<br>下方均为实际 PPT 文件的 PowerPoint 渲染。</p></div>
+      <div class="viewer">
+        <div class="viewer-toolbar"><div class="variant-tabs" role="group" aria-label="导出版本"><button type="button" data-variant="native-data" aria-pressed="true">原生数据版</button><button type="button" data-variant="editable-shapes" aria-pressed="false">形状版</button></div><span class="render-label"><span class="live-dot"></span> PowerPoint 渲染</span><button id="zoom" class="icon-button" aria-label="放大当前幻灯片" title="放大当前幻灯片">⤢</button></div>
+        <div class="viewer-main">
+          <div class="slide-stage"><img id="slide-image" src="previews/native-data/slide-1.png" width="1600" height="900" alt="示例第 1 页：文字排版"><p id="image-error" hidden>预览未找到，请重新生成 PowerPoint 渲染图片。</p></div>
+          <aside class="slide-inspector" aria-live="polite" aria-atomic="true"><span id="slide-kicker" class="eyebrow">01 / TYPOGRAPHY</span><h3 id="slide-title">文字与版式</h3><p id="slide-description"></p><div class="inspection-label">本页文件结构</div><div id="object-counts" class="object-counts"></div><div class="try-it"><strong>在 PowerPoint 里试试</strong><p id="slide-action"></p></div><a id="source-link" class="text-link" href="sources/01-cover.svg" target="_blank" rel="noopener noreferrer">查看 SVG 页面源文件 ↗</a></aside>
+        </div>
+        <div class="viewer-footer"><button id="prev" class="icon-button" aria-label="上一页">←</button><span id="page-indicator">01 / 05</span><p>用左右方向键翻页</p><button id="next" class="icon-button" aria-label="下一页">→</button></div>
+      </div>
+      <div id="thumbnails" class="thumbnails" role="group" aria-label="选择幻灯片"></div>
+      <div class="sample-disclosure"><span aria-hidden="true">ⓘ</span><p>这是本研究编写 SVG 后，调用上游转换工具生成的演示样例，未运行完整 AI 策划流程。图中数值为虚构示例；浏览器展示图片，真正的编辑请下载 PPT。</p></div>
+    </section>
+
+    <section id="how-it-works" class="mechanism section">
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">02 / UNDER THE HOOD</p><h2>AI 负责设计，程序负责转换</h2></div><p>本地实验验证的是后半段：<br>SVG → 检查 → 原生 PPTX → PowerPoint 渲染。</p></div>
+      <ol class="pipeline"><li><span>01</span><h3>理解材料</h3><p>文档、网页或主题<br>提取内容、确定叙事</p><small>完整工作流能力</small></li><li><span>02</span><h3>设计 SVG</h3><p>定义文字、坐标、图形<br>与原生数据标记</p><small>本例已编写</small></li><li><span>03</span><h3>检查与编译</h3><p>检查格式约束<br>转换为 DrawingML</p><small class="verified">本地已运行 ✓</small></li><li><span>04</span><h3>交付 PPTX</h3><p>保留原生对象与数据<br>在 PowerPoint 中继续编辑</p><small class="verified">本地已渲染 ✓</small></li></ol>
+      <div class="boundary"><h3>可编辑，也有边界。</h3><p>图片素材仍是图片；原生图表可能规范化部分样式。模板、旁白和复杂动画属于上游能力，本次样例没有覆盖这些端到端流程。</p><a href="https://github.com/hugohe3/ppt-master/blob/52a2801c27cb468d7ea95e25c7b0702eaa360914/docs/powerpoint-svg-mapping.md" target="_blank" rel="noopener noreferrer">查看上游能力边界 ↗</a></div></div>
+    </section>
+
+    <section id="examples" class="section wrap"><div class="section-heading"><div><p class="eyebrow">03 / THE STYLE ATLAS</p><h2>18 种风格，不止商务蓝</h2></div><p>36 张官方案例静态预览。<br>按类别筛选，放大查看封面与内容页。</p></div>
+      <div class="examples-grid featured-styles">
+        <a class="example" href="styles.html?style=swiss-minimal"><img src="style-previews/swiss-minimal-1.jpg" loading="lazy" alt="瑞士极简官方案例"><h3>瑞士极简 ↗</h3><p>严格网格 · 大留白 · 文字层级</p></a>
+        <a class="example" href="styles.html?style=glassmorphism"><img src="style-previews/glassmorphism-1.jpg" loading="lazy" alt="毛玻璃官方案例"><h3>毛玻璃 ↗</h3><p>半透明面板 · 渐变光感</p></a>
+        <a class="example" href="styles.html?style=pixel-art"><img src="style-previews/pixel-art-1.jpg" loading="lazy" alt="像素艺术官方案例"><h3>像素艺术 ↗</h3><p>像素造型 · 游戏界面感</p></a>
+        <a class="example" href="styles.html?style=paper-cut"><img src="style-previews/paper-cut-1.jpg" loading="lazy" alt="层叠剪纸官方案例"><h3>层叠剪纸 ↗</h3><p>纸张叠层 · 柔和投影</p></a>
+        <a class="example" href="styles.html?style=ink-wash"><img src="style-previews/ink-wash-1.jpg" loading="lazy" alt="水墨留白官方案例"><h3>水墨留白 ↗</h3><p>宣纸留白 · 水墨笔触</p></a>
+        <a class="example" href="styles.html?style=chalkboard"><img src="style-previews/chalkboard-1.jpg" loading="lazy" alt="黑板粉笔官方案例"><h3>黑板粉笔 ↗</h3><p>深色板面 · 教学推导</p></a>
+      </div>
+      <a class="button primary all-styles-link" href="styles.html">浏览全部 18 种风格 →</a>
+    </section>
+
+    <section id="downloads" class="downloads wrap"><div><p class="eyebrow">TAKE IT WITH YOU</p><h2>下载后，亲手改一页。</h2><p>两个版本来自同一套 SVG。形状版方便逐元素改外观；<br>原生数据版可以编辑图表数据和表格单元格。</p><div class="download-actions"><a class="button light" href="downloads/native-data.pptx" download>原生数据版 .pptx ↓</a><a class="button outline" href="downloads/editable-shapes.pptx" download>形状版 .pptx ↓</a></div></div><div class="verification"><span class="verified-symbol">✓</span><h3>结果有据可查</h3><p>两个版本均已由 PowerPoint 16.0 打开并渲染。可检查文件哈希、对象数量与渲染记录。</p><a href="evidence.json" target="_blank" rel="noopener noreferrer">文件结构报告 ↗</a><a href="render-evidence.json" target="_blank" rel="noopener noreferrer">PowerPoint 渲染记录 ↗</a></div></section>
+  </main>
+  <footer class="wrap"><span>001 · PPT Master 能力实验室</span><p>独立研究展示 · 上游作者 Hugo He · MIT<br>研究版本 <a href="https://github.com/hugohe3/ppt-master/tree/52a2801c27cb468d7ea95e25c7b0702eaa360914" target="_blank" rel="noopener noreferrer">52a2801</a> · 2026-09-16</p><a href="https://hugohe3.github.io/ppt-master-examples/" target="_blank" rel="noopener noreferrer">官方案例库 ↗</a></footer>
+  <dialog id="zoom-dialog" aria-label="幻灯片放大预览"><button id="close-zoom" class="icon-button" aria-label="关闭放大预览">×</button><img id="zoom-image" alt="当前幻灯片放大图" width="1600" height="900"><p id="zoom-caption"></p></dialog>
+  <noscript><p class="wrap">启用 JavaScript 可切换页面与版本；也可以直接下载两份 PPT 文件。</p></noscript>
+</body>
+</html>
