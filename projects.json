@@ -62,7 +62,7 @@
       "id": 4,
       "slug": "design-extract",
       "name": "Design Extract 网站设计提取研究",
-      "summary": "浏览器采集与设计资料导出；附 Codex 对比、使用场景和网页复刻参考流程引导图。17 项基础检查通过，另有 4 项保真问题；完整复刻未验证。",
+      "summary": "从网页提取配色、字体、间距、布局与部分交互状态，导出设计文档和主题配置；为我们批量分析参考站、复用设计规范及构建网页复刻工具提供采集模块与工程参考。单次复刻可直接用 Codex，完整复刻仍需生成、对比与修正。",
       "repo": "https://github.com/Manavarya09/design-extract",
       "status": "已完成",
       "tags": [
