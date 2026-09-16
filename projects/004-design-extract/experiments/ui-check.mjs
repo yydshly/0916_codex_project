@@ -79,6 +79,6 @@ try{
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));record('narrow layout equivalent to desktop 200% zoom');
   assert.deepEqual(errors,[]);assert.deepEqual(badResponses,[]);record('no page errors or HTTP failures');
   const report={date:new Date().toISOString(),url:base,browser:browser.version(),checks,passed:checks.length,pageErrors:errors,httpFailures:badResponses,screenshotDirectory:'.local/design-extract/ui',scope:'Original static research webpage; this is not a retest of upstream extraction.'};
-  await writeFile(join(project,'notes/ui-verification.json'),JSON.stringify(report,null,2)+'\n');
+  await writeFile(join(project,base.startsWith('https://')?'notes/ui-online-verification.json':'notes/ui-verification.json'),JSON.stringify(report,null,2)+'\n');
   console.log(JSON.stringify(report,null,2));
 }finally{await browser.close();}

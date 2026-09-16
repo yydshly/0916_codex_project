@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-16T13:51:20.337Z",
+  "url": "https://yydshly.github.io/0916_codex_project/004-design-extract/",
+  "browser": "149.0.7827.55",
+  "checks": [
+    {
+      "name": "title and main route",
+      "passed": true
+    },
+    {
+      "name": "six capability panels",
+      "passed": true
+    },
+    {
+      "name": "keyboard tab navigation",
+      "passed": true
+    },
+    {
+      "name": "five principle steps and pinned source links",
+      "passed": true
+    },
+    {
+      "name": "three real specimen images",
+      "passed": true
+    },
+    {
+      "name": "three actual output excerpts",
+      "passed": true
+    },
+    {
+      "name": "published figures match retained research data",
+      "passed": true
+    },
+    {
+      "name": "four expandable limitations",
+      "passed": true
+    },
+    {
+      "name": "download resources accessible",
+      "passed": true
+    },
+    {
+      "name": "layout without horizontal overflow at 1440px",
+      "passed": true
+    },
+    {
+      "name": "layout without horizontal overflow at 768px",
+      "passed": true
+    },
+    {
+      "name": "layout without horizontal overflow at 375px",
+      "passed": true
+    },
+    {
+      "name": "mobile sticky navigation does not obscure heading",
+      "passed": true
+    },
+    {
+      "name": "direct section link reload",
+      "passed": true
+    },
+    {
+      "name": "narrow layout equivalent to desktop 200% zoom",
+      "passed": true
+    },
+    {
+      "name": "no page errors or HTTP failures",
+      "passed": true
+    }
+  ],
+  "passed": 16,
+  "pageErrors": [],
+  "httpFailures": [],
+  "screenshotDirectory": ".local/design-extract/ui",
+  "scope": "Original static research webpage; this is not a retest of upstream extraction."
+}

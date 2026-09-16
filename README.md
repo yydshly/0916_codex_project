@@ -18,7 +18,7 @@ PDF 工具参考：[PDF Craft](projects/002-pdf-craft/README.md) 用于扫描书
 | 001 | [PPT Master 能力实验室](projects/001-ppt-master/README.md) | 把内容策划、18 种视觉风格与原生 PPT 导出串成工作流；附 36 张官方风格预览及可编辑图表、表格、公式实测。 | AI 演示文稿、SVG、原生 PPTX、本地实测 | 已完成 | [hugohe3/ppt\-master](https://github.com/hugohe3/ppt-master) | [访问](https://yydshly.github.io/0916_codex_project/001-ppt-master/styles.html) |
 | 002 | [PDF Craft 扫描文档重建研究](projects/002-pdf-craft/README.md) | 扫描书结构重建与翻译输出；附 PDF 工具引导图及 Stirling\-PDF 格式转换、通用处理参考。主要价值在工程集成，未做转换实测。 | OCR 集成、文档重建、EPUB、源码研究 | 已归档 | [oomol\-lab/pdf\-craft](https://github.com/oomol-lab/pdf-craft) | — |
 | 003 | [WrenAI 业务问数研究](projects/003-wrenai/README.md) | 面向 Agent 的业务问数基础设施：模型理解需求，MDL 统一口径，引擎规划查询；适合销售、运营与库存分析。附原理引导图、方案对比及 36 组引擎实测，未验证完整模型问数。 | 业务问数、语义层、WASM 实测、交互展示 | 已完成 | [Canner/WrenAI](https://github.com/Canner/WrenAI) | [访问](https://yydshly.github.io/0916_codex_project/003-wrenai/) |
-| 004 | [Design Extract 网站设计提取研究](projects/004-design-extract/README.md) | 网页设计规范提取与 AI 开发辅助；附真实输出截图、17 项基础检查和 4 项保真问题，已验证提取与导出，未验证完整复刻。 | 设计变量、浏览器提取、AI 开发辅助、本地实测 | 已完成 | [Manavarya09/design\-extract](https://github.com/Manavarya09/design-extract) | — |
+| 004 | [Design Extract 网站设计提取研究](projects/004-design-extract/README.md) | 网页设计提取研究：中文交互手册梳理能力与五步原理，附真实输出、17 项基础检查和 4 项保真问题；未验证完整复刻。 | 设计变量、浏览器提取、AI 开发辅助、本地实测、交互展示 | 已完成 | [Manavarya09/design\-extract](https://github.com/Manavarya09/design-extract) | [访问](https://yydshly.github.io/0916_codex_project/004-design-extract/) |
 <!-- PROJECT_INDEX:END -->
 
 ## 项目预览
@@ -58,7 +58,7 @@ WrenAI 原理引导图：本质、能力、资料准备、内部处理、输入�
 
 ### 004 · [Design Extract 网站设计提取研究](projects/004-design-extract/README.md)
 
-网页设计规范提取与 AI 开发辅助；附真实输出截图、17 项基础检查和 4 项保真问题，已验证提取与导出，未验证完整复刻。
+网页设计提取研究：中文交互手册梳理能力与五步原理，附真实输出、17 项基础检查和 4 项保真问题；未验证完整复刻。
 
 ![上游工具提取原创测试页后生成的原生预览截图，展示配色与基础统计；完整结果及四项保真问题见子项目说明。](projects/004-design-extract/assets/extracted-preview-cover.png)
 

@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-09-16T13:51:17.951760+00:00",
+  "url": "https://yydshly.github.io/0916_codex_project/004-design-extract/",
+  "sourceCommit": "29c5269264909a0961bf8e8caedd5b1d8545b191",
+  "workflow": "https://github.com/yydshly/0916_codex_project/actions/runs/35104425412",
+  "workflowResult": "success",
+  "files": [
+    {
+      "path": "app.js",
+      "status": 200,
+      "sha256": "49562cbaf7eb37db7a7f5a3b724f0c7e7c1e0f995bf42d29f52d288598e71ddf",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "data/UPSTREAM-LICENSE.txt",
+      "status": 200,
+      "sha256": "ba6f1ac9806736ee52f462f070d1503fde5e73330b2aa7c6d0d13cacb9605217",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "data/design-description.txt",
+      "status": 200,
+      "sha256": "d1eeca5d358d307f264a5417e3e8480a13bf3c951afcd5859d59097087371577",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "data/responsive.json",
+      "status": 200,
+      "sha256": "b97b46e7b8145cb1a84a530b7d30b5722e2fdf36c065c84385ee57bd30ec91bf",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "data/tokens.json",
+      "status": 200,
+      "sha256": "629f01a589266d50f4acd9936649c66c06a9b485cb1a0dfa04520e0d167cbe07",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "data/verification.json",
+      "status": 200,
+      "sha256": "5dee86ee267f3b7356729d92439e9d2bcfb3f49d0d5ec931f30c9e9814ca7f31",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "favicon.svg",
+      "status": 200,
+      "sha256": "dbeba6f0abfd191b8fdc5059f6709da0166495253acc94617d070920a1cfc6ce",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "91cd888a223bba2853f57872a37b51669775887ef81721b3456c8af282135272",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "media/extracted-preview.png",
+      "status": 200,
+      "sha256": "aae55b966141bcad1c7e96054306a8670964e1fba58c230c1ef337c71caf8d71",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "media/fixture-dark.png",
+      "status": 200,
+      "sha256": "9c1bd6c1617ed08eda989f50c7531b318107618e88aa8dcb0f98b135dc0c6dbf",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "media/fixture-light.png",
+      "status": 200,
+      "sha256": "0e77fd87c933a9fa3c802c5e767b4c05040eef1dfc0c049da6c3f83fcf5d15a4",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "media/fixture-mobile.png",
+      "status": 200,
+      "sha256": "0946f0787e741966cc657ffa9b9136c610647158a96ab59a8890669c98e1618b",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "site.json",
+      "status": 200,
+      "sha256": "42d781133f2cdf9399f16e77b0b9caa4b576176739f438341a34e2d3e4becc18",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "sha256": "df8265be6758b890bac2780d58e562a7332e436aa36dc9be3a566a43e17e77ab",
+      "matchesCommittedSource": true
+    }
+  ],
+  "existingRoutes": [
+    {
+      "route": "",
+      "status": 200,
+      "bytes": 5161
+    },
+    {
+      "route": "001-ppt-master/styles.html",
+      "status": 200,
+      "bytes": 5964
+    },
+    {
+      "route": "003-wrenai/",
+      "status": 200,
+      "bytes": 29551
+    }
+  ],
+  "allFilesMatch": true
+}

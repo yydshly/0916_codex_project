@@ -12,11 +12,11 @@
 | 原始许可证 | MIT，Copyright (c) 2024 Manavarya Singh |
 | 发现渠道 / 日期 | 用户提供链接；2026-09-16 |
 | 本轮范围 | 源码阅读、单个原创页面的受控实测、导出与复刻文件生成、选定上游测试 |
-| 状态 | 第一轮研究完成；未部署公开演示 |
+| 状态 | 第一轮研究完成；中文能力与原理手册已发布 |
 
 阅读入口：[实际验证](notes/verification.json) · [源码与局限](notes/architecture.md) · [生成的 DESIGN.md](notes/output/DESIGN.md) · [设计变量](notes/output/tokens.json) · [原生输出预览](notes/output/preview.html)。
 
-中文网页：[能力与原理研究手册](app/index.html)。提供六类能力切换、五步原理讲解、真实样本截图与输出节选、四项局限及应用流程。网页是研究资料展示，不提供实时网址提取服务。
+中文网页：[在线阅读能力与原理手册](https://yydshly.github.io/0916_codex_project/004-design-extract/) · [直接查看工作原理](https://yydshly.github.io/0916_codex_project/004-design-extract/#principle) · [页面源码](app/index.html)。提供六类能力切换、五步原理讲解、真实样本截图与输出节选、四项局限及应用流程。网页是研究资料展示，不提供实时网址提取服务。
 
 ## 能力、输入与输出
 
@@ -145,4 +145,4 @@ python -m http.server 8767 --bind 127.0.0.1 --directory web
 - `notes/`：固定版本的源码研究、验证报告和运行记录。
 - 完整上游源码、依赖和临时 clone / CLI 产物位于已忽略目录；本项目未复制整个上游仓库。
 
-Web 演示尚未部署，项目索引的 `demo` 保持为空。
+网页于 2026-09-16 发布并验证：[在线入口](https://yydshly.github.io/0916_codex_project/004-design-extract/)。首次页面内容提交 `29c5269264909a0961bf8e8caedd5b1d8545b191`，[发布流程](https://github.com/yydshly/0916_codex_project/actions/runs/35104425412)成功；14 个页面与资源文件和已提交源码逐字节一致。见 [发布验证](notes/deployment-verification.json) 与 [线上交互检查](notes/ui-online-verification.json)。原有 PPT Master、WrenAI 入口继续正常响应。

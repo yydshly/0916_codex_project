@@ -56,3 +56,9 @@ GitHub Pages 托管静态文件；需要常驻服务、数据库或服务端密�
 2026-09-16 已发布并实际验证：[WrenAI 30 秒摘要](https://yydshly.github.io/0916_codex_project/003-wrenai/#quickstart) · [原理与场景引导图](https://yydshly.github.io/0916_codex_project/003-wrenai/media/wrenai-summary.png)。
 
 页面包含能力、原理、价值、本质摘要，交互架构、场景选择、方案对比及合成数据引擎实验。首次内容提交 `d9cf45d`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35099163612)成功；页面与 10 个资源校验一致，桌面、手机、锚点刷新和原有 PPT Master 展厅通过线上检查。详情见 [WrenAI 线上验证记录](../projects/003-wrenai/notes/deployment-verification.json)。仅发布静态研究展示，未部署模型服务或生产数据库。
+
+## Design Extract 能力与原理手册
+
+2026-09-16 已发布并验证：[能力与原理手册](https://yydshly.github.io/0916_codex_project/004-design-extract/) · [提取原理](https://yydshly.github.io/0916_codex_project/004-design-extract/#principle)。
+
+页面为无额外依赖的静态 HTML / CSS / JavaScript，包含六类能力、五步交互原理、真实样本截图、输出节选和四项保真问题。首次页面内容提交 `29c5269`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35104425412)成功；14 个发布文件与提交内容一致，原有两个子项目入口正常。数据是保存的本地实验结果，未部署在线提取服务。详情见 [发布验证](../projects/004-design-extract/notes/deployment-verification.json)。
