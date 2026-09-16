@@ -1,3 +1,21 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "id": 2,
+      "slug": "pdf-craft",
+      "name": "PDF Craft 扫描文档重建研究",
+      "summary": "解析 OCR 接入、书籍结构重建与翻译输出；附能力总览图。价值主要在工程集成，暂不继续深挖，未做转换实测。",
+      "repo": "https://github.com/oomol-lab/pdf-craft",
+      "status": "已归档",
+      "tags": [
+        "OCR 集成",
+        "文档重建",
+        "EPUB",
+        "源码研究"
+      ],
+      "cover": "projects/002-pdf-craft/assets/overview.png",
+      "cover_alt": "研究导读图：OCR 接入、后处理、输出边界与低优先级结论；非运行截图，未做转换实测。",
+      "demo": ""
+    }
+  ]
 }
