@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-17",
+  "url": "https://yydshly.github.io/0916_codex_project/007-pua/",
+  "content_commit": "532021f38d9b5d63b9d186bf6aa31d296c25d67c",
+  "workflow": "https://github.com/yydshly/0916_codex_project/actions/runs/35124651525",
+  "workflow_conclusion": "success",
+  "files": [
+    {
+      "path": "app.js",
+      "status": 200,
+      "matches_commit": true,
+      "sha256": "62ccf8b6e1c57a472ae1ef693bff0160ebe9cd147390c09ef1624a04aa86d4e0"
+    },
+    {
+      "path": "guide.css",
+      "status": 200,
+      "matches_commit": true,
+      "sha256": "46b94cef15b3630991042e24f1f36f169f2d3c876eff653d951301f3284277ae"
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "matches_commit": true,
+      "sha256": "ccbb7e88e97c07f69b5a1258d78ba0cbc810b1cc4fd4f3726f47f47e7481e6f3"
+    },
+    {
+      "path": "lab-core.js",
+      "status": 200,
+      "matches_commit": true,
+      "sha256": "7bed49fe5dbb2c5c3f5e9c184d5814dd51a437a4395e5abe2cdcc102401c6403"
+    },
+    {
+      "path": "lab.html",
+      "status": 200,
+      "matches_commit": true,
+      "sha256": "b0b25f09c7f465f40a67df1db456fc433702ab508add4b0e4fbf49f7d28ea55c"
+    },
+    {
+      "path": "media/understanding-map.png",
+      "status": 200,
+      "matches_commit": true,
+      "sha256": "dbd4d2307a283e6fdf293580f2f575ee67056e41ce9a3e8720614c95b82ae47c"
+    },
+    {
+      "path": "media/understanding-map.svg",
+      "status": 200,
+      "matches_commit": true,
+      "sha256": "9223da0418b5427029dddd50d8438e9159f3c5c9ed488882fa4b193eb71bc6e1"
+    },
+    {
+      "path": "style.css",
+      "status": 200,
+      "matches_commit": true,
+      "sha256": "00692b6387226a34f3c0d17befdcd077be0e86d7c8a3cfe7ab5a1ea750a54770"
+    }
+  ],
+  "scope": "HTTP and exact published content verified; no new online browser interaction or model evaluation in this check."
+}

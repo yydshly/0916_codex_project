@@ -2,6 +2,8 @@
 
 > PUA 是一套用 Skill 规则驱动 AI 持续排查与验证的工作流程：参考作者整理的十几种方法框架，按问题和失败证据选择分析角度，执行、验证并调整策略，直到满足任务验收或明确真实阻塞。
 
+**在线网页：[PUA 完整理解与方法参考](https://yydshly.github.io/0916_codex_project/007-pua/)。**
+
 **阅读入口：[原理、参考标准与适用场景](app/index.html)。** 原来的 Bug 实验已移到[辅助教学示例](app/lab.html)，不再作为理解该 skill 的主入口。
 
 | 项目资料 | 内容 |
@@ -122,7 +124,7 @@ python scripts/projects.py check
 python scripts/build_web.py
 ```
 
-构建后入口为 `web/007-pua/index.html`。推送到 `main` 后沿用仓库已有 GitHub Pages 工作流；清单中的 `demo` 在实际验证线上地址前保持为空。 没有新增全仓库前端框架，也没有修改全局技能或模型配置。
+构建后入口为 `web/007-pua/index.html`。已沿用仓库 GitHub Pages 发布，并于 2026-09-17 核对线上页面与资源共 8 个文件与内容提交一致，演示地址已登记到首页索引。见 [发布验证记录](notes/deployment-verification.json)。 没有新增全仓库前端框架，也没有修改全局技能或模型配置。
 
 ## 原理与源码对应
 

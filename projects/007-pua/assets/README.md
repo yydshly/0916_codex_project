@@ -1,5 +1,7 @@
 # 图片与实际截图
 
+首页与网页只展示完整的 `understanding-map` 引导图。其余截图保留为历史验证记录，不再作为首页封面或补充引导图。
+
 - `understanding-map.svg` / `understanding-map.png`：2100 × 2470 原创理解总览图，涵盖六类问题、五阶段流程、四类标准及参考时机、14 种企业风格与额外“钉内／钉外”、提示词与可选钩子的两层驱动。由固定源码解读整理，**不是运行截图，也不是效果实测**。网页使用 `app/media/` 中的相同副本；生成源为 `experiments/build-understanding-map.py`。
 - `understanding-web.png`：总览图接入网页后的实际浏览器截图。
 

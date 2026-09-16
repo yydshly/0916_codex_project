@@ -21,7 +21,7 @@ PDF 工具参考：[PDF Craft](projects/002-pdf-craft/README.md) 用于扫描书
 | 004 | [Design Extract 网站设计提取研究](projects/004-design-extract/README.md) | 从网页提取配色、字体、间距、布局与部分交互状态，导出设计文档和主题配置；为我们批量分析参考站、复用设计规范及构建网页复刻工具提供采集模块与工程参考。单次复刻可直接用 Codex，完整复刻仍需生成、对比与修正。 | 设计变量、浏览器提取、AI 开发辅助、本地实测、交互展示 | 已完成 | [Manavarya09/design\-extract](https://github.com/Manavarya09/design-extract) | [访问](https://yydshly.github.io/0916_codex_project/004-design-extract/) |
 | 005 | [Fridge Magnet 磁贴墙与个人记录研究](projects/005-fridgemagnet/README.md) | 可接入个人软件的磁贴呈现层：六种材质反馈与焦点／重点／稍后分层，展示成长、反思与作品；附项目板—今日板—日报方案，尚未接入真实数据和任务流。 | 磁贴展示、成长记录、个人反思、作品展示、交互演示 | 已完成 | [fridgemagnet\.lol](https://fridgemagnet.lol/) | [访问](https://yydshly.github.io/0916_codex_project/005-fridgemagnet/) |
 | 006 | [Skillry 创作技能能力图谱](projects/006-skillry/README.md) | 偏视觉创作的 Skill 展示、售卖与分发平台，收录网页、演示、图片和视频技能。附具体方向与代表技能引导图；我们的结论是低优先级参考，付费独有价值未验证。 | Skill 目录、视觉创作、低优先级参考、公开资料研究 | 已完成 | [skillry\.dev](https://skillry.dev/) | [访问](https://yydshly.github.io/0916_codex_project/006-skillry/) |
-| 007 | [PUA 排查与验收实验室](projects/007-pua/README.md) | 通过 Skill 规则推动 AI 多角度排查、执行与验证；按问题参考作者整理的十几种方法，依据失败证据调整策略，以任务验收结束循环。附理解总览与教学示例，未验证真实模型收益。 | Agent 技能、工作原理、验收标准、适用场景 | 已完成 | [tanweai/pua](https://github.com/tanweai/pua) | — |
+| 007 | [PUA 排查与验收实验室](projects/007-pua/README.md) | 通过 Skill 规则推动 AI 多角度排查、执行与验证；按问题参考作者整理的十几种方法，依据失败证据调整策略，以任务验收结束循环。附理解总览与教学示例，未验证真实模型收益。 | Agent 技能、工作原理、验收标准、适用场景 | 已完成 | [tanweai/pua](https://github.com/tanweai/pua) | [访问](https://yydshly.github.io/0916_codex_project/007-pua/) |
 <!-- PROJECT_INDEX:END -->
 
 ## 项目预览
@@ -105,21 +105,9 @@ Skillry 四类技能数量与工作流程的原创研究示意图；基于官方
 
 通过 Skill 规则推动 AI 多角度排查、执行与验证；按问题参考作者整理的十几种方法，依据失败证据调整策略，以任务验收结束循环。附理解总览与教学示例，未验证真实模型收益。
 
-![自主实验台实际浏览器截图：时间窗口最终方案通过五项验收；教学流程与修复方案预设，测试真实执行，非真实模型 A/B 实验。](projects/007-pua/assets/lab-verified.png)
+![完整理解引导图：六类问题、处理循环、四类标准与参考时机、企业风格方法库及模型与可选钩子驱动；原创源码解读，非模型效果实测。](projects/007-pua/assets/understanding-map.png)
 
-自主实验台实际浏览器截图：时间窗口最终方案通过五项验收；教学流程与修复方案预设，测试真实执行，非真实模型 A/B 实验。
-
-#### 理解 PUA：原理、参考标准与适用场景
-
-![新版中文研究手册的实际浏览器截图：规则如何进入上下文、模型如何执行和验收；自主源码解读，非真实模型性能对照。](projects/007-pua/assets/principle-guide.png)
-
-新版中文研究手册的实际浏览器截图：规则如何进入上下文、模型如何执行和验收；自主源码解读，非真实模型性能对照。
-
-#### 讨论汇总：问题、方法、标准、参考时机与驱动原理
-
-![原创理解总览图：六类问题、五阶段推进、四类标准及参考时机、14 种风格与额外钉内钉外、模型提示与可选钩子驱动；非运行截图，未做真实模型效果对照。](projects/007-pua/assets/understanding-map.png)
-
-原创理解总览图：六类问题、五阶段推进、四类标准及参考时机、14 种风格与额外钉内钉外、模型提示与可选钩子驱动；非运行截图，未做真实模型效果对照。
+完整理解引导图：六类问题、处理循环、四类标准与参考时机、企业风格方法库及模型与可选钩子驱动；原创源码解读，非模型效果实测。
 <!-- PROJECT_GALLERY:END -->
 
 ## 目录结构

@@ -145,21 +145,9 @@
         "验收标准",
         "适用场景"
       ],
-      "cover": "projects/007-pua/assets/lab-verified.png",
-      "cover_alt": "自主实验台实际浏览器截图：时间窗口最终方案通过五项验收；教学流程与修复方案预设，测试真实执行，非真实模型 A/B 实验。",
-      "demo": "",
-      "guides": [
-        {
-          "title": "理解 PUA：原理、参考标准与适用场景",
-          "image": "projects/007-pua/assets/principle-guide.png",
-          "alt": "新版中文研究手册的实际浏览器截图：规则如何进入上下文、模型如何执行和验收；自主源码解读，非真实模型性能对照。"
-        },
-        {
-          "title": "讨论汇总：问题、方法、标准、参考时机与驱动原理",
-          "image": "projects/007-pua/assets/understanding-map.png",
-          "alt": "原创理解总览图：六类问题、五阶段推进、四类标准及参考时机、14 种风格与额外钉内钉外、模型提示与可选钩子驱动；非运行截图，未做真实模型效果对照。"
-        }
-      ]
+      "cover": "projects/007-pua/assets/understanding-map.png",
+      "cover_alt": "完整理解引导图：六类问题、处理循环、四类标准与参考时机、企业风格方法库及模型与可选钩子驱动；原创源码解读，非模型效果实测。",
+      "demo": "https://yydshly.github.io/0916_codex_project/007-pua/"
     }
   ]
 }
