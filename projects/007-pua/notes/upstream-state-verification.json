@@ -1,0 +1,118 @@
+{
+  "date": "2026-09-17",
+  "upstream_commit": "e6e6cd237ad17750d179674bff52f8184abea8fd",
+  "component": "hooks/runtime-state.py",
+  "python": "3.10.11",
+  "status": "passed",
+  "scope": "直接运行未修改的上游 Python 状态组件；没有运行完整 Bash 钩子或真实模型",
+  "checks": [
+    {
+      "check": "记录首次真实工具失败",
+      "result": "passed",
+      "observed": [
+        "updated",
+        1,
+        0
+      ]
+    },
+    {
+      "check": "同一工具事件去重",
+      "result": "passed",
+      "observed": [
+        "duplicate",
+        1,
+        0
+      ]
+    },
+    {
+      "check": "成功命令不新增失败",
+      "result": "passed",
+      "observed": [
+        "ignored",
+        0,
+        0
+      ]
+    },
+    {
+      "check": "第二次失败仍保留前次计数",
+      "result": "passed",
+      "observed": [
+        "updated",
+        2,
+        1
+      ]
+    },
+    {
+      "check": "缺少事件身份不计数",
+      "result": "passed",
+      "observed": [
+        "ignored",
+        0,
+        0
+      ]
+    },
+    {
+      "check": "用户中断不计数",
+      "result": "passed",
+      "observed": [
+        "ignored",
+        0,
+        0
+      ]
+    },
+    {
+      "check": "保存数字检查点",
+      "result": "passed",
+      "observed": [
+        "saved",
+        2,
+        1
+      ]
+    },
+    {
+      "check": "同一会话同目录恢复",
+      "result": "passed",
+      "observed": [
+        "restored",
+        2,
+        1
+      ]
+    },
+    {
+      "check": "新会话不继承旧检查点",
+      "result": "passed",
+      "observed": [
+        "ignored",
+        0,
+        0
+      ]
+    },
+    {
+      "check": "其他目录不继承旧检查点",
+      "result": "passed",
+      "observed": [
+        "ignored",
+        0,
+        0
+      ]
+    },
+    {
+      "check": "清空仅当前作用域",
+      "result": "passed",
+      "observed": [
+        "cleared",
+        0,
+        0
+      ]
+    },
+    {
+      "check": "清空后无法恢复旧检查点",
+      "result": "passed",
+      "observed": [
+        "ignored",
+        0,
+        0
+      ]
+    }
+  ]
+}

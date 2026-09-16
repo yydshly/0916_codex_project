@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="PUA 能力研究：亲手运行 Bug 样例，理解换策略、证据排查和独立验收。流程为教学模拟，测试在浏览器真实运行。">
+  <title>PUA · 预设排查流程示例</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="lab-core.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#lab">跳到实验区</a>
+<aside class="sidebar">
+  <a class="brand" href="#top"><span class="brand-icon">P</span><span>PUA <small>能力实验室</small></span></a>
+  <div class="sidebar-label">OPEN SOURCE RESEARCH / 007</div>
+  <nav aria-label="页面导航">
+    <a href="index.html"><span>←</span> 原理、标准与场景</a>
+    <a class="active" href="#lab"><span>01</span> 修复实验台</a>
+    <a href="#principle"><span>02</span> 内部怎样工作</a>
+    <a href="#boundaries"><span>03</span> 能力与边界</a>
+    <a href="#sources"><span>04</span> 研究依据</a>
+  </nav>
+  <div class="sidebar-note"><span class="small-label">研究结论</span><p>每一次尝试，<br>都应该增加证据。</p><div class="sidebar-line"></div><small>更多次数 ≠ 更好结果<br>换假设 · 做实验 · 看验收</small></div>
+  <a class="upstream" href="https://github.com/tanweai/pua" target="_blank" rel="noreferrer">tanweai / pua ↗<small>上游 v3.5.1 · 源码研究</small></a>
+</aside>
+<main id="top">
+  <header class="topbar"><span>研究总仓库 <b>/</b> PUA</span><span class="version">本地交互展示 <span class="version-dot"></span></span></header>
+  <section class="intro">
+    <div class="eyebrow">FROM RETRY TO EVIDENCE</div>
+    <h1>用一个例子，<em>理解换假设。</em></h1>
+    <p>这里比较两条人为编写的排查路径：重复局部修改，与根据证据改变假设。<br>没有运行 AI，也没有比较开启／关闭 PUA 的真实效果。<a href="index.html">返回原理、标准与适用场景 ↗</a></p>
+  </section>
+  <section id="lab" class="lab" aria-labelledby="lab-title">
+    <div class="section-top"><div><span class="section-no">SUPPLEMENT / TEACHING EXAMPLE</span><h2 id="lab-title">预设示例：局部微调与换假设</h2></div><span class="label">不是模型对照实验</span></div>
+    <div class="scenario-tabs" role="group" aria-label="选择 Bug 场景">
+      <button data-scenario="time" aria-pressed="true"><span>01</span> 时间窗口漏数据</button>
+      <button data-scenario="page" aria-pressed="false"><span>02</span> 分页重复记录</button>
+      <button data-scenario="unique" aria-pressed="false"><span>03</span> 列表去重误删</button>
+    </div>
+    <div class="workbench">
+      <div class="experiment">
+        <div class="case-header"><span class="small-label">问题与验收约定</span><h3 id="case-title"></h3><p id="case-description"></p></div>
+        <div class="contract"><span>验收条件</span><p id="case-contract"></p></div>
+        <div class="mode-switch" role="group" aria-label="选择推进方式">
+          <button data-mode="evidence" aria-pressed="true">按证据排查</button><button data-mode="repeat" aria-pressed="false">重复微调</button>
+        </div>
+        <div class="attempt-header"><span id="attempt-no"></span><span id="level" class="level"></span></div>
+        <h3 id="attempt-title"></h3><p id="attempt-reason" class="reason"></p>
+        <details class="code-details"><summary>查看本轮实际执行的函数</summary><pre><code id="code"></code></pre></details>
+        <div class="actions"><button id="run" class="primary">运行本轮验收 <span>↗</span></button><button id="next" class="secondary" disabled>下一种尝试 →</button><button id="reset" class="text-button">重置</button></div>
+        <p class="hint">切换场景或推进方式会重置实验。所有方案预先编写，未调用 AI。</p>
+      </div>
+      <div class="evidence-panel">
+        <div class="evidence-head"><span class="small-label">独立样例验收</span><span id="test-count">等待运行</span></div>
+        <div id="results" class="results" aria-live="polite"></div>
+        <div class="finding"><span class="small-label">本轮获得的证据</span><p id="finding"></p></div>
+        <div class="gate"><div><span class="small-label">完成检查</span><p>说“完成”之前，再看一遍验收。</p></div><button id="submit" class="secondary">提交完成</button></div>
+        <p id="gate-result" class="gate-result" role="status">提交时会重新执行全部样例。</p>
+      </div>
+    </div>
+    <div class="history-bar"><span class="small-label">尝试记录</span><ol id="history" aria-label="已运行的尝试"><li class="empty-history">运行第一轮，开始收集证据。</li></ol></div>
+    <div class="lab-note"><strong>这段演示能证明什么？</strong> 它展示预设修复方案的实际测试结果，以及 PUA 建议的排查流程。两条路径是教学设计，不能作为开启／关闭 PUA 的模型效果对比。</div>
+  </section>
+  <section id="principle" class="reading-section">
+    <div class="section-top"><div><span class="section-no">02 / UNDER THE HOOD</span><h2>从规则，到可执行的检查</h2></div><span class="muted">能力依赖宿主提供的工具</span></div>
+    <div class="architecture">
+      <article><span class="arch-number">01</span><h3>技能规则</h3><p>将诊断、换策略、验收步骤写进上下文，由模型理解和执行。</p><code>SKILL.md</code><small>纯技能安装即可获得</small></article>
+      <article><span class="arch-number">02</span><h3>事件提醒</h3><p>匹配用户措辞、监听工具失败，在适当时机补充行动要求。</p><code>hooks/*.sh</code><small>需要宿主实际运行钩子</small></article>
+      <article><span class="arch-number">03</span><h3>有限状态</h3><p>按会话和目录隔离工具失败记录，去重并保存最小检查点。</p><code>runtime-state.py</code><small>工具失败仍需核对任务语义</small></article>
+      <article><span class="arch-number">04</span><h3>循环验收</h3><p>启用循环并配置验证命令后，验收失败会驳回完成声明。</p><code>pua-loop-hook.sh</code><small>有迭代上限、暂停和终止条件</small></article>
+    </div>
+    <div class="escalation"><div><h3>失败升级，升级的是排查要求</h3><p>以下次数指同一子目标已确认的失败实验。一次命令报错、预期失败的复现、搜索无匹配，都不能机械计入。</p></div><div class="level-list"><span><b>L0</b>0–1 次<br>正常执行</span><span><b>L1</b>2 次<br>换实质方案</span><span><b>L2</b>3 次<br>搜索 / 源码 / 三个假设</span><span><b>L3</b>4 次<br>七项排查清单</span><span><b>L4</b>5+ 次<br>换分析方法</span></div></div>
+  </section>
+  <section id="boundaries" class="reading-section">
+    <div class="section-top"><div><span class="section-no">03 / WHAT IT CHANGES</span><h2>更主动、更有章法、更可核验</h2></div></div>
+    <div class="boundary-grid"><article><span class="tag orange">改善执行过程</span><h3>有能力，却没有充分执行</h3><p>反复用同一假设、没查日志就猜原因、只给建议、改完没有测试——这些是它主要针对的问题。</p><p>适用场景还包括功能实现、配置排查、部署检查和资料调研。</p></article><article><span class="tag blue">依然取决于模型和环境</span><h3>次数增加，不保证结果提高</h3><p>它不会新增模型知识、工具权限或缺失的私有信息。提示词不保证模型严格遵循；多轮执行也会消耗更多时间与 token。</p><p>验收只覆盖你定义的条件，测试全绿也不等于没有其他缺陷。</p></article><article><span class="tag neutral">话术可以变化</span><h3>“大厂味”是角色与方法包装</h3><p>上游提供多种风味、鼓励与唠叨模式。可借鉴的是证据、假设、实验、验收之间的关系。</p><p>本演示不重演情绪话术，也不将语气强度当作修复能力。</p></article></div>
+  </section>
+  <section id="sources" class="reading-section sources">
+    <div><span class="section-no">04 / RESEARCH RECORD</span><h2>结论有来源，模拟有边界。</h2><p>研究版本 <code>e6e6cd2</code> · v3.5.1 · 2026-09-17</p><p>最新上游评测未证明“效率翻倍”，也未达到全部指定模型完全通过。本项目没有运行真实模型 A/B 对照。</p></div>
+    <div class="source-links"><a data-source="skills/pua/SKILL.md">核心行为规则 <span>↗</span></a><a data-source="hooks/failure-detector.sh">失败检测与条件升级 <span>↗</span></a><a data-source="hooks/pua-loop-hook.sh">独立验收与循环控制 <span>↗</span></a><a data-source="docs/MODEL-MATRIX-20260909.md">上游评测与已知限制 <span>↗</span></a></div>
+  </section>
+  <footer><span>007 / PUA 排查与验收实验室</span><span>独立研究展示 · 自主编写样例 · 非上游产品界面</span></footer>
+</main>
+</body>
+</html>

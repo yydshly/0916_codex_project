@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-17",
+  "project_static_assets": "passed",
+  "source_and_built_files_equal": true,
+  "local_references_checked": [
+    "app.js",
+    "guide.css",
+    "index.html",
+    "lab-core.js",
+    "lab.html",
+    "media/understanding-map.png",
+    "media/understanding-map.svg",
+    "style.css"
+  ],
+  "registry_check": "passed; 9 entries at validation time",
+  "aggregate_build": "passed after understanding-map integration: 9 registry entries, 7 static demos",
+  "deployment": "not performed",
+  "initial_aggregate_build": "blocked by unrelated in-progress 008-aicodeguide/index.html reference to research.html#workflow-text",
+  "entrypoints": [
+    "index.html: 总览、方法选择、标准、原理与场景",
+    "lab.html: 预设排查示例"
+  ]
+}

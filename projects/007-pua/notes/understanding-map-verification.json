@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-17",
+  "dimensions": [
+    2100,
+    2470
+  ],
+  "artifacts": {
+    "png": {
+      "sha256": "dbd4d2307a283e6fdf293580f2f575ee67056e41ce9a3e8720614c95b82ae47c",
+      "bytes": 728871
+    },
+    "svg": {
+      "sha256": "4fbe0dda72326710a55050880ffc7b1b04275f460b75370e04adffd89a7a9f4a",
+      "bytes": 25320
+    }
+  },
+  "svg_xml_valid": true,
+  "source_public_and_built_copies_equal": true,
+  "http_assets_verified": true,
+  "browser": {
+    "url": "http://127.0.0.1:8777/#overview",
+    "image_loaded": true,
+    "page_horizontal_overflow": false,
+    "14_style_disclosure": "expanded and verified",
+    "screenshot": "assets/understanding-web.png"
+  },
+  "real_model_ab_test": false,
+  "deployment": "not performed"
+}

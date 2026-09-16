@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="理解 PUA skill 的工作原理、排查与验收标准，以及修 Bug、开发、调研、部署等适用场景。区分技能规则与脚本能力。">
+  <title>PUA · 原理、参考标准与适用场景</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="guide.css">
+</head>
+<body>
+<a class="skip" href="#principle">跳到原理说明</a>
+<aside class="sidebar">
+  <a class="brand" href="#top"><span class="brand-icon">P</span><span>PUA <small>技能研究手册</small></span></a>
+  <div class="sidebar-label">OPEN SOURCE RESEARCH / 007</div>
+  <nav aria-label="页面导航">
+    <a href="#overview"><span>01</span> 一张图读懂</a>
+    <a href="#routing"><span>02</span> 何时选、怎样用</a>
+    <a href="#standards"><span>03</span> 四类参考标准</a>
+    <a href="#principle"><span>04</span> 内部驱动原理</a>
+    <a href="#scenarios"><span>05</span> 问题与适用场景</a>
+    <a href="#example"><span>06</span> 具体排查例子</a>
+    <a href="#sources"><span>07</span> 研究依据</a>
+  </nav>
+  <div class="sidebar-note"><span class="small-label">理解它的三个问题</span><p>怎样改变行为？<br>凭什么算完成？<br>什么时候有用？</p><div class="sidebar-line"></div><small>技能约束过程<br>任务标准判定结果</small></div>
+  <a class="upstream" href="https://github.com/tanweai/pua" target="_blank" rel="noreferrer">tanweai / pua ↗<small>v3.5.1 · 固定源码版本研究</small></a>
+</aside>
+<main id="top">
+  <header class="topbar"><span>研究总仓库 <b>/</b> PUA</span><a href="lab.html">辅助：排查流程示例 ↗</a></header>
+  <section class="intro guide-intro">
+    <div class="eyebrow">PRINCIPLE / CRITERIA / USE CASES</div>
+    <h1>PUA skill，<em>怎样影响 AI 做事？</em></h1>
+    <p>它用 Skill 规则推动 AI 从不同角度持续排查：按问题选择方法，用证据判断，失败后调整策略，达到验收后交付。<br>作者整理的十几种企业风格提供方法参考；真正执行仍依靠模型和现有工具。</p>
+    <div class="quick-map"><a href="#overview"><b>总览</b><span>一张图串起全部理解</span></a><a href="#routing"><b>使用</b><span>AI 何时选方法、怎样落实规则</span></a><a href="#standards"><b>标准</b><span>过程看规程，结果看任务验收</span></a></div>
+  </section>
+
+  <section id="overview" class="guide-section">
+    <div class="section-top"><div><span class="section-no">01 / THE WHOLE PICTURE</span><h2>一张图：问题 → 方法 → 验证 → 交付</h2></div></div>
+    <p class="section-lead">PUA 的核心价值是约束 AI 的工作过程：根据证据选择和调整方法，把任务推进到可验证的结果。它适用于多种任务中的排查与交付问题，并不保证增加重试次数就能修好。</p>
+    <div class="mechanism-note"><strong>我们的理解：多角度、有反馈、有停止条件的处理循环。</strong><p>按问题选方法 → 用工具获取证据 → 验证结果 → 失败时调整策略 → 达标交付或有据交接。方法库回答“怎样尝试”，任务验收回答“结果是否正确”；Skill 规定何时查证、换法、验证和停止。</p></div>
+    <figure class="overview-figure">
+      <a href="media/understanding-map.svg" target="_blank" rel="noopener" aria-label="打开 PUA 理解总览原图，可放大阅读"><img src="media/understanding-map.svg" width="2100" height="2470" alt="PUA 理解总览：六类问题、五个执行阶段、四类标准与参考时机、14 种企业风格的方法，以及模型提示与可选脚本两层驱动。详细文字见下方章节。"></a>
+      <figcaption><span>原创源码解读图 · 点击查看可放大的原图</span><div class="figure-actions"><a href="media/understanding-map.png" download>下载 PNG</a><a href="media/understanding-map.svg" download>下载 SVG</a></div></figcaption>
+    </figure>
+  </section>
+
+  <section id="routing" class="guide-section">
+    <div class="section-top"><div><span class="section-no">02 / CHOOSE, APPLY, REVISIT</span><h2>由 AI 按任务与证据选方法，再落实到行动</h2></div></div>
+    <p class="section-lead">技能被调用后，AI 参考作者写好的任务映射表、当前上下文和失败模式作选择。这里的“自动”是模型遵循文本规则进行判断；它没有保证每次选择都最优。方法附件按当前需要读取，不是每次把所有风格轮流用一遍。</p>
+    <ol class="routing-steps">
+      <li><b>先确定目标与验收。</b><span>读取核心规则，明确什么现象需要消失、哪些边界必须保持正确。业务验收来自用户需求和项目约定。</span></li>
+      <li><b>任务开始时选起始方法。</b><span>例如修 Bug → 华为式根因分析；性能问题 → 字节式数据比较；调研 → 百度式先搜索；部署 → 阿里式过程闭环。无法匹配时，路由表默认阿里。</span></li>
+      <li><b>把方法变成工具动作。</b><span>“根因分析”落到读日志、追调用链、验证前提、最小复现；“数据比较”落到建立基线、固定条件、测量修改前后差异。</span></li>
+      <li><b>连续失败时重新检查方法。</b><span>路由文件在当前方法连续两次未解决问题时要求评估切换。先区分方法不合适与执行不到位，再按失败模式选择新方法；不能只换语气、重复同一次尝试。</span></li>
+      <li><b>交付时回到实际验收。</b><span>运行测试或核对来源，判断需求是否满足。通过才结束；缺少必要条件时，说明证据与阻塞。企业风格不决定测试的预期结果。</span></li>
+    </ol>
+    <div class="mechanism-note"><strong>用户可以指定风格，不必交给 AI 自动选。</strong><p>手动指定优先于自动路由。锁定的是旁白风格；失败后仍可切换实质方法与升级要求。用户选择“自动”后可恢复自动路由。</p></div>
+    <div class="mechanism-note"><strong>“由 Skill 定制重置逻辑”，怎样理解更准确？</strong><p>Skill 定义的是失败后的策略调整：检查当前方法是否执行充分，保留已验证事实和已排除路径，再重设假设或下一步实验。它不是清空上下文或重置模型，也不会凭空增加知识与权限。有新证据的探索可以继续；原地打转时才要实质换思路，不能只换风格名称。</p></div>
+    <div class="fit-note"><h3>计数也有标准：先确认这确实是一次修复失败</h3><p>同一子目标下，实际执行的修复方案未通过验收，才计入失败；初始复现、重复观察不能直接累计。工具报错也不必然等于任务失败。压力等级为 0–1 次 L0、2 次 L1、3 次 L2、4 次 L3、5 次及以上 L4。等级升级与方法切换需要分别判断。</p></div>
+    <details class="guide-details"><summary>14 种企业风格具体提供什么参考？展开查看完整方法表</summary>
+      <p class="library-intro">这些是作者整理的角色话术与方法组合，不是企业官方标准。表中是方法侧重点的中文概括，实际执行仍受共同的证据、验证和退出规则约束。</p>
+      <div class="table-scroll"><table><thead><tr><th>风格</th><th>方法侧重点</th><th>怎样转成行动（解释性示例）</th></tr></thead><tbody>
+        <tr><td>阿里</td><td>目标、过程、结果、复盘</td><td>明确交付项，跟进执行，最后核对实际结果</td></tr>
+        <tr><td>字节</td><td>数据驱动、A/B 比较</td><td>同条件测量方案前后指标，避免凭感觉判断</td></tr>
+        <tr><td>华为</td><td>根因分析、5-Why、反向自检</td><td>追查原因链，再找能推翻当前结论的反例</td></tr>
+        <tr><td>腾讯</td><td>多方案比较、最小可行验证、渐进发布</td><td>用小范围实验比较不同解法</td></tr>
+        <tr><td>百度</td><td>信息检索先于判断</td><td>查原始文档与报错来源，再形成结论</td></tr>
+        <tr><td>拼多多</td><td>成本控制、减少中间环节</td><td>检查并删减没有实际价值的处理步骤</td></tr>
+        <tr><td>美团</td><td>标准化拆解、效率与长期维护</td><td>拆清步骤和责任，让重复工作可核对、可复用</td></tr>
+        <tr><td>京东</td><td>用户体验与实际结果</td><td>沿用户实际操作链路检查是否交付可用结果</td></tr>
+        <tr><td>小米</td><td>聚焦体验、用户反馈</td><td>聚焦关键体验，依据反馈修正细节</td></tr>
+        <tr><td>Netflix</td><td>检验方案是否值得保留、直接反馈</td><td>评估组件或方案价值，替换不合适的实现</td></tr>
+        <tr><td>Musk</td><td>质疑 → 删除 → 简化 → 加速 → 自动化</td><td>先核对需求与必要性，再优化执行</td></tr>
+        <tr><td>Jobs</td><td>减法、细节、原型、明确责任</td><td>削减复杂度，用可检查的原型验证体验</td></tr>
+        <tr><td>Amazon</td><td>从用户结果倒推、深入证据</td><td>从期望结果反推需求、约束与方案</td></tr>
+        <tr><td>Microsoft</td><td>贡献、影响与改进行动</td><td>复盘失败后明确下一步具体改变什么</td></tr>
+      </tbody></table></div>
+      <p class="library-intro"><b>为什么源码还出现“钉内／钉外”？</b>README 提到 14 种企业风格，但本次固定版本的方法库还包含这一额外风格，用于区分汇报好看与真实完成，要求回到用户结果和证据链。两处数量口径并不完全一致。</p>
+    </details>
+    <p class="source-note">依据：<a href="https://github.com/tanweai/pua/blob/e6e6cd237ad17750d179674bff52f8184abea8fd/skills/pua/references/methodology-router.md">任务映射、切换条件与用户覆盖</a>、<a href="https://github.com/tanweai/pua/blob/e6e6cd237ad17750d179674bff52f8184abea8fd/skills/pua/references/flavors.md">风格方法库</a>、<a href="https://github.com/tanweai/pua/blob/e6e6cd237ad17750d179674bff52f8184abea8fd/skills/pua/references/runtime-contract.md">真实失败计数契约</a>。</p>
+  </section>
+
+  <section id="standards" class="guide-section">
+    <div class="section-top"><div><span class="section-no">03 / WHAT COUNTS AS GOOD</span><h2>“参考标准”要分成四件事看</h2></div></div>
+    <div class="table-scroll timing-table"><table><thead><tr><th>参考哪类标准</th><th>什么时候参考</th><th>用来决定什么</th></tr></thead><tbody>
+      <tr><td>过程规则</td><td>技能加载后贯穿执行，卡住时重点自检</td><td>有没有查证、换假设、验证与闭环</td></tr>
+      <tr><td>方法库／企业风格</td><td>任务开始选起点，连续失败时重新评估</td><td>下一步用什么解题思路</td></tr>
+      <tr><td>任务验收</td><td>动手前明确；实验后与交付前核对</td><td>修复是否正确、需求是否完成</td></tr>
+      <tr><td>效果评估</td><td>决定是否采用该技能、是否值得继续使用时</td><td>质量收益能否抵消耗时和 token 成本</td></tr>
+    </tbody></table></div>
+    <div class="standards-list">
+      <article><div class="standard-index">A</div><div><span class="small-label">它要求怎样工作 · 来自技能规则</span><h3>过程标准：查证、换方法、验证交付</h3><p>先找证据再归因，避免在同一假设上反复微调；宣布完成前给出运行结果。失败升级按同一子目标的实际失败实验计算。</p><p>“失败 2 次进入 L1，3 次进入 L2……”是作者设计的工作流阈值，不是通用行业标准，也不代表最佳重试次数。</p></div></article>
+      <article><div class="standard-index">B</div><div><span class="small-label">它参考哪些解题方法 · 来自方法论附件</span><h3>方法参考：根因分析、反向检查、数据比较</h3><p>例如追问原因链（RCA / 5-Why）、用最小样例复现、尝试相反假设、找方案最可能失败的边界、比较改动前后的指标。</p><p>不同“大厂风味”把方法与角色话术组合在一起。这些是仓库作者的编排，不应理解为相应公司的官方认证或完整工程规范。</p></div></article>
+      <article class="standard-important"><div class="standard-index">C</div><div><span class="small-label">结果怎样才算对 · 来自实际任务</span><h3>验收标准：需求、项目约定、可信测试与规范</h3><p>你要的行为、已有接口约定、业务规则和相关规范决定结果对错；测试把这些要求变成可执行检查。模型可以协助细化标准，但不能为了让结果通过而擅自降低标准。</p><div class="acceptance-example"><b>例：筛选活动时间窗口</b><span>需求约定：计入开始时刻，排除结束时刻，不同时区的同一时刻应一致。</span><span>验收样例：开始时刻 ✓ ／ 结束时刻排除 ✓ ／ 时区等价 ✓。</span><span>这些条件来自任务定义，PUA 负责推动执行和核验，不能替你发明业务规则。</span></div><p>标准不明确时，先从现有材料推导；会实质改变交付的歧义需要确认。</p></div></article>
+      <article><div class="standard-index">D</div><div><span class="small-label">这个 skill 是否值得用 · 我们建议的评估方式</span><h3>效果标准：完成质量与成本一起比较</h3><p>固定模型、任务、环境与预算，对照有／无技能，多次运行；比较正确完成率、回归问题、人工介入、耗时与 token 成本。</p><p>更多工具调用、更长回答、更强语气都不能直接算提升。当前公开材料不足以证明“效率翻倍”，本项目也未做真实模型 A/B 对照。</p></div></article>
+    </div>
+    <details class="guide-details"><summary>卡住时，它具体让 AI 检查什么？</summary><div class="checklist-content"><p>核心技能给出五步：回顾尝试模式 → 收集原始证据并反转假设 → 检查重复行为 → 执行有验收条件的新方案 → 复盘及检查同类问题。</p><p>进入 L3 后还要求核对七项：</p><ol><li>仔细读失败信息</li><li>用工具搜索核心问题</li><li>读失败位置的原始上下文</li><li>用工具确认前置假设</li><li>尝试相反假设</li><li>在最小范围复现问题</li><li>更换工具、方法或分析角度</li></ol><p>工具不可用就说明事实和替代路径。达到全部约定验收后停止；无法推进时提供已查事实、排除项与剩余阻塞。</p></div></details>
+    <p class="source-note">依据：<a href="https://github.com/tanweai/pua/blob/e6e6cd237ad17750d179674bff52f8184abea8fd/skills/pua/SKILL.md">核心行为与检查清单</a>、<a href="https://github.com/tanweai/pua/blob/e6e6cd237ad17750d179674bff52f8184abea8fd/skills/pua/references/methodology-huawei.md">根因分析与反向自检</a>、<a href="https://github.com/tanweai/pua/blob/e6e6cd237ad17750d179674bff52f8184abea8fd/docs/MODEL-MATRIX-20260909.md">上游评测限制</a>。</p>
+  </section>
+
+  <section id="principle" class="guide-section">
+    <div class="section-top"><div><span class="section-no">04 / HOW IT WORKS</span><h2>规则进入上下文，模型按规则采取行动</h2></div></div>
+    <div class="flow" aria-label="PUA 执行流程">
+      <article><span>01 · 输入</span><h3>任务与已有证据</h3><p>用户目标、源码、报错、之前尝试过的方法。</p></article>
+      <article><span>02 · 加载</span><h3>读取技能规则</h3><p>显式调用，或由宿主根据技能描述选择；完整插件还可通过事件提醒。</p></article>
+      <article><span>03 · 执行</span><h3>诊断 → 工具 → 新证据</h3><p>模型选择下一步，使用已有搜索、文件、终端等工具验证假设。</p></article>
+      <article><span>04 · 判断</span><h3>验收通过，或继续排查</h3><p>没通过就调整方案；通过约定验收后交付，真实阻塞则说明依据。</p></article>
+    </div>
+    <div class="mechanism-note"><strong>为什么提示词可能起作用？</strong><p>它在模型决定“下一步做什么”时增加明确约束，例如要求先读日志、列不同假设、拿测试结果再下结论。这是对实现机制的解释；它没有训练新模型，也没有证明情绪话术本身能稳定提高正确率。</p></div>
+    <div class="two-layers">
+      <article><span class="tag blue">基础能力：技能文本</span><h3>SKILL.md + 方法论附件</h3><p>角色、排查步骤、失败升级和交付要求作为指令被读取。是否实际执行，取决于模型理解和遵循程度。</p><p><b>“自动路由”</b>通常是让模型根据任务类型选择文本中的方法表，不是另一个经过训练的故障诊断模型。</p></article>
+      <article><span class="tag orange">增强能力：真实安装的钩子</span><h3>事件监听 + 状态 + 验收命令</h3><p>完整插件可匹配用户措辞、记录工具失败、保存有限状态。启用循环并配置验证命令后，脚本可以驳回未通过的完成声明。</p><p>只有宿主支持并实际运行相应钩子，这部分自动化才存在；单独安装一个技能文件不包含全部运行能力。</p></article>
+    </div>
+    <details class="guide-details"><summary>展开看：哪些事情由代码完成，哪些仍由模型判断？</summary><div class="table-scroll"><table><thead><tr><th>动作</th><th>由什么完成</th><th>判断边界</th></tr></thead><tbody>
+      <tr><td>匹配“又错了、换个方法”等措辞</td><td>触发脚本中的正则表达式</td><td>命中关键词不等于真正理解任务</td></tr>
+      <tr><td>记录工具失败、去重、隔离会话</td><td>Python 状态组件</td><td>工具失败只是观察，不能直接当作一次修复失败</td></tr>
+      <tr><td>判断根因、选择新方案</td><td>模型结合规则、工具结果推理</td><td>提示词不能保证判断正确</td></tr>
+      <tr><td>检查某个验证命令是否通过</td><td>循环钩子运行命令并检查退出状态</td><td>只覆盖命令实际检查的内容，不自动理解全部业务</td></tr>
+    </tbody></table></div></details>
+    <p class="source-note">依据：<a href="https://github.com/tanweai/pua/blob/e6e6cd237ad17750d179674bff52f8184abea8fd/skills/pua/references/runtime-contract.md">运行契约</a>、<a href="https://github.com/tanweai/pua/blob/e6e6cd237ad17750d179674bff52f8184abea8fd/hooks/hooks.json">钩子配置</a>。</p>
+  </section>
+
+  <section id="scenarios" class="guide-section">
+    <div class="section-top"><div><span class="section-no">05 / WHEN TO USE IT</span><h2>任务类型之外，还要看 AI 卡在哪里</h2></div></div>
+    <p class="section-lead">更有针对性的触发信号是：多次失败、反复用同一方法、没查证就归因、只给计划不执行，或没有证据就说完成。核心技能描述明确排除了平静的首次普通请求；不必为了简单任务强行增加流程。</p>
+    <div class="table-scroll scenario-table"><table><thead><tr><th>场景</th><th>具体卡点</th><th>PUA 推动的动作</th><th>真正的验收依据</th></tr></thead><tbody>
+      <tr><td><strong>修 Bug / 接口联调</strong></td><td>反复改参数，问题仍存在</td><td>查日志和调用链、做最小复现、换根因假设</td><td>原问题不再复现，相关回归通过</td></tr>
+      <tr><td><strong>功能开发</strong></td><td>只写主体代码，漏异常和交付检查</td><td>拆验收项，完成边界处理并运行构建测试</td><td>约定的用户流程、输入输出和边界行为</td></tr>
+      <tr><td><strong>代码审查</strong></td><td>只给笼统意见，没有可核对的问题</td><td>检查调用上下文、反例与影响范围</td><td>明确的位置、触发条件和缺陷证据</td></tr>
+      <tr><td><strong>配置 / 部署排障</strong></td><td>猜“环境问题”，修改后未检查运行结果</td><td>核对版本、路径、权限和服务日志，检查健康状态</td><td>目标环境中实际可访问、响应正确</td></tr>
+      <tr><td><strong>性能优化</strong></td><td>凭感觉改实现，不测量瓶颈</td><td>建立基线，定位瓶颈，做同条件前后比较</td><td>目标指标达标，功能保持正确，资源成本可接受</td></tr>
+      <tr><td><strong>资料调研</strong></td><td>凭记忆总结，来源和结论脱节</td><td>检索原始资料、交叉核对、标注证据缺口</td><td>结论有直接来源，时效性与不确定性说明清楚</td></tr>
+    </tbody></table></div>
+    <div class="fit-note"><h3>什么情况不能靠“再努力一点”解决？</h3><p>缺少必须的账号权限、私有信息、业务决策，或外部服务不可用；这些需要补齐真实条件。纯审美偏好和没有评价目标的开放创作，也需要先确定方向。技能不能扩大权限、补出未知事实，或用无限重试替代用户决策。</p></div>
+    <p class="source-note">场景来自上游<a href="https://github.com/tanweai/pua/blob/e6e6cd237ad17750d179674bff52f8184abea8fd/skills/pua/references/methodology-router.md">方法选择表</a>与运行契约；表中具体卡点和验收例子是本项目的解释性整理，非已测效果承诺。</p>
+  </section>
+
+  <section id="example" class="guide-section">
+    <div class="section-top"><div><span class="section-no">06 / A CONCRETE EXAMPLE</span><h2>原来的“两种推进方式”是什么意思？</h2></div></div>
+    <p class="section-lead">它指的是我们编写的两条教学路径，处理同一份错误代码、使用相同的测试条件。选择下面的示例只是阅读预设过程，页面不会调用真实 AI。</p>
+    <div class="two-layers example-paths"><article><span class="tag neutral">路径 A · 重复局部微调</span><h3>一直假设：比较符号写错了</h3><p>把 &gt; 改为 ≥，再改结束条件、去掉空格。仍然比较日期字符串，因此没有解决不同时区写法导致的问题。</p></article><article><span class="tag blue">路径 B · 根据证据换假设</span><h3>新假设：比较对象本身不对</h3><p>发现跨时区样例失败 → 将字符串转换为时间戳 → 再修正端点 → 运行全部约定样例确认结果。</p></article></div>
+    <div class="example-link"><div><strong>展示的是方法差别，不是 PUA 效果对照。</strong><p>未使用 PUA 的模型也可能自主选择正确方法；使用 PUA 也不保证一定走对。</p></div><a class="guide-button" href="lab.html">打开预设排查示例 ↗</a></div>
+  </section>
+
+  <section id="sources" class="guide-section guide-sources">
+    <span class="section-no">07 / EVIDENCE & LIMITS</span><h2>这份说明依据什么？</h2>
+    <p>固定研究提交 <code>e6e6cd237ad17750d179674bff52f8184abea8fd</code> · v3.5.1。原理和规则来自源码；场景中的具体例子由本项目整理。</p>
+    <div class="evidence-facts"><p><b>已做</b> 阅读核心技能与钩子；验证上游状态组件的 12 项行为；运行三个 Bug 的六条教学路径。</p><p><b>未做</b> 真实模型有／无技能对比；完整插件安装与完整循环钩子实验；证明“PUA 话术使模型更聪明”。</p></div>
+    <a href="https://github.com/tanweai/pua/tree/e6e6cd237ad17750d179674bff52f8184abea8fd">查看固定版本仓库 ↗</a>
+  </section>
+  <footer><span>007 / PUA 原理与使用研究</span><span>自主中文整理 · 教学示例与实测边界分别标明</span></footer>
+</main>
+</body>
+</html>

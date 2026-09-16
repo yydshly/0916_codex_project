@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="2470" viewBox="0 0 2100 2470" role="img" aria-labelledby="title desc">
+<title id="title">PUA 全部理解总览：问题、选法、执行、标准与驱动机制</title>
+<desc id="desc">原创源码解读图。展示六类适用问题、五阶段规则使用时机、四类参考标准、十四种风格及钉内钉外扩展，并区分模型驱动与可选脚本控制。非效果实测图。</desc>
+<rect width="2100" height="2470" fill="#f4f6fa"/>
+<rect x="0" y="0" width="2100" height="272" rx="0" fill="#142239" stroke="#142239"/>
+<text x="60" y="54" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#acbdd5">007 / OPEN SOURCE RESEARCH</text>
+<text x="60" y="122" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="56" font-weight="700" fill="#ffffff">PUA：让 AI 按证据推进任务</text>
+<text x="60" y="180" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#ffc393">本质 = 行为规则 + 方法库 + 可选运行钩子</text>
+<text x="60" y="232" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#d6e1f1">规则进入上下文，影响 AI 的下一步决策；角色话术强化行动要求，模型与工具负责实际执行。</text>
+<text x="60" y="327" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#bf451b">01</text>
+<text x="120" y="327" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#182538">可以辅助解决哪些问题？</text>
+<text x="120" y="369" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">适合反复失败、同思路打转、只给计划、猜测归因或缺少验证的任务；不保证修复成功。</text>
+<rect x="60" y="392" width="640" height="108" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="82" y="432" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#182538">Bug / 接口错误</text>
+<text x="82" y="472" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">边界遗漏、参数误判、调用链故障</text>
+<rect x="730" y="392" width="640" height="108" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="752" y="432" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#182538">功能不完整</text>
+<text x="752" y="472" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">主流程能跑，但漏异常处理和回归</text>
+<rect x="1400" y="392" width="640" height="108" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="1422" y="432" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#182538">审查与质量问题</text>
+<text x="1422" y="472" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">只有笼统意见，缺具体缺陷证据</text>
+<rect x="60" y="517" width="640" height="108" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="82" y="557" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#182538">配置 / 部署异常</text>
+<text x="82" y="597" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">版本、路径、权限或服务状态不明</text>
+<rect x="730" y="517" width="640" height="108" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="752" y="557" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#182538">性能瓶颈</text>
+<text x="752" y="597" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">靠感觉改实现，没有基线和测量</text>
+<rect x="1400" y="517" width="640" height="108" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="1422" y="557" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#182538">调研与事实错误</text>
+<text x="1422" y="597" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">凭记忆下结论，来源与结论脱节</text>
+<text x="60" y="690" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#bf451b">02</text>
+<text x="120" y="690" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#182538">真正使用时：谁在什么时候参考哪些规则？</text>
+<rect x="60" y="735" width="372" height="340" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<rect x="80" y="755" width="332" height="43" rx="6" fill="#eaf0fb" stroke="#eaf0fb"/>
+<text x="95" y="785" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#2452b8">01  任务触发时</text>
+<text x="82" y="842" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#182538">明确目标，加载通用规则</text>
+<text x="82" y="917" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">用户显式调用，或宿主按技能</text>
+<text x="82" y="956" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">描述选择。</text>
+<text x="82" y="995" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">读取 SKILL.md；先从需求、</text>
+<text x="82" y="1034" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">项目约定中明确验收。</text>
+<polyline points="438,904 455,904" fill="none" stroke="#2452b8" stroke-width="3"/>
+<polygon points="455.00,904.00 444.36,909.54 444.36,898.46" fill="#2452b8"/>
+<rect x="462" y="735" width="372" height="340" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<rect x="482" y="755" width="332" height="43" rx="6" fill="#eaf0fb" stroke="#eaf0fb"/>
+<text x="497" y="785" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#2452b8">02  开始解题时</text>
+<text x="484" y="842" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#182538">AI 判断类型，选方法</text>
+<text x="484" y="917" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">参考方法选择表，按需读当前</text>
+<text x="484" y="956" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">风格附件。</text>
+<text x="484" y="995" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">修 Bug → 华为；性能 → 字</text>
+<text x="484" y="1034" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">节；调研 → 百度。</text>
+<polyline points="840,904 857,904" fill="none" stroke="#2452b8" stroke-width="3"/>
+<polygon points="857.00,904.00 846.36,909.54 846.36,898.46" fill="#2452b8"/>
+<rect x="864" y="735" width="372" height="340" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<rect x="884" y="755" width="332" height="43" rx="6" fill="#eaf0fb" stroke="#eaf0fb"/>
+<text x="899" y="785" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#2452b8">03  实际执行时</text>
+<text x="886" y="842" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#182538">把规则变成工具动作</text>
+<text x="886" y="917" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">读日志 / 查源码 → 列假设 →</text>
+<text x="886" y="956" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a"> 最小复现 → 修改 → 验证。</text>
+<text x="886" y="995" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">每次行动应获得新证据。</text>
+<polyline points="1242,904 1259,904" fill="none" stroke="#2452b8" stroke-width="3"/>
+<polygon points="1259.00,904.00 1248.36,909.54 1248.36,898.46" fill="#2452b8"/>
+<rect x="1266" y="735" width="372" height="340" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<rect x="1286" y="755" width="332" height="43" rx="6" fill="#eaf0fb" stroke="#eaf0fb"/>
+<text x="1301" y="785" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#2452b8">04  连续失败时</text>
+<text x="1288" y="842" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#182538">核对证据，调整方案</text>
+<text x="1288" y="917" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">同一子目标失败才升级；有新</text>
+<text x="1288" y="956" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">证据可继续深入。</text>
+<text x="1288" y="995" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">原地打转则换假设、方法或工</text>
+<text x="1288" y="1034" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">具。</text>
+<polyline points="1644,904 1661,904" fill="none" stroke="#2452b8" stroke-width="3"/>
+<polygon points="1661.00,904.00 1650.36,909.54 1650.36,898.46" fill="#2452b8"/>
+<rect x="1668" y="735" width="372" height="340" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<rect x="1688" y="755" width="332" height="43" rx="6" fill="#eaf0fb" stroke="#eaf0fb"/>
+<text x="1703" y="785" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#2452b8">05  准备交付时</text>
+<text x="1690" y="842" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#182538">按任务标准验收</text>
+<text x="1690" y="917" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">用测试、实际运行与来源核对</text>
+<text x="1690" y="956" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">结果。</text>
+<text x="1690" y="995" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">通过则交付；受阻则说明事实</text>
+<text x="1690" y="1034" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#53647a">、排除项与下一步。</text>
+<polyline points="1452,1087 1452,1110 648,1110 648,1087" fill="none" stroke="#bf451b" stroke-width="3"/>
+<polygon points="648.00,1087.00 653.54,1097.64 642.46,1097.64" fill="#bf451b"/>
+<text x="505" y="1155" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#bf451b">失败后回到方法选择；用户指定优先，锁定风格时保持语气、只换解题方法。</text>
+<text x="60" y="1198" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">计数口径：预期复现不算修复失败；工具报错不直接等于任务失败。L1=2 次 / L2=3 次 / L3=4 次 / L4≥5 次。</text>
+<text x="60" y="1265" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#bf451b">03</text>
+<text x="120" y="1265" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#182538">有哪些标准？它们分别在什么时候起作用？</text>
+<rect x="60" y="1310" width="475" height="224" rx="16" fill="#eaf0fb" stroke="#d0ddef"/>
+<text x="82" y="1352" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2452b8">过程标准</text>
+<text x="82" y="1391" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#182538">加载后，全程约束</text>
+<text x="82" y="1435" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">先查证、换实质方法、交付有证据。</text>
+<text x="82" y="1471" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">五步排查 + 七项检查清单。</text>
+<rect x="565" y="1310" width="475" height="224" rx="16" fill="#eaf0fb" stroke="#d0ddef"/>
+<text x="587" y="1352" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2452b8">方法参考</text>
+<text x="587" y="1391" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#182538">选法时 / 失败换法时</text>
+<text x="587" y="1435" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">企业风格提供分析视角：根因、对照实</text>
+<text x="587" y="1471" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">验、简化、倒推。</text>
+<text x="587" y="1507" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">具体动作由 AI 结合问题决定。</text>
+<rect x="1070" y="1310" width="475" height="224" rx="16" fill="#eaf0fb" stroke="#d0ddef"/>
+<text x="1092" y="1352" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2452b8">任务验收</text>
+<text x="1092" y="1391" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#182538">开工前明确 / 交付前核对</text>
+<text x="1092" y="1435" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">需求、业务规则、项目约定、可信测试</text>
+<text x="1092" y="1471" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">与相关规范。</text>
+<text x="1092" y="1507" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">决定这次结果是否正确。</text>
+<rect x="1575" y="1310" width="475" height="224" rx="16" fill="#eaf0fb" stroke="#d0ddef"/>
+<text x="1597" y="1352" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#2452b8">效果评估</text>
+<text x="1597" y="1391" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#182538">评估是否值得采用时</text>
+<text x="1597" y="1435" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">同模型、同任务、同预算多次对照；看</text>
+<text x="1597" y="1471" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">质量、回归、人工介入、耗时与 token</text>
+<text x="1597" y="1507" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">。</text>
+<text x="60" y="1600" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#bf451b">04</text>
+<text x="120" y="1600" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#182538">14 种企业风格 = 话术 + 方法 + 行为要求</text>
+<text x="120" y="1642" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53647a">这是作者编排的方法库，不是企业官方认证；AI 参考对应表选择，不保证选到最优方法。</text>
+<rect x="60" y="1664" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="76" y="1698" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">阿里</text>
+<text x="76" y="1733" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">目标、执行、复盘</text>
+<rect x="346" y="1664" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="362" y="1698" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">字节</text>
+<text x="362" y="1733" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">数据与对照实验</text>
+<rect x="632" y="1664" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="648" y="1698" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">华为</text>
+<text x="648" y="1733" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">根因与反向检查</text>
+<rect x="918" y="1664" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="934" y="1698" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">腾讯</text>
+<text x="934" y="1733" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">多方案与小步验证</text>
+<rect x="1204" y="1664" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="1220" y="1698" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">百度</text>
+<text x="1220" y="1733" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">优先搜索与查证</text>
+<rect x="1490" y="1664" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="1506" y="1698" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">拼多多</text>
+<text x="1506" y="1733" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">删减中间步骤</text>
+<rect x="1776" y="1664" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="1792" y="1698" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">美团</text>
+<text x="1792" y="1733" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">标准化与长期效率</text>
+<rect x="60" y="1767" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="76" y="1801" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">京东</text>
+<text x="76" y="1836" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">体验与结果核对</text>
+<rect x="346" y="1767" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="362" y="1801" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">小米</text>
+<text x="362" y="1836" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">聚焦体验与反馈</text>
+<rect x="632" y="1767" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="648" y="1801" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">Netflix</text>
+<text x="648" y="1836" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">评估方案是否保留</text>
+<rect x="918" y="1767" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="934" y="1801" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">Musk</text>
+<text x="934" y="1836" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">质疑、删减、简化</text>
+<rect x="1204" y="1767" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="1220" y="1801" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">Jobs</text>
+<text x="1220" y="1836" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">减法、细节、原型</text>
+<rect x="1490" y="1767" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="1506" y="1801" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">Amazon</text>
+<text x="1506" y="1836" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">从用户目标倒推</text>
+<rect x="1776" y="1767" width="266" height="88" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="1792" y="1801" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#182538">Microsoft</text>
+<text x="1792" y="1836" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">贡献与改进行动</text>
+<text x="60" y="1910" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#bf451b">补充：源码还有“钉内／钉外”扩展，强调真实用户结果和证据；改变汇报口径不等于解决问题。</text>
+<text x="60" y="1975" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#bf451b">05</text>
+<text x="120" y="1975" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" fill="#182538">驱动力来自哪里？</text>
+<rect x="60" y="2014" width="975" height="231" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="84" y="2060" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#182538">模型驱动：读规则 → 理解 → 决策 → 调用工具</text>
+<text x="84" y="2110" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#53647a">通用规则约束过程，风格附件提供方法。角色话术强化任务责任和行动要求；实</text>
+<text x="84" y="2150" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#53647a">际效果依赖模型遵循程度。</text>
+<text x="84" y="2190" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#53647a">单独加载 skill 时，主要依靠这条路径。</text>
+<rect x="1065" y="2014" width="975" height="231" rx="16" fill="#ffffff" stroke="#d6dfeb"/>
+<text x="1089" y="2060" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#182538">脚本驱动：事件 → 提醒 / 状态 / 验收反馈</text>
+<text x="1089" y="2110" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#53647a">仅在宿主支持并实际运行相应钩子时生效。循环模式配置验证命令后，可独立运</text>
+<text x="1089" y="2150" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#53647a">行并驳回未通过的完成声明。</text>
+<text x="1089" y="2190" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#53647a">脚本只能检查其覆盖的条件。</text>
+<rect x="60" y="2280" width="1980" height="121" rx="12" fill="#142239" stroke="#142239"/>
+<text x="86" y="2324" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#ffffff">边界：不新增模型知识与权限，不补出未知业务规则，不用无限重试代替真实条件。</text>
+<text x="86" y="2370" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#cfddf1">规则约束“怎样做”，任务验收判断“做得对不对”。更多调用和更强语气，都不能直接证明效果更好。</text>
+<text x="60" y="2443" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53647a">原创研究汇总 · 非运行效果图 · v3.5.1 / e6e6cd2 · 未做真实模型 A/B 对照，未证明效率翻倍</text>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-17",
+  "url": "http://127.0.0.1:8777/#lab",
+  "browser": "Codex In-app Browser",
+  "scope": "当前默认窗口的时间窗口教学路径；未进行手机断点或跨浏览器测试",
+  "checks": [
+    {"name": "页面加载、中文内容和样例显示", "result": "passed"},
+    {"name": "基线完成声明被驳回，3/5 通过，修复失败计数为 0", "result": "passed"},
+    {"name": "第一次修复被驳回，4/5 通过，修复失败计数为 1", "result": "passed"},
+    {"name": "第二次修复被驳回，4/5 通过，修复失败计数为 2", "result": "passed"},
+    {"name": "第三次修复通过，5/5 通过，禁止继续前进", "result": "passed"},
+    {"name": "非法场景输入被拒绝，现有场景与结果未改变", "result": "passed"},
+    {"name": "WebMCP 注册及 submit/next/read 操作更新同一界面状态", "result": "passed"},
+    {"name": "页面重置与提交完成按钮", "result": "passed"}
+  ],
+  "notes": "主要路径使用页面可选 WebMCP 接口推进，可访问性树核对实际页面结果；另操作重置和提交按钮。截图取自浏览器，不代表真实模型效果。"
+}

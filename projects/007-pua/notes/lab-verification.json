@@ -1,0 +1,248 @@
+{
+  "date": "2026-09-17",
+  "runtime": "v22.15.0",
+  "implementation": "自主 JavaScript 教学样例，非模型实验",
+  "scenario_count": 3,
+  "route_count": 6,
+  "acceptance_executions_per_route": 12,
+  "status": "passed",
+  "checks": [
+    "三场景六路径的验收与上限",
+    "基线复现不计修复失败",
+    "同方案重复验收不重复计数",
+    "未运行时不能前进",
+    "重置与非法选择保持状态完整",
+    "L0—L4 阈值",
+    "跨时区端点、分页重组、ID 类型与输入不变"
+  ],
+  "runs": [
+    {
+      "scenario": "time",
+      "mode": "evidence",
+      "rounds": [
+        {
+          "round": 1,
+          "variant": 0,
+          "passed": 3,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 0
+        },
+        {
+          "round": 2,
+          "variant": 1,
+          "passed": 4,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 1
+        },
+        {
+          "round": 3,
+          "variant": 2,
+          "passed": 4,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 2
+        },
+        {
+          "round": 4,
+          "variant": 3,
+          "passed": 5,
+          "total": 5,
+          "accepted": true,
+          "repair_failures": 2
+        }
+      ]
+    },
+    {
+      "scenario": "time",
+      "mode": "repeat",
+      "rounds": [
+        {
+          "round": 1,
+          "variant": 0,
+          "passed": 3,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 0
+        },
+        {
+          "round": 2,
+          "variant": 1,
+          "passed": 4,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 1
+        },
+        {
+          "round": 3,
+          "variant": 4,
+          "passed": 3,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 2
+        },
+        {
+          "round": 4,
+          "variant": 5,
+          "passed": 4,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 3
+        }
+      ]
+    },
+    {
+      "scenario": "page",
+      "mode": "evidence",
+      "rounds": [
+        {
+          "round": 1,
+          "variant": 0,
+          "passed": 2,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 0
+        },
+        {
+          "round": 2,
+          "variant": 1,
+          "passed": 2,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 1
+        },
+        {
+          "round": 3,
+          "variant": 2,
+          "passed": 3,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 2
+        },
+        {
+          "round": 4,
+          "variant": 3,
+          "passed": 5,
+          "total": 5,
+          "accepted": true,
+          "repair_failures": 2
+        }
+      ]
+    },
+    {
+      "scenario": "page",
+      "mode": "repeat",
+      "rounds": [
+        {
+          "round": 1,
+          "variant": 0,
+          "passed": 2,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 0
+        },
+        {
+          "round": 2,
+          "variant": 1,
+          "passed": 2,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 1
+        },
+        {
+          "round": 3,
+          "variant": 4,
+          "passed": 2,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 2
+        },
+        {
+          "round": 4,
+          "variant": 5,
+          "passed": 2,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 3
+        }
+      ]
+    },
+    {
+      "scenario": "unique",
+      "mode": "evidence",
+      "rounds": [
+        {
+          "round": 1,
+          "variant": 0,
+          "passed": 3,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 0
+        },
+        {
+          "round": 2,
+          "variant": 1,
+          "passed": 4,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 1
+        },
+        {
+          "round": 3,
+          "variant": 2,
+          "passed": 4,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 2
+        },
+        {
+          "round": 4,
+          "variant": 3,
+          "passed": 5,
+          "total": 5,
+          "accepted": true,
+          "repair_failures": 2
+        }
+      ]
+    },
+    {
+      "scenario": "unique",
+      "mode": "repeat",
+      "rounds": [
+        {
+          "round": 1,
+          "variant": 0,
+          "passed": 3,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 0
+        },
+        {
+          "round": 2,
+          "variant": 1,
+          "passed": 4,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 1
+        },
+        {
+          "round": 3,
+          "variant": 4,
+          "passed": 3,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 2
+        },
+        {
+          "round": 4,
+          "variant": 5,
+          "passed": 3,
+          "total": 5,
+          "accepted": false,
+          "repair_failures": 3
+        }
+      ]
+    }
+  ]
+}
