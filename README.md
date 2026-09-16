@@ -20,7 +20,7 @@ PDF 工具参考：[PDF Craft](projects/002-pdf-craft/README.md) 用于扫描书
 | 003 | [WrenAI 业务问数研究](projects/003-wrenai/README.md) | 面向 Agent 的业务问数基础设施：模型理解需求，MDL 统一口径，引擎规划查询；适合销售、运营与库存分析。附原理引导图、方案对比及 36 组引擎实测，未验证完整模型问数。 | 业务问数、语义层、WASM 实测、交互展示 | 已完成 | [Canner/WrenAI](https://github.com/Canner/WrenAI) | [访问](https://yydshly.github.io/0916_codex_project/003-wrenai/) |
 | 004 | [Design Extract 网站设计提取研究](projects/004-design-extract/README.md) | 从网页提取配色、字体、间距、布局与部分交互状态，导出设计文档和主题配置；为我们批量分析参考站、复用设计规范及构建网页复刻工具提供采集模块与工程参考。单次复刻可直接用 Codex，完整复刻仍需生成、对比与修正。 | 设计变量、浏览器提取、AI 开发辅助、本地实测、交互展示 | 已完成 | [Manavarya09/design\-extract](https://github.com/Manavarya09/design-extract) | [访问](https://yydshly.github.io/0916_codex_project/004-design-extract/) |
 | 005 | [Fridge Magnet 磁贴墙与个人记录研究](projects/005-fridgemagnet/README.md) | 可接入个人软件的磁贴呈现层：六种材质反馈与焦点／重点／稍后分层，展示成长、反思与作品；附项目板—今日板—日报方案，尚未接入真实数据和任务流。 | 磁贴展示、成长记录、个人反思、作品展示、交互演示 | 已完成 | [fridgemagnet\.lol](https://fridgemagnet.lol/) | [访问](https://yydshly.github.io/0916_codex_project/005-fridgemagnet/) |
-| 006 | [Skillry 创作技能能力图谱](projects/006-skillry/README.md) | 偏视觉创作的 Skill 展示、售卖与分发平台，收录网页、演示、图片和视频技能。附具体方向与代表技能引导图；我们的结论是低优先级参考，付费独有价值未验证。 | Skill 目录、视觉创作、低优先级参考、公开资料研究 | 已完成 | [skillry\.dev](https://skillry.dev/) | — |
+| 006 | [Skillry 创作技能能力图谱](projects/006-skillry/README.md) | 偏视觉创作的 Skill 展示、售卖与分发平台，收录网页、演示、图片和视频技能。附具体方向与代表技能引导图；我们的结论是低优先级参考，付费独有价值未验证。 | Skill 目录、视觉创作、低优先级参考、公开资料研究 | 已完成 | [skillry\.dev](https://skillry.dev/) | [访问](https://yydshly.github.io/0916_codex_project/006-skillry/) |
 <!-- PROJECT_INDEX:END -->
 
 ## 项目预览

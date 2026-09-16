@@ -72,3 +72,10 @@ GitHub Pages 托管静态文件；需要常驻服务、数据库或服务端密�
 2026-09-16 已发布并验证：[面板体验](https://yydshly.github.io/0916_codex_project/005-fridgemagnet/) · [项目与日报方案](https://yydshly.github.io/0916_codex_project/005-fridgemagnet/#workbench)。
 
 自主实现的静态概念演示，包含六种材质反馈、焦点／重点／稍后分层、四场景及十二类扩展方向。首次内容提交 `303f5bb`，[工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35115847424)成功；14 个发布文件与提交内容一致，线上图片、注意力操作、场景切换、竞价模拟、锚点刷新及桌面／手机宽度布局已检查。封面与引导图使用实际产品截图；未接入真实账号、记录存储、任务流或支付。详见 [部署验证](../projects/005-fridgemagnet/notes/deployment-verification.json)。
+
+
+## Skillry 技能目录与讨论结论
+
+2026-09-16 已发布：[研究展示](https://yydshly.github.io/0916_codex_project/006-skillry/) · [收录方向引导图](https://yydshly.github.io/0916_codex_project/006-skillry/downloads/understanding-guide.png)。
+
+页面区分平台分发功能与技能执行能力，整理四类技能、十二个代表名称、官方案例及低优先级参考的讨论结论。初次内容提交 `f507be9`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35117357281)成功；16 个静态文件与提交逐字节一致。未进行线上浏览器视觉、交互或手机实测，未安装或运行 Skillry 技能。详见 [发布记录](../projects/006-skillry/notes/deployment-verification.json)。

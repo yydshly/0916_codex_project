@@ -61,7 +61,9 @@ python scripts/projects.py check
 python scripts/build_web.py
 ```
 
-构建产物位于 web/006-skillry/，总入口自动显示“浏览能力图谱”。本次未发布线上站点，清单的 demo 保持为空；后续沿用仓库的 [GitHub Pages 部署约定](../../docs/DEPLOYMENT.md)，上线验证后再登记地址。
+构建产物位于 web/006-skillry/，总入口自动显示“浏览能力图谱”。
+
+2026-09-16 已通过仓库 GitHub Pages 工作流发布：[在线网页](https://yydshly.github.io/0916_codex_project/006-skillry/) · [讨论引导图](https://yydshly.github.io/0916_codex_project/006-skillry/downloads/understanding-guide.png)。内容提交 f507be9，线上 16 个静态文件与提交逐字节一致；详见 [发布验证](notes/deployment-verification.json)。本次验证覆盖资源可达性与内容一致性，未做线上浏览器视觉、交互或手机实测。
 
 ## 研究与验证记录
 

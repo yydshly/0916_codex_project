@@ -1,0 +1,91 @@
+{
+  "verified_at": "2026-09-16T15:46:01.633409+00:00",
+  "url": "https://yydshly.github.io/0916_codex_project/006-skillry/",
+  "content_commit": "f507be92ccb44f9f20386420209549ac96c6ca90",
+  "workflow": "https://github.com/yydshly/0916_codex_project/actions/runs/35117357281",
+  "verification": "All static app files fetched from GitHub Pages and compared byte-for-byte with Git commit blobs",
+  "files": [
+    {
+      "file": "app.js",
+      "sha256": "8c7b9be305907369590def8aab64bd941ec567a4af62cb408d7866b3b18c7042",
+      "matches_commit": true
+    },
+    {
+      "file": "downloads/capability-map.svg",
+      "sha256": "95783dd01b6d0bab1ddadd4311399a8fb7d28312ebb748732d89e37674bfcb35",
+      "matches_commit": true
+    },
+    {
+      "file": "downloads/notices.txt",
+      "sha256": "b478c4f9a84fc42e8c8136f8f511e249b687373025d3f66a63ea8c32202e26b2",
+      "matches_commit": true
+    },
+    {
+      "file": "downloads/research.txt",
+      "sha256": "21aeff5601736c4a01fa00dcdd55ebaea62efec475ac3fe909c7884e09f51c82",
+      "matches_commit": true
+    },
+    {
+      "file": "downloads/source-records.json",
+      "sha256": "c5c66e7222398bf963c843a6f88f9eabaedb10e567bec4e04e0eff7d921d6d11",
+      "matches_commit": true
+    },
+    {
+      "file": "downloads/understanding-guide.png",
+      "sha256": "26bb16a1c3580608d223ff4d45f8d8cce7aae3c284774885d8709dcb9d18ec53",
+      "matches_commit": true
+    },
+    {
+      "file": "downloads/understanding-guide.svg",
+      "sha256": "ae73d21cdb703e9cb5fee852a1e0efa8c7980af3d99a8127b725eeb5d5d801fb",
+      "matches_commit": true
+    },
+    {
+      "file": "downloads/understanding.txt",
+      "sha256": "5288177029f353887635c5eef6df158d264d0554ea165be66fe1d2bccb5479ea",
+      "matches_commit": true
+    },
+    {
+      "file": "index.html",
+      "sha256": "548165f6c8c61fdcfb0eb842d8d4115336f64b344f4e815141524b580c3a9e63",
+      "matches_commit": true
+    },
+    {
+      "file": "media/image-official.webp",
+      "sha256": "d6fdc42ce490e56ea95384f61a68f6f028f4dc17e349ecdf88e77382891b8206",
+      "matches_commit": true
+    },
+    {
+      "file": "media/slides-official.webp",
+      "sha256": "0dcb9df7992867b51060a20f1f160f71607b00af2ec4830b0dc5a36481e5e907",
+      "matches_commit": true
+    },
+    {
+      "file": "media/sources.json",
+      "sha256": "46a7f4e31e25f8aadee306f9aae49ae2ca57f54aab6cd343a335ab73a29ad948",
+      "matches_commit": true
+    },
+    {
+      "file": "media/video-official.webp",
+      "sha256": "e386ed72f9e466403d0584bbcc81cf187d800d91b5f3f13edf555e832567693c",
+      "matches_commit": true
+    },
+    {
+      "file": "media/web-official.webp",
+      "sha256": "387c4c29c0a1658c270f5025a6bd56308cb7325615725932ce66fb809ba08354",
+      "matches_commit": true
+    },
+    {
+      "file": "site.json",
+      "sha256": "e372b7f5cf51d35c85c59e490bb5bb323512704cb77ffef2c697fd6acee6f79a",
+      "matches_commit": true
+    },
+    {
+      "file": "style.css",
+      "sha256": "2895edd6dd15552bee577732108cc6016e78bbbe035ccf96c9c5a52a8649dbef",
+      "matches_commit": true
+    }
+  ],
+  "browser_visual_or_interaction_tested": false,
+  "skill_packages_installed_or_executed": false
+}
