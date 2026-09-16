@@ -19,6 +19,7 @@ PDF 工具参考：[PDF Craft](projects/002-pdf-craft/README.md) 用于扫描书
 | 002 | [PDF Craft 扫描文档重建研究](projects/002-pdf-craft/README.md) | 扫描书结构重建与翻译输出；附 PDF 工具引导图及 Stirling\-PDF 格式转换、通用处理参考。主要价值在工程集成，未做转换实测。 | OCR 集成、文档重建、EPUB、源码研究 | 已归档 | [oomol\-lab/pdf\-craft](https://github.com/oomol-lab/pdf-craft) | — |
 | 003 | [WrenAI 业务问数研究](projects/003-wrenai/README.md) | 面向 Agent 的业务问数基础设施：模型理解需求，MDL 统一口径，引擎规划查询；适合销售、运营与库存分析。附原理引导图、方案对比及 36 组引擎实测，未验证完整模型问数。 | 业务问数、语义层、WASM 实测、交互展示 | 已完成 | [Canner/WrenAI](https://github.com/Canner/WrenAI) | [访问](https://yydshly.github.io/0916_codex_project/003-wrenai/) |
 | 004 | [Design Extract 网站设计提取研究](projects/004-design-extract/README.md) | 从网页提取配色、字体、间距、布局与部分交互状态，导出设计文档和主题配置；为我们批量分析参考站、复用设计规范及构建网页复刻工具提供采集模块与工程参考。单次复刻可直接用 Codex，完整复刻仍需生成、对比与修正。 | 设计变量、浏览器提取、AI 开发辅助、本地实测、交互展示 | 已完成 | [Manavarya09/design\-extract](https://github.com/Manavarya09/design-extract) | [访问](https://yydshly.github.io/0916_codex_project/004-design-extract/) |
+| 005 | [Fridge Magnet 磁贴墙与个人记录研究](projects/005-fridgemagnet/README.md) | 可接入个人软件的磁贴呈现层：六种材质反馈与焦点／重点／稍后分层，展示成长、反思与作品；附项目板—今日板—日报方案，尚未接入真实数据和任务流。 | 磁贴展示、成长记录、个人反思、作品展示、交互演示 | 已完成 | [fridgemagnet\.lol](https://fridgemagnet.lol/) | — |
 <!-- PROJECT_INDEX:END -->
 
 ## 项目预览
@@ -69,6 +70,20 @@ WrenAI 原理引导图：本质、能力、资料准备、内部处理、输入�
 ![原创研究引导图：库的采集归纳导出能力、Codex 对比、四类场景和复刻工具参考流程；非运行截图，完整复刻尚未验证。](projects/004-design-extract/assets/understanding-guide.png)
 
 原创研究引导图：库的采集归纳导出能力、Codex 对比、四类场景和复刻工具参考流程；非运行截图，完整复刻尚未验证。
+
+### 005 · [Fridge Magnet 磁贴墙与个人记录研究](projects/005-fridgemagnet/README.md)
+
+可接入个人软件的磁贴呈现层：六种材质反馈与焦点／重点／稍后分层，展示成长、反思与作品；附项目板—今日板—日报方案，尚未接入真实数据和任务流。
+
+![自主磁贴面板的实际产品效果截图：成长墙以当前焦点、重点摘要和稍后收纳划分关注层次；卡片插画与故事为虚构示例。](projects/005-fridgemagnet/assets/product-attention.png)
+
+自主磁贴面板的实际产品效果截图：成长墙以当前焦点、重点摘要和稍后收纳划分关注层次；卡片插画与故事为虚构示例。
+
+#### 产品效果：深夜玻璃材质与关注层次
+
+![同一成长墙切换深夜玻璃材质后的实际网页截图；自主概念演示，未接入真实个人记录。](projects/005-fridgemagnet/assets/product-glass.png)
+
+同一成长墙切换深夜玻璃材质后的实际网页截图；自主概念演示，未接入真实个人记录。
 <!-- PROJECT_GALLERY:END -->
 
 ## 目录结构

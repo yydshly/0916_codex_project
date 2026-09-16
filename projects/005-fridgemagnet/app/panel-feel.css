@@ -1,0 +1,32 @@
+.feel-controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:13px;margin-top:14px}
+.feel-controls button{padding:7px 12px;min-height:38px;border:1px solid #cbd5c7;border-radius:5px;background:#f1f4eb;font-size:13px}
+.feel-controls #feel-demo{background:var(--green);border-color:var(--green);color:#fffdf0}
+.feel-controls button[aria-pressed="false"]{color:#697468;background:#fffdf7}.feel-controls button:disabled{opacity:.5}
+#feel-message{font-size:13px;color:var(--muted);margin-left:auto;max-width:460px}
+.drag-grip:after{content:"";position:absolute;inset:-9px -7px;background:transparent}
+/* Pointer-driven transforms are confined to each card; page geometry stays still. */
+[data-feel="on"] .magnet{
+  --feel-x:0px;--feel-y:0px;--feel-z:0px;--feel-roll:0deg;--feel-pitch:0deg;--feel-yaw:0deg;--feel-scale-x:1;--feel-scale-y:1;
+  transform:perspective(850px) translate3d(calc(var(--dx) + var(--feel-x)),calc(var(--dy) + var(--lift) + var(--feel-y)),var(--feel-z)) rotateX(var(--feel-pitch)) rotateY(var(--feel-yaw)) rotateZ(calc(var(--effect-rotation) + var(--feel-roll))) scale(var(--zoom)) scale(var(--feel-scale-x),var(--feel-scale-y));
+  transform-origin:50% 35%;transition:transform .13s ease-out,box-shadow .2s;
+}
+[data-feel="on"] .magnet.is-held,[data-feel="on"] .magnet.is-settling{transition:none;z-index:9;will-change:transform}
+[data-feel="on"] .magnet.is-held{box-shadow:5px 25px 24px #182b384d!important}
+[data-feel="on"] .magnet.is-held .drag-grip{transform:translateX(-50%) translateY(-4px) rotate(-5deg);box-shadow:1px 4px 4px #19252a30}
+[data-feel="on"][data-panel-theme="cork"] .magnet{transform-origin:50% 0%}
+[data-feel="on"][data-panel-theme="cork"] .magnet.is-held{box-shadow:3px 19px 12px #4b2d3050!important}
+[data-feel="on"][data-panel-theme="play"] .magnet.is-held{box-shadow:10px 17px 0 #493b59!important}
+[data-feel="on"][data-panel-theme="blueprint"] .magnet.is-held{box-shadow:8px 12px 0 #082d4780,0 0 0 2px #9ed8ed!important}
+[data-feel="on"][data-panel-theme="glass"] .magnet.is-held{box-shadow:0 0 0 1px #b6edff,0 0 28px #68c5e040,5px 22px 26px #020b2455!important}
+.feel-guide{position:absolute;inset:0;pointer-events:none;opacity:0;z-index:1}
+[data-feel="on"][data-panel-theme="blueprint"] .feel-drag-active .feel-guide{opacity:1;background:linear-gradient(90deg,transparent calc(var(--guide-x,50%) - .5px),#a4dffba3 var(--guide-x,50%),transparent calc(var(--guide-x,50%) + .5px)),linear-gradient(transparent calc(var(--guide-y,50%) - .5px),#a4dffba3 var(--guide-y,50%),transparent calc(var(--guide-y,50%) + .5px))}
+[data-feel="on"][data-panel-theme="gallery"] .fridge:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 240px 240px at var(--light-x,50%) var(--light-y,30%),#fffef8f0,#fffef81a 75%,transparent);z-index:0}
+[data-panel-theme="gallery"] .fridge-label,[data-panel-theme="gallery"] .fridge-bottom{position:relative}
+[data-feel="on"][data-panel-theme="glass"] .magnet:after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:radial-gradient(ellipse at var(--shine-x,50%) var(--shine-y,20%),#e8f7ff35,transparent 65%),linear-gradient(125deg,transparent 15%,#c6f0ff15 35%,transparent 55%);opacity:0;transition:opacity .2s}
+[data-feel="on"][data-panel-theme="glass"] .magnet:hover:after,[data-feel="on"][data-panel-theme="glass"] .magnet.is-held:after,[data-feel="on"][data-panel-theme="glass"] .magnet.is-settling:after{opacity:1}
+.glass-ripple{position:absolute;width:40px;height:40px;border:1px solid #aff1ffb0;border-radius:50%;pointer-events:none;z-index:2;animation:glass-ripple .8s ease-out both}
+@keyframes glass-ripple{from{transform:translate(-50%,-50%) scale(.5);opacity:.7}to{transform:translate(-50%,-50%) scale(6);opacity:0}}
+[data-feel="off"] .magnet,[data-feel="off"] .magnet:hover,[data-feel="off"] .magnet:focus-within,[data-feel="off"] .magnet.dragging{--lift:0px;--zoom:1;--effect-rotation:var(--rotate);transition:none!important}
+[data-feel="off"][data-panel-theme="gallery"] .magnet,[data-feel="off"][data-panel-theme="blueprint"] .magnet{--effect-rotation:0deg}
+@media(max-width:850px){#feel-message{width:100%;max-width:none;margin-left:0}.feel-controls{gap:7px}.feel-controls button{font-size:12px;padding:7px 10px}}
+@media(prefers-reduced-motion:reduce){.glass-ripple{display:none}.magnet:after{transition:none!important}}

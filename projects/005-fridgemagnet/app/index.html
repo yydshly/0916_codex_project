@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="磁贴面板的视觉与操作研究：六种材质反馈，以及成长记录、个人项目规划、今日任务、日报复盘等十二类扩展方向。">
+  <meta name="theme-color" content="#234d43">
+  <title>把日子贴在这里 · 磁贴墙实验室</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="panel-themes.css">
+  <link rel="stylesheet" href="panel-feel.css">
+  <link rel="stylesheet" href="workbench.css">
+  <link rel="stylesheet" href="attention.css">
+  <script src="attention-model.js" defer></script>
+  <script src="panel-physics.js" defer></script>
+  <script src="panel-feel.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="panel-themes.js" defer></script>
+</head>
+<body>
+  <noscript><p>本演示需要 JavaScript 才能切换场景和展开磁贴。下方“可以长成什么”和“从想法到产品”的内容可在启用 JavaScript 后查看。</p></noscript>
+  <a class="skip" href="#main">跳到内容</a>
+  <header class="masthead">
+    <a class="brand" href="#wall"><span class="brand-mark" aria-hidden="true">贴</span><span>把日子贴在这里<small>A LITTLE WALL OF LIFE</small></span></a>
+    <nav aria-label="主导航"><a href="#wall" class="active" aria-current="page" data-view="wall">磁贴体验</a><a href="#workbench" data-view="workbench">项目与日报</a><a href="#possibilities" data-view="possibilities">可以长成什么</a><a href="#blueprint" data-view="blueprint">从想法到产品</a></nav>
+    <a class="source-link" href="https://fridgemagnet.lol/" target="_blank" rel="noopener noreferrer">灵感来源 ↗</a>
+  </header>
+  <main id="main">
+    <section id="wall" class="view" aria-labelledby="page-title">
+      <div class="page-heading"><div><p class="eyebrow">005 / FRIDGE MAGNET · 面板触感实验</p><h1 id="page-title">让重要的事，先被看见。</h1><p class="intro">一张焦点，几项重点，其余随时展开。内容有轻重，操作有触感。</p></div><span class="edition">6 种材质反馈<br><b>全部为虚构示例</b></span></div>
+      <details class="theme-lab" aria-label="面板风格选择"><summary class="appearance-summary"><span>材质与触感</span><small>6 种风格 · 拖动反馈与音效设置</small></summary>
+        <div class="theme-heading"><span>面板风格</span><span id="theme-description" aria-live="polite">搪瓷光泽 · 胶带纸卡 · 轻盈抬起</span></div>
+        <div class="theme-options" role="group" aria-label="选择面板材质与特效">
+          <button class="theme-option active" data-theme="fridge" aria-pressed="true"><span class="theme-swatch swatch-fridge" aria-hidden="true"><i></i><i></i></span><span>复古冰箱<small>温暖 · 日常</small></span><b aria-hidden="true">✓</b></button>
+          <button class="theme-option" data-theme="cork" aria-pressed="false"><span class="theme-swatch swatch-cork" aria-hidden="true"><i></i><i></i></span><span>软木手账<small>自然 · 收藏</small></span><b aria-hidden="true">✓</b></button>
+          <button class="theme-option" data-theme="blueprint" aria-pressed="false"><span class="theme-swatch swatch-blueprint" aria-hidden="true"><i></i><i></i></span><span>蓝图网格<small>理性 · 灵感</small></span><b aria-hidden="true">✓</b></button>
+          <button class="theme-option" data-theme="gallery" aria-pressed="false"><span class="theme-swatch swatch-gallery" aria-hidden="true"><i></i><i></i></span><span>极简展馆<small>留白 · 作品</small></span><b aria-hidden="true">✓</b></button>
+          <button class="theme-option" data-theme="glass" aria-pressed="false"><span class="theme-swatch swatch-glass" aria-hidden="true"><i></i><i></i></span><span>深夜玻璃<small>通透 · 沉浸</small></span><b aria-hidden="true">✓</b></button>
+          <button class="theme-option" data-theme="play" aria-pressed="false"><span class="theme-swatch swatch-play" aria-hidden="true"><i></i><i></i></span><span>彩色积木<small>活泼 · 成长</small></span><b aria-hidden="true">✓</b></button>
+        </div>
+        <div class="feel-controls" role="group" aria-label="体感效果控制"><button id="feel-demo">▶ 感受一下</button><button id="motion-toggle" aria-pressed="true">动态反馈：开</button><button id="sound-toggle" aria-pressed="false">触感音：关</button><span id="feel-message" role="status">拖离原位再靠近：松手时会吸回原位。</span></div>
+      </details>
+      <div class="workspace">
+        <aside class="side-panel">
+          <p class="eyebrow">换一种生活，看同一面墙</p>
+          <div class="scene-list" role="group" aria-label="体验场景">
+            <button class="scene active" data-scene="growth" aria-pressed="true"><span class="scene-icon">✳</span><span>孩子成长墙<small>把第一次，好好留下</small></span><span>01</span></button>
+            <button class="scene" data-scene="reflection" aria-pressed="false"><span class="scene-icon">✎</span><span>个人反思墙<small>留一点空间，给自己</small></span><span>02</span></button>
+            <button class="scene" data-scene="portfolio" aria-pressed="false"><span class="scene-icon">▧</span><span>个人作品墙<small>让成果拥有自己的位置</small></span><span>03</span></button>
+            <button class="scene" data-scene="origin" aria-pressed="false"><span class="scene-icon">↗</span><span>原站机制<small>出价如何改变曝光</small></span><span>04</span></button>
+          </div>
+          <div class="scene-note"><span class="small-label">这面墙，为谁而留</span><h2 id="scene-title">陪伴成长，不比较成长。</h2><p id="scene-description"></p></div>
+          <div class="rule-note"><span class="small-label">位置由什么决定？</span><p id="scene-rule"></p></div>
+          <div id="bid-demo" hidden><label for="bid">你的模拟出价 <output id="bid-value">$6</output></label><input id="bid" type="range" min="1" max="12" value="6"><p id="bid-result" aria-live="polite"></p><small>仅演示排序，没有支付或上架。滑块可反复调整；原站追加出价只能上升。</small></div>
+          <a class="text-link" href="#possibilities">看看更多延伸方向 <span>↗</span></a>
+        </aside>
+        <div class="wall-column">
+          <div class="wall-toolbar"><div><span class="wall-name" id="wall-name">小满的成长冰箱</span><span class="count" id="record-count">6 张记忆</span></div><button class="quiet-button" id="reset-layout">↺ 还原摆放</button></div>
+          <div id="attention-tools" class="attention-tools"><div class="attention-counts" id="attention-counts"></div><button id="focus-only" aria-pressed="false">只看焦点</button><button id="undo-priority" disabled>撤销调整</button></div>
+          <p id="attention-intro" class="attention-intro">一次突出一张，重要的留在旁边，其余随时展开。</p>
+          <p id="priority-change-note" class="priority-change-note" role="status"></p>
+          <div class="fridge" id="fridge"><div class="fridge-label"><span>GOOD DAYS, KEPT.</span><small id="wall-caption">不用每一天都特别，只要是我们的一天。</small></div><div id="magnet-board" class="magnet-board" aria-label="磁贴展示区"></div><div class="fridge-bottom"><span>MEMORIES LIVE HERE</span><span class="handle" aria-hidden="true"></span></div></div>
+          <div class="wall-help"><span>拖动磁贴顶端调整位置 · 点击卡片展开故事</span><span>键盘：聚焦拖动柄后用方向键移动</span></div>
+        </div>
+      </div>
+      <div class="takeaway"><span class="takeaway-index">想法 / 01</span><p id="takeaway"></p><a href="#workbench">延伸到项目规划与日报 →</a></div>
+    </section>
+
+    <section id="workbench" class="view" hidden aria-labelledby="workbench-title">
+      <div class="page-heading"><div><p class="eyebrow">我们的理解 / PERSONAL WORKSPACE</p><h1 id="workbench-title">项目板看全局，今日板做事情，日报看积累。</h1><p class="intro">把有触感的面板接入个人工作流，让一条任务从计划走到复盘。</p></div><span class="edition">扩展设计方案<br><b>下方为虚构示例</b></span></div>
+      <div class="understanding"><p class="eyebrow">最值得带走的能力</p><h2>面板提供触感，场景赋予动作含义。</h2><p>对我们而言，Fridge Magnet 的主要参考价值是材质、空间层次和拿起放下的反馈。这套呈现方式可以接入已有软件：内容由原来的记录、项目或任务系统提供，面板负责陈列与操作反馈。</p><p>当它成为工作台时，位置也可以承载状态、日期和项目归属。任务状态应由明确的分区或操作决定，自由摆放仍然只是视觉整理。</p></div>
+      <div class="work-section-heading"><div><p class="eyebrow">一份任务，三个视图</p><h2>计划写准备做什么，日报补实际发生了什么。</h2></div><span class="concept-label">方案示意 · 尚未接入真实任务系统</span></div>
+      <div class="work-views">
+        <article class="work-view"><span class="work-step">01 / PROJECT</span><h3>项目规划板</h3><p>看目标、阶段、阻塞与下一步。</p><div class="work-card"><span class="work-card-meta">项目 P-01 · 磁贴面板</span><h4>完成可操作的材质体验</h4><span class="work-state">进行中</span><p>下一步：验证拖动与放下反馈。</p><div class="linked-task"><span>T-014</span>验证卡片落下反馈</div></div><div class="work-lanes"><span>想做</span><span>准备</span><span class="selected">进行中</span><span>完成</span></div><small>项目内继续拆分任务，避免把项目和任务混成一个层级。</small></article>
+        <article class="work-view"><span class="work-step">02 / TODAY</span><h3>今日工作板</h3><p>只呈现今天准备推进的事情。</p><div class="work-card"><span class="work-card-meta">2026.09.16 · 计划</span><h4>验证卡片落下反馈</h4><span class="work-state">今天要做</span><p>预期：比较六种材质，记下需要调整的地方。</p><div class="linked-task"><span>T-014</span>来自项目「磁贴面板」</div></div><div class="work-lanes"><span class="selected">要做</span><span>正在做</span><span>已完成</span></div><small>安排到今天是设置计划日期，任务仍属于原来的项目。</small></article>
+        <article class="work-view"><span class="work-step">03 / DAILY LOG</span><h3>项目日报时间线</h3><p>保留进展、问题与下一步。</p><div class="work-card daily"><span class="work-card-meta">2026.09.16 · 当天结束后的示例</span><h4>落下反馈验证记录</h4><dl><dt>完成</dt><dd>比较了六种材质的反馈。</dd><dt>阻塞</dt><dd>触屏操作仍待确认。</dd><dt>下一步</dt><dd>补做触屏体验验证。</dd></dl><div class="linked-task"><span>T-014</span>关联原任务，保留当天记录</div></div><small>日报是历史快照。以后任务状态变化，不改写那天实际发生的事情。</small></article>
+      </div>
+      <p class="work-note">三张示意卡描述同一任务的计划与回顾关系，内容为虚构，不代表本项目新增了这些验证结果。后续产品可从任务活动带入日报草稿，由使用者补充并确认，不必重复抄写。</p>
+      <div class="work-section-heading"><div><p class="eyebrow">让体感服务于操作</p><h2>每一次移动，都应知道发生了什么。</h2></div></div>
+      <div class="action-mapping">
+        <article><span>拖进状态区</span><h3>推进任务</h3><p>放入「进行中」才改变状态，落位反馈提示操作完成，并允许撤销。</p></article>
+        <article><span>拖到日期上</span><h3>安排日程</h3><p>为任务设置计划日期；它仍保留原项目归属和稳定编号。</p></article>
+        <article><span>收进一个卡组</span><h3>整理项目</h3><p>先选择卡组，再确认归属。卡片视觉重叠不自动表示项目合并。</p></article>
+        <article><span>完成后收纳</span><h3>记录成果</h3><p>盖章、翻面或收进当天档案；完成、归档、删除是不同操作。</p></article>
+      </div>
+      <div class="work-split"><article class="paper-spec"><p class="eyebrow">共用什么</p><h2>一份数据，多种看法。</h2><ul class="field-list"><li><b>项目</b><span>目标、阶段、里程碑与项目编号。</span></li><li><b>任务</b><span>任务编号、项目归属、状态、计划日期与下一步。</span></li><li><b>日报</b><span>发生日期、任务引用、实际进展、阻塞与下一步快照。</span></li><li><b>面板偏好</b><span>位置、分组与材质风格；和业务状态分开保存。</span></li></ul></article><article class="roadmap"><p class="eyebrow">接入已有个人软件</p><div><span class="phase">第一步 · 呈现</span><h3>让已有内容成为卡片</h3><p>对接现有项目与任务，支持展开详情，先保留原来的保存与编辑能力。</p></div><div><span class="phase">第二步 · 操作</span><h3>让明确的落点改变状态</h3><p>增加状态分区、日期落点、键盘等效操作与撤销；保存失败时还原并说明。</p></div><div><span class="phase">第三步 · 回顾</span><h3>把进展连接到日报与周复盘</h3><p>基于实际活动整理草稿，补充阻塞和下一步，确认后保留历史记录。</p></div></article></div>
+      <aside class="boundary"><h2>现在能体验的是面板，工作流是下一步。</h2><p>「磁贴体验」里的六种材质、拖拽与动效已经实现。本区的状态分区、日期安排、项目分组、日报生成、撤销与数据保存属于扩展方案；当前拖动卡片仍只改变视觉位置。</p><p><a href="#wall">回到面板体验 →</a>　<a href="#possibilities">查看完整的十二类场景 →</a></p></aside>
+    </section>
+
+    <section id="possibilities" class="view" hidden aria-labelledby="possibility-title">
+      <div class="page-heading"><div><p class="eyebrow">十二类方向 / POSSIBILITIES</p><h1 id="possibility-title">留住生活，也推动事情向前。</h1><p class="intro">记录与展示、项目与行动，共用一套有触感的面板。</p></div></div>
+      <div class="direction-grid">
+        <article class="direction featured"><span class="direction-number">01 / 优先探索</span><h2>孩子成长记录贴吧</h2><p>一个家庭一起写的成长相册。记录值得回看的瞬间，也给孩子留出自己的表达空间。</p><dl><dt>贴什么</dt><dd>第一次、童言童语、画作、日常照片、家人的留言</dd><dt>怎么找</dt><dd>按日期、成长阶段与主题回看，不做孩子之间的排名</dd><dt>谁能看</dt><dd>从家庭私密空间开始，未来可选择分享单张卡片</dd></dl><button data-preview="growth">体验成长墙 ↗</button><span class="recommendation">价值：让零散照片变成有故事的记忆</span></article>
+        <article class="direction"><span class="direction-number">02 / 个人反思</span><h2>写给自己的回看墙</h2><p>记录发生了什么、当时如何感受，以及后来有没有新的理解。</p><dl><dt>贴什么</dt><dd>感悟、困惑、微小成就、未完成的想法</dd><dt>位置含义</dt><dd>正在关注的放在眼前，想通的收进档案</dd><dt>可扩展</dt><dd>每周回顾、记录关联、后续追记</dd></dl><button data-preview="reflection">体验反思墙 ↗</button></article>
+        <article class="direction"><span class="direction-number">03 / 作品展示</span><h2>不断更新的私人展览</h2><p>每件作品有封面，也有过程。让访客先产生兴趣，再深入了解。</p><dl><dt>贴什么</dt><dd>项目、摄影、文章、设计、实验</dd><dt>位置含义</dt><dd>代表作优先，兼顾最近完成与主题策展</dd><dt>可扩展</dt><dd>作品详情、演示链接、版本故事、精选合集</dd></dl><button data-preview="portfolio">体验作品墙 ↗</button></article>
+        <article class="direction"><span class="direction-number">04 / 家庭与关系</span><h2>属于我们的小事</h2><p>从一个人的记录，变成家庭成员一起完成的生活拼图。</p><dl><dt>贴什么</dt><dd>家庭旅行、节日、菜谱、宠物、彼此的感谢</dd><dt>位置含义</dt><dd>正在发生的事与共同珍藏的瞬间</dd><dt>可扩展</dt><dd>多人补充、纪念日回顾、年度相册</dd></dl><span class="concept-label">方向梳理 · 尚未实现</span></article>
+        <article class="direction"><span class="direction-number">05 / 学习与兴趣</span><h2>看得见的学习足迹</h2><p>把学到的东西和动手成果放在一起，看到过程中的联系。</p><dl><dt>贴什么</dt><dd>读书摘记、手作、练习、问题与答案</dd><dt>位置含义</dt><dd>近期主题、待探索问题、阶段成果</dd><dt>可扩展</dt><dd>主题收藏、知识关联、实践前后对照</dd></dl><span class="concept-label">方向梳理 · 尚未实现</span></article>
+        <article class="direction"><span class="direction-number">06 / 小型社区</span><h2>每个人都能留下一张</h2><p>适合活动、班级或小组的主题展示，需要相应的成员与内容管理。</p><dl><dt>贴什么</dt><dd>活动照片、班级作品、成员介绍、留言</dd><dt>位置含义</dt><dd>时间、主题或策展，不默认按付费排列</dd><dt>可扩展</dt><dd>成员权限、发布审核、举报与撤回</dd></dl><span class="concept-label">方向梳理 · 尚未实现</span></article>
+        <article class="direction featured"><span class="direction-number">07 / 个人项目规划</span><h2>从想做，到真正完成</h2><p>看清每个项目的目标、阶段、阻塞，以及最值得先做的一步。</p><dl><dt>贴什么</dt><dd>项目、阶段目标、里程碑；进入项目后查看具体任务</dd><dt>位置含义</dt><dd>想做、准备、进行中、完成</dd><dt>可扩展</dt><dd>任务拆分、状态流转、阻塞提示</dd></dl><a class="work-link" href="#workbench">查看项目与日报方案 ↗</a></article>
+        <article class="direction"><span class="direction-number">08 / 每日工作</span><h2>今天，就推进这几件事</h2><p>把长期项目收敛成今天可以动手的任务。</p><dl><dt>贴什么</dt><dd>关联原项目的今日任务</dd><dt>位置含义</dt><dd>今天要做、正在做、已完成</dd><dt>可扩展</dt><dd>计划日期、跨日调整、完成记录</dd></dl><a class="work-link" href="#workbench">查看今日板方案 ↗</a></article>
+        <article class="direction"><span class="direction-number">09 / 项目日报</span><h2>让进展留下可回看的轨迹</h2><p>计划写准备做什么，日报补实际完成了什么。</p><dl><dt>贴什么</dt><dd>当天成果、遇到的阻塞、下一步</dd><dt>位置含义</dt><dd>按项目与发生日期排列</dd><dt>可扩展</dt><dd>引用任务活动、确认日报草稿、保留历史快照</dd></dl><a class="work-link" href="#workbench">查看日报衔接方案 ↗</a></article>
+        <article class="direction"><span class="direction-number">10 / 每周计划与复盘</span><h2>把这一周，前后连起来</h2><p>周初安排目标，周末补充结果与调整原因。</p><dl><dt>贴什么</dt><dd>本周目标、实际成果、未完成项</dd><dt>位置含义</dt><dd>本周关注、已推进、准备顺延</dd><dt>可扩展</dt><dd>关联日报、跨周安排、保留原计划与变化原因</dd></dl><span class="concept-label">方向梳理 · 尚未实现</span></article>
+        <article class="direction"><span class="direction-number">11 / 灵感孵化</span><h2>给想法一个长大的过程</h2><p>从随手记下，到值得研究，再决定是否投入。</p><dl><dt>贴什么</dt><dd>灵感、待验证的问题、实验结论</dd><dt>位置含义</dt><dd>随手记、值得研究、正在验证、决定实施</dd><dt>可扩展</dt><dd>关联证据、沉淀结论、转成项目</dd></dl><span class="concept-label">方向梳理 · 尚未实现</span></article>
+        <article class="direction"><span class="direction-number">12 / 生活筹备</span><h2>把一件大事，准备妥当</h2><p>旅行、搬家或家庭活动，都能拆成可安排的小卡片。</p><dl><dt>贴什么</dt><dd>准备事项、清单、参考资料与提醒</dd><dt>位置含义</dt><dd>日期、类别或准备状态</dd><dt>可扩展</dt><dd>共享清单、分工、日期安排与资料关联</dd></dl><span class="concept-label">方向梳理 · 尚未实现</span></article>
+      </div>
+      <div class="comparison"><p class="eyebrow">真正可复用的部分</p><h2>拿走呈现方式，重新定义排序理由。</h2><div class="table-scroll"><table><caption>从原站到个人产品的能力映射</caption><thead><tr><th>原站元素</th><th>可以保留</th><th>在个人产品中重新定义</th></tr></thead><tbody><tr><td>网站推广磁贴</td><td>封面、摘要、点击展开</td><td>一条记忆、一篇反思或一件作品</td></tr><tr><td>出价决定位置</td><td>视觉重点与自由摆放</td><td>手动精选、时间、主题</td></tr><tr><td>冰箱门与冷冻室</td><td>精选区与归档的层次</td><td>当前关注与历史记录，避免隐藏难找</td></tr><tr><td>交易动态</td><td>近期变化的可见性</td><td>新记录、家人补充、后续追记</td></tr><tr><td>公开推广链接</td><td>可分享的内容入口</td><td>成长与反思默认私密；作品可选择公开</td></tr></tbody></table></div></div>
+    </section>
+
+    <section id="blueprint" class="view" hidden aria-labelledby="blueprint-title">
+      <p class="route-note">下面保留孩子成长记录的落地路线；项目规划、任务与日报的接入路线见 <a href="#workbench">「项目与日报」→</a></p>
+      <div class="page-heading"><div><p class="eyebrow">落地路线 / FROM WALL TO PRODUCT</p><h1 id="blueprint-title">先留住一个瞬间，再慢慢长成一本书。</h1><p class="intro">以孩子成长记录为例：让记录轻一点，让回看有温度。</p></div></div>
+      <div class="journey"><article><span>01</span><h2>随手记</h2><p>一张照片或一句话就能开始，先留下发生日期。</p></article><article><span>02</span><h2>贴上墙</h2><p>选主题、补故事，把最想回看的放到显眼位置。</p></article><article><span>03</span><h2>一起补充</h2><p>家人留下不同视角，保留作者与修改记录。</p></article><article><span>04</span><h2>长久回看</h2><p>按时间查找、按主题收藏，再汇成年度相册。</p></article></div>
+      <div class="blueprint-grid"><article class="paper-spec"><p class="eyebrow">一张成长贴，装什么？</p><h2>不是只有照片，还有当时的你。</h2><ul class="field-list"><li><b>发生日期</b><span>允许补记，区分发生时间和记录时间</span></li><li><b>一句标题</b><span>“第一次自己撑伞”</span></li><li><b>照片 / 文字 / 画作</b><span>文字也能独立成为一张贴</span></li><li><b>主题</b><span>第一次、童言童语、日常、作品</span></li><li><b>故事与后续</b><span>当时发生了什么，后来有什么变化</span></li><li><b>记录者与可见范围</b><span>谁写的，哪些家人能看</span></li></ul></article><article class="roadmap"><p class="eyebrow">建议实现顺序</p><div><span class="phase">现在 · 概念展示</span><h3>先感受是否愿意经常打开</h3><p>四个场景、卡片展开、拖动摆放、精选置中、竞价模拟。使用虚构数据，不保存个人记录。</p></div><div><span class="phase">第一版 · 私人记录</span><h3>新增、编辑、找回、导出</h3><p>文字与照片记录、时间与主题筛选、可靠存储、备份导出。先把个人记录闭环做好。</p></div><div><span class="phase">第二版 · 家人参与</span><h3>共同记录，明确谁能看</h3><p>成员邀请、访问权限、留言与修改记录；分享前选择具体内容与接收人。</p></div><div><span class="phase">之后 · 回顾与整理</span><h3>让记录有机会被再次看见</h3><p>“那年今天”、成长年册、主题回顾。若加入 AI，只辅助整理原有记录，由家人确认。</p></div></article></div>
+      <aside class="boundary"><h2>如果做孩子成长贴吧，先做家庭空间。</h2><p>“贴吧”可以是共同记录的形式，不必一开始就是公开社区。真正落地时，需要照片与原图位置资料处理、成员访问控制、删除与备份机制。身高、成绩等记录不默认公开，也不做儿童能力排名。</p><p>本页仅展示方向和交互：没有账户、上传、云端存储、真实支付或家庭分享功能；刷新会还原示例与位置。</p></aside>
+      <div class="origin-note"><h2>来源与实现边界</h2><p>灵感来自 <a href="https://fridgemagnet.lol/" target="_blank" rel="noopener noreferrer">Fridge Magnet ↗</a> 的磁贴展示与竞价规则。本页为自主编写的中文场景演示，没有引用其源代码；尚未确认原站是否开源，不能将本页视为原站库的调用效果。原站支付、冷冻室与引流效果未实测。</p><p>页面里的角色、故事、作品和出价均为虚构示例。扩展方向属于设计建议，不是原站已有能力。</p></div>
+    </section>
+  </main>
+  <footer class="footer"><span>005 · 磁贴墙实验室</span><span>留住内容，也留住回看的心情。</span><a href="#blueprint">来源与实现边界</a></footer>
+  <dialog id="story-dialog" aria-labelledby="story-title"><button class="dialog-close" aria-label="关闭故事">×</button><div id="story-content"></div></dialog>
+  <p id="live-status" class="sr-only" role="status" aria-live="polite"></p>
+</body>
+</html>
