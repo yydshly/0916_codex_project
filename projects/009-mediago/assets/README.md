@@ -4,9 +4,9 @@
 
 | 图片 | 来源与用途 |
 | --- | --- |
-| `guide-desktop.jpg` | 2026-09-17 本地研究网页真实浏览器截图，用作项目封面，展示标题、导航与技术本质示意 |
+| `guide-desktop.jpg` | 2026-09-17 本地研究网页真实浏览器截图，保留为历史验证记录，不再用作项目封面 |
 | `guide-mobile.jpg` | 同日 390 × 844 CSS 像素手机视口下的本地网页截图，用于记录响应式检查 |
-| `capability-map.png` / `capability-map.svg` | 原创 2400 × 3830 能力全景图，包含十个能力模块、来源与引擎、六类场景和边界；非官方截图，证据见 `notes/capability-map.md` |
+| `capability-map.png` / `capability-map.svg` | 原创 2400 × 3830 能力全景图，作为唯一项目封面，包含十个能力模块、来源与引擎、六类场景和边界；非官方截图，证据见 `notes/capability-map.md` |
 
 截图来自 `http://127.0.0.1:8779/009-mediago/`，未修改画面，不包含账号、密钥或私人视频。它们是**研究手册截图，不是 MediaGo 应用截图或下载结果证据**。实际像素尺寸记录在 [网页验证记录](../notes/web-verification.json)。
 
