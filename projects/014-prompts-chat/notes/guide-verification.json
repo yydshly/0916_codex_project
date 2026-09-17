@@ -1,0 +1,106 @@
+{
+  "checkedAt": "2026-09-17T02:24:03.865513+00:00",
+  "localUrl": "http://127.0.0.1:8794/014-prompts-chat/?v=20260917-guide#guide",
+  "assets": [
+    {
+      "path": "app.js",
+      "status": 200,
+      "sha256": "0bb8e01d3de9550d118ab0b739e79b92a4b56e06fc69b0530c2672a6d586ba18",
+      "bytes": 26207
+    },
+    {
+      "path": "catalog-data.js",
+      "status": 200,
+      "sha256": "95b4ee5ae807c44f6ae34de02f10d7e1cf59411751e8da9ad0ec100d085f4255",
+      "bytes": 93360
+    },
+    {
+      "path": "catalog.css",
+      "status": 200,
+      "sha256": "c8d5fa08c7e22aa42ef14a8ed4417f81af0c913bc29e1a88cf7cd96607c8ff9d",
+      "bytes": 9277
+    },
+    {
+      "path": "catalog.js",
+      "status": 200,
+      "sha256": "c9c68b44e52735a9d0a36d65f51612ed2b2b8ae274f57793abd35d0b89dbf0f4",
+      "bytes": 13682
+    },
+    {
+      "path": "data.js",
+      "status": 200,
+      "sha256": "770802f9e106630376125eec7c8ab5c42254caa5d8b976573412e8df7eabf653",
+      "bytes": 19387
+    },
+    {
+      "path": "guide-data.js",
+      "status": 200,
+      "sha256": "e16a68b33f8ab7ed70d4c550830a3485606a5c976ccdedf7d627a60db5c02e78",
+      "bytes": 469755
+    },
+    {
+      "path": "guide.css",
+      "status": 200,
+      "sha256": "c9bf7c5189dacec3d6204cf9d0423bb1b83d6943abc0d26723ae43e19dbdcfc9",
+      "bytes": 4565
+    },
+    {
+      "path": "guide.js",
+      "status": 200,
+      "sha256": "fa5b3405eb85b2280ffb5188ea2446c05e9da6915287f4d7825968004c9f554b",
+      "bytes": 22557
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "5e839b338d46e9282b754edf2d7b7545b1aeb9408fdf0e1c52cb65a6a868fdcd",
+      "bytes": 13212
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "sha256": "71c28b3cdd6325404c8911e8acdfa7ccc308bb8e416ba02e9574b45ca192c62f",
+      "bytes": 15029
+    }
+  ],
+  "content": {
+    "publicRecords": 2270,
+    "apiPages": 23,
+    "categoriesWithRecords": 52,
+    "directions": 16,
+    "uncategorized": 716,
+    "crossDomainSamples": 32,
+    "designSamples": 30,
+    "uniqueAnnotated": 60,
+    "reviewedRawHashes": "all matched",
+    "indexPages": 57,
+    "indexUniqueCoverage": 2270,
+    "playbooks": 4,
+    "playbookSteps": 14,
+    "routes": 11
+  },
+  "checks": [
+    "guide content, filtering, pagination, route and edit logic",
+    "Design 30 raw hashes, details and 3 recipes regression",
+    "original 32 abilities and 6 conceptual scenes regression",
+    "JavaScript syntax",
+    "registry check",
+    "static build",
+    "local HTTP asset hashes"
+  ],
+  "browser": {
+    "homeLayout": "checked in current browser windows without viewport override",
+    "sourceTypeFilter": "SKILL returned 72",
+    "chineseDirectionSearch": "数据分析 returned 28",
+    "taskEditing": "preview updated",
+    "copy": "clipboard matched composed task",
+    "sourceDetail": "opened original text and verified content",
+    "detailReload": "correct detail retained after reload",
+    "consoleErrorsObserved": 0,
+    "fullKeyboardAudit": false,
+    "multiDeviceAudit": false
+  },
+  "modelOutputEvaluation": false,
+  "upstreamInstalled": false,
+  "publicDeployment": false
+}

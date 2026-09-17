@@ -1,0 +1,20 @@
+{
+  "image": "assets/understanding-guide.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "sha256": "eaaec823db0cf2247406b89df813cb4a7db5e103ca53f44a565c36bfdd04e4a1",
+  "httpStatus": 200,
+  "imageContentReviewed": true,
+  "content": [
+    "库的定位与内容来源",
+    "16类提示词主题",
+    "从点子发现到产品迭代的六步路径",
+    "两个待验证产品方向",
+    "质量与执行边界"
+  ],
+  "generation": "built-in imagegen",
+  "websiteSourceAndBuiltImageMatch": true,
+  "publicDeployment": false
+}

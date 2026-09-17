@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "capturedAt": "2026-09-17",
+    "sourceCategory": "Design",
+    "categoryId": "cmmnlanki0004l204gai1zuii",
+    "categoryUrl": "https://prompts.chat/prompts?category=cmmnlanki0004l204gai1zuii",
+    "apiUrl": "https://prompts.chat/api/prompts?category=cmmnlanki0004l204gai1zuii&perPage=50",
+    "total": 30,
+    "typeCounts": {
+      "TEXT": 24,
+      "IMAGE": 5,
+      "SKILL": 1
+    },
+    "scope": "用户指定的 Design 分类，本次公开接口返回的全部 30 条；不是全站全集。",
+    "license": "CC0-1.0",
+    "rawResponseSha256": "1b65663783d671cbbd82c0f3c626171ac4df94b288ffaa9cc512c0d3ffd8db65"
+  },
+  "records": [
+    {
+      "id": "cmu2uyoea000agm0avbldxte6",
+      "title": "person wearing a black suit",
+      "sourceType": "IMAGE",
+      "sourceUrl": "https://prompts.chat/prompts/cmu2uyoea000agm0avbldxte6_person-wearing-a-black-suit",
+      "contentSha256": "ade7e4bd1889819a490941a8188f120e150f48e1526bc62ff1a007311463184d"
+    },
+    {
+      "id": "cmtue41oj0001gm0ab0crqo8l",
+      "title": "game",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmtue41oj0001gm0ab0crqo8l_game",
+      "contentSha256": "9079757b46c66e205bd6d15b96db0d473aa21f30f4ec041c43a3f92059079ad0"
+    },
+    {
+      "id": "cmt1mi71c000dji042jz7e5cd",
+      "title": "Infographic",
+      "sourceType": "IMAGE",
+      "sourceUrl": "https://prompts.chat/prompts/cmt1mi71c000dji042jz7e5cd_infographic",
+      "contentSha256": "b29d5c1f2bc8ed97d7de6475b5ffa9111c81b2fcfd0af9ca0ef8dca67dd57c5f"
+    },
+    {
+      "id": "cmrlz4j1p0001i20abdmz1zik",
+      "title": "Conversational Logo Design Process",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmrlz4j1p0001i20abdmz1zik_conversational-logo-design-process",
+      "contentSha256": "735f0ebfa602cafcfa5be9e0c65991ff561a1bd007b531009cfed4dae02aaabb"
+    },
+    {
+      "id": "cmrh8zk3j000hkr0avllrtxcu",
+      "title": "Produccion Musical IA Electronic | Agente Celestial Designs",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmrh8zk3j000hkr0avllrtxcu_produccion-musical-ia-electronic-agente-celestial-designs",
+      "contentSha256": "30a01f44945c054b491e8ecd18b5969566f8c0f8ed3c7aa0bd2d395a923dfb4f"
+    },
+    {
+      "id": "cmrh8yw8v0003kr0ag936c3jd",
+      "title": "Diseño HUD Sci-Fi | Agente Celestial Designs",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmrh8yw8v0003kr0ag936c3jd_diseo-hud-sci-fi-agente-celestial-designs",
+      "contentSha256": "7abf4f5ee3eb5d0909ec2a4a08c6e5922bf6e4dc8e20f39c6c847323be9bf496"
+    },
+    {
+      "id": "cmr7pdt230001kz040mqravf8",
+      "title": "Vintage copper engraving portrait with glasses in front of yellow circle",
+      "sourceType": "IMAGE",
+      "sourceUrl": "https://prompts.chat/prompts/cmr7pdt230001kz040mqravf8_vintage-copper-engraving-portrait-with-glasses-in-front-of-yellow-circle",
+      "contentSha256": "4d50b107128393d41f28f0ce0ade9b4cf8fcea774f6ea6f078988463869fa75d"
+    },
+    {
+      "id": "cmqqhqp87000el204uh69zoup",
+      "title": "Custom Poster and Wallpaper Design with Image Upload",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmqqhqp87000el204uh69zoup_custom-poster-and-wallpaper-design-with-image-upload",
+      "contentSha256": "f4af36697973ccb11e331bd66071550c68757c8bb6869104b9750ded0ba31b06"
+    },
+    {
+      "id": "cmqpjk1ur0007ju043rw8ryds",
+      "title": "Action video",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmqpjk1ur0007ju043rw8ryds_action-video",
+      "contentSha256": "185f1147a0a6d54e08c78de0cd0bc0419d69cba8df052a9e6db288ba0884076e"
+    },
+    {
+      "id": "cmqdpf4240001jv04m93hle15",
+      "title": "Intricate Stippling Illustration of Istanbul Street Scene",
+      "sourceType": "IMAGE",
+      "sourceUrl": "https://prompts.chat/prompts/cmqdpf4240001jv04m93hle15_intricate-stippling-illustration-of-istanbul-street-scene",
+      "contentSha256": "7654b3647bfc57030c13b62f00ad699581cdef9a73c970462f3c39a61329f517"
+    },
+    {
+      "id": "cmpvl2nex0001l204z3m0xqw3",
+      "title": "GRAPHICS",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmpvl2nex0001l204z3m0xqw3_graphics",
+      "contentSha256": "5bcef06d0c7c9d2e0265a8715b023801e7018bda28ecbf0bca8c349a5b4d3636"
+    },
+    {
+      "id": "cmp9lkk550005kv0476lgujwd",
+      "title": "Dota 2 Hero Stats and Builds Website Design",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmp9lkk550005kv0476lgujwd_dota-2-hero-stats-and-builds-website-design",
+      "contentSha256": "386cd729762323395c3a5b7a4da8576fb8e3c4fca3ceba8231e1bb3433adb7c2"
+    },
+    {
+      "id": "cmp2nnvma0001l704v43f48t8",
+      "title": "The Lovelyline",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmp2nnvma0001l704v43f48t8_the-lovelyline",
+      "contentSha256": "85b155f35397346f05bee9437e4be50d67327a8196febbf96f39ce90b096996e"
+    },
+    {
+      "id": "cmobko15m0004l4047a41x2lz",
+      "title": "RPA/Agentic AI Process Developer Portfolio Design for Claude",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmobko15m0004l4047a41x2lz_rpaagentic-ai-process-developer-portfolio-design-for-claude",
+      "contentSha256": "4e4ce94e18c26dd7e7a9dc63e95a7405d1fc151589403bb3f4bdd98abdba093f"
+    },
+    {
+      "id": "cmobfhjz3000el1043ccbflbw",
+      "title": "High-End Technology-Inspired Website UI Redesign",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmobfhjz3000el1043ccbflbw_high-end-technology-inspired-website-ui-redesign",
+      "contentSha256": "48cf76228afa43d428a6ac304b607e6463965b1787734decef6eaed584665e1f"
+    },
+    {
+      "id": "cmobbg6a50007jv042pfx03v8",
+      "title": "Designing a Feature Testing Page for Enterprise WeChat/DingTalk",
+      "sourceType": "SKILL",
+      "sourceUrl": "https://prompts.chat/prompts/cmobbg6a50007jv042pfx03v8_designing-a-feature-testing-page-for-enterprise-wechatdingtalk",
+      "contentSha256": "582598e8126559ac2724ad7aaf6f715a87333a4c36f65059c27810b319837433"
+    },
+    {
+      "id": "cmnx9n87w0004i604fqxukj6b",
+      "title": "Web Typography",
+      "sourceType": "IMAGE",
+      "sourceUrl": "https://prompts.chat/prompts/cmnx9n87w0004i604fqxukj6b_web-typography",
+      "contentSha256": "782782f7e5a104db9f248bba960235673b96c6ccb629e1a277ef2f61499d9d14"
+    },
+    {
+      "id": "cmnrbjdrn0001ky047nuc6gd0",
+      "title": "AI-Generated Patent Illustration Instructions",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmnrbjdrn0001ky047nuc6gd0_ai-generated-patent-illustration-instructions",
+      "contentSha256": "af4b99472c0c92ebce268349d5268216cab897b4ada025ea45843f5b67a1e731"
+    },
+    {
+      "id": "cmnedfduc0001l104i919vl6s",
+      "title": "Picture design",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmnedfduc0001l104i919vl6s_picture-design",
+      "contentSha256": "617d55c56bbe2f3e74e49c63c1b8766e8c437ae8088b7a69928218486bbda02d"
+    },
+    {
+      "id": "cmn089nzq0004l104lmz1atha",
+      "title": "Illustrator Style Describer Weavy",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmn089nzq0004l104lmz1atha_illustrator-style-describer-weavy",
+      "contentSha256": "e87eff2b4b15ca4707915bb35c72bfd93ed4fcf26f7e729df7020a5d4b17e1fd"
+    },
+    {
+      "id": "cmmxtz3690005l704lv6dp3h5",
+      "title": "Apple-Level UI System Designer (2026 Standard)",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmmxtz3690005l704lv6dp3h5_apple-level-ui-system-designer-2026-standard",
+      "contentSha256": "fe9560094e70a71be584a94a54158a5fe7e10c5e24957af90c539cf554238fe8"
+    },
+    {
+      "id": "cmmxtuy2w0004l704mt7xxlr3",
+      "title": "Design System Consistency Auditor",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmmxtuy2w0004l704mt7xxlr3_design-system-consistency-auditor",
+      "contentSha256": "f71e42f3a5841119c4f3451be3ceb45c7edb71fd6b366ea7b6816e3046c4ee45"
+    },
+    {
+      "id": "cmmxtsuq40001l704dlqlgxdr",
+      "title": "AI-First Design Handoff Generator (Dev-Ready Spec)",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmmxtsuq40001l704dlqlgxdr_ai-first-design-handoff-generator-dev-ready-spec",
+      "contentSha256": "ca5030da1388b8aa622559391b4b82e55ae48d264919e339bb4717aed35a96db"
+    },
+    {
+      "id": "cmmxtom5d0001jy04k8n66wqv",
+      "title": "UX Conversion Deconstruction Engine",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmmxtom5d0001jy04k8n66wqv_ux-conversion-deconstruction-engine",
+      "contentSha256": "30b6db5059f0657129a0e705ab61ec0b087448300305eae80f30691418521b68"
+    },
+    {
+      "id": "cmmoq6w7o0004la042h9mga36",
+      "title": "Pre-Launch Checklist Generator",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmmoq6w7o0004la042h9mga36_pre-launch-checklist-generator",
+      "contentSha256": "7c8697fb5c16942ba9a12b2fb26f13e0d171a7061af7e865582c424ffa639dae"
+    },
+    {
+      "id": "cmmoq2i9d000sle049zrs991x",
+      "title": "Lighthouse & Performance Optimization",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmmoq2i9d000sle049zrs991x_lighthouse-performance-optimization",
+      "contentSha256": "50f5ab8680ea90a90bad6e2a24059fa18868579e7a751bf1da3f5973f8568dbf"
+    },
+    {
+      "id": "cmmoq1aqr000kle046h0960yk",
+      "title": "Visual QA & Cross-Browser Audit",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmmoq1aqr000kle046h0960yk_visual-qa-cross-browser-audit",
+      "contentSha256": "f2ce3148272e4d271eea6ce6e9f3244be1fb77ef2a230dc9a7a42a79cab6756b"
+    },
+    {
+      "id": "cmmopznp10009le041evkm0nx",
+      "title": "Design Handoff Notes - AI First, Human Readable",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmmopznp10009le041evkm0nx_design-handoff-notes-ai-first-human-readable",
+      "contentSha256": "634f451348ca4dc86c9968a29e8bc00010de3abdd3d988f22e477a97b75d810c"
+    },
+    {
+      "id": "cmmoikk3b000jkz04xgxb1t9s",
+      "title": "Design System Extraction Prompt Kit",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmmoikk3b000jkz04xgxb1t9s_design-system-extraction-prompt-kit",
+      "contentSha256": "0dd75ec60868d6d99cbc50df9d25022a782d51a544abd297cee454b7f720a370"
+    },
+    {
+      "id": "cmmnb9dxg0001l8047jcrujr5",
+      "title": "Kickstart Prompt for Web UX & UI Design",
+      "sourceType": "TEXT",
+      "sourceUrl": "https://prompts.chat/prompts/cmmnb9dxg0001l8047jcrujr5_kickstart-prompt-for-web-ux-ui-design",
+      "contentSha256": "1cab1e7ff822c98d17b35038f68fa5938a51fd086f50c2a2f72b4832ed16034d"
+    }
+  ]
+}

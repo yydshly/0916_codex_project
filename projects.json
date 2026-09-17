@@ -257,6 +257,25 @@
       "cover": "projects/013-aya/assets/aya-capability-map.png",
       "cover_alt": "原创研究全景图：电脑通过 USB 或 Wi-Fi 使用 ADB 控制 Android 设备，展示九类能力及输出、内部服务和扩展边界；非运行截图，未做真机实测。",
       "demo": ""
+    },
+    {
+      "id": 14,
+      "slug": "prompts-chat",
+      "name": "prompts.chat 提示词参考地图与复用指南",
+      "summary": "社区提示词收集与参考库：归纳2270条公开索引、16类内容主题及复用建议，用一张图说明如何基于任务思路筛选点子、验证需求并推进产品；产品设想与提示词效果仍需验证。",
+      "repo": "https://github.com/f/prompts.chat",
+      "status": "研究中",
+      "tags": [
+        "提示词参考地图",
+        "公开目录索引",
+        "用途归纳",
+        "中文用法",
+        "复用路径",
+        "内容快照"
+      ],
+      "cover": "projects/014-prompts-chat/assets/understanding-guide.png",
+      "cover_alt": "研究总览图：prompts.chat 是社区提示词收集与参考库，归纳16类内容主题，并说明从发现点子、筛选机会到需求验证、原型试用和产品迭代的路径。产品方向为待验证设想，非上游运行截图。",
+      "demo": ""
     }
   ]
 }

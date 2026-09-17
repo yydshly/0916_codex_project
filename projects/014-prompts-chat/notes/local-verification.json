@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-17",
+  "scope": "真实 Design 目录与静态研究网页；通过公开 HTTP API 读取 30 条内容，未调用模型生成或写入服务",
+  "url": "http://127.0.0.1:8794/014-prompts-chat/?v=20260917-catalog#catalog",
+  "syntaxChecks": "passed",
+  "registryCheck": "passed",
+  "buildAndLocalLinks": "passed",
+  "catalogChecks": {
+    "records": 30,
+    "rawTextHashes": "all matched",
+    "detailViews": 30,
+    "recipes": 3,
+    "recipeSteps": 13,
+    "filtering": "passed",
+    "contextAppend": "passed",
+    "routeViews": 7
+  },
+  "earlierScenarioLogic": "passed",
+  "httpResources": [
+    {
+      "file": "index.html",
+      "httpStatus": 200,
+      "matchesSource": true,
+      "sha256": "98ca78b6cd8cd5dab6a9ead7cee6a335b9182bb7826b4038af3c6c8e03ddc01e"
+    },
+    {
+      "file": "styles.css",
+      "httpStatus": 200,
+      "matchesSource": true,
+      "sha256": "71c28b3cdd6325404c8911e8acdfa7ccc308bb8e416ba02e9574b45ca192c62f"
+    },
+    {
+      "file": "catalog.css",
+      "httpStatus": 200,
+      "matchesSource": true,
+      "sha256": "c8d5fa08c7e22aa42ef14a8ed4417f81af0c913bc29e1a88cf7cd96607c8ff9d"
+    },
+    {
+      "file": "data.js",
+      "httpStatus": 200,
+      "matchesSource": true,
+      "sha256": "770802f9e106630376125eec7c8ab5c42254caa5d8b976573412e8df7eabf653"
+    },
+    {
+      "file": "catalog-data.js",
+      "httpStatus": 200,
+      "matchesSource": true,
+      "sha256": "95b4ee5ae807c44f6ae34de02f10d7e1cf59411751e8da9ad0ec100d085f4255"
+    },
+    {
+      "file": "catalog.js",
+      "httpStatus": 200,
+      "matchesSource": true,
+      "sha256": "c9c68b44e52735a9d0a36d65f51612ed2b2b8ae274f57793abd35d0b89dbf0f4"
+    },
+    {
+      "file": "app.js",
+      "httpStatus": 200,
+      "matchesSource": true,
+      "sha256": "bc7a7501bfd3695eb6c20ef574cf230339a3f3dbf4485c8a5a96488fbacfa243"
+    },
+    {
+      "file": "site.json",
+      "httpStatus": 200,
+      "matchesSource": true,
+      "sha256": "5bf2fea3f97c1144bf5ffd9970792925807b2b56609e9d055dca6ac61c95de4a"
+    }
+  ],
+  "browserVisualTest": "not run",
+  "modelOutputTest": "not run",
+  "publicDeployment": "not performed"
+}
