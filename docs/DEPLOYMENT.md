@@ -110,3 +110,12 @@ GitHub Pages 托管静态文件；需要常驻服务、数据库或服务端密�
 摘要明确其能力是通过编辑器和 MCP / CLI 创建、修改、保存、导出可编辑设计稿；已测效果偏传统、规整的商务后台与数据汇报，价值在设计自动化及批量制作。内置 AI 未测试，商务倾向不能代表生成上限。首页封面与网页使用同一张引导图，实际截图作为详情证据保留。
 
 内容提交 `687de43`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35138359354)成功；9 个线上文件与提交逐字节一致，总入口摘要和引导图验证通过，原有 Kun 页面 HTTP 200。未执行线上浏览器视觉、交互和手机测试。见[发布记录](../projects/012-openpencil/notes/deployment-verification.json)。仅部署静态研究内容，未部署 OpenPencil 在线编辑器或模型服务。
+
+
+## prompts.chat 提示词参考地图与产品点子引导
+
+2026-09-17 已发布并验证：[用途与价值地图](https://yydshly.github.io/0916_codex_project/014-prompts-chat/#guide) · [完整公开索引](https://yydshly.github.io/0916_codex_project/014-prompts-chat/#library) · [唯一总览引导图](https://yydshly.github.io/0916_codex_project/014-prompts-chat/media/understanding-guide.png)。
+
+摘要明确它是社区提示词收集与参考库：归纳 2,270 条公开目录索引、16 类内容主题，用任务思路支持点子筛选、需求验证和产品推进。目录分类与模型执行能力分开说明；60 篇独立条目有阅读说明，四条复用路径可填写与复制。总首页封面和研究页面使用同一张总览图，产品方向为待验证设想。
+
+内容提交 `a8af68a`，[发布工作流](https://github.com/yydshly/0916_codex_project/actions/runs/35175126109)成功；11 个线上主要资源与提交逐字节一致，总入口摘要和封面验证通过，原有 PPT Master、OpenPencil 页面 HTTP 200。线上检查 1440px / 390px 布局、引导图加载、分类筛选、中文搜索、任务填写与复制、详情锚点刷新。详见[部署验证](../projects/014-prompts-chat/notes/deployment-verification.json)。仅部署静态研究网页，未安装上游服务或评测提示词模型效果。

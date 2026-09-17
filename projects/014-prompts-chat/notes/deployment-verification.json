@@ -1,0 +1,122 @@
+{
+  "checkedAt": "2026-09-17T02:38:30.838986+00:00",
+  "contentCommit": "a8af68abcd50cdc3f470dbe1b4af4dc88d5590ea",
+  "workflowRun": 35175126109,
+  "workflowUrl": "https://github.com/yydshly/0916_codex_project/actions/runs/35175126109",
+  "workflowConclusion": "success",
+  "siteUrl": "https://yydshly.github.io/0916_codex_project/014-prompts-chat/#guide",
+  "imageUrl": "https://yydshly.github.io/0916_codex_project/014-prompts-chat/media/understanding-guide.png",
+  "assets": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "5f17551937084956b9568a81ab7b0153d26659db586e6ff4a3696771d0fdbacb",
+      "matchesCommit": true
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "sha256": "71c28b3cdd6325404c8911e8acdfa7ccc308bb8e416ba02e9574b45ca192c62f",
+      "matchesCommit": true
+    },
+    {
+      "path": "catalog.css",
+      "status": 200,
+      "sha256": "c8d5fa08c7e22aa42ef14a8ed4417f81af0c913bc29e1a88cf7cd96607c8ff9d",
+      "matchesCommit": true
+    },
+    {
+      "path": "guide.css",
+      "status": 200,
+      "sha256": "c0c31215e04b24b49d126de070ced8378531f5049acb92b2e61e78878de2334d",
+      "matchesCommit": true
+    },
+    {
+      "path": "data.js",
+      "status": 200,
+      "sha256": "770802f9e106630376125eec7c8ab5c42254caa5d8b976573412e8df7eabf653",
+      "matchesCommit": true
+    },
+    {
+      "path": "catalog-data.js",
+      "status": 200,
+      "sha256": "0618cf886c4b61cbd562d951c7d307e458b3d18c39630b498abc0e2496ef13f7",
+      "matchesCommit": true
+    },
+    {
+      "path": "catalog.js",
+      "status": 200,
+      "sha256": "c9c68b44e52735a9d0a36d65f51612ed2b2b8ae274f57793abd35d0b89dbf0f4",
+      "matchesCommit": true
+    },
+    {
+      "path": "guide-data.js",
+      "status": 200,
+      "sha256": "e8bd860fdce44ae1af00a15820a86dbd56fe159fc26d7f5cdf032c57655673ce",
+      "matchesCommit": true
+    },
+    {
+      "path": "guide.js",
+      "status": 200,
+      "sha256": "9cbdbcb83edf4846bfe055887e1868c9526335afa9dc011e5df040b5c68eb011",
+      "matchesCommit": true
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "sha256": "16ed81f3d4f972ec222e67e330a25100fb6a2d0f9c75b4c1059961a1d8b1e04f",
+      "matchesCommit": true
+    },
+    {
+      "path": "media/understanding-guide.png",
+      "status": 200,
+      "sha256": "eaaec823db0cf2247406b89df813cb4a7db5e103ca53f44a565c36bfdd04e4a1",
+      "matchesCommit": true
+    }
+  ],
+  "index": {
+    "entry": true,
+    "summary": true,
+    "cover": true,
+    "coverMatchesCommit": true
+  },
+  "regressions": [
+    {
+      "path": "001-ppt-master/styles.html",
+      "status": 200
+    },
+    {
+      "path": "012-openpencil/",
+      "status": 200
+    }
+  ],
+  "browserVerification": {
+    "desktopViewport": [
+      1440,
+      1000
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "horizontalDocumentOverflow": false,
+    "homeSummary": "verified",
+    "guideImage": {
+      "loaded": true,
+      "naturalDimensions": [
+        1536,
+        1024
+      ]
+    },
+    "typeFilter": "SKILL returned 72",
+    "chineseSearch": "数据分析 returned 28",
+    "taskEditing": "preview updated",
+    "copy": "success notification observed",
+    "detailReload": "The PRD Mastermind detail retained",
+    "consoleErrorsObserved": 0,
+    "viewportOverrideReset": true,
+    "fullDeviceAudit": false
+  },
+  "modelOutputTest": false,
+  "upstreamServiceDeployed": false
+}

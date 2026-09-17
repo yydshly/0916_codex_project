@@ -28,7 +28,7 @@ PDF 工具参考：[PDF Craft](projects/002-pdf-craft/README.md) 用于扫描书
 | 011 | [Kun AI 工作台能力与原理研究](projects/011-kun/README.md) | 类似 Codex 的 Agent 工作台：自有循环与外部 Agent SDK 并存，整合模型接入、成果预览、部分编辑和任务管理；附完整理解图与 Pi／Codex／Claude Code 对比。主要参考价值在工作流程整合，16 类界面不等于独有智能；源码研究，未实测。 | Agent 工作台、工具执行、多 Agent 编排、上下文管理、源码研究、网页手册 | 已完成 | [KunAgent/Kun](https://github.com/KunAgent/Kun) | [访问](https://yydshly.github.io/0916_codex_project/011-kun/) |
 | 012 | [OpenPencil AI 设计编辑器实测](projects/012-openpencil/README.md) | 开源设计编辑器，以 MCP / CLI 让 Agent 创建、修改、保存和导出可编辑设计稿。已测效果偏传统、规整的商务后台与数据汇报；价值在设计自动化与批量制作，内置 AI 的创意上限未验证。 | AI 设计编辑器、MCP、Agent 工具、原生画布、本地实测、理解摘要 | 已完成 | [ZSeven\-W/openpencil](https://github.com/ZSeven-W/openpencil) | [访问](https://yydshly.github.io/0916_codex_project/012-openpencil/) |
 | 013 | [AYA 电脑控制 Android 手机能力研究](projects/013-aya/README.md) | 电脑通过 ADB（USB / Wi\-Fi）连接并控制 Android 手机，支持投屏操控、文件与应用管理、截图录屏和调试监控；为我们构建手机自动化、批量设备管理及 AI 操作工具提供连接与执行层参考。源码研究，未做真机实测。 | ADB 设备控制、USB / Wi\-Fi、Android 自动化参考、源码研究 | 已完成 | [liriliri/aya](https://github.com/liriliri/aya) | — |
-| 014 | [prompts\.chat 提示词参考地图与复用指南](projects/014-prompts-chat/README.md) | 社区提示词收集与参考库：归纳2270条公开索引、16类内容主题及复用建议，用一张图说明如何基于任务思路筛选点子、验证需求并推进产品；产品设想与提示词效果仍需验证。 | 提示词参考地图、公开目录索引、用途归纳、中文用法、复用路径、内容快照 | 研究中 | [f/prompts\.chat](https://github.com/f/prompts.chat) | — |
+| 014 | [prompts\.chat 提示词参考地图与复用指南](projects/014-prompts-chat/README.md) | 社区提示词收集与参考库：归纳2270条公开索引、16类内容主题及复用建议，用一张图说明如何基于任务思路筛选点子、验证需求并推进产品；产品设想与提示词效果仍需验证。 | 提示词参考地图、公开目录索引、用途归纳、中文用法、复用路径、内容快照 | 研究中 | [f/prompts\.chat](https://github.com/f/prompts.chat) | [访问](https://yydshly.github.io/0916_codex_project/014-prompts-chat/#guide) |
 <!-- PROJECT_INDEX:END -->
 
 ## 项目预览

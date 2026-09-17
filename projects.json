@@ -275,7 +275,7 @@
       ],
       "cover": "projects/014-prompts-chat/assets/understanding-guide.png",
       "cover_alt": "研究总览图：prompts.chat 是社区提示词收集与参考库，归纳16类内容主题，并说明从发现点子、筛选机会到需求验证、原型试用和产品迭代的路径。产品方向为待验证设想，非上游运行截图。",
-      "demo": ""
+      "demo": "https://yydshly.github.io/0916_codex_project/014-prompts-chat/#guide"
     }
   ]
 }

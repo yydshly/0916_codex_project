@@ -10,7 +10,7 @@
 | 日期与来源 | 2026-09-17；用户提供 GitHub 链接 |
 | 状态 | 研究中；公开目录索引、用途地图、阅读样本、复用路径与平台能力已整理 |
 | 许可 | 源码与站点自编内容采用 MIT；提示词文本与数据采用 CC0，详见文末许可文件 |
-| 证据范围 | 官方资料与源码阅读；公开 HTTP API 读取 2,270 条唯一目录记录；60 篇独立内容有阅读说明；本地内容、交互逻辑及当前浏览器主要操作检查通过；未执行模型生成、未安装上游、未公开部署 |
+| 证据范围 | 官方资料与源码阅读；公开 HTTP API 读取 2,270 条唯一目录记录；60 篇独立内容有阅读说明；本地内容、交互逻辑及当前浏览器主要操作检查通过；研究网页已上线；未执行提示词模型效果评测、未安装或部署上游服务 |
 
 ## 一张图：我们的理解与产品参考价值
 
@@ -52,7 +52,9 @@
 
 ## 网页入口与组织
 
-网页源码：[app/index.html](app/index.html)。当前为本地预览，未发布公共地址。
+已发布：[用途与价值地图](https://yydshly.github.io/0916_codex_project/014-prompts-chat/#guide) · [完整公开索引](https://yydshly.github.io/0916_codex_project/014-prompts-chat/#library) · [引导图原图](https://yydshly.github.io/0916_codex_project/014-prompts-chat/media/understanding-guide.png)。
+
+网页源码：[app/index.html](app/index.html)。2026-09-17 GitHub Pages 发布成功，已核对线上摘要、引导图、筛选、任务填写、复制和详情刷新，并检查 1440px / 390px 布局；[部署验证记录](notes/deployment-verification.json)。
 
 | 页面 | 内容 |
 | --- | --- |

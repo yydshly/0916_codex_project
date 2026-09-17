@@ -99,4 +99,4 @@ python scripts/build_web.py
 
 覆盖：2,270 唯一索引、52 分类、16 方向、32 样本正文哈希、60 个独立详解条目、57 页索引无重复遗漏、4 路径 14 步真实引用、11 个路由、筛选与任务字段更新；保留之前的 30 条 Design 原文及旧演练回归检查。
 
-浏览器已核对当前窗口的首页排版、索引筛选、中文搜索、任务填写与复制、样本入口。未执行多设备完整测试、模型质量对照、上游安装或公开部署。验证元数据见 [guide-verification.json](guide-verification.json)。
+首次本地验证见 [guide-verification.json](guide-verification.json)。2026-09-17 已发布静态研究网页，线上验证摘要、引导图加载、类型筛选、中文搜索、任务填写与复制、样本详情刷新，并检查 1440px / 390px 布局。未执行全设备完整测试、模型质量对照或上游安装；详见 [部署记录](deployment-verification.json)。
